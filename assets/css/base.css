@@ -2,8 +2,9 @@
 
 :root {
   --text-size: clamp(1.0625rem, 0.98rem + 0.35vw, 1.1875rem);
-  /* About 68 characters of running serif text; in rem and vw so every grid gets the same column. */
-  --measure: calc(30 * var(--text-size));
+  /* About 77 characters of running serif text, wide enough for a figure's wide drawing;
+     in rem and vw so every grid gets the same column. */
+  --measure: calc(34 * var(--text-size));
 }
 
 html {

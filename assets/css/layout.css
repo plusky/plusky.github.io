@@ -1,4 +1,5 @@
-/* One grid with named lines: text (default), wide (text plus 7rem a side), full. */
+/* One grid with named lines: text (default, figures included), wide (text plus 7rem a side,
+   for the site header and footer), full. */
 .grid {
   display: grid;
   grid-template-columns:
@@ -9,9 +10,7 @@
     minmax(1rem, 1fr) [full-end];
 }
 .grid > * { grid-column: text; min-width: 0; }
-.grid > .fig--wide, .grid > .bar { grid-column: wide; }
-/* A text figure may reach 720px, the width of its wide drawing, centred on the text column. */
-.grid > .fig--text { grid-column: wide; justify-self: center; width: min(100%, 720px); }
+.grid > .bar { grid-column: wide; }
 .grid > .fig--full { grid-column: full; padding-inline: 1rem; }
 
 /* Site header and footer. */
@@ -76,8 +75,6 @@ main { display: block; }
 .post-body { margin-top: 2.5rem; }
 .post-body > .prose { grid-column: full; display: grid; grid-template-columns: subgrid; }
 .post-body > .prose > * { grid-column: text; min-width: 0; }
-.post-body > .prose > .fig--wide { grid-column: wide; }
-.post-body > .prose > .fig--text { grid-column: wide; justify-self: center; width: min(100%, 720px); }
 /* Block code starts at the text column and grows to the right for long lines. */
 .post-body > .prose > .highlight, .post-body > .prose > pre {
   grid-column: text-start / full-end;
@@ -92,7 +89,7 @@ main { display: block; }
   .toc-inline { display: none; }
   .toc-side {
     display: block;
-    grid-column: full-start / wide-start;
+    grid-column: full-start / text-start;
     grid-row: 1;
     justify-self: end;
     width: min(15rem, 100% - 4rem);
