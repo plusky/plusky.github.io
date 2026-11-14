@@ -171,7 +171,7 @@ def table(d):
                  f"was chosen on)", ps["jobs"], f"{rp['right']} (replay of production)", ps["rule"]["right"]))
     for k, cname in CLASSES[:2]:
         rows.append((f"Gold jobs: {cname.lower()}", ps["rule"][k][1], f"{of(*rp[k])} (replay)", of(*ps["rule"][k])))
-    rows.append((f"Passed on a rerun (not among the {o3['jobs']}): said infrastructure", rr["jobs"], rr["posted_infra"],
+    rows.append((f"Passed on a rerun (only partly among the {o3['jobs']}): said infrastructure", rr["jobs"], rr["posted_infra"],
                  f"{rr['rule_infra']} (both said it: {rr['both_infra']})"))
     rows.append((f"{REVIEWED} (among the {o3['jobs']}; {rv['tickets']} bugs in all, one on "
                  f"{rv['largest_ticket_jobs']} jobs; all product bugs)", rv["jobs"], rv["posted_right"], rv["rule_right"]))

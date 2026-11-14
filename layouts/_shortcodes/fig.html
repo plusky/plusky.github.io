@@ -3,8 +3,8 @@
   {{- errorf "%s: fig needs an id" .Position -}}
 {{- end -}}
 {{- $size := .Get "size" | default "text" -}}
-{{- if not (in (slice "text" "wide" "full") $size) -}}
-  {{- errorf "%s: fig %q: size must be text, wide or full, not %q" .Position $id $size -}}
+{{- if not (in (slice "text" "full") $size) -}}
+  {{- errorf "%s: fig %q: size must be text or full, not %q" .Position $id $size -}}
 {{- end -}}
 {{- $wide := .Page.Resources.Get (printf "fig/%s.svg" $id) -}}
 {{- $narrow := .Page.Resources.Get (printf "fig/%s.narrow.svg" $id) -}}
