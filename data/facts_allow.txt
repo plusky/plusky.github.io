@@ -1,0 +1,6 @@
+# Numbers a post may use that are not facts from data/facts.json.
+# One token per line, exactly as written in the text, then "# reason".
+# Years, ordinals, "#814", dotted versions (1.2.3) and ISO dates need no entry.
+100%  # "all of them", not a measured share
+0  # "none", not a measured count
+9354  # CPU model of the benchmark server

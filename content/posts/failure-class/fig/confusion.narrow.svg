@@ -1,0 +1,279 @@
+<svg viewBox="0 0 360 509" role="img" aria-labelledby="confusion-n-t confusion-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="confusion-n-t">What Gemma at Q8 answered against the label a person set, by kind of failure</title>
+<desc id="confusion-n-d">Of the jobs a person labelled test issue, Gemma at Q8 called 39 product bugs and 6 test issues; the IQ2_M quantisation in production called 15 test issues.</desc>
+<g>
+<text class="t-muted" x="0" y="7.92">Answered</text>
+<rect class="c-product" x="3" y="21.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="30.79">product bug</text>
+<rect class="c-test" x="109.79" y="21.5" width="10" height="10" rx="2"/>
+<text class="t" x="128.79" y="30.79">test issue</text>
+<rect class="c-infra" x="200.69" y="21.5" width="10" height="10" rx="2"/>
+<text class="t" x="219.69" y="30.79">infrastructure</text>
+<text class="t-strong" x="0" y="61.58">Gemma at Q8, labels set by people</text>
+<text class="t-strong" x="0" y="250.58">IQ2_M, the quantisation in production, on the same jobs</text>
+<text class="t-muted" x="0" y="411.92">No job a person labelled is infrastructure.</text>
+<text class="t-strong" x="0" y="432.58">
+<tspan x="0" dy="0">Silver jobs labelled infrastructure afterwards, against the class</tspan>
+<tspan x="0" dy="16.9">posted in production</tspan>
+</text>
+</g>
+<g class="is-on" data-layer="all">
+<text class="t-strong" x="0" y="90.75">product bug</text>
+<text class="t-muted" x="360" y="91" text-anchor="end">49 jobs</text>
+<g data-tip="Gemma at Q8, all jobs: labelled product bug, answered product bug: 44 of 49 jobs (90%)" tabindex="0">
+<title>Gemma at Q8, all jobs: labelled product bug, answered product bug: 44 of 49 jobs (90%)</title>
+<rect class="c-product" x="0" y="100" width="321.47" height="24"/>
+<text class="t-on" x="6" y="115.96">44</text>
+</g>
+<g data-tip="Gemma at Q8, all jobs: labelled product bug, answered test issue: 5 of 49 jobs (10%)" tabindex="0">
+<title>Gemma at Q8, all jobs: labelled product bug, answered test issue: 5 of 49 jobs (10%)</title>
+<path class="c-test" d="M323.47 100H356A4 4 0 0 1 360 104V120A4 4 0 0 1 356 124H323.47Z"/>
+<text class="t-on" x="329.47" y="115.96">5</text>
+</g>
+<text class="t" x="0" y="138.58">44 of 49 called product bug</text>
+<text class="t-strong" x="0" y="167.75">test issue</text>
+<text class="t-muted" x="360" y="168" text-anchor="end">46 jobs</text>
+<g data-tip="Gemma at Q8, all jobs: labelled test issue, answered product bug: 39 of 46 jobs (85%)" tabindex="0">
+<title>Gemma at Q8, all jobs: labelled test issue, answered product bug: 39 of 46 jobs (85%)</title>
+<rect class="c-product" x="0" y="177" width="301.83" height="24"/>
+<text class="t-on" x="6" y="192.96">39</text>
+</g>
+<g data-tip="Gemma at Q8, all jobs: labelled test issue, answered test issue: 6 of 46 jobs (13%)" tabindex="0">
+<title>Gemma at Q8, all jobs: labelled test issue, answered test issue: 6 of 46 jobs (13%)</title>
+<rect class="c-test" x="303.83" y="177" width="46.43" height="24"/>
+<text class="t-on" x="309.83" y="192.96">6</text>
+</g>
+<g data-tip="Gemma at Q8, all jobs: labelled test issue, answered infrastructure: 1 of 46 jobs (2%)" tabindex="0">
+<title>Gemma at Q8, all jobs: labelled test issue, answered infrastructure: 1 of 46 jobs (2%)</title>
+<rect class="hit" x="336" y="177" width="24" height="24"/>
+<path class="c-infra" d="M352.26 177H356A4 4 0 0 1 360 181V197A4 4 0 0 1 356 201H352.26Z"/>
+</g>
+<text class="t" x="0" y="215.58">39 of 46 called product bug, 6 test issue</text>
+<text class="t-strong" x="0" y="279.75">product bug</text>
+<text class="t-muted" x="360" y="280" text-anchor="end">49 jobs</text>
+<g data-tip="IQ2_M, all jobs: labelled product bug, answered product bug: 35 of 49 jobs (71%)" tabindex="0">
+<title>IQ2_M, all jobs: labelled product bug, answered product bug: 35 of 49 jobs (71%)</title>
+<rect class="c-product" x="0" y="289" width="254.29" height="20"/>
+<text class="t-on" x="6" y="302.96">35</text>
+</g>
+<g data-tip="IQ2_M, all jobs: labelled product bug, answered test issue: 13 of 49 jobs (27%)" tabindex="0">
+<title>IQ2_M, all jobs: labelled product bug, answered test issue: 13 of 49 jobs (27%)</title>
+<rect class="c-test" x="256.29" y="289" width="94.45" height="20"/>
+<text class="t-on" x="262.29" y="302.96">13</text>
+</g>
+<g data-tip="IQ2_M, all jobs: labelled product bug, answered infrastructure: 1 of 49 jobs (2%)" tabindex="0">
+<title>IQ2_M, all jobs: labelled product bug, answered infrastructure: 1 of 49 jobs (2%)</title>
+<rect class="hit" x="336" y="287" width="24" height="24"/>
+<path class="c-infra" d="M352.73 289H356A4 4 0 0 1 360 293V305A4 4 0 0 1 356 309H352.73Z"/>
+</g>
+<text class="t-strong" x="0" y="333.75">test issue</text>
+<text class="t-muted" x="360" y="334" text-anchor="end">46 jobs</text>
+<g data-tip="IQ2_M, all jobs: labelled test issue, answered product bug: 31 of 46 jobs (67%)" tabindex="0">
+<title>IQ2_M, all jobs: labelled test issue, answered product bug: 31 of 46 jobs (67%)</title>
+<rect class="c-product" x="0" y="343" width="241.26" height="20"/>
+<text class="t-on" x="6" y="356.96">31</text>
+</g>
+<g data-tip="IQ2_M, all jobs: labelled test issue, answered test issue: 15 of 46 jobs (33%)" tabindex="0">
+<title>IQ2_M, all jobs: labelled test issue, answered test issue: 15 of 46 jobs (33%)</title>
+<path class="c-test" d="M243.26 343H356A4 4 0 0 1 360 347V359A4 4 0 0 1 356 363H243.26Z"/>
+<text class="t-on" x="249.26" y="356.96">15</text>
+</g>
+<text class="t" x="0" y="377.58">15 of 46 called test issue</text>
+<text class="t-strong" x="0" y="479.75">infrastructure</text>
+<text class="t-muted" x="360" y="480" text-anchor="end">111 jobs</text>
+<g data-tip="Silver, posted, all jobs: labelled infrastructure, posted product bug: 33 of 111 jobs (30%)" tabindex="0">
+<title>Silver, posted, all jobs: labelled infrastructure, posted product bug: 33 of 111 jobs (30%)</title>
+<rect class="c-product" x="0" y="489" width="105.84" height="20"/>
+<text class="t-on" x="6" y="502.96">33</text>
+</g>
+<g data-tip="Silver, posted, all jobs: labelled infrastructure, posted test issue: 45 of 111 jobs (41%)" tabindex="0">
+<title>Silver, posted, all jobs: labelled infrastructure, posted test issue: 45 of 111 jobs (41%)</title>
+<rect class="c-test" x="107.84" y="489" width="144.32" height="20"/>
+<text class="t-on" x="113.84" y="502.96">45</text>
+</g>
+<g data-tip="Silver, posted, all jobs: labelled infrastructure, posted infrastructure: 33 of 111 jobs (30%)" tabindex="0">
+<title>Silver, posted, all jobs: labelled infrastructure, posted infrastructure: 33 of 111 jobs (30%)</title>
+<path class="c-infra" d="M254.16 489H356A4 4 0 0 1 360 493V505A4 4 0 0 1 356 509H254.16Z"/>
+<text class="t-on" x="260.16" y="502.96">33</text>
+</g>
+</g>
+<g data-layer="script">
+<text class="t-strong" x="0" y="90.75">product bug</text>
+<text class="t-muted" x="360" y="91" text-anchor="end">22 jobs</text>
+<g data-tip="Gemma at Q8, failed in a script: labelled product bug, answered product bug: 22 of 22 jobs (100%)" tabindex="0">
+<title>Gemma at Q8, failed in a script: labelled product bug, answered product bug: 22 of 22 jobs (100%)</title>
+<path class="c-product" d="M0 100H356A4 4 0 0 1 360 104V120A4 4 0 0 1 356 124H0Z"/>
+<text class="t-on" x="6" y="115.96">22</text>
+</g>
+<text class="t" x="0" y="138.58">22 of 22 called product bug</text>
+<text class="t-strong" x="0" y="167.75">test issue</text>
+<text class="t-muted" x="360" y="168" text-anchor="end">13 jobs</text>
+<g data-tip="Gemma at Q8, failed in a script: labelled test issue, answered product bug: 13 of 13 jobs (100%)" tabindex="0">
+<title>Gemma at Q8, failed in a script: labelled test issue, answered product bug: 13 of 13 jobs (100%)</title>
+<path class="c-product" d="M0 177H356A4 4 0 0 1 360 181V197A4 4 0 0 1 356 201H0Z"/>
+<text class="t-on" x="6" y="192.96">13</text>
+</g>
+<text class="t" x="0" y="215.58">13 of 13 called product bug, none a test issue</text>
+<text class="t-strong" x="0" y="279.75">product bug</text>
+<text class="t-muted" x="360" y="280" text-anchor="end">22 jobs</text>
+<g data-tip="IQ2_M, failed in a script: labelled product bug, answered product bug: 20 of 22 jobs (91%)" tabindex="0">
+<title>IQ2_M, failed in a script: labelled product bug, answered product bug: 20 of 22 jobs (91%)</title>
+<rect class="c-product" x="0" y="289" width="325.45" height="20"/>
+<text class="t-on" x="6" y="302.96">20</text>
+</g>
+<g data-tip="IQ2_M, failed in a script: labelled product bug, answered test issue: 2 of 22 jobs (9%)" tabindex="0">
+<title>IQ2_M, failed in a script: labelled product bug, answered test issue: 2 of 22 jobs (9%)</title>
+<path class="c-test" d="M327.45 289H356A4 4 0 0 1 360 293V305A4 4 0 0 1 356 309H327.45Z"/>
+<text class="t-on" x="333.45" y="302.96">2</text>
+</g>
+<text class="t-strong" x="0" y="333.75">test issue</text>
+<text class="t-muted" x="360" y="334" text-anchor="end">13 jobs</text>
+<g data-tip="IQ2_M, failed in a script: labelled test issue, answered product bug: 8 of 13 jobs (62%)" tabindex="0">
+<title>IQ2_M, failed in a script: labelled test issue, answered product bug: 8 of 13 jobs (62%)</title>
+<rect class="c-product" x="0" y="343" width="220.31" height="20"/>
+<text class="t-on" x="6" y="356.96">8</text>
+</g>
+<g data-tip="IQ2_M, failed in a script: labelled test issue, answered test issue: 5 of 13 jobs (38%)" tabindex="0">
+<title>IQ2_M, failed in a script: labelled test issue, answered test issue: 5 of 13 jobs (38%)</title>
+<path class="c-test" d="M222.31 343H356A4 4 0 0 1 360 347V359A4 4 0 0 1 356 363H222.31Z"/>
+<text class="t-on" x="228.31" y="356.96">5</text>
+</g>
+<text class="t" x="0" y="377.58">5 of 13 called test issue</text>
+<text class="t-strong" x="0" y="479.75">infrastructure</text>
+<text class="t-muted" x="360" y="480" text-anchor="end">53 jobs</text>
+<g data-tip="Silver, posted, failed in a script: labelled infrastructure, posted product bug: 14 of 53 jobs (26%)" tabindex="0">
+<title>Silver, posted, failed in a script: labelled infrastructure, posted product bug: 14 of 53 jobs (26%)</title>
+<rect class="c-product" x="0" y="489" width="94.04" height="20"/>
+<text class="t-on" x="6" y="502.96">14</text>
+</g>
+<g data-tip="Silver, posted, failed in a script: labelled infrastructure, posted test issue: 17 of 53 jobs (32%)" tabindex="0">
+<title>Silver, posted, failed in a script: labelled infrastructure, posted test issue: 17 of 53 jobs (32%)</title>
+<rect class="c-test" x="96.04" y="489" width="114.19" height="20"/>
+<text class="t-on" x="102.04" y="502.96">17</text>
+</g>
+<g data-tip="Silver, posted, failed in a script: labelled infrastructure, posted infrastructure: 22 of 53 jobs (42%)" tabindex="0">
+<title>Silver, posted, failed in a script: labelled infrastructure, posted infrastructure: 22 of 53 jobs (42%)</title>
+<path class="c-infra" d="M212.23 489H356A4 4 0 0 1 360 493V505A4 4 0 0 1 356 509H212.23Z"/>
+<text class="t-on" x="218.23" y="502.96">22</text>
+</g>
+</g>
+<g data-layer="needle">
+<text class="t-strong" x="0" y="90.75">product bug</text>
+<text class="t-muted" x="360" y="91" text-anchor="end">20 jobs</text>
+<g data-tip="Gemma at Q8, needle mismatch: labelled product bug, answered product bug: 15 of 20 jobs (75%)" tabindex="0">
+<title>Gemma at Q8, needle mismatch: labelled product bug, answered product bug: 15 of 20 jobs (75%)</title>
+<rect class="c-product" x="0" y="100" width="268.5" height="24"/>
+<text class="t-on" x="6" y="115.96">15</text>
+</g>
+<g data-tip="Gemma at Q8, needle mismatch: labelled product bug, answered test issue: 5 of 20 jobs (25%)" tabindex="0">
+<title>Gemma at Q8, needle mismatch: labelled product bug, answered test issue: 5 of 20 jobs (25%)</title>
+<path class="c-test" d="M270.5 100H356A4 4 0 0 1 360 104V120A4 4 0 0 1 356 124H270.5Z"/>
+<text class="t-on" x="276.5" y="115.96">5</text>
+</g>
+<text class="t" x="0" y="138.58">15 of 20 called product bug</text>
+<text class="t-strong" x="0" y="167.75">test issue</text>
+<text class="t-muted" x="360" y="168" text-anchor="end">24 jobs</text>
+<g data-tip="Gemma at Q8, needle mismatch: labelled test issue, answered product bug: 18 of 24 jobs (75%)" tabindex="0">
+<title>Gemma at Q8, needle mismatch: labelled test issue, answered product bug: 18 of 24 jobs (75%)</title>
+<rect class="c-product" x="0" y="177" width="268.5" height="24"/>
+<text class="t-on" x="6" y="192.96">18</text>
+</g>
+<g data-tip="Gemma at Q8, needle mismatch: labelled test issue, answered test issue: 6 of 24 jobs (25%)" tabindex="0">
+<title>Gemma at Q8, needle mismatch: labelled test issue, answered test issue: 6 of 24 jobs (25%)</title>
+<path class="c-test" d="M270.5 177H356A4 4 0 0 1 360 181V197A4 4 0 0 1 356 201H270.5Z"/>
+<text class="t-on" x="276.5" y="192.96">6</text>
+</g>
+<text class="t" x="0" y="215.58">18 of 24 called product bug, 6 test issue</text>
+<text class="t-strong" x="0" y="279.75">product bug</text>
+<text class="t-muted" x="360" y="280" text-anchor="end">20 jobs</text>
+<g data-tip="IQ2_M, needle mismatch: labelled product bug, answered product bug: 9 of 20 jobs (45%)" tabindex="0">
+<title>IQ2_M, needle mismatch: labelled product bug, answered product bug: 9 of 20 jobs (45%)</title>
+<rect class="c-product" x="0" y="289" width="161.1" height="20"/>
+<text class="t-on" x="6" y="302.96">9</text>
+</g>
+<g data-tip="IQ2_M, needle mismatch: labelled product bug, answered test issue: 11 of 20 jobs (55%)" tabindex="0">
+<title>IQ2_M, needle mismatch: labelled product bug, answered test issue: 11 of 20 jobs (55%)</title>
+<path class="c-test" d="M163.1 289H356A4 4 0 0 1 360 293V305A4 4 0 0 1 356 309H163.1Z"/>
+<text class="t-on" x="169.1" y="302.96">11</text>
+</g>
+<text class="t-strong" x="0" y="333.75">test issue</text>
+<text class="t-muted" x="360" y="334" text-anchor="end">24 jobs</text>
+<g data-tip="IQ2_M, needle mismatch: labelled test issue, answered product bug: 15 of 24 jobs (62%)" tabindex="0">
+<title>IQ2_M, needle mismatch: labelled test issue, answered product bug: 15 of 24 jobs (62%)</title>
+<rect class="c-product" x="0" y="343" width="223.75" height="20"/>
+<text class="t-on" x="6" y="356.96">15</text>
+</g>
+<g data-tip="IQ2_M, needle mismatch: labelled test issue, answered test issue: 9 of 24 jobs (38%)" tabindex="0">
+<title>IQ2_M, needle mismatch: labelled test issue, answered test issue: 9 of 24 jobs (38%)</title>
+<path class="c-test" d="M225.75 343H356A4 4 0 0 1 360 347V359A4 4 0 0 1 356 363H225.75Z"/>
+<text class="t-on" x="231.75" y="356.96">9</text>
+</g>
+<text class="t" x="0" y="377.58">9 of 24 called test issue</text>
+<text class="t-strong" x="0" y="479.75">infrastructure</text>
+<text class="t-muted" x="360" y="480" text-anchor="end">29 jobs</text>
+<g data-tip="Silver, posted, needle mismatch: labelled infrastructure, posted product bug: 7 of 29 jobs (24%)" tabindex="0">
+<title>Silver, posted, needle mismatch: labelled infrastructure, posted product bug: 7 of 29 jobs (24%)</title>
+<rect class="c-product" x="0" y="489" width="85.93" height="20"/>
+<text class="t-on" x="6" y="502.96">7</text>
+</g>
+<g data-tip="Silver, posted, needle mismatch: labelled infrastructure, posted test issue: 20 of 29 jobs (69%)" tabindex="0">
+<title>Silver, posted, needle mismatch: labelled infrastructure, posted test issue: 20 of 29 jobs (69%)</title>
+<rect class="c-test" x="87.93" y="489" width="245.52" height="20"/>
+<text class="t-on" x="93.93" y="502.96">20</text>
+</g>
+<g data-tip="Silver, posted, needle mismatch: labelled infrastructure, posted infrastructure: 2 of 29 jobs (7%)" tabindex="0">
+<title>Silver, posted, needle mismatch: labelled infrastructure, posted infrastructure: 2 of 29 jobs (7%)</title>
+<path class="c-infra" d="M335.45 489H356A4 4 0 0 1 360 493V505A4 4 0 0 1 356 509H335.45Z"/>
+<text class="t-on" x="341.45" y="502.96">2</text>
+</g>
+</g>
+<g data-layer="serial">
+<text class="t-strong" x="0" y="90.75">product bug</text>
+<text class="t-muted" x="360" y="91" text-anchor="end">3 jobs</text>
+<g data-tip="Gemma at Q8, serial console: labelled product bug, answered product bug: 3 of 3 jobs (100%)" tabindex="0">
+<title>Gemma at Q8, serial console: labelled product bug, answered product bug: 3 of 3 jobs (100%)</title>
+<path class="c-product" d="M0 100H356A4 4 0 0 1 360 104V120A4 4 0 0 1 356 124H0Z"/>
+<text class="t-on" x="6" y="115.96">3</text>
+</g>
+<text class="t" x="0" y="138.58">3 of 3 called product bug</text>
+<text class="t-strong" x="0" y="167.75">test issue</text>
+<text class="t-muted" x="360" y="168" text-anchor="end">7 jobs</text>
+<g data-tip="Gemma at Q8, serial console: labelled test issue, answered product bug: 6 of 7 jobs (86%)" tabindex="0">
+<title>Gemma at Q8, serial console: labelled test issue, answered product bug: 6 of 7 jobs (86%)</title>
+<rect class="c-product" x="0" y="177" width="306.86" height="24"/>
+<text class="t-on" x="6" y="192.96">6</text>
+</g>
+<g data-tip="Gemma at Q8, serial console: labelled test issue, answered infrastructure: 1 of 7 jobs (14%)" tabindex="0">
+<title>Gemma at Q8, serial console: labelled test issue, answered infrastructure: 1 of 7 jobs (14%)</title>
+<path class="c-infra" d="M308.86 177H356A4 4 0 0 1 360 181V197A4 4 0 0 1 356 201H308.86Z"/>
+<text class="t-on" x="314.86" y="192.96">1</text>
+</g>
+<text class="t" x="0" y="215.58">6 of 7 called product bug, none a test issue</text>
+<text class="t-strong" x="0" y="279.75">product bug</text>
+<text class="t-muted" x="360" y="280" text-anchor="end">3 jobs</text>
+<g data-tip="IQ2_M, serial console: labelled product bug, answered product bug: 2 of 3 jobs (67%)" tabindex="0">
+<title>IQ2_M, serial console: labelled product bug, answered product bug: 2 of 3 jobs (67%)</title>
+<rect class="c-product" x="0" y="289" width="238.67" height="20"/>
+<text class="t-on" x="6" y="302.96">2</text>
+</g>
+<g data-tip="IQ2_M, serial console: labelled product bug, answered infrastructure: 1 of 3 jobs (33%)" tabindex="0">
+<title>IQ2_M, serial console: labelled product bug, answered infrastructure: 1 of 3 jobs (33%)</title>
+<path class="c-infra" d="M240.67 289H356A4 4 0 0 1 360 293V305A4 4 0 0 1 356 309H240.67Z"/>
+<text class="t-on" x="246.67" y="302.96">1</text>
+</g>
+<text class="t-strong" x="0" y="333.75">test issue</text>
+<text class="t-muted" x="360" y="334" text-anchor="end">7 jobs</text>
+<g data-tip="IQ2_M, serial console: labelled test issue, answered product bug: 6 of 7 jobs (86%)" tabindex="0">
+<title>IQ2_M, serial console: labelled test issue, answered product bug: 6 of 7 jobs (86%)</title>
+<rect class="c-product" x="0" y="343" width="306.86" height="20"/>
+<text class="t-on" x="6" y="356.96">6</text>
+</g>
+<g data-tip="IQ2_M, serial console: labelled test issue, answered test issue: 1 of 7 jobs (14%)" tabindex="0">
+<title>IQ2_M, serial console: labelled test issue, answered test issue: 1 of 7 jobs (14%)</title>
+<path class="c-test" d="M308.86 343H356A4 4 0 0 1 360 347V359A4 4 0 0 1 356 363H308.86Z"/>
+<text class="t-on" x="314.86" y="356.96">1</text>
+</g>
+<text class="t" x="0" y="377.58">1 of 7 called test issue</text>
+<text class="t-muted" x="0" y="474.92">The silver set has no serial console split.</text>
+</g>
+</svg>

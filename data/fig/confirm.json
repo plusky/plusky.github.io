@@ -1,0 +1,288 @@
+{
+ "id": "confirm",
+ "scope": "o3",
+ "o3": {
+  "scope": "o3",
+  "jobs": 128,
+  "control": {
+   "right": 66,
+   "of": 128,
+   "mean_class_recall": 51.9,
+   "by_class": {
+    "product": {
+     "right": 38,
+     "jobs": 70,
+     "said": 54
+    },
+    "test": {
+     "right": 9,
+     "jobs": 16,
+     "said": 43
+    },
+    "infra": {
+     "right": 19,
+     "jobs": 42,
+     "said": 31
+    }
+   }
+  },
+  "rule": {
+   "right": 93,
+   "of": 128,
+   "mean_class_recall": 72.2,
+   "by_class": {
+    "product": {
+     "right": 58,
+     "jobs": 70,
+     "said": 70
+    },
+    "test": {
+     "right": 13,
+     "jobs": 16,
+     "said": 31
+    },
+    "infra": {
+     "right": 22,
+     "jobs": 42,
+     "said": 27
+    }
+   },
+   "mcnemar": {
+    "gained": 41,
+    "lost": 14,
+    "p": 0.000355,
+    "p_printed": "p = 0.000"
+   }
+  },
+  "rule_three_orders": {
+   "right": 95,
+   "of": 128,
+   "mean_class_recall": 71.5,
+   "by_class": {
+    "product": {
+     "right": 61,
+     "jobs": 70,
+     "said": 74
+    },
+    "test": {
+     "right": 12,
+     "jobs": 16,
+     "said": 27
+    },
+    "infra": {
+     "right": 22,
+     "jobs": 42,
+     "said": 27
+    }
+   },
+   "mcnemar": {
+    "gained": 43,
+    "lost": 14,
+    "p": 0.000154,
+    "p_printed": "p = 0.000"
+   }
+  },
+  "gain_low_90": {
+   "rule": 8.9,
+   "rule_three_orders": 8.4
+  }
+ },
+ "by_label_source": {
+  "scope": "o3",
+  "hindsight_rule": "the final label was given by at least one labelling pass that set hindsight_used",
+  "person_set": {
+   "scope": "o3",
+   "jobs": 35,
+   "in_threshold_set": true,
+   "rule": {
+    "right": 20,
+    "product": [
+     14,
+     19
+    ],
+    "test": [
+     6,
+     16
+    ]
+   },
+   "production_replay": {
+    "right": 19,
+    "product": [
+     13,
+     19
+    ],
+    "test": [
+     6,
+     16
+    ]
+   }
+  },
+  "hindsight_rerun_passed": {
+   "jobs": 23,
+   "posted": {
+    "product": [
+     0,
+     0
+    ],
+    "test": [
+     2,
+     2
+    ],
+    "infra": [
+     14,
+     21
+    ]
+   },
+   "rule": {
+    "product": [
+     0,
+     0
+    ],
+    "test": [
+     2,
+     2
+    ],
+    "infra": [
+     11,
+     21
+    ]
+   },
+   "posted_right": 16,
+   "rule_right": 13
+  },
+  "hindsight_other": {
+   "jobs": 85,
+   "posted": {
+    "product": [
+     32,
+     60
+    ],
+    "test": [
+     5,
+     10
+    ],
+    "infra": [
+     3,
+     15
+    ]
+   },
+   "rule": {
+    "product": [
+     50,
+     60
+    ],
+    "test": [
+     10,
+     10
+    ],
+    "infra": [
+     8,
+     15
+    ]
+   },
+   "posted_right": 40,
+   "rule_right": 68
+  },
+  "no_hindsight": {
+   "jobs": 20,
+   "posted": {
+    "product": [
+     6,
+     10
+    ],
+    "test": [
+     2,
+     4
+    ],
+    "infra": [
+     2,
+     6
+    ]
+   },
+   "rule": {
+    "product": [
+     8,
+     10
+    ],
+    "test": [
+     1,
+     4
+    ],
+    "infra": [
+     3,
+     6
+    ]
+   },
+   "posted_right": 10,
+   "rule_right": 12
+  },
+  "hindsight_total": 108,
+  "hindsight_infra": 36,
+  "hindsight_by_other_rules": {
+   "first_labeller_flag": 107,
+   "any_pass_flag": 110
+  },
+  "rerun_passed_any_source": {
+   "jobs": 25,
+   "posted": {
+    "product": [
+     0,
+     0
+    ],
+    "test": [
+     2,
+     2
+    ],
+    "infra": [
+     15,
+     23
+    ]
+   },
+   "rule": {
+    "product": [
+     0,
+     0
+    ],
+    "test": [
+     2,
+     2
+    ],
+    "infra": [
+     13,
+     23
+    ]
+   },
+   "posted_right": 17,
+   "rule_right": 15
+  },
+  "infra_total": 42,
+  "missed_infra": 20,
+  "missed_infra_rerun_passed": 10
+ },
+ "reviewed_by_person": {
+  "scope": "o3",
+  "jobs": 14,
+  "tickets": 2,
+  "largest_ticket_jobs": 12,
+  "by_class": {
+   "product": 14,
+   "test": 0,
+   "infra": 0
+  },
+  "tickets_in_gold_set": 2,
+  "tickets_resolution_checked": 1,
+  "silver_label_agrees": 14,
+  "posted_right": 9,
+  "rule_right": 10,
+  "method": "jobs of the 128 that a person reviewed on o3; references = bug references in their comments not written by the LLM; class as the gold set assigns it: a boo/bsc/bnc bug is a product bug, a public progress ticket of the test or infrastructure tracker a test or infrastructure issue. Every reference is a Bugzilla bug, so every job maps to product; a bare label without a reference is not used.",
+  "caveats": "Two tickets, one of them on most of the jobs: it says little about classes in general and nothing about test issues or infrastructure. The hindsight labeller could read these references, so the silver label of these jobs is not independent of them."
+ },
+ "rerun_passed_with_decision": {
+  "scope": "o3",
+  "silver_with_decision": 216,
+  "jobs": 50,
+  "posted_infra": 20,
+  "rule_infra": 16,
+  "both_infra": 12
+ }
+}

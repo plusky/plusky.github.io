@@ -1,0 +1,120 @@
+{
+ "id": "repeat",
+ "scope": "mixed",
+ "model": "Gemma 4 E4B Q8_0, same prompt, same settings",
+ "sets": [
+  {
+   "set": "69 gold jobs, o3 and internal",
+   "scope": "mixed",
+   "jobs": 69,
+   "same": 62
+  },
+  {
+   "set": "its internal product jobs",
+   "scope": "internal-aggregate",
+   "jobs": 34,
+   "same": 33
+  },
+  {
+   "set": "its o3 gold jobs",
+   "scope": "o3",
+   "jobs": 35,
+   "same": 29
+  },
+  {
+   "set": "its o3 gold test jobs",
+   "scope": "o3",
+   "jobs": 16,
+   "same": 11
+  },
+  {
+   "set": "o3 gold jobs of the last-good A/B, run again four days later",
+   "scope": "o3",
+   "jobs": 16,
+   "same": 7
+  },
+  {
+   "set": "verdict turn only, asked again at temperature 0",
+   "scope": "mixed",
+   "jobs": 36,
+   "same": 33
+  }
+ ],
+ "o3_pair": {
+  "scope": "o3",
+  "jobs": 35,
+  "classes": [
+   "product",
+   "test",
+   "infra"
+  ],
+  "run1_by_run2": [
+   [
+    28,
+    2,
+    0
+   ],
+   [
+    3,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ],
+  "right": {
+   "run1": 21,
+   "run2": 22
+  },
+  "labels": {
+   "product": 19,
+   "test": 16,
+   "infra": 0
+  }
+ },
+ "lastgood_pair": {
+  "scope": "o3",
+  "jobs": 16,
+  "classes": [
+   "product",
+   "test",
+   "infra"
+  ],
+  "run1_by_run2": [
+   [
+    6,
+    3,
+    0
+   ],
+   [
+    5,
+    1,
+    0
+   ],
+   [
+    1,
+    0,
+    0
+   ]
+  ],
+  "right": {
+   "run1": 10,
+   "run2": 8
+  }
+ },
+ "agreeing_runs_right": {
+  "scope": "o3",
+  "pair": "the two runs of o3_pair",
+  "product": [
+   18,
+   18
+  ],
+  "test": [
+   1,
+   11
+  ]
+ }
+}

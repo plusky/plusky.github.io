@@ -1,0 +1,62 @@
+<svg viewBox="0 0 360 286" role="img" aria-labelledby="repeat-n-t repeat-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="repeat-n-t">Jobs that kept their class when the same prompt ran twice</title>
+<desc id="repeat-n-d">The same prompt run twice kept the class on 29 of 35 gold jobs, 11 of 16 test issues among them and 7 of 16 gold jobs run again four days later, half of them from that set, against 33 of 34 product bugs from an internal instance.</desc>
+<rect class="c-ctl" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">kept its class</text>
+<rect class="c-focus" x="112.42" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="131.42" y="14.79">changed</text>
+<g>
+<g data-tip="Gold jobs, run again a day later: 29 of 35 kept the class" tabindex="0">
+<title>Gold jobs, run again a day later: 29 of 35 kept the class</title>
+<rect class="hit" x="0" y="63.75" width="297.29" height="24"/>
+<rect class="c-ctl" x="0" y="65.75" width="297.29" height="20"/>
+</g>
+<g data-tip="Gold jobs, run again a day later: 6 of 35 changed" tabindex="0">
+<title>Gold jobs, run again a day later: 6 of 35 changed</title>
+<rect class="hit" x="299.29" y="63.75" width="60.71" height="24"/>
+<path class="c-focus" d="M299.29 65.75H356A4 4 0 0 1 360 69.75V81.75A4 4 0 0 1 356 85.75H299.29Z"/>
+</g>
+<g data-tip="Test issues among those gold jobs: 11 of 16 kept the class" tabindex="0">
+<title>Test issues among those gold jobs: 11 of 16 kept the class</title>
+<rect class="hit" x="0" y="117.58" width="246.5" height="24"/>
+<rect class="c-ctl" x="0" y="119.58" width="246.5" height="20"/>
+</g>
+<g data-tip="Test issues among those gold jobs: 5 of 16 changed" tabindex="0">
+<title>Test issues among those gold jobs: 5 of 16 changed</title>
+<rect class="hit" x="248.5" y="117.58" width="111.5" height="24"/>
+<path class="c-focus" d="M248.5 119.58H356A4 4 0 0 1 360 123.58V135.58A4 4 0 0 1 356 139.58H248.5Z"/>
+</g>
+<g data-tip="Another 16 gold jobs (8 shared), run again four days later: 7 of 16 kept the class" tabindex="0">
+<title>Another 16 gold jobs (8 shared), run again four days later: 7 of 16 kept the class</title>
+<rect class="hit" x="0" y="184.33" width="156.5" height="24"/>
+<rect class="c-ctl" x="0" y="186.33" width="156.5" height="20"/>
+</g>
+<g data-tip="Another 16 gold jobs (8 shared), run again four days later: 9 of 16 changed" tabindex="0">
+<title>Another 16 gold jobs (8 shared), run again four days later: 9 of 16 changed</title>
+<rect class="hit" x="158.5" y="184.33" width="201.5" height="24"/>
+<path class="c-focus" d="M158.5 186.33H356A4 4 0 0 1 360 190.33V202.33A4 4 0 0 1 356 206.33H158.5Z"/>
+</g>
+<g data-tip="Product bugs from an internal instance (internal counts): 33 of 34 kept the class" tabindex="0">
+<title>Product bugs from an internal instance (internal counts): 33 of 34 kept the class</title>
+<rect class="hit" x="0" y="259.08" width="336" height="24"/>
+<rect class="c-ctl" x="0" y="261.08" width="348.41" height="20"/>
+</g>
+<g data-tip="Product bugs from an internal instance (internal counts): 1 of 34 changed" tabindex="0">
+<title>Product bugs from an internal instance (internal counts): 1 of 34 changed</title>
+<rect class="hit" x="336" y="259.08" width="24" height="24"/>
+<path class="c-focus" d="M350.41 261.08H356A4 4 0 0 1 360 265.08V277.08A4 4 0 0 1 356 281.08H350.41Z"/>
+</g>
+</g>
+<text class="t-strong" x="360" y="43.58" text-anchor="end">29 of 35 kept</text>
+<text class="t-strong" x="0" y="43.58">Gold jobs</text>
+<text class="t-muted" x="0" y="56.75">run again a day later</text>
+<text class="t-strong" x="360" y="110.33" text-anchor="end">11 of 16 kept</text>
+<text class="t-strong" x="0" y="110.33">Test issues among them</text>
+<text class="t-strong" x="360" y="164.16" text-anchor="end">7 of 16 kept</text>
+<text class="t-strong" x="0" y="164.16">Another 16 gold jobs (8 shared)</text>
+<text class="t-muted" x="0" y="177.33">run again four days later</text>
+<line class="grid" x1="0" y1="218.33" x2="360" y2="218.33"/>
+<text class="t" x="360" y="238.91" text-anchor="end">33 of 34 kept</text>
+<text class="t-strong" x="0" y="238.91">Product bugs, internal instance</text>
+<text class="t-muted" x="0" y="252.08">internal counts</text>
+</svg>

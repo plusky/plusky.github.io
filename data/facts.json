@@ -1,0 +1,1297 @@
+{
+ "window_days": {
+  "value": 42,
+  "forms": [
+   "In 42 days",
+   "42 days"
+  ],
+  "what": "length of the window over which o3 comments and bug references were counted",
+  "scope": "o3"
+ },
+ "llm_jobs_42d": {
+  "value": 6459,
+  "forms": [
+   "6,459",
+   "6459"
+  ],
+  "what": "o3 jobs with at least one LLM comment in 42 days in four job groups (Tumbleweed, its Development group, AArch64, Leap 16); jobs, not comments",
+  "scope": "o3"
+ },
+ "llm_jobs_per_day": {
+  "value": 154,
+  "forms": [
+   "154",
+   "about 154 a day"
+  ],
+  "what": "jobs with an LLM comment a day in those four groups (6459 / 42)",
+  "scope": "o3"
+ },
+ "llm_jobs_reviewed": {
+  "value": 142,
+  "forms": [
+   "142",
+   "2.2%",
+   "about 140"
+  ],
+  "what": "of the 6459 commented jobs, those a person later reviewed (set a bug reference or label)",
+  "scope": "o3"
+ },
+ "development_share": {
+  "value": 0.51,
+  "forms": [
+   "3,290 of 6,459",
+   "51%",
+   "half"
+  ],
+  "what": "share of the 6459 commented jobs that are in the Development Tumbleweed group",
+  "scope": "o3"
+ },
+ "development_jobs": {
+  "value": 3290,
+  "forms": [
+   "3,290",
+   "3290"
+  ],
+  "what": "commented jobs in the Development Tumbleweed group in 42 days",
+  "scope": "o3"
+ },
+ "development_reviewed": {
+  "value": 4,
+  "forms": [
+   "4",
+   "4 of 3,290",
+   "4 of 3290"
+  ],
+  "what": "of the commented Development Tumbleweed jobs, those a person reviewed",
+  "scope": "o3"
+ },
+ "cpt_prompts": {
+  "value": 520,
+  "forms": [
+   "520",
+   "520 real prompts"
+  ],
+  "what": "first-turn prompts measured with the model's tokenizer for characters per token",
+  "scope": "mixed"
+ },
+ "cpt_internal": {
+  "value": 122,
+  "forms": [
+   "122",
+   "122 of them from an internal instance"
+  ],
+  "what": "of the 520 measured prompts, those from the internal instance",
+  "scope": "internal-aggregate"
+ },
+ "cpt_original": {
+  "value": 3,
+  "forms": [
+   "3 characters per token",
+   "after looking at eight jobs"
+  ],
+  "what": "characters per token the script first assumed, lowered to 2.5 after eight o3 jobs",
+  "scope": "public-record"
+ },
+ "cpt_context": {
+  "value": 16384,
+  "forms": [
+   "16,384 tokens",
+   "a context of 16,384 tokens"
+  ],
+  "what": "context size for which the overflow of cut prompts was counted",
+  "scope": "mixed"
+ },
+ "cpt_median": {
+  "value": 2.28,
+  "forms": [
+   "2.28"
+  ],
+  "what": "median characters per token of the measured prompts",
+  "scope": "mixed"
+ },
+ "cpt_below_assumed": {
+  "value": 0.83,
+  "forms": [
+   "83%"
+  ],
+  "what": "share of prompts with fewer characters per token than the 2.5 the script assumed",
+  "scope": "mixed"
+ },
+ "cpt_assumed": {
+  "value": 2.5,
+  "forms": [
+   "2.5"
+  ],
+  "what": "characters per token the script assumes since 2 November 2026",
+  "scope": "public-record"
+ },
+ "cpt_proposed": {
+  "value": 1.9,
+  "forms": [
+   "1.9"
+  ],
+  "what": "characters per token proposed after the measurement (open pull request)",
+  "scope": "public-record"
+ },
+ "cpt_over_ctx_16k_at_2_5": {
+  "value": 11,
+  "forms": [
+   "11",
+   "11 of 520",
+   "11 of the 520 prompts"
+  ],
+  "what": "measured prompts that would still exceed a 16,384-token context after cutting at 2.5 characters per token (one more prompt cannot be fixed by any constant)",
+  "scope": "mixed"
+ },
+ "think_hidden_share": {
+  "value": 0.91,
+  "forms": [
+   "about nine tenths of what it generates"
+  ],
+  "what": "share of the tokens Gemma generates per turn that is thinking and never shown (468 per turn with thinking, 44 without; one request: 202 generated, 19 visible)",
+  "scope": "bench"
+ },
+ "think_time_saved": {
+  "value": 0.37,
+  "forms": [
+   "37%"
+  ],
+  "what": "less total time for the 17 audited jobs with thinking off (10641 -> 6741 s)",
+  "scope": "bench"
+ },
+ "think_class_on": {
+  "value": 13,
+  "forms": [
+   "13 of 17",
+   "76%",
+   "from 13"
+  ],
+  "what": "audited jobs with the class right, thinking on (one run)",
+  "scope": "bench"
+ },
+ "think_class_off": {
+  "value": 9,
+  "forms": [
+   "9 of 17",
+   "53%",
+   "from 13 to 9"
+  ],
+  "what": "audited jobs with the class right, thinking off (one run)",
+  "scope": "bench"
+ },
+ "refs_failed_with_ref": {
+  "value": 1316,
+  "forms": [
+   "1,316",
+   "1316"
+  ],
+  "what": "failed, incomplete or timed-out o3 jobs with a bug reference in 42 days (four groups)",
+  "scope": "o3"
+ },
+ "refs_bots_carry_over": {
+  "value": 1226,
+  "forms": [
+   "1,226",
+   "1226"
+  ],
+  "what": "of the 1316 failed o3 jobs with a bug reference in 42 days, those whose reference came from a bot or was carried over from an earlier job of the scenario",
+  "scope": "o3"
+ },
+ "refs_person": {
+  "value": 90,
+  "forms": [
+   "90"
+  ],
+  "what": "failed o3 jobs whose bug reference a person set (42 days)",
+  "scope": "o3"
+ },
+ "refs_person_public": {
+  "value": 83,
+  "forms": [
+   "83 of 90",
+   "83"
+  ],
+  "what": "of the 90 person-set references, those whose ticket is public (class known)",
+  "scope": "o3"
+ },
+ "refs_person_infra": {
+  "value": 0,
+  "forms": [
+   "none",
+   "0",
+   "not one"
+  ],
+  "what": "of the 83 person-set references with a public ticket, those labelled infrastructure",
+  "scope": "o3"
+ },
+ "refs_person_unknown_not_public": {
+  "value": 7,
+  "forms": [
+   "7"
+  ],
+  "what": "of the 90 person-set references, those to a ticket in a project that is not public: class unknown",
+  "scope": "o3"
+ },
+ "gold_jobs": {
+  "value": 98,
+  "forms": [
+   "98"
+  ],
+  "what": "gold o3 jobs: failed jobs with a bug or ticket reference set by a person",
+  "scope": "o3"
+ },
+ "gold_product": {
+  "value": 50,
+  "forms": [
+   "50"
+  ],
+  "what": "gold o3 jobs labelled product",
+  "scope": "o3"
+ },
+ "gold_test": {
+  "value": 48,
+  "forms": [
+   "48"
+  ],
+  "what": "gold o3 jobs labelled test",
+  "scope": "o3"
+ },
+ "gold_tickets": {
+  "value": 27,
+  "forms": [
+   "27"
+  ],
+  "what": "distinct tickets behind the 98 gold o3 jobs",
+  "scope": "o3"
+ },
+ "gold_largest_cluster": {
+  "value": 18,
+  "forms": [
+   "18",
+   "the largest with 18 jobs"
+  ],
+  "what": "jobs of the largest gold ticket",
+  "scope": "o3"
+ },
+ "gold_doubtful_tickets": {
+  "value": 8,
+  "forms": [
+   "8",
+   "8 of the 27"
+  ],
+  "what": "gold tickets that do not map cleanly onto the three classes",
+  "scope": "o3"
+ },
+ "gold_doubtful_jobs": {
+  "value": 40,
+  "forms": [
+   "40",
+   "40 of the 98"
+  ],
+  "what": "gold jobs on those tickets",
+  "scope": "o3"
+ },
+ "silver_jobs": {
+  "value": 299,
+  "forms": [
+   "299"
+  ],
+  "what": "silver o3 jobs: failed jobs with a posted LLM comment, labelled with hindsight by a frontier model",
+  "scope": "o3"
+ },
+ "silver_product": {
+  "value": 87,
+  "forms": [
+   "87"
+  ],
+  "what": "silver o3 jobs labelled product",
+  "scope": "o3"
+ },
+ "silver_test": {
+  "value": 87,
+  "forms": [
+   "87"
+  ],
+  "what": "silver o3 jobs labelled test",
+  "scope": "o3"
+ },
+ "silver_infra": {
+  "value": 111,
+  "forms": [
+   "111"
+  ],
+  "what": "silver o3 jobs labelled infra",
+  "scope": "o3"
+ },
+ "silver_unclear": {
+  "value": 14,
+  "forms": [
+   "14"
+  ],
+  "what": "silver o3 jobs labelled unclear",
+  "scope": "o3"
+ },
+ "detect_27": {
+  "value": 30,
+  "forms": [
+   "30 points",
+   "about 30 points",
+   "about 30 percentage points"
+  ],
+  "what": "smallest difference in percentage points that 27 tickets can reliably show: paired comparison of two models scored per ticket, normal approximation: z * spread / sqrt(tickets) with z = 2.8 (two-sided 5%, 80% power) and an assumed spread of per-ticket differences of 0.55 (a third of tickets changing between the two); the spread observed between Q8 and IQ2_M on 26 tickets, 0.42, gives about 23 points",
+  "scope": "o3"
+ },
+ "detect_105": {
+  "value": 15,
+  "forms": [
+   "15 points",
+   "Fifteen points"
+  ],
+  "what": "the same with 105 tickets",
+  "scope": "o3"
+ },
+ "detect_235": {
+  "value": 10,
+  "forms": [
+   "10 points",
+   "ten points"
+  ],
+  "what": "the same with 235 tickets",
+  "scope": "o3"
+ },
+ "detect_tickets_105": {
+  "value": 105,
+  "forms": [
+   "105 tickets",
+   "need 105 tickets"
+  ],
+  "what": "tickets needed for a smallest detectable difference of 15 points (same formula)",
+  "scope": "o3"
+ },
+ "detect_tickets_235": {
+  "value": 235,
+  "forms": [
+   "235",
+   "235 tickets",
+   "need 235"
+  ],
+  "what": "tickets needed for a smallest detectable difference of 10 points (same formula)",
+  "scope": "o3"
+ },
+ "detect_z": {
+  "value": 2.8,
+  "forms": [
+   "2.8",
+   "5% level and 80% power"
+  ],
+  "what": "z value of a two-sided 5% test at 80% power (1.96 + 0.84)",
+  "scope": "o3"
+ },
+ "gold_right_q8": {
+  "value": 50,
+  "forms": [
+   "50 of 95",
+   "Gemma's 50"
+  ],
+  "what": "gold o3 jobs Gemma Q8 had right, of the 95 it answered (IQ2_M also 50)",
+  "scope": "o3"
+ },
+ "gold_answered_gemma": {
+  "value": 95,
+  "forms": [
+   "95 of 98",
+   "95 of the 98",
+   "95"
+  ],
+  "what": "gold o3 jobs Gemma answered (three prompts did not fit its context)",
+  "scope": "o3"
+ },
+ "noise_same_internal": {
+  "value": 33,
+  "forms": [
+   "33 of 34",
+   "34 product bugs from an internal instance, 33"
+  ],
+  "what": "internal gold product jobs that kept their class when the same prompt ran twice (Gemma Q8, production prompt, run of 2026-11-10 against the replay of 2026-11-09)",
+  "scope": "internal-aggregate"
+ },
+ "noise_same_o3": {
+  "value": 29,
+  "forms": [
+   "29 of 35",
+   "29 of 35 gold"
+  ],
+  "what": "o3 gold jobs that kept their class when the same prompt ran twice (Gemma Q8, production prompt, run of 2026-11-10 against the replay of 2026-11-09)",
+  "scope": "o3"
+ },
+ "noise_same_o3_test": {
+  "value": 11,
+  "forms": [
+   "11 of 16"
+  ],
+  "what": "of those 35, the test-issue jobs that kept their class",
+  "scope": "o3"
+ },
+ "noise_same_lastgood": {
+  "value": 7,
+  "forms": [
+   "7 of 16"
+  ],
+  "what": "o3 gold jobs that kept their class when the same prompt ran again four days later (2026-11-13 against the 2026-11-09 replay); 8 of these 16 jobs are also among the 35 above",
+  "scope": "o3"
+ },
+ "noise_t0_changed": {
+  "value": 3,
+  "forms": [
+   "3 of 36"
+  ],
+  "what": "classes changed when only the verdict turn was asked again at temperature 0 on the same stored answers to the first two (screen half A)",
+  "scope": "mixed"
+ },
+ "agree_product_right": {
+  "value": 18,
+  "forms": [
+   "18 of 18"
+  ],
+  "what": "o3 gold product jobs where both runs give the same class: right (18 of those 18; of 19 product jobs; Gemma Q8, production prompt, the 2026-11-09 replay against the 2026-11-10 'base' run, 35 o3 gold jobs)",
+  "scope": "o3"
+ },
+ "agree_test_right": {
+  "value": 1,
+  "forms": [
+   "1 of 11"
+  ],
+  "what": "o3 gold test jobs where both runs give the same class: right (1 of those 11; of 16 test jobs; Gemma Q8, production prompt, the 2026-11-09 replay against the 2026-11-10 'base' run, 35 o3 gold jobs)",
+  "scope": "o3"
+ },
+ "gold_answered_product": {
+  "value": 49,
+  "forms": [
+   "Of 49 product-bug jobs"
+  ],
+  "what": "gold o3 product-bug jobs Gemma answered",
+  "scope": "o3"
+ },
+ "gold_answered_test": {
+  "value": 46,
+  "forms": [
+   "Of 46 test-issue jobs",
+   "of the 46"
+  ],
+  "what": "gold o3 test-issue jobs Gemma answered",
+  "scope": "o3"
+ },
+ "bias_q8_product_product": {
+  "value": 44,
+  "forms": [
+   "44",
+   "called 44 product"
+  ],
+  "what": "gold o3 product jobs Gemma Q8 called product",
+  "scope": "o3"
+ },
+ "bias_q8_test_product": {
+  "value": 39,
+  "forms": [
+   "39",
+   "39 product"
+  ],
+  "what": "gold o3 test jobs Gemma Q8 called product",
+  "scope": "o3"
+ },
+ "bias_q8_test_test": {
+  "value": 6,
+  "forms": [
+   "6",
+   "6 test"
+  ],
+  "what": "gold o3 test jobs Gemma Q8 called test",
+  "scope": "o3"
+ },
+ "bias_iq2m_test_test": {
+  "value": 15,
+  "forms": [
+   "15 of the 46",
+   "15 of 46"
+  ],
+  "what": "gold o3 test jobs Gemma IQ2_M, the production quantisation, called test",
+  "scope": "o3"
+ },
+ "q8_class_changed": {
+  "value": 24,
+  "forms": [
+   "24 of 95",
+   "24 of 95 labelled jobs"
+  ],
+  "what": "gold o3 jobs whose class Q8 answered differently from IQ2_M, of the 95 both answered (20 of them towards product)",
+  "scope": "o3"
+ },
+ "q8_test_right_script": {
+  "value": 0,
+  "forms": [
+   "0 of 13",
+   "of 13"
+  ],
+  "what": "gold o3 test jobs failing as a script failure: Gemma Q8 called test",
+  "scope": "o3"
+ },
+ "q8_test_right_serial": {
+  "value": 0,
+  "forms": [
+   "0 of 7",
+   "of 7"
+  ],
+  "what": "gold o3 test jobs failing as a serial console: Gemma Q8 called test",
+  "scope": "o3"
+ },
+ "screens_compared": {
+  "value": 179,
+  "forms": [
+   "179",
+   "179 comparisons"
+  ],
+  "what": "screen comparisons logged with a verdict of pass, drop or drop for coverage, on 2026-11-10 and 2026-11-11",
+  "scope": "mixed"
+ },
+ "screens_pass": {
+  "value": 31,
+  "forms": [
+   "31",
+   "31 passed"
+  ],
+  "what": "of those, comparisons that passed their rule",
+  "scope": "mixed"
+ },
+ "screens_not_passed": {
+  "value": 148,
+  "forms": [
+   "148 did not"
+  ],
+  "what": "of those, comparisons that did not pass: dropped, or dropped for coverage",
+  "scope": "mixed"
+ },
+ "screens_pairs": {
+  "value": 19,
+  "forms": [
+   "19 comparisons",
+   "Of the 19"
+  ],
+  "what": "comparisons that passed their rule on half A and were then run on half B against the same control in a later run",
+  "scope": "mixed"
+ },
+ "screens_pairs_failed_b": {
+  "value": 18,
+  "forms": [
+   "18 of 19",
+   "18 failed"
+  ],
+  "what": "of those 19, comparisons that failed on half B",
+  "scope": "mixed"
+ },
+ "screens_halves_compared": {
+  "value": 164,
+  "forms": [
+   "164 comparisons"
+  ],
+  "what": "comparisons on half A, half B or both halves with a net count (the ones the screens figure draws)",
+  "scope": "mixed"
+ },
+ "screens_halves_passed": {
+  "value": 29,
+  "forms": [
+   "29 of the 164",
+   "29 of 164"
+  ],
+  "what": "of those 164, comparisons that passed their rule",
+  "scope": "mixed"
+ },
+ "screen_jobs": {
+  "value": 71,
+  "forms": [
+   "71",
+   "71 jobs"
+  ],
+  "what": "jobs of the screen set, halves A and B together (24 product, 23 test, 24 infra)",
+  "scope": "mixed"
+ },
+ "screen_internal": {
+  "value": 29,
+  "forms": [
+   "29 of the 71",
+   "29 of 71"
+  ],
+  "what": "screen jobs from the internal instance",
+  "scope": "internal-aggregate"
+ },
+ "screen_always_product": {
+  "value": 24,
+  "forms": [
+   "24 of 71"
+  ],
+  "what": "screen jobs right when always answering product",
+  "scope": "mixed"
+ },
+ "screen_production": {
+  "value": 28,
+  "forms": [
+   "28 of 71",
+   "scores 28"
+  ],
+  "what": "screen jobs right with the production prompt, Gemma Q8",
+  "scope": "mixed"
+ },
+ "screen_rule2": {
+  "value": 47,
+  "forms": [
+   "47 of 71"
+  ],
+  "what": "screen jobs right with the two-question rule (environment answer 0.3 or more: infrastructure; else the higher of product and test, one option order), from stored decision answers",
+  "scope": "mixed"
+ },
+ "model_kev27b": {
+  "value": 47,
+  "forms": [
+   "47 of 71"
+  ],
+  "what": "screen jobs right: Kev-27B (27B decision model, Q4_K_M), label question",
+  "scope": "mixed"
+ },
+ "gemma26_secs": {
+  "value": 978,
+  "forms": [
+   "978 s",
+   "978 seconds"
+  ],
+  "what": "Gemma-26B-A4B Q8: median seconds per job on the screen set, first turn to verdict, eight jobs in parallel on the benchmark server (68 timed jobs)",
+  "scope": "bench"
+ },
+ "env_threshold": {
+  "value": 0.3,
+  "forms": [
+   "0.3",
+   "0.3 or more"
+  ],
+  "what": "threshold on the probability of \"yes\" to the decision model's question whether the test environment failed",
+  "scope": "mixed"
+ },
+ "env_readoff_infra": {
+  "value": 19,
+  "forms": [
+   "19 of 30"
+  ],
+  "what": "infrastructure jobs whose environment answer was 0.3 or more, of the 116 jobs the threshold was read from",
+  "scope": "mixed"
+ },
+ "env_readoff_others": {
+  "value": 5,
+  "forms": [
+   "5 of 86",
+   "5 of the 86"
+  ],
+  "what": "other jobs whose environment answer was 0.3 or more, of the same 116",
+  "scope": "mixed"
+ },
+ "env_readoff_jobs": {
+  "value": 116,
+  "forms": [
+   "116",
+   "the 116 jobs",
+   "116 labelled jobs"
+  ],
+  "what": "labelled jobs the prompt variants and the threshold were tuned on (none among the 128 of the frozen run)",
+  "scope": "mixed"
+ },
+ "env_confirm_above_product": {
+  "value": 2,
+  "forms": [
+   "2 of 70"
+  ],
+  "what": "of the 128 frozen-run jobs labelled product, those whose environment answer was 0.3 or more (unrounded)",
+  "scope": "o3"
+ },
+ "env_confirm_above_test": {
+  "value": 3,
+  "forms": [
+   "3 of 16"
+  ],
+  "what": "of the 128 frozen-run jobs labelled test, those whose environment answer was 0.3 or more (unrounded)",
+  "scope": "o3"
+ },
+ "env_confirm_above_infra": {
+  "value": 22,
+  "forms": [
+   "22 of 42"
+  ],
+  "what": "of the 128 frozen-run jobs labelled infra, those whose environment answer was 0.3 or more (unrounded)",
+  "scope": "o3"
+ },
+ "env_confirm_above_others": {
+  "value": 5,
+  "forms": [
+   "5 of 86",
+   "5 of the 86"
+  ],
+  "what": "of the 128 frozen-run jobs not labelled infrastructure, those whose environment answer was 0.3 or more (unrounded)",
+  "scope": "o3"
+ },
+ "confirm_jobs": {
+  "value": 128,
+  "forms": [
+   "128"
+  ],
+  "what": "o3 jobs of the frozen run: silver jobs with a confident label, none among the jobs the threshold was read from",
+  "scope": "o3"
+ },
+ "confirm_shared": {
+  "value": 12,
+  "forms": [
+   "12",
+   "12 share a test and a build"
+  ],
+  "what": "of the 128, jobs whose test (without the machine) and build match a job tuned on",
+  "scope": "o3"
+ },
+ "confirm_posted_right": {
+  "value": 66,
+  "forms": [
+   "66 of 128",
+   "against 66",
+   "right on 66"
+  ],
+  "what": "posted comment's class right on the 128",
+  "scope": "o3"
+ },
+ "confirm_rule_right": {
+  "value": 93,
+  "forms": [
+   "93 of 128",
+   "93 of 128 jobs"
+  ],
+  "what": "two-question decision rule right on the 128",
+  "scope": "o3"
+ },
+ "confirm_net_gain": {
+  "value": 27,
+  "forms": [
+   "27 jobs"
+  ],
+  "what": "jobs more the rule had right than the posted comments on the 128 (93 - 66)",
+  "scope": "o3"
+ },
+ "confirm_posted_recall": {
+  "value": 51.9,
+  "forms": [
+   "51.9%"
+  ],
+  "what": "recall averaged over the three classes, posted class on the 128",
+  "scope": "o3"
+ },
+ "confirm_rule_recall": {
+  "value": 72.2,
+  "forms": [
+   "72.2%"
+  ],
+  "what": "recall averaged over the three classes, two-question rule on the 128",
+  "scope": "o3"
+ },
+ "confirm_hindsight": {
+  "value": 108,
+  "forms": [
+   "108 of 128",
+   "108 of them"
+  ],
+  "what": "labels of the 128 given by a labelling pass that used hindsight (later runs, later bug links)",
+  "scope": "o3"
+ },
+ "confirm_hindsight_infra": {
+  "value": 36,
+  "forms": [
+   "36 of 42",
+   "36 of the 42"
+  ],
+  "what": "of the 42 infrastructure labels on the 128, those made with hindsight",
+  "scope": "o3"
+ },
+ "person35_jobs": {
+  "value": 35,
+  "forms": [
+   "35"
+  ],
+  "what": "o3 jobs with a bug reference a person set and both answers stored (all among the jobs the 0.3 was read from, none among the 128)",
+  "scope": "o3"
+ },
+ "person35_rule": {
+  "value": 20,
+  "forms": [
+   "20 of 35",
+   "got 20"
+  ],
+  "what": "decision rule right on those 35",
+  "scope": "o3"
+ },
+ "person35_replay": {
+  "value": 19,
+  "forms": [
+   "19 of 35",
+   "production 19"
+  ],
+  "what": "Gemma IQ2_M replay of the production script right on those 35",
+  "scope": "o3"
+ },
+ "confirm_reviewed_jobs": {
+  "value": 14,
+  "forms": [
+   "14",
+   "14 of the 128"
+  ],
+  "what": "of the 128 frozen-run jobs, those a person reviewed on o3 with a bug reference (all Bugzilla bugs, so product by the gold set's rule)",
+  "scope": "o3"
+ },
+ "confirm_reviewed_tickets": {
+  "value": 2,
+  "forms": [
+   "2",
+   "two bugs"
+  ],
+  "what": "distinct bugs behind those reviewed jobs",
+  "scope": "o3"
+ },
+ "confirm_reviewed_posted": {
+  "value": 9,
+  "forms": [
+   "9 of 14",
+   "9 of those"
+  ],
+  "what": "posted class right on the reviewed jobs (class from the person's reference)",
+  "scope": "o3"
+ },
+ "confirm_reviewed_rule": {
+  "value": 10,
+  "forms": [
+   "10 of 14",
+   "the rule 10"
+  ],
+  "what": "two-question rule right on the reviewed jobs (class from the person's reference)",
+  "scope": "o3"
+ },
+ "rerun_dec_jobs": {
+  "value": 50,
+  "forms": [
+   "50"
+  ],
+  "what": "silver o3 jobs with a decision-model answer (216 jobs) that passed on a rerun in the same build",
+  "scope": "o3"
+ },
+ "rerun_dec_posted_infra": {
+  "value": 20,
+  "forms": [
+   "20 of 50",
+   "for 20 of those"
+  ],
+  "what": "of those 50, jobs the posted comment called infrastructure",
+  "scope": "o3"
+ },
+ "rerun_dec_rule_infra": {
+  "value": 16,
+  "forms": [
+   "16 of 50",
+   "the rule for 16"
+  ],
+  "what": "of those 50, jobs the two-question rule called infrastructure",
+  "scope": "o3"
+ },
+ "lat_median": {
+  "value": 55,
+  "forms": [
+   "55 s",
+   "an estimated median of 55 seconds"
+  ],
+  "what": "estimated median seconds of the two-question decision request per job (8/16 threads; a linear fit on input tokens over 10 measured requests, applied to the 128 frozen-run jobs)",
+  "scope": "bench"
+ },
+ "lat_memory": {
+  "value": 8.5,
+  "forms": [
+   "8.5 GiB",
+   "about 8.5 GiB"
+  ],
+  "what": "memory of the decision model server at the capped thread setting (docker stats)",
+  "scope": "bench"
+ },
+ "rerun_silver": {
+  "value": 299,
+  "forms": [
+   "299",
+   "299 commented jobs"
+  ],
+  "what": "silver o3 jobs in the rerun study (each with a posted LLM comment)",
+  "scope": "o3"
+ },
+ "rerun_first_failures": {
+  "value": 188,
+  "forms": [
+   "188"
+  ],
+  "what": "of the 299, first failures: the previous run of the same scenario had not failed",
+  "scope": "o3"
+ },
+ "rerun_first_rerun": {
+  "value": 111,
+  "forms": [
+   "111",
+   "111 were run again"
+  ],
+  "what": "of the 188 first failures, those run again in the same build",
+  "scope": "o3"
+ },
+ "rerun_passed": {
+  "value": 67,
+  "forms": [
+   "67",
+   "67 of those"
+  ],
+  "what": "of those 111, jobs whose later run in the same build passed: a rerun of the job, or for 4 of them a new run of the scenario in that build",
+  "scope": "o3"
+ },
+ "rerun_passed_records": {
+  "value": 68,
+  "forms": [
+   "68"
+  ],
+  "what": "the same count as given in the comments on the pull requests, before one pass forced by a force_result label was found",
+  "scope": "o3"
+ },
+ "rerun_not_passed": {
+  "value": 44,
+  "forms": [
+   "44",
+   "44 were rerun and failed again"
+  ],
+  "what": "first failures run again in the same build without passing (strict)",
+  "scope": "o3"
+ },
+ "rerun_none": {
+  "value": 77,
+  "forms": [
+   "77"
+  ],
+  "what": "first failures never run again in the same build",
+  "scope": "o3"
+ },
+ "rerun_passed_label_infra": {
+  "value": 56,
+  "forms": [
+   "56"
+  ],
+  "what": "of the 67 that passed on a rerun, jobs labelled infra",
+  "scope": "o3"
+ },
+ "rerun_passed_label_test": {
+  "value": 11,
+  "forms": [
+   "11"
+  ],
+  "what": "of the 67 that passed on a rerun, jobs labelled test",
+  "scope": "o3"
+ },
+ "rerun_passed_label_product": {
+  "value": 0,
+  "forms": [
+   "0",
+   "None was a product bug"
+  ],
+  "what": "of the 67 that passed on a rerun, jobs labelled product",
+  "scope": "o3"
+ },
+ "silver_infra_rerun_passed": {
+  "value": 56,
+  "forms": [
+   "56 of 111"
+  ],
+  "what": "silver infrastructure labels on jobs whose later run in the same build passed, of all 111 (all such jobs were first failures)",
+  "scope": "o3"
+ },
+ "rerun_passed_bisect_no_model": {
+  "value": 25,
+  "forms": [
+   "For 25 of the 67"
+  ],
+  "what": "of the 67, jobs where the model itself had answered BISECT: NO",
+  "scope": "o3"
+ },
+ "rerun_passed_bisect_no_same_module": {
+  "value": 25,
+  "forms": [
+   "another 25"
+  ],
+  "what": "of the 67, jobs where the script rewrote BISECT: YES to NO because another job of the build failed in the same module",
+  "scope": "o3"
+ },
+ "rerun_all_restart_yes": {
+  "value": 62,
+  "forms": [
+   "62 of the 299"
+  ],
+  "what": "of the 299, jobs whose comment said Restart: YES",
+  "scope": "o3"
+ },
+ "retry_hook_covers": {
+  "value": 8,
+  "forms": [
+   "8 of 67",
+   "8 of the 67"
+  ],
+  "what": "of the 67 jobs whose later run passed, jobs the rule 'today's hook (investigation retry on BISECT: YES)' retried or would have retried",
+  "scope": "o3"
+ },
+ "retry_restart_yes_covers": {
+  "value": 28,
+  "forms": [
+   "28 of 67",
+   "28 of the 67"
+  ],
+  "what": "of the 67 jobs whose later run passed, jobs the rule 'Restart: YES' retried or would have retried",
+  "scope": "o3"
+ },
+ "prs_total": {
+  "value": 28,
+  "forms": [
+   "28",
+   "28 pull requests"
+  ],
+  "what": "pull requests opened against os-autoinst-scripts and openQA from 25 October to 14 November 2026",
+  "scope": "public-record"
+ },
+ "prs_merged": {
+  "value": 22,
+  "forms": [
+   "22",
+   "22 are merged"
+  ],
+  "what": "of those, merged by 14 November 2026",
+  "scope": "public-record"
+ },
+ "prs_open_small": {
+  "value": 3,
+  "forms": [
+   "three small fixes"
+  ],
+  "what": "of the 6 pull requests open on 14 November 2026, those other than the decision model in the script, the characters-per-token constant and the retry on Restart: YES: two fixes around force_result and one documentation change (817, 819, 8113)",
+  "scope": "public-record"
+ },
+ "date_first_pr": {
+  "value": "2026-10-25",
+  "forms": [
+   "25 October",
+   "25 October 2026"
+  ],
+  "what": "date of the first pull request of the work",
+  "scope": "public-record"
+ },
+ "ele_gold_right": {
+  "value": 42,
+  "forms": [
+   "42 of 95"
+  ],
+  "what": "gold o3 jobs elephant-1 alone (label question) had right, of the 95 Gemma answered",
+  "scope": "o3"
+ },
+ "ele_gold_infra": {
+  "value": 26,
+  "forms": [
+   "26",
+   "called 26 jobs infrastructure"
+  ],
+  "what": "of the same 95 gold o3 jobs, those elephant-1 alone called infrastructure (gold has no infrastructure label)",
+  "scope": "o3"
+ },
+ "date_last_measurement": {
+  "value": "2026-11-14",
+  "forms": [
+   "2026-11-14",
+   "14 November"
+  ],
+  "what": "date of the last measurement and of the pull request states",
+  "scope": "o3"
+ },
+ "date_slow_models_stopped": {
+  "value": "2026-11-11",
+  "forms": [
+   "11 November",
+   "evening of 11 November"
+  ],
+  "what": "the evening the slow models were stopped (20:45)",
+  "scope": "bench"
+ },
+ "audit_jobs": {
+  "value": 17,
+  "forms": [
+   "17",
+   "17 failed jobs"
+  ],
+  "what": "o3 jobs audited by hand for the prompt and speed tests",
+  "scope": "o3"
+ },
+ "prompt_fix_infra_before": {
+  "value": 15,
+  "forms": [
+   "15 of 17",
+   "15 of the 17"
+  ],
+  "what": "audited o3 jobs called infrastructure before the prompt fix (one sample per job at temperature 1.0, Gemma 4 E4B)",
+  "scope": "bench"
+ },
+ "prompt_fix_infra_after": {
+  "value": 3,
+  "forms": [
+   "3 of 17"
+  ],
+  "what": "audited o3 jobs called infrastructure after the prompt fix (one sample per job at temperature 1.0, Gemma 4 E4B)",
+  "scope": "bench"
+ },
+ "prompt_fix_right_before": {
+  "value": 4,
+  "forms": [
+   "4 of 17",
+   "up from 4"
+  ],
+  "what": "audited o3 jobs with the class right before the prompt fix (one sample per job at temperature 1.0, Gemma 4 E4B)",
+  "scope": "bench"
+ },
+ "prompt_fix_right_after": {
+  "value": 12,
+  "forms": [
+   "12 of 17"
+  ],
+  "what": "audited o3 jobs with the class right after the prompt fix (one sample per job at temperature 1.0, Gemma 4 E4B)",
+  "scope": "bench"
+ },
+ "ctx_size_total": {
+  "value": 262144,
+  "forms": [
+   "262,144",
+   "262144",
+   "eight slots"
+  ],
+  "what": "context the Gemma test server was started with, shared by 8 parallel slots",
+  "scope": "bench"
+ },
+ "ctx_slot": {
+  "value": 32768,
+  "forms": [
+   "32,768",
+   "32768"
+  ],
+  "what": "tokens per slot when 262,144 are shared by 8 parallel slots",
+  "scope": "bench"
+ },
+ "ctx_divided": {
+  "value": "--ctx-size / --parallel",
+  "forms": [
+   "divides `--ctx-size` by `--parallel`"
+  ],
+  "what": "llama-server splits its context over the parallel slots",
+  "scope": "public-record"
+ },
+ "ctx_http_400": {
+  "value": 400,
+  "forms": [
+   "HTTP 400"
+  ],
+  "what": "HTTP status llama.cpp returns for a prompt that does not fit a slot",
+  "scope": "bench"
+ },
+ "cache_turns_2_3": {
+  "value": 95,
+  "forms": [
+   "95%"
+  ],
+  "what": "share of prompt tokens of the second and third request of a job taken from the prompt cache, on the test server",
+  "scope": "bench"
+ },
+ "script_temperature": {
+  "value": 0.3,
+  "forms": [
+   "temperature 0.3",
+   "the verdict at 0"
+  ],
+  "what": "temperature of the script's first two questions; the verdict is asked at 0",
+  "scope": "public-record"
+ },
+ "gemma_probs": {
+  "value": 1.0,
+  "forms": [
+   "about 1.0"
+  ],
+  "what": "Gemma's own probability of its answer token, for every answer",
+  "scope": "mixed"
+ },
+ "frontier_o3_gold": {
+  "value": 65,
+  "forms": [
+   "65%"
+  ],
+  "what": "a frontier model on Gemma's input, mean share right per ticket on 26 o3 gold tickets",
+  "scope": "o3"
+ },
+ "gemma_o3_gold_causes": {
+  "value": 60,
+  "forms": [
+   "60%",
+   "Gemma's 60%"
+  ],
+  "what": "Gemma (IQ2_M replay) on the same 26 tickets",
+  "scope": "o3"
+ },
+ "ceiling_causes_o3": {
+  "value": 26,
+  "forms": [
+   "26",
+   "26 gold tickets",
+   "26 tickets"
+  ],
+  "what": "o3 gold tickets in the comparison of a frontier model and Gemma on Gemma's input",
+  "scope": "o3"
+ },
+ "variants_run": {
+  "value": 7.5,
+  "forms": [
+   "seven and a half hours",
+   "ten prompt variants"
+  ],
+  "what": "hours one run of ten verdict variants with Gemma Q8 over the 116 tuning jobs took (04:32 to 11:59 on 2026-11-10; 114 answered, two prompts too long)",
+  "scope": "bench"
+ },
+ "steer_follows": {
+  "value": "59 of 71",
+  "forms": [
+   "59 of 71"
+  ],
+  "what": "screen jobs where steered Gemma repeated the decision model's label",
+  "scope": "mixed"
+ },
+ "decision_model": {
+  "value": "elephant-1 9B, MIT",
+  "forms": [
+   "elephant-1"
+  ],
+  "what": "the decision model used",
+  "scope": "public-record"
+ },
+ "hardware_vm": {
+  "value": "an aarch64 test VM (64 vCPU)",
+  "forms": [
+   "a test VM"
+  ],
+  "what": "where the thinking comparison ran",
+  "scope": "bench"
+ },
+ "production_hosts": {
+  "value": "three o3 worker hosts",
+  "forms": [
+   "three of the worker hosts"
+  ],
+  "what": "where the production LLM runs",
+  "scope": "public-record"
+ }
+}

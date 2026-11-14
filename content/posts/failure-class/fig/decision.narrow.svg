@@ -1,0 +1,57 @@
+<svg viewBox="0 0 360 720" role="img" aria-labelledby="decision-n-t decision-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="decision-n-t">One writes, one weighs</title>
+<desc id="decision-n-d">A chat model writes an answer token by token; a decision model returns a probability for each answer it was given.</desc>
+<g transform="translate(0 0)">
+<text class="t-strong" x="0" y="14">Chat model writes</text>
+<text class="t-muted" x="0" y="32">Gemma 4 E4B</text>
+<rect class="box" x="0" y="46" width="360" height="30" rx="6"/>
+<text class="t" x="12" y="65.5">prompt with the job state</text>
+<path class="arrow" d="M24 76L24 96"/>
+<path class="head" d="M24 102L20.5 95L27.5 95Z"/>
+<text class="t-muted" x="36" y="93">generates token by token</text>
+<rect class="c-ctl-soft" x="0" y="104" width="323" height="22"/>
+<path class="c-ctl" d="M325 104H356A4 4 0 0 1 360 108V122A4 4 0 0 1 356 126H325Z"/>
+<text class="t" x="0" y="143">thinking, about 90% of the tokens</text>
+<text class="t" x="360" y="143" text-anchor="end">text</text>
+<rect class="box" x="0" y="154" width="360" height="30" rx="6"/>
+<text class="t-mono" x="12" y="173.5">… Classification: Product bug</text>
+<text class="t-muted" x="0" y="202">the class is parsed from the last lines</text>
+<text class="t-strong" x="0" y="232">probability of the answer token</text>
+<text class="t" x="0" y="255.5">product bug</text>
+<path class="c-product" d="M104 242H280A4 4 0 0 1 284 246V256A4 4 0 0 1 280 260H104Z"/>
+<text class="t" x="290" y="255.5">1.0</text>
+<text class="t-muted" x="0" y="282">about 1.0 whatever the answer,</text>
+<text class="t-muted" x="0" y="300">so it says nothing about confidence</text>
+</g>
+<line class="grid" x1="0" y1="316" x2="360" y2="316"/>
+<g transform="translate(0 334)">
+<text class="t-strong" x="0" y="14">Decision model weighs</text>
+<text class="t-muted" x="0" y="32">elephant-1, 9B</text>
+<rect class="box" x="0" y="46" width="360" height="30" rx="6"/>
+<text class="t" x="12" y="65.5">job state + question + list of answers</text>
+<path class="arrow" d="M24 76L24 96"/>
+<path class="head" d="M24 102L20.5 95L27.5 95Z"/>
+<text class="t-muted" x="36" y="93">returns one probability per answer</text>
+<text class="t" x="0" y="119.5">product bug</text>
+<path class="c-product" d="M104 106H177.4A4 4 0 0 1 181.4 110V120A4 4 0 0 1 177.4 124H104Z"/>
+<text class="t" x="187.4" y="119.5">0.43</text>
+<text class="t" x="0" y="145.5">test issue</text>
+<path class="c-test" d="M104 132H163A4 4 0 0 1 167 136V146A4 4 0 0 1 163 150H104Z"/>
+<text class="t" x="173" y="145.5">0.35</text>
+<text class="t" x="0" y="171.5">infrastructure</text>
+<path class="c-infra" d="M104 158H139.6A4 4 0 0 1 143.6 162V172A4 4 0 0 1 139.6 176H104Z"/>
+<text class="t" x="149.6" y="171.5">0.22</text>
+<text class="t-muted" x="0" y="202">second question, yes or no</text>
+<text class="t-strong" x="0" y="232">did the test environment fail?</text>
+<text class="t" x="0" y="255.5">yes</text>
+<path class="c-infra" d="M104 242H110.8A4 4 0 0 1 114.8 246V256A4 4 0 0 1 110.8 260H104Z"/>
+<text class="t" x="120.8" y="255.5">0.06</text>
+<line class="ref" x1="158" y1="236" x2="158" y2="266"/>
+<text class="t-muted" x="164" y="282">threshold 0.3</text>
+</g>
+<line class="grid" x1="0" y1="634" x2="360" y2="634"/>
+<text class="t" x="0" y="660">Rule used in the article: an environment answer of at least</text>
+<text class="t" x="0" y="678">0.3 means infrastructure, otherwise whichever of product</text>
+<text class="t" x="0" y="696">bug and test issue has the higher probability. Here 0.06 is</text>
+<text class="t" x="0" y="714">below 0.3, so: product bug.</text>
+</svg>

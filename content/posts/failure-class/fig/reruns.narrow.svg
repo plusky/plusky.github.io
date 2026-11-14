@@ -1,0 +1,132 @@
+<svg viewBox="0 0 360 753" role="img" aria-labelledby="reruns-n-t reruns-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="reruns-n-t">Commented jobs by what a rerun did, and the jobs each retry rule retries</title>
+<desc id="reruns-n-d">Of 299 commented jobs, 67 passed when simply run again in the same build; the hook's investigation retries covered 8 of them, while the comment said Restart: YES on 28.</desc>
+<text class="t-strong" x="0" y="8.58">What became of the 299 commented jobs</text>
+<g>
+<g>
+<g data-tip="Commented jobs → First failures: 188" tabindex="0">
+<title>Commented jobs → First failures: 188</title>
+<path class="c-ctl flow" d="M0 56C0 114.5 0 114.5 0 173L225.1 173C225.1 114.5 225.1 114.5 225.1 56Z"/>
+</g>
+<g data-tip="Commented jobs → Not a first failure: 111" tabindex="0">
+<title>Commented jobs → Not a first failure: 111</title>
+<path class="c-ctl-soft flow" d="M225.1 56C225.1 114.5 227.1 114.5 227.1 173L360 173C360 114.5 358 114.5 358 56Z"/>
+</g>
+<g data-tip="First failures → Passed on a rerun: 67" tabindex="0">
+<title>First failures → Passed on a rerun: 67</title>
+<path class="c-focus flow" d="M0 185C0 243.5 0 243.5 0 302L80.22 302C80.22 243.5 80.22 243.5 80.22 185Z"/>
+</g>
+<g data-tip="First failures → Rerun, failed again: 44" tabindex="0">
+<title>First failures → Rerun, failed again: 44</title>
+<path class="c-ctl flow" d="M80.22 185C80.22 243.5 82.22 243.5 82.22 302L134.9 302C134.9 243.5 132.9 243.5 132.9 185Z"/>
+</g>
+<g data-tip="First failures → Never rerun: 77" tabindex="0">
+<title>First failures → Never rerun: 77</title>
+<path class="c-ctl-soft flow" d="M132.9 185C132.9 243.5 136.9 243.5 136.9 302L229.1 302C229.1 243.5 225.1 243.5 225.1 185Z"/>
+</g>
+</g>
+<rect class="bg" x="0" y="147" width="360" height="26"/>
+<g>
+<g data-tip="Commented jobs: 299" tabindex="0">
+<title>Commented jobs: 299</title>
+<rect class="hit" x="0" y="38" width="358" height="24"/>
+<rect class="c-ctl" x="0" y="44" width="358" height="12"/>
+</g>
+<g data-tip="First failures: 188" tabindex="0">
+<title>First failures: 188</title>
+<rect class="hit" x="0" y="167" width="225.1" height="24"/>
+<rect class="c-ctl" x="0" y="173" width="225.1" height="12"/>
+</g>
+<g data-tip="Not a first failure: 111" tabindex="0">
+<title>Not a first failure: 111</title>
+<rect class="hit" x="227.1" y="167" width="132.9" height="24"/>
+<rect class="c-ctl-soft" x="227.1" y="173" width="132.9" height="12"/>
+</g>
+<g data-tip="Passed on a rerun: 67" tabindex="0">
+<title>Passed on a rerun: 67</title>
+<rect class="hit" x="0" y="296" width="80.22" height="24"/>
+<rect class="c-focus" x="0" y="302" width="80.22" height="12"/>
+</g>
+<g data-tip="Rerun, failed again: 44" tabindex="0">
+<title>Rerun, failed again: 44</title>
+<rect class="hit" x="82.22" y="296" width="52.68" height="24"/>
+<rect class="c-ctl" x="82.22" y="302" width="52.68" height="12"/>
+</g>
+<g data-tip="Never rerun: 77" tabindex="0">
+<title>Never rerun: 77</title>
+<rect class="hit" x="136.9" y="296" width="92.19" height="24"/>
+<rect class="c-ctl-soft" x="136.9" y="302" width="92.19" height="12"/>
+</g>
+</g>
+<text class="t" x="0" y="34.75">Commented jobs 299</text>
+<text class="t-strong" x="0" y="328.58">
+<tspan x="0" dy="0">Passed on a</tspan>
+<tspan x="0" dy="16.9">rerun 67</tspan>
+</text>
+<text class="t" x="82.22" y="328.58">
+<tspan x="82.22" dy="0">Failed</tspan>
+<tspan x="82.22" dy="16.9">again 44</tspan>
+</text>
+<text class="t" x="136.9" y="328.58">Never rerun 77</text>
+<text class="t" x="0" y="163.75">First failures 188</text>
+<text class="t" x="227.1" y="163.75">Not a first failure 111</text>
+</g>
+<text class="t-strong" x="0" y="397.31">
+<tspan x="0" dy="0">What each retry rule retries among the 299 commented jobs,</tspan>
+<tspan x="0" dy="16.9">and how many of the 67 it covers</tspan>
+</text>
+<rect class="c-ctl" x="3" y="432.96" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="442.25">jobs it retries</text>
+<rect class="c-focus" x="113.64" y="432.96" width="10" height="10" rx="2"/>
+<text class="t" x="132.64" y="442.25">of the 67 it covers</text>
+<line class="grid" x1="0" y1="458.46" x2="0" y2="715.78"/>
+<line class="grid" x1="83.15" y1="458.46" x2="83.15" y2="715.78"/>
+<line class="grid" x1="166.31" y1="458.46" x2="166.31" y2="715.78"/>
+<line class="grid" x1="249.46" y1="458.46" x2="249.46" y2="715.78"/>
+<line class="grid" x1="332.62" y1="458.46" x2="332.62" y2="715.78"/>
+<line class="axis" x1="0" y1="715.78" x2="332.62" y2="715.78"/>
+<text class="t-muted" x="0" y="729.7">0</text>
+<text class="t-muted" x="83.15" y="729.7" text-anchor="middle">50</text>
+<text class="t-muted" x="166.31" y="729.7" text-anchor="middle">100</text>
+<text class="t-muted" x="249.46" y="729.7" text-anchor="middle">150</text>
+<text class="t-muted" x="332.62" y="729.7" text-anchor="middle">200</text>
+<text class="t-muted" x="332.62" y="745.62" text-anchor="end">jobs</text>
+<g>
+<g data-tip="The hook as it was (its investigation retries): retried 35 jobs, 8 of them among the 67 that passed on a rerun" tabindex="0">
+<title>The hook as it was (its investigation retries): retried 35 jobs, 8 of them among the 67 that passed on a rerun</title>
+<rect class="hit" x="0" y="480.29" width="58.21" height="30"/>
+<path class="c-ctl" d="M0 480.29H54.21A4 4 0 0 1 58.21 484.29V490.29A4 4 0 0 1 54.21 494.29H0Z"/>
+<path class="c-focus" d="M0 496.29H9.3A4 4 0 0 1 13.3 500.29V506.29A4 4 0 0 1 9.3 510.29H0Z"/>
+<text class="t" x="64.21" y="491.58">35</text>
+<text class="t-strong" x="19.3" y="507.58">8</text>
+</g>
+<g data-tip="Restart: YES: would retry 62 jobs, 28 of them among the 67 that passed on a rerun" tabindex="0">
+<title>Restart: YES: would retry 62 jobs, 28 of them among the 67 that passed on a rerun</title>
+<rect class="hit" x="0" y="546.12" width="103.11" height="30"/>
+<path class="c-ctl" d="M0 546.12H99.11A4 4 0 0 1 103.11 550.12V556.12A4 4 0 0 1 99.11 560.12H0Z"/>
+<path class="c-focus" d="M0 562.12H42.57A4 4 0 0 1 46.57 566.12V572.12A4 4 0 0 1 42.57 576.12H0Z"/>
+<text class="t" x="109.11" y="557.41">62</text>
+<text class="t-strong" x="52.57" y="573.41">28</text>
+</g>
+<g data-tip="Restart: YES or BISECT: YES: would retry 105 jobs, 44 of them among the 67 that passed on a rerun" tabindex="0">
+<title>Restart: YES or BISECT: YES: would retry 105 jobs, 44 of them among the 67 that passed on a rerun</title>
+<rect class="hit" x="0" y="611.95" width="174.62" height="30"/>
+<path class="c-ctl" d="M0 611.95H170.62A4 4 0 0 1 174.62 615.95V621.95A4 4 0 0 1 170.62 625.95H0Z"/>
+<path class="c-focus" d="M0 627.95H69.18A4 4 0 0 1 73.18 631.95V637.95A4 4 0 0 1 69.18 641.95H0Z"/>
+<text class="t" x="180.62" y="623.24">105</text>
+<text class="t" x="79.18" y="639.24">44</text>
+</g>
+<g data-tip="Every first failure: would retry 188 jobs, 67 of them among the 67 that passed on a rerun" tabindex="0">
+<title>Every first failure: would retry 188 jobs, 67 of them among the 67 that passed on a rerun</title>
+<rect class="hit" x="0" y="677.78" width="312.66" height="30"/>
+<path class="c-ctl" d="M0 677.78H308.66A4 4 0 0 1 312.66 681.78V687.78A4 4 0 0 1 308.66 691.78H0Z"/>
+<path class="c-focus" d="M0 693.78H107.43A4 4 0 0 1 111.43 697.78V703.78A4 4 0 0 1 107.43 707.78H0Z"/>
+<text class="t" x="318.66" y="689.07">188</text>
+<text class="t" x="117.43" y="705.07">67</text>
+</g>
+</g>
+<text class="t-strong" x="0" y="471.04">The hook as it was (its investigation retries)</text>
+<text class="t-strong" x="0" y="536.87">Restart: YES</text>
+<text class="t" x="0" y="602.7">Restart: YES or BISECT: YES</text>
+<text class="t" x="0" y="668.53">Every first failure</text>
+</svg>

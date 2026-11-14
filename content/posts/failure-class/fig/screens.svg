@@ -1,0 +1,965 @@
+<svg viewBox="0 0 720 744" role="img" aria-labelledby="screens-t screens-d" xmlns="http://www.w3.org/2000/svg">
+<title id="screens-t">Net jobs gained against the control for every screened idea, by idea family</title>
+<desc id="screens-d">Of the 19 comparisons that passed on half A and were then run on half B against the same control in a later run, 18 failed there, and 29 of the 164 comparisons on the two halves passed their rule.</desc>
+<g>
+<line class="grid" x1="136.51" y1="112.49" x2="714" y2="112.49"/>
+<line class="grid" x1="136.51" y1="272.49" x2="714" y2="272.49"/>
+<line class="grid" x1="136.51" y1="364.49" x2="714" y2="364.49"/>
+<line class="grid" x1="136.51" y1="458.49" x2="714" y2="458.49"/>
+<line class="grid" x1="136.51" y1="506.49" x2="714" y2="506.49"/>
+<line class="grid" x1="136.51" y1="554.49" x2="714" y2="554.49"/>
+<line class="grid" x1="136.51" y1="602.49" x2="714" y2="602.49"/>
+<line class="grid" x1="136.51" y1="642.49" x2="714" y2="642.49"/>
+<line class="axis" x1="395.38" y1="112.49" x2="395.38" y2="706.49"/>
+<line class="ref" x1="455.13" y1="73.66" x2="455.13" y2="706.49"/>
+<line class="ref" x1="494.95" y1="91.66" x2="494.95" y2="706.49"/>
+<line class="axis" x1="136.51" y1="706.49" x2="714" y2="706.49"/>
+<text class="t-muted" x="196.25" y="720.41" text-anchor="middle">−10</text>
+<text class="t-muted" x="295.82" y="720.41" text-anchor="middle">−5</text>
+<text class="t-muted" x="395.38" y="720.41" text-anchor="middle">0</text>
+<text class="t-muted" x="494.95" y="720.41" text-anchor="middle">5</text>
+<text class="t-muted" x="594.52" y="720.41" text-anchor="middle">10</text>
+<text class="t-muted" x="694.09" y="720.41" text-anchor="middle">15</text>
+<text class="t-muted" x="714" y="736.33" text-anchor="end">net jobs gained against the control</text>
+</g>
+<g>
+<line class="leader" x1="494.95" y1="192.49" x2="435.21" y2="192.49"/>
+<line class="leader" x1="475.04" y1="192.49" x2="395.38" y2="214.49"/>
+<line class="leader" x1="455.13" y1="203.49" x2="395.38" y2="236.49"/>
+<line class="leader" x1="455.13" y1="181.49" x2="395.38" y2="148.49"/>
+<line class="leader" x1="455.13" y1="214.49" x2="395.38" y2="247.49"/>
+<line class="leader" x1="455.13" y1="170.49" x2="395.38" y2="137.49"/>
+<line class="leader" x1="475.04" y1="329.49" x2="395.38" y2="329.49"/>
+<line class="leader" x1="475.04" y1="307.49" x2="375.47" y2="307.49"/>
+<line class="leader" x1="554.69" y1="318.49" x2="455.13" y2="329.49"/>
+<line class="leader" x1="494.95" y1="318.49" x2="435.21" y2="307.49"/>
+<line class="leader" x1="455.13" y1="318.49" x2="355.56" y2="307.49"/>
+<line class="leader" x1="534.78" y1="411.49" x2="455.13" y2="411.49"/>
+<line class="leader" x1="475.04" y1="411.49" x2="395.38" y2="422.49"/>
+<line class="leader" x1="634.35" y1="411.49" x2="455.13" y2="422.49"/>
+<line class="leader" x1="494.95" y1="411.49" x2="435.21" y2="422.49"/>
+<line class="leader" x1="475.04" y1="422.49" x2="315.73" y2="411.49"/>
+<line class="leader" x1="455.13" y1="482.49" x2="355.56" y2="471.49"/>
+<line class="leader" x1="494.95" y1="482.49" x2="475.04" y2="482.49"/>
+<line class="leader" x1="455.13" y1="578.49" x2="395.38" y2="589.49"/>
+</g>
+<g>
+<g data-tip="quote the evidence · half A · 36 jobs · net 0 · dropped · product 0, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>quote the evidence · half A · 36 jobs · net 0 · dropped · product 0, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 186.99L405.34 197.99L385.43 197.99L385.43 186.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="192.49" r="4"/>
+</g>
+<g data-tip="definitions per kind of failure · half B · 35 jobs · net +2 · dropped · product −3, test +1, infra +4 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>definitions per kind of failure · half B · 35 jobs · net +2 · dropped · product −3, test +1, infra +4 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 186.99L445.17 197.99L425.25 197.99L425.25 186.99Z"/>
+<circle class="bg" cx="435.21" cy="192.49" r="5"/>
+<circle class="s-ctl" cx="435.21" cy="192.49" r="4"/>
+</g>
+<g data-tip="definitions per kind of failure · half B · 35 jobs · net −3 · dropped · product −4, test 0, infra +1 · against decision model with the environment question" tabindex="0">
+<title>definitions per kind of failure · half B · 35 jobs · net −3 · dropped · product −4, test 0, infra +1 · against decision model with the environment question</title>
+<path class="hit" d="M345.6 186.99L345.6 197.99L325.69 197.99L325.69 186.99Z"/>
+<circle class="bg" cx="335.64" cy="192.49" r="5"/>
+<circle class="s-ctl" cx="335.64" cy="192.49" r="4"/>
+</g>
+<g data-tip="production wording · half A · 36 jobs · net −3 · dropped · product +1, test −2, infra −2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>production wording · half A · 36 jobs · net −3 · dropped · product +1, test −2, infra −2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M325.69 208.99L325.69 197.99L345.6 197.99L345.6 208.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="203.49" r="4"/>
+</g>
+<g data-tip="production wording · half B · 35 jobs · net −1 · dropped · product 0, test −1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>production wording · half B · 35 jobs · net −1 · dropped · product 0, test −1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M385.43 186.99L385.43 197.99L365.51 197.99L365.51 186.99Z"/>
+<circle class="bg" cx="375.47" cy="192.49" r="5"/>
+<circle class="s-ctl" cx="375.47" cy="192.49" r="4"/>
+</g>
+<g data-tip="no example · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>no example · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M365.51 208.99L365.51 197.99L385.43 197.99L385.43 208.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="203.49" r="4"/>
+</g>
+<g data-tip="no example · half B · 35 jobs · net +1 · dropped · product +1, test −1, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>no example · half B · 35 jobs · net +1 · dropped · product +1, test −1, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.25 186.99L425.25 197.99L405.34 197.99L405.34 186.99Z"/>
+<circle class="bg" cx="415.3" cy="192.49" r="5"/>
+<circle class="s-ctl" cx="415.3" cy="192.49" r="4"/>
+</g>
+<g data-tip="step by step · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>step by step · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M385.43 208.99L385.43 197.99L405.34 197.99L405.34 208.99Z"/>
+<circle class="bg" cx="395.38" cy="203.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="203.49" r="4"/>
+</g>
+<g data-tip="few-shot examples · half B · 35 jobs · net −1 · dropped · product −1, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>few-shot examples · half B · 35 jobs · net −1 · dropped · product −1, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M385.43 175.99L385.43 175.99L385.43 186.99L385.43 186.99L365.51 186.99L365.51 175.99Z"/>
+<circle class="bg" cx="375.47" cy="181.49" r="5"/>
+<circle class="s-ctl" cx="375.47" cy="181.49" r="4"/>
+</g>
+<g data-tip="direct answer · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>direct answer · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 208.99L405.34 197.99L425.25 197.99L425.25 208.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="203.49" r="4"/>
+</g>
+<g data-tip="direct answer · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>direct answer · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 175.99L405.34 175.99L405.34 186.99L405.34 186.99L385.43 186.99L385.43 186.99L385.43 175.99Z"/>
+<circle class="bg" cx="395.38" cy="181.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="181.49" r="4"/>
+</g>
+<g data-tip="may abstain · half A · 36 jobs · net −2 · dropped · product +1, test −2, infra −1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>may abstain · half A · 36 jobs · net −2 · dropped · product +1, test −2, infra −1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M365.51 186.99L365.51 197.99L345.6 197.99L345.6 186.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="192.49" r="4"/>
+</g>
+<g data-tip="may abstain · half B · 35 jobs · net −2 · dropped · product −3, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>may abstain · half B · 35 jobs · net −2 · dropped · product −3, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M365.51 197.99L365.51 208.99L361.92 215.49L349.19 215.49L345.6 208.99L345.6 197.99Z"/>
+<circle class="bg" cx="355.56" cy="203.49" r="5"/>
+<circle class="s-ctl" cx="355.56" cy="203.49" r="4"/>
+</g>
+<g data-tip="challenge the first answer · half A · 36 jobs · net +2 · dropped · product +1, test 0, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>challenge the first answer · half A · 36 jobs · net +2 · dropped · product +1, test 0, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.25 208.99L425.25 197.99L445.17 197.99L445.17 208.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="203.49" r="4"/>
+</g>
+<g data-tip="challenge the first answer · half B · 35 jobs · net +1 · dropped · product 0, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>challenge the first answer · half B · 35 jobs · net +1 · dropped · product 0, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.25 186.99L405.34 186.99L405.34 186.99L405.34 175.99L425.25 175.99Z"/>
+<circle class="bg" cx="415.3" cy="181.49" r="5"/>
+<circle class="s-ctl" cx="415.3" cy="181.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · half A · 36 jobs · net +1 · dropped · product +1, test −1, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · half A · 36 jobs · net +1 · dropped · product +1, test −1, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 219.99L405.34 208.99L425.25 208.99L425.25 219.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="214.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · half A · 36 jobs · net −6 · dropped · product 0, test −3, infra −3 · against decision model with the environment question" tabindex="0">
+<title>contrast pairs in the first prompt · half A · 36 jobs · net −6 · dropped · product 0, test −3, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M265.95 180.49L282.27 180.49L285.86 186.99L285.86 197.99L265.95 197.99Z"/>
+<circle class="c-ctl ring" cx="275.9" cy="192.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test −1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test −1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M427.3 164.99L427.3 172.29L425.25 175.99L405.34 175.99L405.34 164.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="170.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net +4 · dropped · product +1, test +2, infra +1 · against production prompt, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net +4 · dropped · product +1, test +2, infra +1 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M485 197.99L485 215.49L468.67 215.49L465.08 208.99L465.08 197.99Z"/>
+<path class="c-ctl ring" d="M475.04 197.99L480.54 203.49L475.04 208.99L469.54 203.49Z"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · half B · 35 jobs · net 0 · dropped · product 0, test +1, infra −1 · against production prompt, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · half B · 35 jobs · net 0 · dropped · product 0, test +1, infra −1 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M385.43 208.99L405.34 208.99L405.34 219.99L385.43 219.99Z"/>
+<circle class="bg" cx="395.38" cy="214.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="214.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net 0 · dropped · product +2, test −1, infra −1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net 0 · dropped · product +2, test −1, infra −1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 164.99L405.34 175.99L385.43 175.99L385.43 164.99Z"/>
+<path class="c-ctl ring" d="M395.38 164.99L400.88 170.49L395.38 175.99L389.88 170.49Z"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net 0 · dropped · product +1, test −2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net 0 · dropped · product +1, test −2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M383.38 230.99L383.38 223.69L385.43 219.99L405.34 219.99L405.34 230.99Z"/>
+<path class="c-ctl ring" d="M395.38 219.99L400.88 225.49L395.38 230.99L389.88 225.49Z"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net −12 · dropped · product 0, test −4, infra −8 · against decision model with the environment question" tabindex="0">
+<title>contrast pairs in the first prompt · both halves (A+B) · 71 jobs · net −12 · dropped · product 0, test −4, infra −8 · against decision model with the environment question</title>
+<path class="hit" d="M144.42 180.49L168.42 180.49L168.42 197.99L144.42 197.99Z"/>
+<path class="c-ctl ring" d="M156.42 186.99L161.92 192.49L156.42 197.99L150.92 192.49Z"/>
+</g>
+<g data-tip="no note · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>no note · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M381.84 226.49L363.47 226.49L363.47 212.69L365.51 208.99L385.43 208.99L385.43 219.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="214.49" r="4"/>
+</g>
+<g data-tip="no note, abstentions filled · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>no note, abstentions filled · half A · 36 jobs · net −1 · dropped · product +1, test −2, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M363.47 158.49L381.84 158.49L385.43 164.99L385.43 175.99L365.51 175.99L363.47 172.29Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="170.49" r="4"/>
+</g>
+<g data-tip="no note, abstentions filled · half A · 36 jobs · net −8 · dropped · product 0, test −4, infra −4 · against decision model with the environment question" tabindex="0">
+<title>no note, abstentions filled · half A · 36 jobs · net −8 · dropped · product 0, test −4, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M226.12 180.49L246.03 180.49L246.03 204.49L229.71 204.49L226.12 197.99Z"/>
+<circle class="c-ctl ring" cx="236.08" cy="192.49" r="4"/>
+</g>
+<g data-tip="reasoning first, abstentions filled · half A · 36 jobs · net −4 · dropped · product −1, test +1, infra −4 · against decision model with the environment question" tabindex="0">
+<title>reasoning first, abstentions filled · half A · 36 jobs · net −4 · dropped · product −1, test +1, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M309.36 180.49L322.1 180.49L325.69 186.99L325.69 197.99L305.77 197.99L305.77 186.99Z"/>
+<circle class="c-ctl ring" cx="315.73" cy="192.49" r="4"/>
+</g>
+<g data-tip="name where it failed · half A · 36 jobs · net +2 · dropped · product +2, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>name where it failed · half A · 36 jobs · net +2 · dropped · product +2, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M428.85 169.49L441.58 169.49L445.17 175.99L445.17 186.99L445.17 186.99L425.25 186.99L425.25 186.99L425.25 175.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="181.49" r="4"/>
+</g>
+<g data-tip="name where it failed, abstentions filled · half A · 36 jobs · net +2 · dropped · product +2, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>name where it failed, abstentions filled · half A · 36 jobs · net +2 · dropped · product +2, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M441.58 226.49L428.85 226.49L425.25 219.99L425.25 208.99L445.17 208.99L445.17 219.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="214.49" r="4"/>
+</g>
+<g data-tip="name where it failed, abstentions filled · half A · 36 jobs · net −5 · dropped · product +1, test −2, infra −4 · against decision model with the environment question" tabindex="0">
+<title>name where it failed, abstentions filled · half A · 36 jobs · net −5 · dropped · product +1, test −2, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M305.77 186.99L305.77 197.99L305.77 197.99L285.86 197.99L285.86 197.99L285.86 186.99Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="192.49" r="4"/>
+</g>
+<g data-tip="proof required, abstentions filled · half A · 36 jobs · net −4 · dropped · product −2, test +1, infra −3 · against decision model with the environment question" tabindex="0">
+<title>proof required, abstentions filled · half A · 36 jobs · net −4 · dropped · product −2, test +1, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M325.69 197.99L325.69 208.99L322.1 215.49L305.77 215.49L305.77 197.99Z"/>
+<circle class="c-ctl ring" cx="315.73" cy="203.49" r="4"/>
+</g>
+<g data-tip="debate · half A · 36 jobs · net −3 · dropped · product −1, test −3, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>debate · half A · 36 jobs · net −3 · dropped · product −1, test −3, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M323.64 169.49L345.6 169.49L345.6 186.99L325.69 186.99L323.64 183.29Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="181.49" r="4"/>
+</g>
+<g data-tip="debate, abstentions filled · half A · 36 jobs · net −3 · dropped · product −1, test −3, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>debate, abstentions filled · half A · 36 jobs · net −3 · dropped · product −1, test −3, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M347.64 212.69L347.64 226.49L323.64 226.49L323.64 212.69L325.69 208.99L345.6 208.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="214.49" r="4"/>
+</g>
+<g data-tip="debate, abstentions filled · half A · 36 jobs · net −10 · dropped · product −2, test −5, infra −3 · against decision model with the environment question" tabindex="0">
+<title>debate, abstentions filled · half A · 36 jobs · net −10 · dropped · product −2, test −5, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M184.25 180.49L206.21 180.49L206.21 197.99L202.62 204.49L184.25 204.49Z"/>
+<circle class="c-ctl ring" cx="196.25" cy="192.49" r="4"/>
+</g>
+<g data-tip="three views · half A · 36 jobs · net −2 · dropped · product −2, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>three views · half A · 36 jobs · net −2 · dropped · product −2, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M345.6 169.49L361.92 169.49L365.51 175.99L365.51 186.99L365.51 186.99L345.6 186.99L345.6 186.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="181.49" r="4"/>
+</g>
+<g data-tip="three views, abstentions filled · half A · 36 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>three views, abstentions filled · half A · 36 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 153.99L405.34 164.99L405.34 164.99L385.43 164.99L383.38 161.29L383.38 153.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="159.49" r="4"/>
+</g>
+<g data-tip="three views, abstentions filled · half A · 36 jobs · net −7 · dropped · product −2, test −1, infra −4 · against decision model with the environment question" tabindex="0">
+<title>three views, abstentions filled · half A · 36 jobs · net −7 · dropped · product −2, test −1, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M246.03 180.49L265.95 180.49L265.95 197.99L262.36 204.49L246.03 204.49Z"/>
+<circle class="c-ctl ring" cx="255.99" cy="192.49" r="4"/>
+</g>
+<g data-tip="class probabilities · half A · 36 jobs · net +1 · dropped · product −3, test +4, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>class probabilities · half A · 36 jobs · net +1 · dropped · product −3, test +4, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M427.3 223.69L427.3 237.49L408.93 237.49L405.34 230.99L405.34 219.99L425.25 219.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="225.49" r="4"/>
+</g>
+<g data-tip="class probabilities, abstentions filled · half A · 36 jobs · net +1 · dropped · product −3, test +4, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>class probabilities, abstentions filled · half A · 36 jobs · net +1 · dropped · product −3, test +4, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M408.93 147.49L427.3 147.49L427.3 164.99L405.34 164.99L405.34 164.99L405.34 153.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="159.49" r="4"/>
+</g>
+<g data-tip="class probabilities, abstentions filled · half A · 36 jobs · net −6 · dropped · product −4, test +2, infra −4 · against decision model with the environment question" tabindex="0">
+<title>class probabilities, abstentions filled · half A · 36 jobs · net −6 · dropped · product −4, test +2, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M285.86 215.49L263.9 215.49L263.9 201.69L265.95 197.99L285.86 197.99Z"/>
+<circle class="c-ctl ring" cx="275.9" cy="203.49" r="4"/>
+</g>
+<g data-tip="yes/no chain · half A · 36 jobs · net −5 · dropped · product −1, test −2, infra −2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>yes/no chain · half A · 36 jobs · net −5 · dropped · product −1, test −2, infra −2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M305.77 197.99L305.77 197.99L305.77 215.49L285.86 215.49L285.86 197.99L285.86 197.99Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="203.49" r="4"/>
+</g>
+<g data-tip="yes/no chain, abstentions filled · half A · 36 jobs · net −5 · dropped · product −1, test −2, infra −2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>yes/no chain, abstentions filled · half A · 36 jobs · net −5 · dropped · product −1, test −2, infra −2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M283.82 169.49L307.82 169.49L307.82 183.29L305.77 186.99L285.86 186.99L283.82 183.29Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="181.49" r="4"/>
+</g>
+<g data-tip="yes/no chain, abstentions filled · half A · 36 jobs · net −12 · dropped · product −2, test −4, infra −6 · against decision model with the environment question" tabindex="0">
+<title>yes/no chain, abstentions filled · half A · 36 jobs · net −12 · dropped · product −2, test −4, infra −6 · against decision model with the environment question</title>
+<path class="hit" d="M168.42 197.99L168.42 215.49L144.42 215.49L144.42 197.99Z"/>
+<circle class="c-ctl ring" cx="156.42" cy="203.49" r="4"/>
+</g>
+<g data-tip="reasoning first · half B · 35 jobs · net 0 · dropped · product −3, test +2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>reasoning first · half B · 35 jobs · net 0 · dropped · product −3, test +2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M407.38 234.69L407.38 241.99L383.38 241.99L383.38 230.99L405.34 230.99Z"/>
+<circle class="bg" cx="395.38" cy="236.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="236.49" r="4"/>
+</g>
+<g data-tip="reasoning first · both halves (A+B) · 71 jobs · net +3 · dropped · product −3, test +5, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>reasoning first · both halves (A+B) · 71 jobs · net +3 · dropped · product −3, test +5, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M467.13 219.99L467.13 237.49L443.13 237.49L443.13 223.69L445.17 219.99Z"/>
+<path class="c-ctl ring" d="M455.13 219.99L460.63 225.49L455.13 230.99L449.63 225.49Z"/>
+</g>
+<g data-tip="reasoning first, abstentions filled · half B · 35 jobs · net 0 · dropped · product −3, test +2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>reasoning first, abstentions filled · half B · 35 jobs · net 0 · dropped · product −3, test +2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M407.38 142.99L407.38 150.29L405.34 153.99L383.38 153.99L383.38 142.99Z"/>
+<circle class="bg" cx="395.38" cy="148.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="148.49" r="4"/>
+</g>
+<g data-tip="reasoning first, abstentions filled · both halves (A+B) · 71 jobs · net −9 · dropped · product −5, test +2, infra −6 · against decision model with the environment question" tabindex="0">
+<title>reasoning first, abstentions filled · both halves (A+B) · 71 jobs · net −9 · dropped · product −5, test +2, infra −6 · against decision model with the environment question</title>
+<path class="hit" d="M206.21 180.49L226.12 180.49L226.12 197.99L206.21 197.99Z"/>
+<path class="c-ctl ring" d="M216.16 186.99L221.66 192.49L216.16 197.99L210.66 192.49Z"/>
+</g>
+<g data-tip="proof required · half B · 35 jobs · net 0 · dropped · product −3, test +3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>proof required · half B · 35 jobs · net 0 · dropped · product −3, test +3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M407.38 241.99L407.38 259.49L383.38 259.49L383.38 241.99Z"/>
+<circle class="bg" cx="395.38" cy="247.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="247.49" r="4"/>
+</g>
+<g data-tip="proof required · both halves (A+B) · 71 jobs · net +3 · dropped · product −4, test +6, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>proof required · both halves (A+B) · 71 jobs · net +3 · dropped · product −4, test +6, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M443.13 147.49L467.13 147.49L467.13 164.99L443.13 164.99Z"/>
+<path class="c-ctl ring" d="M455.13 153.99L460.63 159.49L455.13 164.99L449.63 159.49Z"/>
+</g>
+<g data-tip="proof required, abstentions filled · half B · 35 jobs · net 0 · dropped · product −3, test +3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>proof required, abstentions filled · half B · 35 jobs · net 0 · dropped · product −3, test +3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M383.38 125.49L407.38 125.49L407.38 142.99L383.38 142.99Z"/>
+<circle class="bg" cx="395.38" cy="137.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="137.49" r="4"/>
+</g>
+<g data-tip="proof required, abstentions filled · both halves (A+B) · 71 jobs · net −9 · dropped · product −6, test +3, infra −6 · against decision model with the environment question" tabindex="0">
+<title>proof required, abstentions filled · both halves (A+B) · 71 jobs · net −9 · dropped · product −6, test +3, infra −6 · against decision model with the environment question</title>
+<path class="hit" d="M226.12 197.99L228.16 201.69L228.16 215.49L204.16 215.49L204.16 201.69L206.21 197.99Z"/>
+<path class="c-ctl ring" d="M216.16 197.99L221.66 203.49L216.16 208.99L210.66 203.49Z"/>
+</g>
+<g data-tip="definitions per kind of failure · half A · 36 jobs · net +5 · passed · product −1, test +1, infra +5 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>definitions per kind of failure · half A · 36 jobs · net +5 · passed · product −1, test +1, infra +5 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M485 180.49L506.95 180.49L506.95 197.99L485 197.99Z"/>
+<circle class="c-focus ring" cx="494.95" cy="192.49" r="4"/>
+</g>
+<g data-tip="step by step · half A · 36 jobs · net +3 · passed · product +1, test +2, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>step by step · half A · 36 jobs · net +3 · passed · product +1, test +2, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M465.08 186.99L465.08 197.99L445.17 197.99L445.17 186.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="192.49" r="4"/>
+</g>
+<g data-tip="few-shot examples · half A · 36 jobs · net +5 · passed · product +4, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>few-shot examples · half A · 36 jobs · net +5 · passed · product +4, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M506.95 197.99L506.95 215.49L485 215.49L485 197.99L485 197.99Z"/>
+<circle class="c-focus ring" cx="494.95" cy="203.49" r="4"/>
+</g>
+<g data-tip="contrast pairs in the first prompt · half A · 36 jobs · net +4 · passed · product +1, test +1, infra +2 · against production prompt, Gemma Q8" tabindex="0">
+<title>contrast pairs in the first prompt · half A · 36 jobs · net +4 · passed · product +1, test +1, infra +2 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M468.67 180.49L485 180.49L485 197.99L485 197.99L465.08 197.99L465.08 197.99L465.08 186.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="192.49" r="4"/>
+</g>
+<g data-tip="reasoning first · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>reasoning first · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 208.99L445.17 197.99L465.08 197.99L465.08 197.99L465.08 208.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="203.49" r="4"/>
+</g>
+<g data-tip="reasoning first, abstentions filled · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>reasoning first, abstentions filled · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M467.13 175.99L467.13 183.29L465.08 186.99L445.17 186.99L445.17 186.99L445.17 175.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="181.49" r="4"/>
+</g>
+<g data-tip="proof required · half A · 36 jobs · net +3 · passed · product −1, test +3, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>proof required · half A · 36 jobs · net +3 · passed · product −1, test +3, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M467.13 212.69L467.13 219.99L445.17 219.99L445.17 208.99L465.08 208.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="214.49" r="4"/>
+</g>
+<g data-tip="proof required, abstentions filled · half A · 36 jobs · net +3 · passed · product −1, test +3, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>proof required, abstentions filled · half A · 36 jobs · net +3 · passed · product −1, test +3, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M467.13 164.99L467.13 175.99L445.17 175.99L443.13 172.29L443.13 164.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="170.49" r="4"/>
+</g>
+<g data-tip="decision model on a focused excerpt · half A · 36 jobs · net −3 · dropped · product −1, test 0, infra −2 · against decision model with the environment question" tabindex="0">
+<title>decision model on a focused excerpt · half A · 36 jobs · net −3 · dropped · product −1, test 0, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M345.6 312.99L345.6 323.99L323.64 323.99L323.64 312.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model on Gemma's analysis only · half A · 36 jobs · net −8 · dropped · product +1, test −5, infra −4 · against decision model with the environment question" tabindex="0">
+<title>decision model on Gemma's analysis only · half A · 36 jobs · net −8 · dropped · product +1, test −5, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M224.08 306.49L248.08 306.49L248.08 323.99L224.08 323.99Z"/>
+<circle class="c-ctl ring" cx="236.08" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model on the excerpt plus Gemma's analysis · half A · 36 jobs · net 0 · dropped · product 0, test +2, infra −2 · against decision model with the environment question" tabindex="0">
+<title>decision model on the excerpt plus Gemma's analysis · half A · 36 jobs · net 0 · dropped · product 0, test +2, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M405.34 312.99L405.34 312.99L405.34 323.99L405.34 323.99L385.43 323.99L385.43 323.99L385.43 312.99L385.43 312.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="318.49" r="4"/>
+</g>
+<g data-tip="job facts listed · half A · 36 jobs · net −1 · dropped · product +2, test −3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>job facts listed · half A · 36 jobs · net −1 · dropped · product +2, test −3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M385.43 312.99L385.43 323.99L365.51 323.99L365.51 323.99L365.51 312.99L365.51 312.99L385.43 312.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="318.49" r="4"/>
+</g>
+<g data-tip="job facts listed · half B · 35 jobs · net −1 · dropped · product −2, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>job facts listed · half B · 35 jobs · net −1 · dropped · product −2, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M385.43 341.49L369.11 341.49L365.51 334.99L365.51 323.99L385.43 323.99Z"/>
+<circle class="bg" cx="375.47" cy="329.49" r="5"/>
+<circle class="s-ctl" cx="375.47" cy="329.49" r="4"/>
+</g>
+<g data-tip="decision model's estimate as a hint · half A · 36 jobs · net +2 · dropped · product +1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's estimate as a hint · half A · 36 jobs · net +2 · dropped · product +1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 312.99L445.17 323.99L425.25 323.99L425.25 312.99L425.26 312.99L445.17 312.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="318.49" r="4"/>
+</g>
+<g data-tip="job statistics in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test −1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>job statistics in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test −1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.25 312.99L425.25 323.99L425.25 323.99L405.34 323.99L405.34 312.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="318.49" r="4"/>
+</g>
+<g data-tip="job statistics in the first prompt · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against production prompt, Gemma Q8" tabindex="0">
+<title>job statistics in the first prompt · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M405.34 323.99L405.34 323.99L425.25 323.99L425.25 334.99L405.34 334.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="329.49" r="4"/>
+</g>
+<g data-tip="job statistics in the first prompt · half A · 36 jobs · net −6 · dropped · product +1, test −3, infra −4 · against decision model with the environment question" tabindex="0">
+<title>job statistics in the first prompt · half A · 36 jobs · net −6 · dropped · product +1, test −3, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M263.9 306.49L282.27 306.49L285.86 312.99L285.86 323.99L282.27 330.49L263.9 330.49Z"/>
+<circle class="c-ctl ring" cx="275.9" cy="318.49" r="4"/>
+</g>
+<g data-tip="job statistics in the first prompt · half A · 36 jobs · net −2 · dropped · product +2, test −2, infra −2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>job statistics in the first prompt · half A · 36 jobs · net −2 · dropped · product +2, test −2, infra −2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M365.51 312.99L365.51 323.99L365.51 323.99L345.6 323.99L345.6 323.99L345.6 312.99L365.51 312.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="318.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · half A · 36 jobs · net −3 · dropped · product +2, test −3, infra −2 · against decision model with the environment question" tabindex="0">
+<title>test source in the first prompt · half A · 36 jobs · net −3 · dropped · product +2, test −3, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M323.64 334.99L323.64 323.99L345.6 323.99L345.6 323.99L345.6 334.99L345.6 334.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="329.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test 0, infra −1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · half A · 36 jobs · net +1 · dropped · product +2, test 0, infra −1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.26 301.99L425.26 312.99L425.25 312.99L405.34 312.99L405.34 312.99L405.34 301.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="307.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net +2 · dropped · product +1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net +2 · dropped · product +1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M425.26 334.99L425.25 334.99L425.25 323.99L445.17 323.99L445.17 334.99L445.17 334.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="329.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net −5 · dropped · product 0, test −1, infra −4 · against decision model with the environment question" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net −5 · dropped · product 0, test −1, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M307.82 312.99L307.82 323.99L285.86 323.99L285.86 312.99Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net −2 · dropped · product +1, test 0, infra −3 · against decision model with the environment question" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net −2 · dropped · product +1, test 0, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M365.51 323.99L365.51 323.99L365.51 334.99L345.6 334.99L345.6 323.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="329.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half B · 35 jobs · net +2 · dropped · product 0, test +2, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half B · 35 jobs · net +2 · dropped · product 0, test +2, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M428.85 295.49L445.17 295.49L445.17 312.99L425.25 312.99L425.25 301.99Z"/>
+<circle class="bg" cx="435.21" cy="307.49" r="5"/>
+<circle class="s-ctl" cx="435.21" cy="307.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half B · 35 jobs · net −2 · dropped · product −1, test 0, infra −1 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half B · 35 jobs · net −2 · dropped · product −1, test 0, infra −1 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M365.51 301.99L365.51 312.99L365.51 312.99L345.6 312.99L345.6 312.99L345.6 301.99Z"/>
+<circle class="bg" cx="355.56" cy="307.49" r="5"/>
+<circle class="s-ctl" cx="355.56" cy="307.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half B · 35 jobs · net −3 · dropped · product −1, test +1, infra −3 · against decision model with the environment question" tabindex="0">
+<title>decision model's area as a steer · half B · 35 jobs · net −3 · dropped · product −1, test +1, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M323.64 295.49L342.01 295.49L345.6 301.99L345.6 312.99L323.64 312.99Z"/>
+<circle class="bg" cx="335.64" cy="307.49" r="5"/>
+<circle class="s-ctl" cx="335.64" cy="307.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · both halves (A+B) · 71 jobs · net −5 · dropped · product 0, test +1, infra −6 · against decision model with the environment question" tabindex="0">
+<title>decision model's area as a steer · both halves (A+B) · 71 jobs · net −5 · dropped · product 0, test +1, infra −6 · against decision model with the environment question</title>
+<path class="hit" d="M307.82 323.99L307.82 334.99L283.82 334.99L283.82 327.69L285.86 323.99Z"/>
+<path class="c-ctl ring" d="M295.82 323.99L301.32 329.49L295.82 334.99L290.32 329.49Z"/>
+</g>
+<g data-tip="decision model's area as a steer · both halves (A+B) · 71 jobs · net +3 · dropped · product 0, test +2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · both halves (A+B) · 71 jobs · net +3 · dropped · product 0, test +2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 295.49L461.49 295.49L465.08 301.99L465.08 312.99L465.08 312.99L445.17 312.99L445.17 312.99Z"/>
+<path class="c-ctl ring" d="M455.13 301.99L460.63 307.49L455.13 312.99L449.63 307.49Z"/>
+</g>
+<g data-tip="decision model's area as a steer · half B · 35 jobs · net +1 · dropped · product −1, test +1, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half B · 35 jobs · net +1 · dropped · product −1, test +1, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M403.3 345.99L403.3 338.69L405.34 334.99L425.25 334.99L425.25 334.99L425.25 345.99Z"/>
+<circle class="bg" cx="415.3" cy="340.49" r="5"/>
+<circle class="s-ctl" cx="415.3" cy="340.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · both halves (A+B) · 71 jobs · net +1 · dropped · product 0, test +1, infra 0 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · both halves (A+B) · 71 jobs · net +1 · dropped · product 0, test +1, infra 0 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M403.3 284.49L427.3 284.49L427.3 298.29L425.26 301.99L405.34 301.99L403.3 298.29Z"/>
+<path class="c-ctl ring" d="M415.3 290.99L420.8 296.49L415.3 301.99L409.8 296.49Z"/>
+</g>
+<g data-tip="test source in the first prompt · half B · 35 jobs · net 0 · dropped · product 0, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · half B · 35 jobs · net 0 · dropped · product 0, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M401.75 341.49L385.43 341.49L385.43 323.99L385.43 323.99L405.34 323.99L405.34 334.99Z"/>
+<circle class="bg" cx="395.38" cy="329.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="329.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · both halves (A+B) · 71 jobs · net +4 · dropped · product +3, test −1, infra +2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · both halves (A+B) · 71 jobs · net +4 · dropped · product +3, test −1, infra +2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M463.04 284.49L487.04 284.49L487.04 301.99L465.08 301.99L463.04 298.29Z"/>
+<path class="c-ctl ring" d="M475.04 290.99L480.54 296.49L475.04 301.99L469.54 296.49Z"/>
+</g>
+<g data-tip="test source in the first prompt · half B · 35 jobs · net −1 · dropped · product +1, test 0, infra −2 · against production prompt, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · half B · 35 jobs · net −1 · dropped · product +1, test 0, infra −2 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M369.11 295.49L385.43 295.49L385.43 312.99L385.43 312.99L365.51 312.99L365.51 301.99Z"/>
+<circle class="bg" cx="375.47" cy="307.49" r="5"/>
+<circle class="s-ctl" cx="375.47" cy="307.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · both halves (A+B) · 71 jobs · net +3 · dropped · product +2, test +2, infra −1 · against production prompt, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · both halves (A+B) · 71 jobs · net +3 · dropped · product +2, test +2, infra −1 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M465.08 334.99L465.08 334.99L465.08 352.49L445.17 352.49L445.17 334.99L445.17 334.99Z"/>
+<path class="c-ctl ring" d="M455.13 334.99L460.63 340.49L455.13 345.99L449.63 340.49Z"/>
+</g>
+<g data-tip="test source in the first prompt · both halves (A+B) · 71 jobs · net −8 · dropped · product +1, test −4, infra −5 · against decision model with the environment question" tabindex="0">
+<title>test source in the first prompt · both halves (A+B) · 71 jobs · net −8 · dropped · product +1, test −4, infra −5 · against decision model with the environment question</title>
+<path class="hit" d="M248.08 323.99L248.08 341.49L224.08 341.49L224.08 323.99Z"/>
+<path class="c-ctl ring" d="M236.08 323.99L241.58 329.49L236.08 334.99L230.58 329.49Z"/>
+</g>
+<g data-tip="test source in the first prompt · both halves (A+B) · 71 jobs · net −2 · dropped · product +1, test −4, infra +1 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · both halves (A+B) · 71 jobs · net −2 · dropped · product +1, test −4, infra +1 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M365.51 334.99L367.56 338.69L367.56 352.49L345.6 352.49L345.6 334.99L345.6 334.99Z"/>
+<path class="c-ctl ring" d="M355.56 334.99L361.06 340.49L355.56 345.99L350.06 340.49Z"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net −3 · dropped · product −1, test −2, infra 0 · against steered analysis, production verdict" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net −3 · dropped · product −1, test −2, infra 0 · against steered analysis, production verdict</title>
+<path class="hit" d="M345.6 352.49L323.64 352.49L323.64 334.99L345.6 334.99L345.6 334.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="340.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net +2 · dropped · product +2, test −1, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net +2 · dropped · product +2, test −1, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 352.49L428.85 352.49L425.26 345.99L425.26 334.99L445.17 334.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="340.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net 0 · dropped · product +1, test −2, infra +1 · against steered analysis, definitions verdict" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net 0 · dropped · product +1, test −2, infra +1 · against steered analysis, definitions verdict</title>
+<path class="hit" d="M385.43 295.49L401.75 295.49L405.34 301.99L405.34 312.99L385.43 312.99L385.43 312.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="307.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net −5 · dropped · product 0, test −2, infra −3 · against decision model with the environment question" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net −5 · dropped · product 0, test −2, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M283.82 295.49L307.82 295.49L307.82 312.99L285.86 312.99L283.82 309.29Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="307.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net −5 · dropped · product +1, test −3, infra −3 · against decision model with the environment question" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net −5 · dropped · product +1, test −3, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M307.82 334.99L307.82 352.49L283.82 352.49L283.82 334.99Z"/>
+<circle class="c-ctl ring" cx="295.82" cy="340.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net +1 · dropped · product −1, test 0, infra +2 · against test source in the prompt, production verdict" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net +1 · dropped · product −1, test 0, infra +2 · against test source in the prompt, production verdict</title>
+<path class="hit" d="M427.3 349.69L427.3 363.49L403.3 363.49L403.3 345.99L425.26 345.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="351.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net −2 · dropped · product −1, test 0, infra −1 · against test source in the prompt, definitions verdict" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net −2 · dropped · product −1, test 0, infra −1 · against test source in the prompt, definitions verdict</title>
+<path class="hit" d="M343.56 284.49L367.56 284.49L367.56 298.29L365.51 301.99L345.6 301.99L343.56 298.29Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="296.49" r="4"/>
+</g>
+<g data-tip="decision model's estimate as a hint · half B · 35 jobs · net +4 · passed · product +1, test +2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's estimate as a hint · half B · 35 jobs · net +4 · passed · product +1, test +2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M485 323.99L465.08 323.99L465.08 323.99L465.08 312.99L465.08 312.99L485 312.99Z"/>
+<circle class="bg" cx="475.04" cy="318.49" r="5"/>
+<circle class="s-focus" cx="475.04" cy="318.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · half A · 36 jobs · net +4 · passed · product +3, test −1, infra +2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · half A · 36 jobs · net +4 · passed · product +3, test −1, infra +2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M485 334.99L465.08 334.99L465.08 334.99L465.08 323.99L485 323.99L485 323.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="329.49" r="4"/>
+</g>
+<g data-tip="test source in the first prompt · half A · 36 jobs · net +4 · passed · product +1, test +2, infra +1 · against production prompt, Gemma Q8" tabindex="0">
+<title>test source in the first prompt · half A · 36 jobs · net +4 · passed · product +1, test +2, infra +1 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M487.04 301.99L487.04 309.29L485 312.99L465.08 312.99L465.08 301.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="307.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net +8 · passed · product +1, test +4, infra +3 · against production prompt, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net +8 · passed · product +1, test +4, infra +3 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M542.69 306.49L566.69 306.49L566.69 330.49L542.69 330.49Z"/>
+<circle class="c-focus ring" cx="554.69" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net +5 · passed · product +2, test +2, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net +5 · passed · product +2, test +2, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M488.59 306.49L506.95 306.49L506.95 323.99L485 323.99L485 323.99L485 312.99Z"/>
+<circle class="c-focus ring" cx="494.95" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net +3 · passed · product +1, test +1, infra +1 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net +3 · passed · product +1, test +1, infra +1 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M465.08 312.99L465.08 323.99L445.17 323.99L445.17 323.99L445.17 312.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="318.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · half A · 36 jobs · net +4 · passed · product 0, test +2, infra +2 · against test source in the prompt, production verdict" tabindex="0">
+<title>decision model's area as a steer · half A · 36 jobs · net +4 · passed · product 0, test +2, infra +2 · against test source in the prompt, production verdict</title>
+<path class="hit" d="M487.04 338.69L487.04 352.49L465.08 352.49L465.08 334.99L485 334.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="340.49" r="4"/>
+</g>
+<g data-tip="decision model's area as a steer · both halves (A+B) · 71 jobs · net +11 · passed · product +1, test +7, infra +3 · against production prompt, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · both halves (A+B) · 71 jobs · net +11 · passed · product +1, test +7, infra +3 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M602.43 306.49L626.43 306.49L626.43 330.49L602.43 330.49Z"/>
+<path class="c-focus ring" d="M614.43 312.99L619.93 318.49L614.43 323.99L608.93 318.49Z"/>
+</g>
+<g data-tip="decision model's area as a steer · half B · 35 jobs · net +3 · passed · product 0, test +3, infra 0 · against production prompt, Gemma Q8" tabindex="0">
+<title>decision model's area as a steer · half B · 35 jobs · net +3 · passed · product 0, test +3, infra 0 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M465.08 323.99L465.08 323.99L465.08 334.99L445.17 334.99L445.17 323.99Z"/>
+<circle class="bg" cx="455.13" cy="329.49" r="5"/>
+<circle class="s-focus" cx="455.13" cy="329.49" r="4"/>
+</g>
+<g data-tip="steer plus test source · half A · 36 jobs · net +5 · passed · product 0, test +2, infra +3 · against production prompt, Gemma Q8" tabindex="0">
+<title>steer plus test source · half A · 36 jobs · net +5 · passed · product 0, test +2, infra +3 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M506.95 323.99L506.95 341.49L488.59 341.49L485 334.99L485 323.99L485 323.99Z"/>
+<circle class="c-focus ring" cx="494.95" cy="329.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, production wording · half A · 36 jobs · net +8 · dropped (class rule: product down by 2 (the rule allows 1 on A or B)) · product −2, test +7, infra +3 · against production prompt, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, production wording · half A · 36 jobs · net +8 · dropped (class rule: product down by 2 (the rule allows 1 on A or B)) · product −2, test +7, infra +3 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M544.74 399.49L566.69 399.49L566.69 423.49L548.33 423.49L544.74 416.99Z"/>
+<circle class="c-ctl ring" cx="554.69" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, production wording · half A · 36 jobs · net −2 · dropped · product −2, test +3, infra −3 · against decision model with the environment question" tabindex="0">
+<title>gpt-oss-20b, production wording · half A · 36 jobs · net −2 · dropped · product −2, test +3, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M365.51 405.99L365.51 416.99L365.51 416.99L345.6 416.99L345.6 405.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, definitions · half A · 36 jobs · net 0 · dropped · product −1, test +4, infra −3 · against decision model with the environment question" tabindex="0">
+<title>gpt-oss-20b, definitions · half A · 36 jobs · net 0 · dropped · product −1, test +4, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M407.38 405.99L407.38 416.99L385.43 416.99L385.43 416.99L385.43 405.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, with hint · half A · 36 jobs · net −1 · dropped · product 0, test +2, infra −3 · against decision model with the environment question" tabindex="0">
+<title>gpt-oss-20b, with hint · half A · 36 jobs · net −1 · dropped · product 0, test +2, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M385.43 405.99L385.43 405.99L385.43 416.99L365.51 416.99L365.51 405.99L365.51 405.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · half A · 36 jobs · net +2 · dropped · product +3, test 0, infra −1 · against decision model with the environment question" tabindex="0">
+<title>Gemma-26B-A4B, production wording · half A · 36 jobs · net +2 · dropped · product +3, test 0, infra −1 · against decision model with the environment question</title>
+<path class="hit" d="M423.21 399.49L445.17 399.49L445.17 416.99L423.21 416.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, definitions · half A · 36 jobs · net −2 · dropped · product +3, test −3, infra −2 · against decision model with the environment question" tabindex="0">
+<title>Gemma-26B-A4B, definitions · half A · 36 jobs · net −2 · dropped · product +3, test −3, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M343.56 427.99L343.56 420.69L345.6 416.99L365.51 416.99L365.51 416.99L365.51 427.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="422.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, with hint · half A · 36 jobs · net −1 · dropped · product +2, test −1, infra −2 · against decision model with the environment question" tabindex="0">
+<title>Gemma-26B-A4B, with hint · half A · 36 jobs · net −1 · dropped · product +2, test −1, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M385.43 434.49L369.11 434.49L365.51 427.99L365.51 416.99L385.43 416.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="422.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, definitions · half B · 35 jobs · net +3 · dropped (class rule: product down by 3 (the rule allows 1 on A or B)) · product −3, test +4, infra +2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, definitions · half B · 35 jobs · net +3 · dropped (class rule: product down by 3 (the rule allows 1 on A or B)) · product −3, test +4, infra +2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 399.49L461.49 399.49L465.08 405.99L465.08 416.99L465.08 416.99L445.17 416.99Z"/>
+<circle class="bg" cx="455.13" cy="411.49" r="5"/>
+<circle class="s-ctl" cx="455.13" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, definitions · both halves (A+B) · 71 jobs · net +10 · dropped (class rule: product down by 3 (the rule allows 2 on A+B)) · product −3, test +10, infra +3 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, definitions · both halves (A+B) · 71 jobs · net +10 · dropped (class rule: product down by 3 (the rule allows 2 on A+B)) · product −3, test +10, infra +3 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M582.52 399.49L606.52 399.49L606.52 423.49L582.52 423.49Z"/>
+<path class="c-ctl ring" d="M594.52 405.99L600.02 411.49L594.52 416.99L589.02 411.49Z"/>
+</g>
+<g data-tip="gpt-oss-20b, with hint · half B · 35 jobs · net 0 · dropped · product −2, test 0, infra +2 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, with hint · half B · 35 jobs · net 0 · dropped · product −2, test 0, infra +2 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M407.38 416.99L407.38 434.49L385.43 434.49L385.43 416.99L385.43 416.99Z"/>
+<circle class="bg" cx="395.38" cy="422.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="422.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, with hint · both halves (A+B) · 71 jobs · net +4 · dropped · product −2, test +3, infra +3 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, with hint · both halves (A+B) · 71 jobs · net +4 · dropped · product −2, test +3, infra +3 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M463.04 388.49L487.04 388.49L487.04 402.29L485 405.99L465.08 405.99L463.04 402.29Z"/>
+<path class="c-ctl ring" d="M475.04 394.99L480.54 400.49L475.04 405.99L469.54 400.49Z"/>
+</g>
+<g data-tip="gpt-oss-20b, production wording · half B · 35 jobs · net +4 · dropped (class rule: product down by 3 (the rule allows 1 on A or B)) · product −3, test +6, infra +1 · against production prompt, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, production wording · half B · 35 jobs · net +4 · dropped (class rule: product down by 3 (the rule allows 1 on A or B)) · product −3, test +6, infra +1 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M487.04 427.99L487.04 445.49L463.04 445.49L463.04 431.69L465.08 427.99Z"/>
+<circle class="bg" cx="475.04" cy="433.49" r="5"/>
+<circle class="s-ctl" cx="475.04" cy="433.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, production wording · both halves (A+B) · 71 jobs · net +12 · dropped (class rule: product down by 5 (the rule allows 2 on A+B)) · product −5, test +13, infra +4 · against production prompt, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, production wording · both halves (A+B) · 71 jobs · net +12 · dropped (class rule: product down by 5 (the rule allows 2 on A+B)) · product −5, test +13, infra +4 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M646.35 416.99L646.35 434.49L622.35 434.49L622.35 416.99Z"/>
+<path class="c-ctl ring" d="M634.35 416.99L639.85 422.49L634.35 427.99L628.85 422.49Z"/>
+</g>
+<g data-tip="gpt-oss-20b, definitions · both halves (A+B) · 71 jobs · net −2 · dropped · product −5, test +7, infra −4 · against decision model with the environment question" tabindex="0">
+<title>gpt-oss-20b, definitions · both halves (A+B) · 71 jobs · net −2 · dropped · product −5, test +7, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M343.56 388.49L365.51 388.49L365.51 405.99L365.51 405.99L345.6 405.99L343.56 402.29Z"/>
+<path class="c-ctl ring" d="M355.56 394.99L361.06 400.49L355.56 405.99L350.06 400.49Z"/>
+</g>
+<g data-tip="gpt-oss-20b, with hint · both halves (A+B) · 71 jobs · net −2 · dropped · product −2, test +3, infra −3 · against decision model with the environment question" tabindex="0">
+<title>gpt-oss-20b, with hint · both halves (A+B) · 71 jobs · net −2 · dropped · product −2, test +3, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M367.56 431.69L367.56 445.49L343.56 445.49L343.56 427.99L365.51 427.99Z"/>
+<path class="c-ctl ring" d="M355.56 427.99L361.06 433.49L355.56 438.99L350.06 433.49Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · half B · 32 jobs · net +3 · dropped (coverage: 3 of 35 jobs timed out, so it was scored on 32 only and not counted as a pass) · product +1, test 0, infra +2 · against production prompt, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, production wording · half B · 32 jobs · net +3 · dropped (coverage: 3 of 35 jobs timed out, so it was scored on 32 only and not counted as a pass) · product +1, test 0, infra +2 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M465.08 416.99L465.08 427.99L461.49 434.49L445.17 434.49L445.17 416.99L445.17 416.99Z"/>
+<circle class="bg" cx="455.13" cy="422.49" r="5"/>
+<circle class="s-ctl" cx="455.13" cy="422.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, definitions · half B · 32 jobs · net +2 · dropped · product +1, test −1, infra +2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, definitions · half B · 32 jobs · net +2 · dropped · product +1, test −1, infra +2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M445.17 434.49L423.21 434.49L423.21 416.99L445.17 416.99Z"/>
+<circle class="bg" cx="435.21" cy="422.49" r="5"/>
+<circle class="s-ctl" cx="435.21" cy="422.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, with hint · half B · 32 jobs · net −4 · dropped · product −2, test −3, infra +1 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, with hint · half B · 32 jobs · net −4 · dropped · product −2, test −3, infra +1 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M303.73 399.49L325.69 399.49L325.69 423.49L303.73 423.49Z"/>
+<circle class="bg" cx="315.73" cy="411.49" r="5"/>
+<circle class="s-ctl" cx="315.73" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · both halves (A+B) · 68 jobs · net +15 · dropped (coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass) · product +4, test +4, infra +7 · against production prompt, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, production wording · both halves (A+B) · 68 jobs · net +15 · dropped (coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass) · product +4, test +4, infra +7 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M682.09 399.49L706.09 399.49L706.09 423.49L682.09 423.49Z"/>
+<path class="c-ctl ring" d="M694.09 405.99L699.59 411.49L694.09 416.99L688.59 411.49Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B, definitions · both halves (A+B) · 68 jobs · net +7 · dropped (coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass) · product +5, test −2, infra +4 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, definitions · both halves (A+B) · 68 jobs · net +7 · dropped (coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass) · product +5, test −2, infra +4 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M544.74 416.99L546.78 420.69L546.78 434.49L522.78 434.49L522.78 416.99Z"/>
+<path class="c-ctl ring" d="M534.78 416.99L540.28 422.49L534.78 427.99L529.28 422.49Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B, with hint · both halves (A+B) · 68 jobs · net 0 · dropped · product 0, test −3, infra +3 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, with hint · both halves (A+B) · 68 jobs · net 0 · dropped · product 0, test −3, infra +3 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M385.43 388.49L407.38 388.49L407.38 405.99L385.43 405.99L385.43 405.99Z"/>
+<path class="c-ctl ring" d="M395.38 394.99L400.88 400.49L395.38 405.99L389.88 400.49Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · both halves (A+B) · 68 jobs · net −1 · dropped · product +3, test −2, infra −2 · against decision model with the environment question" tabindex="0">
+<title>Gemma-26B-A4B, production wording · both halves (A+B) · 68 jobs · net −1 · dropped · product +3, test −2, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M365.51 388.49L385.43 388.49L385.43 405.99L365.51 405.99Z"/>
+<path class="c-ctl ring" d="M375.47 394.99L380.97 400.49L375.47 405.99L369.97 400.49Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · half B · 32 jobs · net −3 · dropped · product 0, test −2, infra −1 · against decision model with the environment question" tabindex="0">
+<title>Gemma-26B-A4B, production wording · half B · 32 jobs · net −3 · dropped · product 0, test −2, infra −1 · against decision model with the environment question</title>
+<path class="hit" d="M325.69 399.49L342.01 399.49L345.6 405.99L345.6 416.99L342.01 423.49L325.69 423.49Z"/>
+<circle class="bg" cx="335.64" cy="411.49" r="5"/>
+<circle class="s-ctl" cx="335.64" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, definitions · half A · 36 jobs · net +7 · passed · product 0, test +6, infra +1 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, definitions · half A · 36 jobs · net +7 · passed · product 0, test +6, infra +1 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M522.78 399.49L544.74 399.49L544.74 416.99L522.78 416.99Z"/>
+<circle class="c-focus ring" cx="534.78" cy="411.49" r="4"/>
+</g>
+<g data-tip="gpt-oss-20b, with hint · half A · 36 jobs · net +4 · passed · product 0, test +3, infra +1 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>gpt-oss-20b, with hint · half A · 36 jobs · net +4 · passed · product 0, test +3, infra +1 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M485 405.99L485 416.99L465.08 416.99L465.08 405.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, production wording · half A · 36 jobs · net +12 · passed · product +3, test +4, infra +5 · against production prompt, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, production wording · half A · 36 jobs · net +12 · passed · product +3, test +4, infra +5 · against production prompt, Gemma Q8</title>
+<path class="hit" d="M622.35 399.49L646.35 399.49L646.35 416.99L622.35 416.99Z"/>
+<circle class="c-focus ring" cx="634.35" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, definitions · half A · 36 jobs · net +5 · passed · product +4, test −1, infra +2 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, definitions · half A · 36 jobs · net +5 · passed · product +4, test −1, infra +2 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M488.59 399.49L506.95 399.49L506.95 423.49L488.59 423.49L485 416.99L485 405.99Z"/>
+<circle class="c-focus ring" cx="494.95" cy="411.49" r="4"/>
+</g>
+<g data-tip="Gemma-26B-A4B, with hint · half A · 36 jobs · net +4 · passed · product +2, test 0, infra +2 · against decision model's estimate as a hint, Gemma Q8" tabindex="0">
+<title>Gemma-26B-A4B, with hint · half A · 36 jobs · net +4 · passed · product +2, test 0, infra +2 · against decision model's estimate as a hint, Gemma Q8</title>
+<path class="hit" d="M487.04 420.69L487.04 427.99L465.08 427.99L465.08 416.99L465.08 416.99L485 416.99Z"/>
+<circle class="c-focus ring" cx="475.04" cy="422.49" r="4"/>
+</g>
+<g data-tip="Kev-9B, environment rule · half A · 36 jobs · net −10 · dropped · product −8, test −5, infra +3 · against decision model with the environment question" tabindex="0">
+<title>Kev-9B, environment rule · half A · 36 jobs · net −10 · dropped · product −8, test −5, infra +3 · against decision model with the environment question</title>
+<path class="hit" d="M184.25 470.49L208.25 470.49L208.25 494.49L184.25 494.49Z"/>
+<circle class="c-ctl ring" cx="196.25" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-4B, environment rule · half A · 36 jobs · net −8 · dropped · product −6, test −5, infra +3 · against decision model with the environment question" tabindex="0">
+<title>Kev-4B, environment rule · half A · 36 jobs · net −8 · dropped · product −6, test −5, infra +3 · against decision model with the environment question</title>
+<path class="hit" d="M224.08 470.49L246.03 470.49L246.03 487.99L242.44 494.49L224.08 494.49Z"/>
+<circle class="c-ctl ring" cx="236.08" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-4B, label question · half A · 36 jobs · net −7 · dropped · product −8, test −5, infra +6 · against decision model, label question only" tabindex="0">
+<title>Kev-4B, label question · half A · 36 jobs · net −7 · dropped · product −8, test −5, infra +6 · against decision model, label question only</title>
+<path class="hit" d="M246.03 470.49L267.99 470.49L267.99 487.99L246.03 487.99Z"/>
+<circle class="c-ctl ring" cx="255.99" cy="482.49" r="4"/>
+</g>
+<g data-tip="Clef-Flash, environment rule · half A · 36 jobs · net −3 · dropped · product −4, test +4, infra −3 · against decision model with the environment question" tabindex="0">
+<title>Clef-Flash, environment rule · half A · 36 jobs · net −3 · dropped · product −4, test +4, infra −3 · against decision model with the environment question</title>
+<path class="hit" d="M323.64 470.49L342.01 470.49L345.6 476.99L345.6 487.99L323.64 487.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="482.49" r="4"/>
+</g>
+<g data-tip="Clef-Flash, label question · half A · 36 jobs · net −2 · dropped · product −5, test +3, infra 0 · against decision model, label question only" tabindex="0">
+<title>Clef-Flash, label question · half A · 36 jobs · net −2 · dropped · product −5, test +3, infra 0 · against decision model, label question only</title>
+<path class="hit" d="M367.56 476.99L367.56 487.99L345.6 487.99L345.6 476.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="482.49" r="4"/>
+</g>
+<g data-tip="d3-flash, environment rule · half A · 36 jobs · net −3 · dropped · product −5, test +4, infra −2 · against decision model with the environment question" tabindex="0">
+<title>d3-flash, environment rule · half A · 36 jobs · net −3 · dropped · product −5, test +4, infra −2 · against decision model with the environment question</title>
+<path class="hit" d="M345.6 505.49L323.64 505.49L323.64 487.99L345.6 487.99L345.6 487.99Z"/>
+<circle class="c-ctl ring" cx="335.64" cy="493.49" r="4"/>
+</g>
+<g data-tip="d3-flash, label question · half A · 36 jobs · net −2 · dropped · product −5, test +4, infra −1 · against decision model, label question only" tabindex="0">
+<title>d3-flash, label question · half A · 36 jobs · net −2 · dropped · product −5, test +4, infra −1 · against decision model, label question only</title>
+<path class="hit" d="M367.56 487.99L367.56 505.49L345.6 505.49L345.6 487.99L345.6 487.99Z"/>
+<circle class="c-ctl ring" cx="355.56" cy="493.49" r="4"/>
+</g>
+<g data-tip="Kev-9B, label question · half B · 35 jobs · net −2 · dropped · product −4, test +1, infra +1 · against decision model, label question only" tabindex="0">
+<title>Kev-9B, label question · half B · 35 jobs · net −2 · dropped · product −4, test +1, infra +1 · against decision model, label question only</title>
+<path class="hit" d="M343.56 459.49L367.56 459.49L367.56 476.99L345.6 476.99L343.56 473.29Z"/>
+<circle class="bg" cx="355.56" cy="471.49" r="5"/>
+<circle class="s-ctl" cx="355.56" cy="471.49" r="4"/>
+</g>
+<g data-tip="Kev-9B, environment rule · half B · 35 jobs · net −7 · dropped · product −9, test −4, infra +6 · against decision model with the environment question" tabindex="0">
+<title>Kev-9B, environment rule · half B · 35 jobs · net −7 · dropped · product −9, test −4, infra +6 · against decision model with the environment question</title>
+<path class="hit" d="M267.99 487.99L267.99 505.49L243.99 505.49L243.99 491.69L246.03 487.99Z"/>
+<circle class="bg" cx="255.99" cy="493.49" r="5"/>
+<circle class="s-ctl" cx="255.99" cy="493.49" r="4"/>
+</g>
+<g data-tip="Kev-9B, label question · half B · 35 jobs · net −5 · dropped · product −5, test +1, infra −1 · against decision model with the environment question" tabindex="0">
+<title>Kev-9B, label question · half B · 35 jobs · net −5 · dropped · product −5, test +1, infra −1 · against decision model with the environment question</title>
+<path class="hit" d="M283.82 470.49L307.82 470.49L307.82 494.49L283.82 494.49Z"/>
+<circle class="bg" cx="295.82" cy="482.49" r="5"/>
+<circle class="s-ctl" cx="295.82" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-9B, label question · both halves (A+B) · 71 jobs · net +1 · dropped · product −5, test +1, infra +5 · against decision model, label question only" tabindex="0">
+<title>Kev-9B, label question · both halves (A+B) · 71 jobs · net +1 · dropped · product −5, test +1, infra +5 · against decision model, label question only</title>
+<path class="hit" d="M403.3 470.49L425.26 470.49L425.26 487.99L403.3 487.99Z"/>
+<path class="c-ctl ring" d="M415.3 476.99L420.8 482.49L415.3 487.99L409.8 482.49Z"/>
+</g>
+<g data-tip="Kev-27B, environment rule · half A · 36 jobs · net +2 · dropped · product +1, test 0, infra +1 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B, environment rule · half A · 36 jobs · net +2 · dropped · product +1, test 0, infra +1 · against decision model with the environment question</title>
+<path class="hit" d="M425.25 470.49L445.17 470.49L445.17 487.99L441.58 494.49L428.85 494.49L425.25 487.99Z"/>
+<circle class="c-ctl ring" cx="435.21" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-27B, label question · half B · 35 jobs · net +4 · dropped (class rule: product down by 2 (the rule allows 1 on A or B)) · product −2, test 0, infra +6 · against decision model, label question only" tabindex="0">
+<title>Kev-27B, label question · half B · 35 jobs · net +4 · dropped (class rule: product down by 2 (the rule allows 1 on A or B)) · product −2, test 0, infra +6 · against decision model, label question only</title>
+<path class="hit" d="M465.08 470.49L485 470.49L485 494.49L468.67 494.49L465.08 487.99Z"/>
+<circle class="bg" cx="475.04" cy="482.49" r="5"/>
+<circle class="s-ctl" cx="475.04" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-27B, environment rule · half B · 35 jobs · net +1 · dropped · product −3, test 0, infra +4 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B, environment rule · half B · 35 jobs · net +1 · dropped · product −3, test 0, infra +4 · against decision model with the environment question</title>
+<path class="hit" d="M427.3 491.69L427.3 505.49L403.3 505.49L403.3 487.99L425.26 487.99Z"/>
+<circle class="bg" cx="415.3" cy="493.49" r="5"/>
+<circle class="s-ctl" cx="415.3" cy="493.49" r="4"/>
+</g>
+<g data-tip="Kev-27B, environment rule · both halves (A+B) · 71 jobs · net +3 · dropped · product −2, test 0, infra +5 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B, environment rule · both halves (A+B) · 71 jobs · net +3 · dropped · product −2, test 0, infra +5 · against decision model with the environment question</title>
+<path class="hit" d="M467.13 491.69L467.13 505.49L443.13 505.49L443.13 491.69L445.17 487.99L465.08 487.99Z"/>
+<path class="c-ctl ring" d="M455.13 487.99L460.63 493.49L455.13 498.99L449.63 493.49Z"/>
+</g>
+<g data-tip="Kev-9B, label question · half A · 36 jobs · net +3 · passed · product −1, test 0, infra +4 · against decision model, label question only" tabindex="0">
+<title>Kev-9B, label question · half A · 36 jobs · net +3 · passed · product −1, test 0, infra +4 · against decision model, label question only</title>
+<path class="hit" d="M445.17 470.49L465.08 470.49L465.08 487.99L445.17 487.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-27B, label question · half A · 36 jobs · net +5 · passed · product +1, test 0, infra +4 · against decision model, label question only" tabindex="0">
+<title>Kev-27B, label question · half A · 36 jobs · net +5 · passed · product +1, test 0, infra +4 · against decision model, label question only</title>
+<path class="hit" d="M485 470.49L506.95 470.49L506.95 494.49L485 494.49Z"/>
+<circle class="c-focus ring" cx="494.95" cy="482.49" r="4"/>
+</g>
+<g data-tip="Kev-27B, label question · both halves (A+B) · 71 jobs · net +9 · passed · product −1, test 0, infra +10 · against decision model, label question only" tabindex="0">
+<title>Kev-27B, label question · both halves (A+B) · 71 jobs · net +9 · passed · product −1, test 0, infra +10 · against decision model, label question only</title>
+<path class="hit" d="M562.61 470.49L586.61 470.49L586.61 494.49L562.61 494.49Z"/>
+<path class="c-focus ring" d="M574.61 476.99L580.11 482.49L574.61 487.99L569.11 482.49Z"/>
+</g>
+<g data-tip="hint plus environment override · half B · 33 jobs · net +2 · dropped · product +1, test +1, infra 0 · against decision model with the environment question" tabindex="0">
+<title>hint plus environment override · half B · 33 jobs · net +2 · dropped · product +1, test +1, infra 0 · against decision model with the environment question</title>
+<path class="hit" d="M425.25 518.49L445.17 518.49L445.17 535.99L425.25 535.99Z"/>
+<circle class="bg" cx="435.21" cy="530.49" r="5"/>
+<circle class="s-ctl" cx="435.21" cy="530.49" r="4"/>
+</g>
+<g data-tip="hint plus environment override · half A · 33 jobs · net +1 · dropped · product +1, test 0, infra 0 · against decision model with the environment question" tabindex="0">
+<title>hint plus environment override · half A · 33 jobs · net +1 · dropped · product +1, test 0, infra 0 · against decision model with the environment question</title>
+<path class="hit" d="M405.34 518.49L425.25 518.49L425.25 535.99L421.66 542.49L405.34 542.49Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="530.49" r="4"/>
+</g>
+<g data-tip="nearest labelled precedent rule · half A · 36 jobs · net −1 · dropped · product 0, test −1, infra 0 · against decision model with the environment question" tabindex="0">
+<title>nearest labelled precedent rule · half A · 36 jobs · net −1 · dropped · product 0, test −1, infra 0 · against decision model with the environment question</title>
+<path class="hit" d="M363.47 518.49L385.43 518.49L385.43 535.99L363.47 535.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="530.49" r="4"/>
+</g>
+<g data-tip="nearest labelled precedent rule · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against decision model with the environment question" tabindex="0">
+<title>nearest labelled precedent rule · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against decision model with the environment question</title>
+<path class="hit" d="M385.43 518.49L405.34 518.49L405.34 542.49L389.02 542.49L385.43 535.99Z"/>
+<circle class="bg" cx="395.38" cy="530.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="530.49" r="4"/>
+</g>
+<g data-tip="Kev-27B and elephant-1 averaged · half A · 36 jobs · net −1 · dropped · product −1, test −1, infra +1 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B and elephant-1 averaged · half A · 36 jobs · net −1 · dropped · product −1, test −1, infra +1 · against decision model with the environment question</title>
+<path class="hit" d="M387.47 539.69L387.47 553.49L363.47 553.49L363.47 535.99L385.43 535.99Z"/>
+<circle class="c-ctl ring" cx="375.47" cy="541.49" r="4"/>
+</g>
+<g data-tip="Kev-27B and elephant-1 averaged · both halves (A+B) · 71 jobs · net +2 · dropped · product −2, test −1, infra +5 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B and elephant-1 averaged · both halves (A+B) · 71 jobs · net +2 · dropped · product −2, test −1, infra +5 · against decision model with the environment question</title>
+<path class="hit" d="M447.21 539.69L447.21 553.49L423.21 553.49L423.21 539.69L425.25 535.99L445.17 535.99Z"/>
+<path class="c-ctl ring" d="M435.21 535.99L440.71 541.49L435.21 546.99L429.71 541.49Z"/>
+</g>
+<g data-tip="Kev-27B and elephant-1 averaged · half B · 35 jobs · net +3 · passed · product −1, test 0, infra +4 · against decision model with the environment question" tabindex="0">
+<title>Kev-27B and elephant-1 averaged · half B · 35 jobs · net +3 · passed · product −1, test 0, infra +4 · against decision model with the environment question</title>
+<path class="hit" d="M445.17 518.49L467.13 518.49L467.13 542.49L448.76 542.49L445.17 535.99Z"/>
+<circle class="bg" cx="455.13" cy="530.49" r="5"/>
+<circle class="s-focus" cx="455.13" cy="530.49" r="4"/>
+</g>
+<g data-tip="verdict asked again · half A · 36 jobs · net 0 · dropped · product +1, test −1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>verdict asked again · half A · 36 jobs · net 0 · dropped · product +1, test −1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M383.38 566.49L405.34 566.49L405.34 583.99L383.38 583.99Z"/>
+<circle class="c-ctl ring" cx="395.38" cy="578.49" r="4"/>
+</g>
+<g data-tip="verdict in a fresh conversation · half A · 36 jobs · net −4 · dropped · product −1, test +1, infra −4 · against decision model with the environment question" tabindex="0">
+<title>verdict in a fresh conversation · half A · 36 jobs · net −4 · dropped · product −1, test +1, infra −4 · against decision model with the environment question</title>
+<path class="hit" d="M303.73 566.49L327.73 566.49L327.73 590.49L303.73 590.49Z"/>
+<circle class="c-ctl ring" cx="315.73" cy="578.49" r="4"/>
+</g>
+<g data-tip="verdict in a fresh conversation · both halves (A+B) · 71 jobs · net +3 · dropped · product −1, test +4, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>verdict in a fresh conversation · both halves (A+B) · 71 jobs · net +3 · dropped · product −1, test +4, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M467.13 583.99L467.13 601.49L443.13 601.49L443.13 583.99Z"/>
+<path class="c-ctl ring" d="M455.13 583.99L460.63 589.49L455.13 594.99L449.63 589.49Z"/>
+</g>
+<g data-tip="verdict in a fresh conversation · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>verdict in a fresh conversation · half B · 35 jobs · net 0 · dropped · product −1, test +1, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M407.38 587.69L407.38 601.49L383.38 601.49L383.38 583.99L405.34 583.99Z"/>
+<circle class="bg" cx="395.38" cy="589.49" r="5"/>
+<circle class="s-ctl" cx="395.38" cy="589.49" r="4"/>
+</g>
+<g data-tip="majority of five samples · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>majority of five samples · half A · 36 jobs · net +1 · dropped · product +1, test 0, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M405.34 566.49L427.3 566.49L427.3 590.49L408.93 590.49L405.34 583.99Z"/>
+<circle class="c-ctl ring" cx="415.3" cy="578.49" r="4"/>
+</g>
+<g data-tip="verdict in a fresh conversation · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8" tabindex="0">
+<title>verdict in a fresh conversation · half A · 36 jobs · net +3 · passed · product 0, test +3, infra 0 · against fuller class definitions, Gemma Q8</title>
+<path class="hit" d="M443.13 566.49L467.13 566.49L467.13 583.99L443.13 583.99Z"/>
+<circle class="c-focus ring" cx="455.13" cy="578.49" r="4"/>
+</g>
+<g data-tip="TF-IDF baseline · half A · 36 jobs · net +9 · passed (passed A, then a leakage check showed it had learnt to recognise tickets (jobs of one ticket on both sides of its split); trained only on earlier jobs it was level with the decision rule) · product +2, test +4, infra +3 · against decision model with the environment question" tabindex="0">
+<title>TF-IDF baseline · half A · 36 jobs · net +9 · passed (passed A, then a leakage check showed it had learnt to recognise tickets (jobs of one ticket on both sides of its split); trained only on earlier jobs it was level with the decision rule) · product +2, test +4, infra +3 · against decision model with the environment question</title>
+<path class="hit" d="M562.61 662.49L586.61 662.49L586.61 686.49L562.61 686.49Z"/>
+<circle class="c-focus ring" cx="574.61" cy="674.49" r="4"/>
+</g>
+</g>
+<g>
+<text class="t-muted" x="0" y="14.46">verdict</text>
+<rect class="c-focus" x="45.86" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="60.86" y="14.79">passed its rule</text>
+<rect class="c-ctl" x="155.77" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="170.77" y="14.79">dropped</text>
+<text class="t-muted" x="253.63" y="14.46">screen</text>
+<circle class="c-ctl ring" cx="302.77" cy="10.5" r="4"/>
+<text class="t" x="312.77" y="14.79">half A</text>
+<circle class="bg" cx="365.16" cy="10.5" r="5"/>
+<circle class="s-ctl" cx="365.16" cy="10.5" r="4"/>
+<text class="t" x="375.16" y="14.79">half B</text>
+<path class="c-ctl ring" d="M428.14 5L433.64 10.5L428.14 16L422.64 10.5Z"/>
+<text class="t" x="438.14" y="14.79">both halves (A+B)</text>
+<text class="t-strong" x="0" y="39.58">18 of the 19 comparisons that passed on half A failed when run on half B against the same control in a later run.</text>
+<text class="t" x="0" y="57.41">A line joins each such pass to its half-B run. 29 of the 164 comparisons drawn passed their rule.</text>
+<text class="t-strong" x="460.13" y="83.24">+3: rule for one half</text>
+<text class="t-strong" x="499.95" y="101.24">+5: rule for both halves</text>
+<text class="t" x="124.51" y="189.78" text-anchor="end">prompt wording</text>
+<text class="t-muted" x="124.51" y="204.45" text-anchor="end">59 tries</text>
+<text class="t" x="124.51" y="315.78" text-anchor="end">added facts</text>
+<text class="t-muted" x="124.51" y="330.45" text-anchor="end">45 tries</text>
+<text class="t" x="124.51" y="408.78" text-anchor="end">bigger chat models</text>
+<text class="t-muted" x="124.51" y="423.45" text-anchor="end">34 tries, 28 drawn</text>
+<text class="t" x="124.51" y="479.78" text-anchor="end">other decision models</text>
+<text class="t-muted" x="124.51" y="494.45" text-anchor="end">19 tries, 18 drawn</text>
+<text class="t" x="124.51" y="527.78" text-anchor="end">combination rules</text>
+<text class="t-muted" x="124.51" y="542.45" text-anchor="end">11 tries, 7 drawn</text>
+<text class="t" x="124.51" y="575.78" text-anchor="end">sampling and voting</text>
+<text class="t-muted" x="124.51" y="590.45" text-anchor="end">6 tries</text>
+<text class="t" x="124.51" y="619.78" text-anchor="end">flags</text>
+<text class="t-muted" x="124.51" y="634.45" text-anchor="end">3 tries</text>
+<text class="t-muted" x="156.42" y="626.45">3 tries with no net count</text>
+<text class="t" x="124.51" y="671.78" text-anchor="end">classic baseline</text>
+<text class="t-muted" x="124.51" y="686.45" text-anchor="end">2 tries, 1 drawn</text>
+<line class="leader" x1="156.8" y1="186.5" x2="157.62" y2="173.49"/>
+<rect class="bg" x="157.62" y="157.66" width="146.65" height="15.83" rx="2"/>
+<text class="t" x="160.62" y="168.24">contrast pairs on A+B: −12</text>
+<line class="leader" x1="500.95" y1="203.49" x2="506.95" y2="203.49"/>
+<rect class="bg" x="506.95" y="188.75" width="174.69" height="32.73" rx="2"/>
+<text class="t" x="509.95" y="199.33">
+<tspan x="509.95" dy="0">few-shot examples, one run: +5</tspan>
+<tspan x="509.95" dy="16.9">on half A, −1 on half B</tspan>
+</text>
+<line class="leader" x1="692.38" y1="405.74" x2="691.69" y2="403.39"/>
+<rect class="bg" x="522.35" y="370.66" width="169.33" height="32.73" rx="2"/>
+<text class="t" x="688.69" y="381.24" text-anchor="end">
+<tspan x="688.69" dy="0">Gemma-26B-A4B: +15 on 68 of</tspan>
+<tspan x="688.69" dy="16.9">71, 3 timed out, not counted</tspan>
+</text>
+<line class="leader" x1="580.61" y1="674.49" x2="586.61" y2="674.49"/>
+<rect class="bg" x="586.61" y="651.3" width="116.25" height="49.63" rx="2"/>
+<text class="t" x="589.61" y="661.88">
+<tspan x="589.61" dy="0">TF-IDF baseline: had</tspan>
+<tspan x="589.61" dy="16.9">learnt to recognise</tspan>
+<tspan x="589.61" dy="16.9">tickets</tspan>
+</text>
+</g>
+</svg>

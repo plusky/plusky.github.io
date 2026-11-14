@@ -1,0 +1,177 @@
+<svg viewBox="0 0 360 277" role="img" aria-labelledby="chars-per-token-n-t chars-per-token-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="chars-per-token-n-t">Characters per token in 520 measured prompts</title>
+<desc id="chars-per-token-n-d">Real prompts hold a median of 2.28 characters per token, fewer than the 2.5 the script assumed, so prompts cut by character count still overflowed.</desc>
+<g>
+<line class="grid" x1="25.89" y1="231.83" x2="356" y2="231.83"/>
+<text class="t-muted" x="19.89" y="235.79" text-anchor="end">0</text>
+<line class="grid" x1="25.89" y1="184.33" x2="356" y2="184.33"/>
+<text class="t-muted" x="19.89" y="188.29" text-anchor="end">25</text>
+<line class="grid" x1="25.89" y1="136.83" x2="356" y2="136.83"/>
+<text class="t-muted" x="19.89" y="140.79" text-anchor="end">50</text>
+<line class="grid" x1="25.89" y1="89.33" x2="356" y2="89.33"/>
+<text class="t-muted" x="19.89" y="93.29" text-anchor="end">75</text>
+<line class="grid" x1="25.89" y1="41.83" x2="356" y2="41.83"/>
+<text class="t-muted" x="19.89" y="45.79" text-anchor="end">100</text>
+<line class="axis" x1="25.89" y1="231.83" x2="331.1" y2="231.83"/>
+<text class="t-muted" x="91.29" y="245.75" text-anchor="middle">2.0</text>
+<text class="t-muted" x="200.3" y="245.75" text-anchor="middle">2.5</text>
+<text class="t-muted" x="309.3" y="245.75" text-anchor="middle">3.0</text>
+<text class="t-muted" x="331.1" y="261.67" text-anchor="end">characters per token</text>
+<line class="axis" x1="345.1" y1="231.83" x2="356" y2="231.83"/>
+</g>
+<g>
+<g data-tip="1.70–1.75 characters per token: 1 prompt" tabindex="0">
+<title>1.70–1.75 characters per token: 1 prompt</title>
+<rect class="hit" x="25.89" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M26.89 231.83V231.83A1.9 1.9 0 0 1 28.79 229.93H33.89A1.9 1.9 0 0 1 35.79 231.83V231.83Z"/>
+</g>
+<g data-tip="1.75–1.80 characters per token: 0 prompts" tabindex="0">
+<title>1.75–1.80 characters per token: 0 prompts</title>
+<rect class="hit" x="36.79" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="1.80–1.85 characters per token: 0 prompts" tabindex="0">
+<title>1.80–1.85 characters per token: 0 prompts</title>
+<rect class="hit" x="47.69" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="1.85–1.90 characters per token: 0 prompts" tabindex="0">
+<title>1.85–1.90 characters per token: 0 prompts</title>
+<rect class="hit" x="58.59" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="1.90–1.95 characters per token: 1 prompt" tabindex="0">
+<title>1.90–1.95 characters per token: 1 prompt</title>
+<rect class="hit" x="69.49" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M70.49 231.83V231.83A1.9 1.9 0 0 1 72.39 229.93H77.49A1.9 1.9 0 0 1 79.39 231.83V231.83Z"/>
+</g>
+<g data-tip="1.95–2.00 characters per token: 3 prompts" tabindex="0">
+<title>1.95–2.00 characters per token: 3 prompts</title>
+<rect class="hit" x="80.39" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M81.39 231.83V230.13A4 4 0 0 1 85.39 226.13H86.29A4 4 0 0 1 90.29 230.13V231.83Z"/>
+</g>
+<g data-tip="2.00–2.05 characters per token: 18 prompts" tabindex="0">
+<title>2.00–2.05 characters per token: 18 prompts</title>
+<rect class="hit" x="91.29" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M92.29 231.83V201.63A4 4 0 0 1 96.29 197.63H97.19A4 4 0 0 1 101.19 201.63V231.83Z"/>
+</g>
+<g data-tip="2.05–2.10 characters per token: 11 prompts" tabindex="0">
+<title>2.05–2.10 characters per token: 11 prompts</title>
+<rect class="hit" x="102.19" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M103.19 231.83V214.93A4 4 0 0 1 107.19 210.93H108.09A4 4 0 0 1 112.09 214.93V231.83Z"/>
+</g>
+<g data-tip="2.10–2.15 characters per token: 29 prompts" tabindex="0">
+<title>2.10–2.15 characters per token: 29 prompts</title>
+<rect class="hit" x="113.09" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M114.09 231.83V180.73A4 4 0 0 1 118.09 176.73H118.99A4 4 0 0 1 122.99 180.73V231.83Z"/>
+</g>
+<g data-tip="2.15–2.20 characters per token: 65 prompts" tabindex="0">
+<title>2.15–2.20 characters per token: 65 prompts</title>
+<rect class="hit" x="123.99" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M124.99 231.83V112.33A4 4 0 0 1 128.99 108.33H129.89A4 4 0 0 1 133.89 112.33V231.83Z"/>
+</g>
+<g data-tip="2.20–2.25 characters per token: 79 prompts" tabindex="0">
+<title>2.20–2.25 characters per token: 79 prompts</title>
+<rect class="hit" x="134.89" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M135.89 231.83V85.73A4 4 0 0 1 139.89 81.73H140.8A4 4 0 0 1 144.8 85.73V231.83Z"/>
+</g>
+<g data-tip="2.25–2.30 characters per token: 92 prompts" tabindex="0">
+<title>2.25–2.30 characters per token: 92 prompts</title>
+<rect class="hit" x="145.8" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M146.8 231.83V61.03A4 4 0 0 1 150.8 57.03H151.7A4 4 0 0 1 155.7 61.03V231.83Z"/>
+</g>
+<g data-tip="2.30–2.35 characters per token: 57 prompts" tabindex="0">
+<title>2.30–2.35 characters per token: 57 prompts</title>
+<rect class="hit" x="156.7" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M157.7 231.83V127.53A4 4 0 0 1 161.7 123.53H162.6A4 4 0 0 1 166.6 127.53V231.83Z"/>
+</g>
+<g data-tip="2.35–2.40 characters per token: 36 prompts" tabindex="0">
+<title>2.35–2.40 characters per token: 36 prompts</title>
+<rect class="hit" x="167.6" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M168.6 231.83V167.43A4 4 0 0 1 172.6 163.43H173.5A4 4 0 0 1 177.5 167.43V231.83Z"/>
+</g>
+<g data-tip="2.40–2.45 characters per token: 23 prompts" tabindex="0">
+<title>2.40–2.45 characters per token: 23 prompts</title>
+<rect class="hit" x="178.5" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M179.5 231.83V192.13A4 4 0 0 1 183.5 188.13H184.4A4 4 0 0 1 188.4 192.13V231.83Z"/>
+</g>
+<g data-tip="2.45–2.50 characters per token: 19 prompts" tabindex="0">
+<title>2.45–2.50 characters per token: 19 prompts</title>
+<rect class="hit" x="189.4" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M190.4 231.83V199.73A4 4 0 0 1 194.4 195.73H195.3A4 4 0 0 1 199.3 199.73V231.83Z"/>
+</g>
+<g data-tip="2.50–2.55 characters per token: 23 prompts" tabindex="0">
+<title>2.50–2.55 characters per token: 23 prompts</title>
+<rect class="hit" x="200.3" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M201.3 231.83V192.13A4 4 0 0 1 205.3 188.13H206.2A4 4 0 0 1 210.2 192.13V231.83Z"/>
+</g>
+<g data-tip="2.55–2.60 characters per token: 15 prompts" tabindex="0">
+<title>2.55–2.60 characters per token: 15 prompts</title>
+<rect class="hit" x="211.2" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M212.2 231.83V207.33A4 4 0 0 1 216.2 203.33H217.1A4 4 0 0 1 221.1 207.33V231.83Z"/>
+</g>
+<g data-tip="2.60–2.65 characters per token: 5 prompts" tabindex="0">
+<title>2.60–2.65 characters per token: 5 prompts</title>
+<rect class="hit" x="222.1" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M223.1 231.83V226.33A4 4 0 0 1 227.1 222.33H228A4 4 0 0 1 232 226.33V231.83Z"/>
+</g>
+<g data-tip="2.65–2.70 characters per token: 4 prompts" tabindex="0">
+<title>2.65–2.70 characters per token: 4 prompts</title>
+<rect class="hit" x="233" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M234 231.83V228.23A4 4 0 0 1 238 224.23H238.9A4 4 0 0 1 242.9 228.23V231.83Z"/>
+</g>
+<g data-tip="2.70–2.75 characters per token: 4 prompts" tabindex="0">
+<title>2.70–2.75 characters per token: 4 prompts</title>
+<rect class="hit" x="243.9" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M244.9 231.83V228.23A4 4 0 0 1 248.9 224.23H249.8A4 4 0 0 1 253.8 228.23V231.83Z"/>
+</g>
+<g data-tip="2.75–2.80 characters per token: 8 prompts" tabindex="0">
+<title>2.75–2.80 characters per token: 8 prompts</title>
+<rect class="hit" x="254.8" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M255.8 231.83V220.63A4 4 0 0 1 259.8 216.63H260.7A4 4 0 0 1 264.7 220.63V231.83Z"/>
+</g>
+<g data-tip="2.80–2.85 characters per token: 1 prompt" tabindex="0">
+<title>2.80–2.85 characters per token: 1 prompt</title>
+<rect class="hit" x="265.7" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M266.7 231.83V231.83A1.9 1.9 0 0 1 268.6 229.93H273.7A1.9 1.9 0 0 1 275.6 231.83V231.83Z"/>
+</g>
+<g data-tip="2.85–2.90 characters per token: 2 prompts" tabindex="0">
+<title>2.85–2.90 characters per token: 2 prompts</title>
+<rect class="hit" x="276.6" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M277.6 231.83V231.83A3.8 3.8 0 0 1 281.4 228.03H282.7A3.8 3.8 0 0 1 286.5 231.83V231.83Z"/>
+</g>
+<g data-tip="2.90–2.95 characters per token: 0 prompts" tabindex="0">
+<title>2.90–2.95 characters per token: 0 prompts</title>
+<rect class="hit" x="287.5" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="2.95–3.00 characters per token: 0 prompts" tabindex="0">
+<title>2.95–3.00 characters per token: 0 prompts</title>
+<rect class="hit" x="298.4" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="3.00–3.05 characters per token: 0 prompts" tabindex="0">
+<title>3.00–3.05 characters per token: 0 prompts</title>
+<rect class="hit" x="309.3" y="41.83" width="10.9" height="190"/>
+</g>
+<g data-tip="3.05–3.10 characters per token: 1 prompt" tabindex="0">
+<title>3.05–3.10 characters per token: 1 prompt</title>
+<rect class="hit" x="320.2" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M321.2 231.83V231.83A1.9 1.9 0 0 1 323.1 229.93H328.2A1.9 1.9 0 0 1 330.1 231.83V231.83Z"/>
+</g>
+<g data-tip="3.10 and more (3.10–3.95, 17 bins drawn as one bar): 23 prompts" tabindex="0">
+<title>3.10 and more (3.10–3.95, 17 bins drawn as one bar): 23 prompts</title>
+<rect class="hit" x="345.1" y="41.83" width="10.9" height="190"/>
+<path class="c-focus" d="M346.1 231.83V192.13A4 4 0 0 1 350.1 188.13H351A4 4 0 0 1 355 192.13V231.83Z"/>
+</g>
+</g>
+<g>
+<text class="t-muted" x="0" y="7.92">prompts</text>
+<text class="t-strong" x="205.3" y="8.58">assumed 2.5</text>
+<text class="t-strong" x="147.34" y="8.58" text-anchor="end">median 2.28</text>
+<text class="t" x="74.49" y="28.58">proposed 1.9</text>
+<line class="ref" x1="200.3" y1="0" x2="200.3" y2="231.83"/>
+<line class="ref" x1="152.34" y1="0" x2="152.34" y2="231.83"/>
+<line class="ref" x1="69.49" y1="19" x2="69.49" y2="231.83"/>
+<text class="t-muted" x="356" y="179.13" text-anchor="end">3.1 and more</text>
+<line class="leader" x1="25.89" y1="254.75" x2="200.3" y2="254.75"/>
+<line class="leader" x1="25.89" y1="250.75" x2="25.89" y2="254.75"/>
+<line class="leader" x1="200.3" y1="250.75" x2="200.3" y2="254.75"/>
+<text class="t-strong" x="25.89" y="269.33">83% of prompts are below 2.5</text>
+</g>
+</svg>

@@ -1,0 +1,16 @@
+<ol>
+<li>Chat model, Gemma 4 E4B:
+<ol>
+<li>In: the prompt with the job state.</li>
+<li>Out: a block of thinking tokens, about 90% of what it generates, then text ending with “Classification: Product bug”.</li>
+<li>The class is parsed from the last lines.</li>
+<li>The probability of the answer token after all that thinking is about 1.0 whatever the answer, so it says nothing about confidence.</li>
+</ol></li>
+<li>Decision model, elephant-1 (9B):
+<ol>
+<li>In: the same job state, a question and a fixed list of answers.</li>
+<li>Out: one probability per answer, for example product bug 0.43, test issue 0.35, infrastructure 0.22.</li>
+<li>A second yes/no question, “did the test environment fail?”, gets 0.06 against a threshold of 0.3.</li>
+</ol></li>
+<li>Rule used in the article: an environment answer of at least 0.3 means infrastructure, otherwise whichever of product bug and test issue has the higher probability. Here 0.06 is below 0.3, so the answer is product bug.</li>
+</ol>

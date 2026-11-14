@@ -1,0 +1,55 @@
+{{- $id := .Get "id" -}}
+{{- if not $id -}}
+  {{- errorf "%s: fig needs an id" .Position -}}
+{{- end -}}
+{{- $size := .Get "size" | default "text" -}}
+{{- if not (in (slice "text" "wide" "full") $size) -}}
+  {{- errorf "%s: fig %q: size must be text, wide or full, not %q" .Position $id $size -}}
+{{- end -}}
+{{- $wide := .Page.Resources.Get (printf "fig/%s.svg" $id) -}}
+{{- $narrow := .Page.Resources.Get (printf "fig/%s.narrow.svg" $id) -}}
+{{- $tableFile := path.Join "content" .Page.File.Dir "fig" (printf "%s.table.html" $id) -}}
+{{- /* Figure number: position of this id among the fig shortcodes in the source. */ -}}
+{{- $n := 0 -}}
+{{- $seen := 0 -}}
+{{- range $i, $m := findRESubmatch `\{\{<\s*fig\s[^}]*?\bid="([^"]+)"` .Page.RawContent -}}
+  {{- if eq (index $m 1) $id }}
+    {{- $seen = add $seen 1 }}
+    {{- if eq $n 0 }}{{ $n = add $i 1 }}{{ end }}
+  {{- end -}}
+{{- end -}}
+{{- if gt $seen 1 -}}
+  {{- errorf "%s: fig %q is used %d times; each figure id may appear once per page" .Position $id $seen -}}
+{{- end -}}
+{{- if eq $n 0 -}}
+  {{- errorf "%s: fig %q: cannot number it; write the id as id=\"%s\"" .Position $id $id -}}
+{{- end -}}
+{{- with $wide -}}
+<figure class="fig fig--{{ $size }}{{ if $narrow }} fig--has-narrow{{ end }}" id="fig-{{ $id }}">
+{{- with $.Get "toggles" }}
+<div class="fig-toggles" hidden>
+{{- range split . "," }}
+  {{- $pair := split (trim . " ") ":" }}
+  {{- if eq (len $pair) 2 }}
+<button type="button" data-show="{{ index $pair 0 }}" aria-pressed="false">{{ index $pair 1 }}</button>
+  {{- else }}
+    {{- errorf "%s: fig %q: toggle %q is not name:Label" $.Position $id . }}
+  {{- end }}
+{{- end }}
+</div>
+{{- end }}
+<div class="fig-wide">{{ .Content | safeHTML }}</div>
+{{- with $narrow }}
+<div class="fig-narrow">{{ .Content | safeHTML }}</div>
+{{- end }}
+<figcaption><span class="fig-num">Figure {{ $n }}.</span> {{ with $.Get "caption" }}{{ . | $.Page.RenderString }}{{ end }}</figcaption>
+{{- if fileExists $tableFile }}
+<details class="fig-data">
+<summary>Data</summary>
+<div class="fig-table">{{ readFile $tableFile | safeHTML }}</div>
+</details>
+{{- end }}
+</figure>
+{{- else -}}
+  {{- errorf "%s: fig %q: fig/%s.svg is missing from the page bundle %s" .Position $id $id .Page.File.Dir -}}
+{{- end -}}

@@ -1,0 +1,38 @@
+<table>
+<caption>What the model answered for each label, by kind of failure. Gemma at Q8 and IQ2_M: the gold jobs, labels set by people, the model run again on them at 8-bit (Q8) and at the IQ2_M quantisation that runs in production; no gold job is labelled infrastructure. Silver, posted: silver jobs labelled infrastructure afterwards, against the class posted in production; the silver set has no serial-console split.</caption>
+<thead><tr>
+<th scope="col">Answers</th>
+<th scope="col">Failure kind</th>
+<th scope="col">Label</th>
+<th scope="col">Answered product bug</th>
+<th scope="col">Answered test issue</th>
+<th scope="col">Answered infrastructure</th>
+<th scope="col">Jobs</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row">Gemma at Q8</th><td>all jobs</td><td>product bug</td><td>44</td><td>5</td><td>0</td><td>49</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>all jobs</td><td>test issue</td><td>39</td><td>6</td><td>1</td><td>46</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>failed in a script</td><td>product bug</td><td>22</td><td>0</td><td>0</td><td>22</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>failed in a script</td><td>test issue</td><td>13</td><td>0</td><td>0</td><td>13</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>needle mismatch</td><td>product bug</td><td>15</td><td>5</td><td>0</td><td>20</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>needle mismatch</td><td>test issue</td><td>18</td><td>6</td><td>0</td><td>24</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>serial console</td><td>product bug</td><td>3</td><td>0</td><td>0</td><td>3</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>serial console</td><td>test issue</td><td>6</td><td>0</td><td>1</td><td>7</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>other</td><td>product bug</td><td>4</td><td>0</td><td>0</td><td>4</td></tr>
+<tr><th scope="row">Gemma at Q8</th><td>other</td><td>test issue</td><td>2</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><th scope="row">IQ2_M</th><td>all jobs</td><td>product bug</td><td>35</td><td>13</td><td>1</td><td>49</td></tr>
+<tr><th scope="row">IQ2_M</th><td>all jobs</td><td>test issue</td><td>31</td><td>15</td><td>0</td><td>46</td></tr>
+<tr><th scope="row">IQ2_M</th><td>failed in a script</td><td>product bug</td><td>20</td><td>2</td><td>0</td><td>22</td></tr>
+<tr><th scope="row">IQ2_M</th><td>failed in a script</td><td>test issue</td><td>8</td><td>5</td><td>0</td><td>13</td></tr>
+<tr><th scope="row">IQ2_M</th><td>needle mismatch</td><td>product bug</td><td>9</td><td>11</td><td>0</td><td>20</td></tr>
+<tr><th scope="row">IQ2_M</th><td>needle mismatch</td><td>test issue</td><td>15</td><td>9</td><td>0</td><td>24</td></tr>
+<tr><th scope="row">IQ2_M</th><td>serial console</td><td>product bug</td><td>2</td><td>0</td><td>1</td><td>3</td></tr>
+<tr><th scope="row">IQ2_M</th><td>serial console</td><td>test issue</td><td>6</td><td>1</td><td>0</td><td>7</td></tr>
+<tr><th scope="row">IQ2_M</th><td>other</td><td>product bug</td><td>4</td><td>0</td><td>0</td><td>4</td></tr>
+<tr><th scope="row">IQ2_M</th><td>other</td><td>test issue</td><td>2</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><th scope="row">Silver, posted</th><td>all jobs</td><td>infrastructure</td><td>33</td><td>45</td><td>33</td><td>111</td></tr>
+<tr><th scope="row">Silver, posted</th><td>failed in a script</td><td>infrastructure</td><td>14</td><td>17</td><td>22</td><td>53</td></tr>
+<tr><th scope="row">Silver, posted</th><td>needle mismatch</td><td>infrastructure</td><td>7</td><td>20</td><td>2</td><td>29</td></tr>
+<tr><th scope="row">Silver, posted</th><td>other</td><td>infrastructure</td><td>12</td><td>8</td><td>9</td><td>29</td></tr>
+</tbody>
+</table>

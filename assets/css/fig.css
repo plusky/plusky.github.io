@@ -1,0 +1,71 @@
+/* Figures. An SVG carries classes only; every colour comes from tokens.css. */
+.fig svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  overflow: visible;
+}
+
+/* Text: never the colour of a series. */
+.fig .t { fill: var(--ink-2); font-size: 13px; }
+.fig .t-strong { fill: var(--ink); font-size: 13px; font-weight: 600; }
+.fig .t-muted { fill: var(--ink-2); font-size: 12px; }
+.fig .t-big { fill: var(--ink); font-size: 22px; font-weight: 600; font-variant-numeric: normal; }
+.fig .t-on { fill: var(--on-fill); font-size: 12px; font-weight: 600; }
+/* White on the lighter dark-theme fills is below 4.5:1. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .fig .t-on { fill: var(--bg); }
+}
+:root[data-theme="dark"] .fig .t-on { fill: var(--bg); }
+.fig .t-mono { font-family: var(--font-mono); font-size: 12px; fill: var(--ink-2); }
+
+/* Chrome: hairlines, recessive. */
+.fig .grid { stroke: var(--rule); stroke-width: 1; fill: none; }
+.fig .axis { stroke: var(--axis); stroke-width: 1; fill: none; }
+.fig .leader { stroke: var(--ink-3); stroke-width: 1; fill: none; }
+.fig .ref { stroke: var(--ink-2); stroke-width: 1.5; fill: none; }
+.fig .band { fill: var(--band); stroke: none; }
+.fig .bg { fill: var(--bg); }
+.fig .ring { stroke: var(--bg); stroke-width: 2; }
+.fig .plate { fill: var(--plate); stroke: none; }
+
+/* The three failure classes keep these colours in every figure. */
+.fig .c-product { fill: var(--c-product); }
+.fig .c-test { fill: var(--c-test); }
+.fig .c-infra { fill: var(--c-infra); }
+.fig .s-product { stroke: var(--c-product); fill: none; stroke-width: 2; }
+.fig .s-test { stroke: var(--c-test); fill: none; stroke-width: 2; }
+.fig .s-infra { stroke: var(--c-infra); fill: none; stroke-width: 2; }
+
+/* Focus against context, for figures that do not show classes by colour. */
+.fig .c-focus { fill: var(--c-focus); }
+.fig .c-ctl { fill: var(--c-ctl); }
+.fig .c-ctl-soft { fill: var(--c-ctl-soft); }
+.fig .c-none { fill: none; }
+.fig .s-focus { stroke: var(--c-focus); fill: none; stroke-width: 2; }
+.fig .s-ctl { stroke: var(--c-ctl); fill: none; stroke-width: 2; }
+.fig .s-ctl-soft { stroke: var(--c-ctl-soft); fill: none; stroke-width: 2; }
+.fig [class^="s-"], .fig [class*=" s-"] { stroke-linejoin: round; stroke-linecap: round; }
+.fig .wash-focus { fill: var(--c-focus); fill-opacity: 0.1; }
+.fig .wash-ctl { fill: var(--c-ctl); fill-opacity: 0.12; }
+.fig .flow { fill-opacity: 0.35; }
+
+/* Diagrams. */
+.fig .box { fill: var(--plate); stroke: var(--axis); stroke-width: 1; }
+.fig .box-focus { fill: var(--plate); stroke: var(--c-focus); stroke-width: 2; }
+.fig .arrow { stroke: var(--ink-2); stroke-width: 1.5; fill: none; }
+.fig .arrow-off { stroke: var(--ink-3); stroke-width: 1.5; fill: none; stroke-dasharray: 4 4; }
+.fig .head { fill: var(--ink-2); stroke: none; }
+.fig .head-off { fill: var(--ink-3); stroke: none; }
+
+/* Hover and focus. */
+.fig .hit { fill: transparent; stroke: none; pointer-events: all; }
+.fig [data-tip] { cursor: default; }
+.fig [data-tip]:hover, .fig [data-tip]:focus { outline: none; filter: brightness(1.12); }
+
+/* Layers switched by a toggle: the generator puts is-on on the default layer,
+   the script moves it. Without the script the default layer stays. */
+.fig [data-layer] { display: none; }
+.fig [data-layer].is-on { display: inline; }

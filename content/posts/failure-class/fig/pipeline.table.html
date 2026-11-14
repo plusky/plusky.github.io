@@ -1,0 +1,21 @@
+<ol>
+<li>A test job fails on openQA. If no known issue matches, the job-done hook runs openqa-llm-investigate.</li>
+<li>The script builds one prompt from:
+<ol>
+<li>the failure analysis of the job&#x27;s log, with earlier reviews of runs failing in the same module</li>
+<li>the settings difference to the last good job</li>
+<li>the test commits since the last good job</li>
+</ol></li>
+<li>It asks a llama.cpp server running Gemma 4 E4B (three hosts behind nginx) three questions in one chat:
+<ol>
+<li>question 1: the analysis, one line per failed module</li>
+<li>question 2: a summary of at most two sentences</li>
+<li>question 3: the verdict, with the job statistics</li>
+</ol></li>
+<li>The script posts a comment on the job that ends with three lines:
+<ol>
+<li>Classification: Product bug | Test issue | Infrastructure problem. Only people read it; they reviewed 2.2% of the commented jobs.</li>
+<li>BISECT: YES | NO. On YES the hook starts openqa-investigate (a retry and reruns with the last good tests and build) and then openqa-trigger-bisect-jobs. This is the only answer wired to anything.</li>
+<li>Restart: YES | NO. Not connected: nothing acts on it.</li>
+</ol></li>
+</ol>

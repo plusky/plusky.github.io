@@ -1,0 +1,186 @@
+{
+ "id": "labels",
+ "scope": "o3",
+ "human": {
+  "failed_with_bug_reference": 1316,
+  "bots_or_carry_over": 1226,
+  "set_by_person": 90,
+  "set_by_person_public_ticket": 83,
+  "by_class": {
+   "product": 41,
+   "test": 40,
+   "unknown_ticket_not_public": 7,
+   "ticket_other_team": 2,
+   "infra": 0
+  },
+  "distinct_references": 23,
+  "window_days": 42
+ },
+ "gold": {
+  "jobs": 98,
+  "by_class": {
+   "product": 50,
+   "test": 48
+  },
+  "tickets": 27,
+  "tickets_by_class": {
+   "test": 13,
+   "product": 14
+  },
+  "doubtful_tickets": 8,
+  "doubtful_jobs": 40,
+  "clusters": [
+   {
+    "jobs": 18,
+    "class": "test",
+    "doubtful": true
+   },
+   {
+    "jobs": 8,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 8,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 7,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 7,
+    "class": "product",
+    "doubtful": true
+   },
+   {
+    "jobs": 6,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 5,
+    "class": "test",
+    "doubtful": true
+   },
+   {
+    "jobs": 4,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 4,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 4,
+    "class": "test",
+    "doubtful": true
+   },
+   {
+    "jobs": 3,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 3,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 2,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 2,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 2,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 2,
+    "class": "product",
+    "doubtful": true
+   },
+   {
+    "jobs": 2,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 2,
+    "class": "test",
+    "doubtful": true
+   },
+   {
+    "jobs": 1,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "product",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": false
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": true
+   },
+   {
+    "jobs": 1,
+    "class": "test",
+    "doubtful": true
+   }
+  ]
+ },
+ "silver": {
+  "jobs": 299,
+  "by_class": {
+   "product": 87,
+   "test": 87,
+   "infra": 111,
+   "unclear": 14
+  },
+  "with_class": 285,
+  "confident_by_class": {
+   "product": 70,
+   "test": 26,
+   "infra": 57
+  },
+  "confident_rule": "labeller confidence >= 0.6"
+ }
+}

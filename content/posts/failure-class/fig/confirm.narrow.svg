@@ -1,0 +1,245 @@
+<svg viewBox="0 0 360 663" role="img" aria-labelledby="confirm-n-t confirm-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="confirm-n-t">Jobs with the class right: posted comments against the rule</title>
+<desc id="confirm-n-d">On 128 jobs whose labels a model set, most of them with hindsight, the rule had the class right on 93 against 66 for the posted comments; on three checks that do not depend on those labels the lead is gone: 20 for the rule against 19 for a replay of production on 35 gold jobs, 16 against 20 saying infrastructure on the 50 that passed on a rerun, and 10 against 9 on the 14 with a bug reference from a reviewer.</desc>
+<g class="is-on" data-layer="all">
+<rect class="c-ctl" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">Posted comments</text>
+<rect class="c-focus" x="141.44" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="160.44" y="14.79">Rule</text>
+<text class="t-strong" x="0" y="43.58">The 128 jobs, by class of the label</text>
+<text class="t-muted" x="0" y="58.75">Every label here was set by a model, most with hindsight.</text>
+<text class="t-strong" x="0" y="84.33">All jobs</text>
+<text class="t-muted" x="46.38" y="83.67">128 jobs</text>
+<rect class="band" x="0" y="93.58" width="330" height="42" rx="2"/>
+<g data-tip="All jobs: posted comments right on 66 of 128" tabindex="0">
+<title>All jobs: posted comments right on 66 of 128</title>
+<rect class="hit" x="0" y="90.58" width="170.16" height="24"/>
+<path class="c-ctl" d="M0 97.58H166.16A4 4 0 0 1 170.16 101.58V109.58A4 4 0 0 1 166.16 113.58H0Z"/>
+<text class="t" x="175.16" y="109.87">posted comments 66</text>
+</g>
+<g data-tip="All jobs: rule right on 93 of 128" tabindex="0">
+<title>All jobs: rule right on 93 of 128</title>
+<rect class="hit" x="0" y="114.58" width="239.77" height="24"/>
+<path class="c-focus" d="M0 115.58H235.77A4 4 0 0 1 239.77 119.58V127.58A4 4 0 0 1 235.77 131.58H0Z"/>
+<text class="t-strong" x="244.77" y="127.87">rule 93</text>
+</g>
+<line class="grid" x1="0" y1="144.58" x2="360" y2="144.58"/>
+<text class="t" x="0" y="160.16">Product bug</text>
+<text class="t-muted" x="72.94" y="159.5">70 jobs</text>
+<rect class="band" x="0" y="169.41" width="180.47" height="42" rx="2"/>
+<g data-tip="Product bug: posted comments right on 38 of 70" tabindex="0">
+<title>Product bug: posted comments right on 38 of 70</title>
+<rect class="hit" x="0" y="166.41" width="97.97" height="24"/>
+<path class="c-ctl" d="M0 173.41H93.97A4 4 0 0 1 97.97 177.41V185.41A4 4 0 0 1 93.97 189.41H0Z"/>
+<text class="t" x="102.97" y="185.7">38</text>
+</g>
+<g data-tip="Product bug: rule right on 58 of 70" tabindex="0">
+<title>Product bug: rule right on 58 of 70</title>
+<rect class="hit" x="0" y="190.41" width="149.53" height="24"/>
+<path class="c-focus" d="M0 191.41H145.53A4 4 0 0 1 149.53 195.41V203.41A4 4 0 0 1 145.53 207.41H0Z"/>
+<text class="t-strong" x="154.53" y="203.7">58</text>
+</g>
+<text class="t" x="0" y="235.99">Test issue</text>
+<text class="t-muted" x="59.47" y="235.33">16 jobs</text>
+<rect class="band" x="0" y="245.24" width="41.25" height="42" rx="2"/>
+<g data-tip="Test issue: posted comments right on 9 of 16" tabindex="0">
+<title>Test issue: posted comments right on 9 of 16</title>
+<rect class="hit" x="0" y="242.24" width="24" height="24"/>
+<path class="c-ctl" d="M0 249.24H19.2A4 4 0 0 1 23.2 253.24V261.24A4 4 0 0 1 19.2 265.24H0Z"/>
+<text class="t" x="28.2" y="261.53">9</text>
+</g>
+<g data-tip="Test issue: rule right on 13 of 16" tabindex="0">
+<title>Test issue: rule right on 13 of 16</title>
+<rect class="hit" x="0" y="266.24" width="33.52" height="24"/>
+<path class="c-focus" d="M0 267.24H29.52A4 4 0 0 1 33.52 271.24V279.24A4 4 0 0 1 29.52 283.24H0Z"/>
+<text class="t-strong" x="38.52" y="279.53">13</text>
+</g>
+<text class="t" x="0" y="311.82">Infrastructure</text>
+<text class="t-muted" x="81.17" y="311.16">42 jobs</text>
+<rect class="band" x="0" y="321.07" width="108.28" height="42" rx="2"/>
+<g data-tip="Infrastructure: posted comments right on 19 of 42" tabindex="0">
+<title>Infrastructure: posted comments right on 19 of 42</title>
+<rect class="hit" x="0" y="318.07" width="48.98" height="24"/>
+<path class="c-ctl" d="M0 325.07H44.98A4 4 0 0 1 48.98 329.07V337.07A4 4 0 0 1 44.98 341.07H0Z"/>
+<text class="t" x="53.98" y="337.36">19</text>
+</g>
+<g data-tip="Infrastructure: rule right on 22 of 42" tabindex="0">
+<title>Infrastructure: rule right on 22 of 42</title>
+<rect class="hit" x="0" y="342.07" width="56.72" height="24"/>
+<path class="c-focus" d="M0 343.07H52.72A4 4 0 0 1 56.72 347.07V355.07A4 4 0 0 1 52.72 359.07H0Z"/>
+<text class="t-strong" x="61.72" y="355.36">22</text>
+</g>
+<line class="axis" x1="0" y1="71.75" x2="0" y2="367.07"/>
+<line class="grid" x1="0" y1="375.07" x2="360" y2="375.07"/>
+<text class="t-strong" x="0" y="399.65">Three checks that do not depend on those labels</text>
+<text class="t-muted" x="0" y="414.82">The 14 are among the 128; the 35 are not, and the 50 only in part.</text>
+<text class="t" x="0" y="440.4">Gold jobs: label set by a person</text>
+<text class="t-muted" x="174.03" y="439.74">35 jobs</text>
+<rect class="band" x="0" y="449.65" width="90.23" height="42" rx="2"/>
+<g data-tip="Gold jobs: label set by a person: a replay of production right on 19 of 35 (product bug 13 of 19, test issue 6 of 16)" tabindex="0">
+<title>Gold jobs: label set by a person: a replay of production right on 19 of 35 (product bug 13 of 19, test issue 6 of 16)</title>
+<rect class="hit" x="0" y="446.65" width="48.98" height="24"/>
+<path class="c-ctl-soft" d="M0 453.65H44.98A4 4 0 0 1 48.98 457.65V465.65A4 4 0 0 1 44.98 469.65H0Z"/>
+<text class="t" x="53.98" y="465.94">replay of production 19</text>
+</g>
+<g data-tip="Gold jobs: label set by a person: rule right on 20 of 35 (product bug 14 of 19, test issue 6 of 16)" tabindex="0">
+<title>Gold jobs: label set by a person: rule right on 20 of 35 (product bug 14 of 19, test issue 6 of 16)</title>
+<rect class="hit" x="0" y="470.65" width="51.56" height="24"/>
+<path class="c-focus" d="M0 471.65H47.56A4 4 0 0 1 51.56 475.65V483.65A4 4 0 0 1 47.56 487.65H0Z"/>
+<text class="t-strong" x="56.56" y="483.94">20</text>
+</g>
+<text class="t" x="0" y="516.23">Passed on a rerun: said infrastructure</text>
+<text class="t-muted" x="208.42" y="515.57">50 jobs</text>
+<rect class="band" x="0" y="525.48" width="128.91" height="42" rx="2"/>
+<g data-tip="Passed on a rerun: posted comments said infrastructure on 20 of 50; both said it on 12" tabindex="0">
+<title>Passed on a rerun: posted comments said infrastructure on 20 of 50; both said it on 12</title>
+<rect class="hit" x="0" y="522.48" width="51.56" height="24"/>
+<path class="c-ctl" d="M0 529.48H47.56A4 4 0 0 1 51.56 533.48V541.48A4 4 0 0 1 47.56 545.48H0Z"/>
+<text class="t" x="56.56" y="541.77">20</text>
+</g>
+<g data-tip="Passed on a rerun: rule said infrastructure on 16 of 50; both said it on 12" tabindex="0">
+<title>Passed on a rerun: rule said infrastructure on 16 of 50; both said it on 12</title>
+<rect class="hit" x="0" y="546.48" width="41.25" height="24"/>
+<path class="c-focus" d="M0 547.48H37.25A4 4 0 0 1 41.25 551.48V559.48A4 4 0 0 1 37.25 563.48H0Z"/>
+<text class="t-strong" x="46.25" y="559.77">16</text>
+</g>
+<text class="t" x="0" y="592.06">Bug reference from a reviewer</text>
+<text class="t-muted" x="168.98" y="591.4">14 jobs</text>
+<rect class="band" x="0" y="601.31" width="36.09" height="42" rx="2"/>
+<g data-tip="Bug reference from a reviewer: posted comments right on 9 of 14 (all product bugs, 2 bugs in all)" tabindex="0">
+<title>Bug reference from a reviewer: posted comments right on 9 of 14 (all product bugs, 2 bugs in all)</title>
+<rect class="hit" x="0" y="598.31" width="24" height="24"/>
+<path class="c-ctl" d="M0 605.31H19.2A4 4 0 0 1 23.2 609.31V617.31A4 4 0 0 1 19.2 621.31H0Z"/>
+<text class="t" x="28.2" y="617.6">9</text>
+</g>
+<g data-tip="Bug reference from a reviewer: rule right on 10 of 14 (all product bugs, 2 bugs in all)" tabindex="0">
+<title>Bug reference from a reviewer: rule right on 10 of 14 (all product bugs, 2 bugs in all)</title>
+<rect class="hit" x="0" y="622.31" width="25.78" height="24"/>
+<path class="c-focus" d="M0 623.31H21.78A4 4 0 0 1 25.78 627.31V635.31A4 4 0 0 1 21.78 639.31H0Z"/>
+<text class="t-strong" x="30.78" y="635.6">10</text>
+</g>
+<line class="axis" x1="0" y1="427.82" x2="0" y2="647.31"/>
+</g>
+<g data-layer="source">
+<rect class="c-ctl" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">Posted comments</text>
+<rect class="c-focus" x="141.44" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="160.44" y="14.79">Rule</text>
+<text class="t-strong" x="0" y="43.58">The 128 jobs, by where the label came from</text>
+<text class="t-muted" x="0" y="58.75">
+<tspan x="0" dy="0">Every label here was set by a model. Label given by a pass that used</tspan>
+<tspan x="0" dy="15.6">hindsight: 108; without hindsight: 20.</tspan>
+</text>
+<text class="t-strong" x="0" y="99.93">All jobs</text>
+<text class="t-muted" x="46.38" y="99.27">128 jobs</text>
+<rect class="band" x="0" y="109.18" width="330" height="42" rx="2"/>
+<g data-tip="All jobs: posted comments right on 66 of 128" tabindex="0">
+<title>All jobs: posted comments right on 66 of 128</title>
+<rect class="hit" x="0" y="106.18" width="170.16" height="24"/>
+<path class="c-ctl" d="M0 113.18H166.16A4 4 0 0 1 170.16 117.18V125.18A4 4 0 0 1 166.16 129.18H0Z"/>
+<text class="t" x="175.16" y="125.47">posted comments 66</text>
+</g>
+<g data-tip="All jobs: rule right on 93 of 128" tabindex="0">
+<title>All jobs: rule right on 93 of 128</title>
+<rect class="hit" x="0" y="130.18" width="239.77" height="24"/>
+<path class="c-focus" d="M0 131.18H235.77A4 4 0 0 1 239.77 135.18V143.18A4 4 0 0 1 235.77 147.18H0Z"/>
+<text class="t-strong" x="244.77" y="143.47">rule 93</text>
+</g>
+<line class="grid" x1="0" y1="160.18" x2="360" y2="160.18"/>
+<text class="t" x="0" y="175.76">Label resting on a passing rerun</text>
+<text class="t-muted" x="178.37" y="175.1">23 jobs</text>
+<rect class="band" x="0" y="185.01" width="59.3" height="42" rx="2"/>
+<g data-tip="Label resting on a passing rerun: posted comments right on 16 of 23 (test issue 2 of 2, infrastructure 14 of 21)" tabindex="0">
+<title>Label resting on a passing rerun: posted comments right on 16 of 23 (test issue 2 of 2, infrastructure 14 of 21)</title>
+<rect class="hit" x="0" y="182.01" width="41.25" height="24"/>
+<path class="c-ctl" d="M0 189.01H37.25A4 4 0 0 1 41.25 193.01V201.01A4 4 0 0 1 37.25 205.01H0Z"/>
+<text class="t" x="46.25" y="201.3">16</text>
+</g>
+<g data-tip="Label resting on a passing rerun: rule right on 13 of 23 (test issue 2 of 2, infrastructure 11 of 21)" tabindex="0">
+<title>Label resting on a passing rerun: rule right on 13 of 23 (test issue 2 of 2, infrastructure 11 of 21)</title>
+<rect class="hit" x="0" y="206.01" width="33.52" height="24"/>
+<path class="c-focus" d="M0 207.01H29.52A4 4 0 0 1 33.52 211.01V219.01A4 4 0 0 1 29.52 223.01H0Z"/>
+<text class="t-strong" x="38.52" y="219.3">13</text>
+</g>
+<text class="t" x="0" y="251.59">Other hindsight label</text>
+<text class="t-muted" x="120.33" y="250.93">85 jobs</text>
+<rect class="band" x="0" y="260.84" width="219.14" height="42" rx="2"/>
+<g data-tip="Other hindsight label: posted comments right on 40 of 85 (product bug 32 of 60, test issue 5 of 10, infrastructure 3 of 15)" tabindex="0">
+<title>Other hindsight label: posted comments right on 40 of 85 (product bug 32 of 60, test issue 5 of 10, infrastructure 3 of 15)</title>
+<rect class="hit" x="0" y="257.84" width="103.12" height="24"/>
+<path class="c-ctl" d="M0 264.84H99.12A4 4 0 0 1 103.12 268.84V276.84A4 4 0 0 1 99.12 280.84H0Z"/>
+<text class="t" x="108.12" y="277.13">40</text>
+</g>
+<g data-tip="Other hindsight label: rule right on 68 of 85 (product bug 50 of 60, test issue 10 of 10, infrastructure 8 of 15)" tabindex="0">
+<title>Other hindsight label: rule right on 68 of 85 (product bug 50 of 60, test issue 10 of 10, infrastructure 8 of 15)</title>
+<rect class="hit" x="0" y="281.84" width="175.31" height="24"/>
+<path class="c-focus" d="M0 282.84H171.31A4 4 0 0 1 175.31 286.84V294.84A4 4 0 0 1 171.31 298.84H0Z"/>
+<text class="t-strong" x="180.31" y="295.13">68</text>
+</g>
+<text class="t" x="0" y="327.42">Label made without hindsight</text>
+<text class="t-muted" x="168.4" y="326.76">20 jobs</text>
+<rect class="band" x="0" y="336.67" width="51.56" height="42" rx="2"/>
+<g data-tip="Label made without hindsight: posted comments right on 10 of 20 (product bug 6 of 10, test issue 2 of 4, infrastructure 2 of 6)" tabindex="0">
+<title>Label made without hindsight: posted comments right on 10 of 20 (product bug 6 of 10, test issue 2 of 4, infrastructure 2 of 6)</title>
+<rect class="hit" x="0" y="333.67" width="25.78" height="24"/>
+<path class="c-ctl" d="M0 340.67H21.78A4 4 0 0 1 25.78 344.67V352.67A4 4 0 0 1 21.78 356.67H0Z"/>
+<text class="t" x="30.78" y="352.96">10</text>
+</g>
+<g data-tip="Label made without hindsight: rule right on 12 of 20 (product bug 8 of 10, test issue 1 of 4, infrastructure 3 of 6)" tabindex="0">
+<title>Label made without hindsight: rule right on 12 of 20 (product bug 8 of 10, test issue 1 of 4, infrastructure 3 of 6)</title>
+<rect class="hit" x="0" y="357.67" width="30.94" height="24"/>
+<path class="c-focus" d="M0 358.67H26.94A4 4 0 0 1 30.94 362.67V370.67A4 4 0 0 1 26.94 374.67H0Z"/>
+<text class="t-strong" x="35.94" y="370.96">12</text>
+</g>
+<line class="axis" x1="0" y1="87.35" x2="0" y2="382.67"/>
+<line class="grid" x1="0" y1="390.67" x2="360" y2="390.67"/>
+<text class="t-strong" x="0" y="415.25">Three checks that do not depend on those labels</text>
+<text class="t-muted" x="0" y="430.42">The 14 are among the 128; the 35 are not, and the 50 only in part.</text>
+<text class="t" x="0" y="456">Gold jobs: label set by a person</text>
+<text class="t-muted" x="174.03" y="455.34">35 jobs</text>
+<rect class="band" x="0" y="465.25" width="90.23" height="42" rx="2"/>
+<g data-tip="Gold jobs: label set by a person: a replay of production right on 19 of 35 (product bug 13 of 19, test issue 6 of 16)" tabindex="0">
+<title>Gold jobs: label set by a person: a replay of production right on 19 of 35 (product bug 13 of 19, test issue 6 of 16)</title>
+<rect class="hit" x="0" y="462.25" width="48.98" height="24"/>
+<path class="c-ctl-soft" d="M0 469.25H44.98A4 4 0 0 1 48.98 473.25V481.25A4 4 0 0 1 44.98 485.25H0Z"/>
+<text class="t" x="53.98" y="481.54">replay of production 19</text>
+</g>
+<g data-tip="Gold jobs: label set by a person: rule right on 20 of 35 (product bug 14 of 19, test issue 6 of 16)" tabindex="0">
+<title>Gold jobs: label set by a person: rule right on 20 of 35 (product bug 14 of 19, test issue 6 of 16)</title>
+<rect class="hit" x="0" y="486.25" width="51.56" height="24"/>
+<path class="c-focus" d="M0 487.25H47.56A4 4 0 0 1 51.56 491.25V499.25A4 4 0 0 1 47.56 503.25H0Z"/>
+<text class="t-strong" x="56.56" y="499.54">20</text>
+</g>
+<text class="t" x="0" y="531.83">Passed on a rerun: said infrastructure</text>
+<text class="t-muted" x="208.42" y="531.17">50 jobs</text>
+<rect class="band" x="0" y="541.08" width="128.91" height="42" rx="2"/>
+<g data-tip="Passed on a rerun: posted comments said infrastructure on 20 of 50; both said it on 12" tabindex="0">
+<title>Passed on a rerun: posted comments said infrastructure on 20 of 50; both said it on 12</title>
+<rect class="hit" x="0" y="538.08" width="51.56" height="24"/>
+<path class="c-ctl" d="M0 545.08H47.56A4 4 0 0 1 51.56 549.08V557.08A4 4 0 0 1 47.56 561.08H0Z"/>
+<text class="t" x="56.56" y="557.37">20</text>
+</g>
+<g data-tip="Passed on a rerun: rule said infrastructure on 16 of 50; both said it on 12" tabindex="0">
+<title>Passed on a rerun: rule said infrastructure on 16 of 50; both said it on 12</title>
+<rect class="hit" x="0" y="562.08" width="41.25" height="24"/>
+<path class="c-focus" d="M0 563.08H37.25A4 4 0 0 1 41.25 567.08V575.08A4 4 0 0 1 37.25 579.08H0Z"/>
+<text class="t-strong" x="46.25" y="575.37">16</text>
+</g>
+<text class="t" x="0" y="607.66">Bug reference from a reviewer</text>
+<text class="t-muted" x="168.98" y="607">14 jobs</text>
+<rect class="band" x="0" y="616.91" width="36.09" height="42" rx="2"/>
+<g data-tip="Bug reference from a reviewer: posted comments right on 9 of 14 (all product bugs, 2 bugs in all)" tabindex="0">
+<title>Bug reference from a reviewer: posted comments right on 9 of 14 (all product bugs, 2 bugs in all)</title>
+<rect class="hit" x="0" y="613.91" width="24" height="24"/>
+<path class="c-ctl" d="M0 620.91H19.2A4 4 0 0 1 23.2 624.91V632.91A4 4 0 0 1 19.2 636.91H0Z"/>
+<text class="t" x="28.2" y="633.2">9</text>
+</g>
+<g data-tip="Bug reference from a reviewer: rule right on 10 of 14 (all product bugs, 2 bugs in all)" tabindex="0">
+<title>Bug reference from a reviewer: rule right on 10 of 14 (all product bugs, 2 bugs in all)</title>
+<rect class="hit" x="0" y="637.91" width="25.78" height="24"/>
+<path class="c-focus" d="M0 638.91H21.78A4 4 0 0 1 25.78 642.91V650.91A4 4 0 0 1 21.78 654.91H0Z"/>
+<text class="t-strong" x="30.78" y="651.2">10</text>
+</g>
+<line class="axis" x1="0" y1="443.42" x2="0" y2="662.91"/>
+</g>
+</svg>

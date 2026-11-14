@@ -1,0 +1,41 @@
+baseURL = "https://plusky.github.io/"
+title = "Martin Pluskal"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+# Read directly by the fig shortcode; as content files Hugo would parse them as pages.
+ignoreFiles = ['\.table\.html$', 'data/fig/SCHEMA\.md$', 'data/facts_allow\.txt$']
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html"]
+  page = ["html"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = false
+  [markup.goldmark.parser.attribute]
+    block = true
+    title = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+
+# The SVG minifier rewrites path data even at precision 0; without it inline figures pass through as written.
+[minify]
+  disableSVG = true
+[minify.tdewolff.css]
+  precision = 0
+[minify.tdewolff.html]
+  keepWhitespace = false
+
+[params]
+  author = "Martin Pluskal"
+  licence = "Text and figures © Martin Pluskal"
+  description = "Notes by Martin Pluskal."

@@ -1,0 +1,322 @@
+{
+ "id": "confusion",
+ "scope": "o3",
+ "classes": [
+  "product",
+  "test",
+  "infra"
+ ],
+ "kinds": [
+  "script failure",
+  "needle failure",
+  "serial console",
+  "other"
+ ],
+ "gold_q8": {
+  "jobs": 95,
+  "right": 50,
+  "label_by_answer": [
+   [
+    44,
+    5,
+    0
+   ],
+   [
+    39,
+    6,
+    1
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ],
+  "by_kind": {
+   "script failure": {
+    "jobs": 35,
+    "right": 22,
+    "label_by_answer": [
+     [
+      22,
+      0,
+      0
+     ],
+     [
+      13,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "needle failure": {
+    "jobs": 44,
+    "right": 21,
+    "label_by_answer": [
+     [
+      15,
+      5,
+      0
+     ],
+     [
+      18,
+      6,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "serial console": {
+    "jobs": 10,
+    "right": 3,
+    "label_by_answer": [
+     [
+      3,
+      0,
+      0
+     ],
+     [
+      6,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "other": {
+    "jobs": 6,
+    "right": 4,
+    "label_by_answer": [
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  }
+ },
+ "gold_iq2m": {
+  "jobs": 95,
+  "right": 50,
+  "label_by_answer": [
+   [
+    35,
+    13,
+    1
+   ],
+   [
+    31,
+    15,
+    0
+   ],
+   [
+    0,
+    0,
+    0
+   ]
+  ],
+  "by_kind": {
+   "script failure": {
+    "jobs": 35,
+    "right": 25,
+    "label_by_answer": [
+     [
+      20,
+      2,
+      0
+     ],
+     [
+      8,
+      5,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "needle failure": {
+    "jobs": 44,
+    "right": 18,
+    "label_by_answer": [
+     [
+      9,
+      11,
+      0
+     ],
+     [
+      15,
+      9,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "serial console": {
+    "jobs": 10,
+    "right": 3,
+    "label_by_answer": [
+     [
+      2,
+      0,
+      1
+     ],
+     [
+      6,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "other": {
+    "jobs": 6,
+    "right": 4,
+    "label_by_answer": [
+     [
+      4,
+      0,
+      0
+     ],
+     [
+      2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  }
+ },
+ "silver_posted": {
+  "jobs": 285,
+  "right": 124,
+  "label_by_answer": [
+   [
+    47,
+    27,
+    13
+   ],
+   [
+    38,
+    44,
+    5
+   ],
+   [
+    33,
+    45,
+    33
+   ]
+  ],
+  "by_kind": {
+   "script failure": {
+    "jobs": 143,
+    "right": 54,
+    "label_by_answer": [
+     [
+      24,
+      19,
+      11
+     ],
+     [
+      24,
+      8,
+      4
+     ],
+     [
+      14,
+      17,
+      22
+     ]
+    ]
+   },
+   "needle failure": {
+    "jobs": 95,
+    "right": 51,
+    "label_by_answer": [
+     [
+      16,
+      7,
+      0
+     ],
+     [
+      10,
+      33,
+      0
+     ],
+     [
+      7,
+      20,
+      2
+     ]
+    ]
+   },
+   "other": {
+    "jobs": 47,
+    "right": 19,
+    "label_by_answer": [
+     [
+      7,
+      1,
+      2
+     ],
+     [
+      4,
+      3,
+      1
+     ],
+     [
+      12,
+      8,
+      9
+     ]
+    ]
+   }
+  }
+ },
+ "silver_unclear_jobs": 14,
+ "gold_jobs_by_kind": {
+  "script failure": 36,
+  "serial console": 11,
+  "needle failure": 45,
+  "other": 6
+ }
+}

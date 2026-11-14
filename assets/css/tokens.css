@@ -1,0 +1,65 @@
+/* Colour and type tokens. Every colour on the site is one of these. */
+:root {
+  color-scheme: light;
+  --bg: #fcfcfb;
+  --plate: #f4f3ef;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --ink-3: #898781;
+  --rule: #e1e0d9;
+  --axis: #c3c2b7;
+  --link: #1c5cab;
+  --c-product: #2a78d6;
+  --c-test: #eb6834;
+  --c-infra: #1baf7a;
+  --c-focus: #6250d6;
+  --c-ctl: #898781;
+  --c-ctl-soft: #a3a299;
+  --band: rgba(11, 11, 11, 0.06);
+  --on-fill: #ffffff;
+  --font-text: "Plain Serif", "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --font-ui: "Plain Sans", "Source Sans 3", "Source Sans Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #1a1a19;
+    --plate: #242422;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --ink-3: #898781;
+    --rule: #2c2c2a;
+    --axis: #383835;
+    --link: #86b6ef;
+    --c-product: #3987e5;
+    --c-test: #d95926;
+    --c-infra: #199e70;
+    --c-focus: #9085e9;
+    --c-ctl: #898781;
+    --c-ctl-soft: #6b6a64;
+    --band: rgba(255, 255, 255, 0.07);
+    --on-fill: #ffffff;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1a1a19;
+  --plate: #242422;
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --ink-3: #898781;
+  --rule: #2c2c2a;
+  --axis: #383835;
+  --link: #86b6ef;
+  --c-product: #3987e5;
+  --c-test: #d95926;
+  --c-infra: #199e70;
+  --c-focus: #9085e9;
+  --c-ctl: #898781;
+  --c-ctl-soft: #6b6a64;
+  --band: rgba(255, 255, 255, 0.07);
+  --on-fill: #ffffff;
+}

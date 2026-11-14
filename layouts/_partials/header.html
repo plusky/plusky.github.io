@@ -1,0 +1,22 @@
+{{- $current := . }}
+<header class="site-header grid">
+<div class="bar">
+<a class="site-name" href="{{ "" | relURL }}">{{ site.Title }}</a>
+<div class="site-nav">
+<nav aria-label="Site">
+<ul>
+{{- with site.GetPage "/posts" }}
+<li><a href="{{ .RelPermalink }}"{{ if eq $current . }} aria-current="page"{{ else if $current.IsDescendant . }} aria-current="true"{{ end }}>Posts</a></li>
+{{- end }}
+{{- with site.GetPage "/about" }}
+<li><a href="{{ .RelPermalink }}"{{ if eq $current . }} aria-current="page"{{ end }}>About</a></li>
+{{- end }}
+{{- with site.Home.OutputFormats.Get "rss" }}
+<li><a href="{{ .RelPermalink }}">RSS</a></li>
+{{- end }}
+</ul>
+</nav>
+<button type="button" class="theme-switch">Theme: system</button>
+</div>
+</div>
+</header>

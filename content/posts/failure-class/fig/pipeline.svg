@@ -1,0 +1,59 @@
+<svg viewBox="0 0 720 396" role="img" aria-labelledby="pipeline-t pipeline-d" xmlns="http://www.w3.org/2000/svg">
+<title id="pipeline-t">From a failed job to a comment</title>
+<desc id="pipeline-d">The model gives three answers per job, and only one of them is wired to anything.</desc>
+<g>
+<rect class="box" x="0" y="0" width="190" height="112" rx="6"/>
+<text class="t-strong" x="12" y="24">Test job fails</text>
+<text class="t" x="12" y="42">the job-done hook finds</text>
+<text class="t" x="12" y="60">no known issue and runs</text>
+<text class="t-mono" x="12" y="78">openqa-llm-investigate</text>
+<path class="arrow" d="M190 56L218 56"/>
+<path class="head" d="M224 56L217 59.5L217 52.5Z"/>
+<rect class="box" x="224" y="0" width="224" height="112" rx="6"/>
+<text class="t-strong" x="236" y="24">One prompt</text>
+<text class="t" x="236" y="42">failure analysis of the log</text>
+<text class="t" x="236" y="60">earlier reviews of the module</text>
+<text class="t" x="236" y="78">settings diff to last good job</text>
+<text class="t" x="236" y="96">test commits since then</text>
+<path class="arrow" d="M448 56L476 56"/>
+<path class="head" d="M482 56L475 59.5L475 52.5Z"/>
+<rect class="box" x="482" y="0" width="238" height="112" rx="6"/>
+<text class="t-strong" x="494" y="24">llama.cpp server</text>
+<text class="t-muted" x="494" y="42">Gemma 4 E4B, 3 hosts, nginx</text>
+<text class="t-strong" x="494" y="66">Q1</text>
+<text class="t" x="522" y="66">analysis per module</text>
+<text class="t-strong" x="494" y="84">Q2</text>
+<text class="t" x="522" y="84">summary, at most 2 sentences</text>
+<text class="t-strong" x="494" y="102">Q3</text>
+<text class="t" x="522" y="102">verdict, with job statistics</text>
+<path class="arrow" d="M601 112L601 138L150 138L150 154"/>
+<path class="head" d="M150 160L146.5 153L153.5 153Z"/>
+<text class="t-muted" x="378" y="131" text-anchor="middle">the script posts the replies</text>
+</g>
+<g>
+<rect class="box" x="0" y="160" width="300" height="232" rx="6"/>
+<text class="t-strong" x="12" y="184">Comment on the job</text>
+<text class="t-muted" x="12" y="202">ends with three lines:</text>
+<text class="t-mono" x="12" y="229">Classification:</text>
+<text class="t-muted" x="12" y="247">Product bug | Test issue |</text>
+<text class="t-muted" x="12" y="263">Infrastructure problem</text>
+<rect class="box" x="400" y="218" width="320" height="50" rx="6"/>
+<text class="t-strong" x="412" y="241">People only</text>
+<text class="t" x="412" y="259">reviewed 2.2% of commented jobs</text>
+<path class="arrow" d="M300 243L394 243"/>
+<path class="head" d="M400 243L393 246.5L393 239.5Z"/>
+<text class="t-muted" x="350" y="236" text-anchor="middle">read</text>
+<text class="t-mono" x="12" y="306">BISECT: YES | NO</text>
+<rect class="box-focus" x="400" y="280" width="320" height="68" rx="6"/>
+<text class="t-strong" x="412" y="303">openqa-investigate</text>
+<text class="t" x="412" y="321">retry, last good tests and build,</text>
+<text class="t" x="412" y="339">then openqa-trigger-bisect-jobs</text>
+<path class="s-focus" d="M300 302L393 302"/>
+<path class="c-focus" d="M400 302L392 306L392 298Z"/>
+<text class="t-strong" x="350" y="294" text-anchor="middle">YES</text>
+<text class="t-mono" x="12" y="376">Restart: YES | NO</text>
+<path class="arrow-off" d="M300 372L390 372"/>
+<path class="head-off" d="M396 372L389 375.5L389 368.5Z"/>
+<text class="t" x="404" y="376">not connected: nothing acts on it</text>
+</g>
+</svg>

@@ -1,0 +1,127 @@
+{
+ "id": "reruns",
+ "scope": "o3",
+ "silver_jobs": 299,
+ "first_failures": 188,
+ "not_first_failures": 111,
+ "groups": {
+  "passed_later_same_build": {
+   "jobs": 67,
+   "bisect_yes": 17,
+   "bisect_no_model": 25,
+   "bisect_no_same_module_rule": 25,
+   "bisect_no_streak_rule": 0,
+   "restart_yes": 28,
+   "restart_no": 39,
+   "labels": {
+    "product": 0,
+    "test": 11,
+    "infra": 56,
+    "unclear": 0
+   },
+   "posted": {
+    "product": 12,
+    "test": 35,
+    "infra": 20
+   }
+  },
+  "rerun_not_passed": {
+   "jobs": 44,
+   "bisect_yes": 5,
+   "bisect_no_model": 3,
+   "bisect_no_same_module_rule": 36,
+   "bisect_no_streak_rule": 0,
+   "restart_yes": 8,
+   "restart_no": 36,
+   "labels": {
+    "product": 13,
+    "test": 14,
+    "infra": 17,
+    "unclear": 0
+   },
+   "posted": {
+    "product": 23,
+    "test": 16,
+    "infra": 5
+   }
+  },
+  "not_rerun": {
+   "jobs": 77,
+   "bisect_yes": 15,
+   "bisect_no_model": 10,
+   "bisect_no_same_module_rule": 52,
+   "bisect_no_streak_rule": 0,
+   "restart_yes": 20,
+   "restart_no": 57,
+   "labels": {
+    "product": 33,
+    "test": 19,
+    "infra": 19,
+    "unclear": 6
+   },
+   "posted": {
+    "product": 29,
+    "test": 36,
+    "infra": 12
+   }
+  }
+ },
+ "all": {
+  "bisect_yes": 46,
+  "bisect_no_model": 46,
+  "bisect_no_same_module_rule": 180,
+  "bisect_no_streak_rule": 27,
+  "restart_yes": 62,
+  "restart_no": 237
+ },
+ "who_started": {
+  "no comment says who": 50,
+  "after a person's mass-restart comment": 11,
+  "openQA RETRY setting": 2,
+  "new run in the same build": 4,
+  "investigation hook": 0
+ },
+ "delay_median_min": 54,
+ "delay_measured": "minutes from the end of the failed job to the start of its passing rerun (no creation time is cached)",
+ "retry_rules": [
+  {
+   "rule": "today's hook (investigation retry on BISECT: YES)",
+   "retries": 35,
+   "covers": 8
+  },
+  {
+   "rule": "Restart: YES",
+   "retries": 62,
+   "covers": 28
+  },
+  {
+   "rule": "Restart: YES or BISECT: YES",
+   "retries": 105,
+   "covers": 44
+  },
+  {
+   "rule": "every first failure",
+   "retries": 188,
+   "covers": 67
+  }
+ ],
+ "hook_rule_retry_passed": 5,
+ "comments_per_day": 154,
+ "strict_note": {
+  "records_passed": 68,
+  "forced_pass": 1,
+  "covers_with_68": [
+   8,
+   28,
+   45,
+   68
+  ]
+ },
+ "hook_investigations": {
+  "jobs": 35,
+  "clones": 122,
+  "retry_passed": 14,
+  "retry_softfailed": 7
+ },
+ "first_failures_per_day": 97
+}

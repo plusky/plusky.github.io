@@ -1,0 +1,260 @@
+/* One grid with named lines: text (default), wide (text plus 7rem a side), full. */
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1rem, 1fr)
+    [wide-start] minmax(0, 7rem)
+    [text-start] min(var(--measure), 100% - 2rem) [text-end]
+    minmax(0, 7rem) [wide-end]
+    minmax(1rem, 1fr) [full-end];
+}
+.grid > * { grid-column: text; min-width: 0; }
+.grid > .fig--wide, .grid > .bar { grid-column: wide; }
+/* A text figure may reach 720px, the width of its wide drawing, centred on the text column. */
+.grid > .fig--text { grid-column: wide; justify-self: center; width: min(100%, 720px); }
+.grid > .fig--full { grid-column: full; padding-inline: 1rem; }
+
+/* Site header and footer. */
+.site-header { padding-block: 1.25rem; border-bottom: 1px solid var(--rule); }
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.9375rem;
+}
+.site-name { color: var(--ink); font-weight: 600; text-decoration: none; letter-spacing: 0.01em; }
+.site-nav { display: flex; align-items: baseline; gap: 1.25rem; }
+.site-nav ul { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; }
+.site-nav a { color: var(--ink-2); text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current] { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; }
+.theme-switch { color: var(--ink-2); padding-inline: 0.25rem; }
+.theme-switch:not(.is-ready) { visibility: hidden; }
+.theme-switch:hover { color: var(--ink); }
+
+.site-footer {
+  margin-top: 5rem;
+  padding-block: 1.5rem 2.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+.site-footer > p { grid-column: wide; margin: 0; }
+
+main { display: block; }
+
+/* Article head. */
+.post-head { padding-top: clamp(2rem, 6vw, 4.5rem); }
+.post-head > * { margin: 0; }
+.standfirst {
+  margin-top: 0.9rem;
+  font-size: 1.2em;
+  line-height: 1.45;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+.post-meta { margin-top: 1rem; font-size: 0.875rem; color: var(--ink-2); }
+.post-meta span + span::before { content: "·"; padding-inline: 0.5em; }
+.page-head { padding-top: clamp(2rem, 6vw, 4.5rem); }
+
+/* Table of contents: a disclosure under the standfirst, the left margin on wide screens. */
+.toc { font-size: 0.875rem; line-height: 1.4; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc ul ul { padding-left: 0.9rem; }
+.toc li { margin-top: 0.35rem; }
+.toc a { color: var(--ink-2); text-decoration: none; display: inline-block; }
+.toc a:hover { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; }
+.toc a[aria-current] { color: var(--ink); font-weight: 600; }
+.toc-inline { margin-top: 1.5rem; border-block: 1px solid var(--rule); padding-block: 0.6rem; }
+.toc-inline summary { cursor: pointer; color: var(--ink-2); }
+.toc-inline summary:hover { color: var(--ink); }
+.toc-inline nav { padding-block: 0.25rem 0.5rem; }
+.toc-title { margin: 0 0 0.5rem; font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.toc-side { display: none; }
+
+.post-body { margin-top: 2.5rem; }
+.post-body > .prose { grid-column: full; display: grid; grid-template-columns: subgrid; }
+.post-body > .prose > * { grid-column: text; min-width: 0; }
+.post-body > .prose > .fig--wide { grid-column: wide; }
+.post-body > .prose > .fig--text { grid-column: wide; justify-self: center; width: min(100%, 720px); }
+/* Block code starts at the text column and grows to the right for long lines. */
+.post-body > .prose > .highlight, .post-body > .prose > pre {
+  grid-column: text-start / full-end;
+  justify-self: start;
+  width: max-content;
+  min-width: min(var(--measure), 100% - 1rem);
+  max-width: calc(100% - 1rem);
+}
+.post-body > .prose > .fig--full { grid-column: full; padding-inline: 1rem; }
+
+@media (min-width: 1280px) {
+  .toc-inline { display: none; }
+  .toc-side {
+    display: block;
+    grid-column: full-start / wide-start;
+    grid-row: 1;
+    justify-self: end;
+    width: min(15rem, 100% - 4rem);
+    margin-right: 1.5rem;
+  }
+  .toc-side > nav { position: sticky; top: 2rem; max-height: calc(100vh - 4rem); overflow-y: auto; }
+  .post-body > .prose { grid-row: 1; }
+}
+
+/* Sidenotes: below 1280px a toggle that opens the note under the line;
+   from 1280px the note floats in the right margin. */
+.sn-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.sn-ref { cursor: pointer; }
+.sn-toggle:focus-visible + .sn-ref { outline: 2px solid var(--link); outline-offset: 1px; }
+.sn { display: none; }
+.sn-toggle:checked + .sn-ref + .sn {
+  display: block;
+  margin: 0.6rem 0 0.8rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--axis);
+}
+
+@media (min-width: 1280px) {
+  .prose > * { position: relative; }
+  .sn-toggle { display: none; }
+  .sn-ref { cursor: auto; }
+  /* Absolute, not floated: a float would stretch its paragraph, which is a grid item. */
+  .sn, .sn-toggle:checked + .sn-ref + .sn {
+    display: inline;
+    position: absolute;
+    right: calc(-1 * min(16rem, (100vw - var(--measure)) / 2 - 4rem) - 2.5rem);
+    width: min(16rem, (100vw - var(--measure)) / 2 - 4rem);
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+/* Larger hit areas for touch, without moving the text. */
+@media (max-width: 1279.98px) {
+  .site-nav a, .theme-switch, .toc-inline summary, .fig-data summary, .sn-ref, .footnote-ref { position: relative; }
+  .site-nav a::before, .theme-switch::before, .toc-inline summary::before, .fig-data summary::before {
+    content: "";
+    position: absolute;
+    inset: -0.65rem -0.3rem;
+  }
+  .sn-ref::before, .footnote-ref::before { content: ""; position: absolute; inset: -0.75rem; }
+  .footnote-backref::after { display: inline-block; padding: 0.75rem 0.6rem; margin: -0.75rem -0.6rem; }
+  .toc-inline a { padding-block: 0.3rem; }
+}
+
+/* Figures: a size container; the narrow drawing replaces the wide one below 610px,
+   where the wide one would be drawn under 85% of its size. */
+.fig { margin-inline: 0; container-type: inline-size; }
+.prose > .fig { margin-block: 2.25em; }
+/* The prose is a grid, so margins do not collapse. */
+.prose > .fig + * { margin-top: 0; }
+.fig-narrow { display: none; }
+.fig--has-narrow .fig-wide { display: none; }
+.fig--has-narrow .fig-narrow { display: block; }
+@container (max-width: 609.98px) {
+  .fig.fig--has-narrow > * { max-width: 460px; margin-inline: auto; }
+}
+@container (min-width: 610px) {
+  .fig--has-narrow .fig-wide { display: block; }
+  .fig--has-narrow .fig-narrow { display: none; }
+}
+.fig figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.fig-num { color: var(--ink); font-weight: 600; }
+.fig-toggles { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-bottom: 0.75rem; font-size: 0.875rem; }
+.fig-toggles button {
+  color: var(--ink-2);
+  padding: 0.15rem 0;
+  border-bottom: 1px solid transparent;
+}
+.fig-toggles button:hover { color: var(--ink); }
+.fig-toggles button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.fig-data { margin-top: 0.75rem; font-size: 0.875rem; }
+.fig--full > .fig-toggles, .fig--full > figcaption, .fig--full > .fig-data { max-width: var(--measure); margin-inline: auto; }
+.fig-data summary { cursor: pointer; color: var(--ink-2); width: max-content; }
+.fig-data summary:hover { color: var(--ink); }
+.fig-table { overflow-x: auto; margin-top: 0.5rem; }
+.fig-table table { font-size: 1em; }
+.fig [data-tip]:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+
+.tip {
+  position: fixed;
+  z-index: 20;
+  max-width: min(18rem, 100vw - 2rem);
+  padding: 0.35rem 0.55rem;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  font-variant-numeric: lining-nums tabular-nums;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Post lists. */
+.intro > * { margin: 0; }
+.intro > * + * { margin-top: 1em; }
+.list-head { margin-top: 3rem; }
+.post-list { list-style: none; margin: 1rem 0 0; padding: 0; }
+.post-list li { padding-block: 1.25rem; border-top: 1px solid var(--rule); }
+.post-list li:last-child { border-bottom: 1px solid var(--rule); }
+.post-list h2, .post-list h3 { font-size: 1.2em; }
+.post-list h2 a, .post-list h3 a { color: var(--ink); text-decoration: none; }
+.post-list h2 a:hover, .post-list h3 a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.post-list p { margin: 0.35rem 0 0; color: var(--ink-2); }
+.post-list time { display: block; margin-bottom: 0.25rem; font-size: 0.875rem; color: var(--ink-2); }
+
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    color-scheme: light;
+    --bg: #ffffff;
+    --plate: #f4f3ef;
+    --ink: #000000;
+    --ink-2: #3a3936;
+    --ink-3: #6b6963;
+    --rule: #d0cfc8;
+    --axis: #a9a89f;
+    --link: #000000;
+    --c-product: #2a78d6;
+    --c-test: #eb6834;
+    --c-infra: #1baf7a;
+    --c-focus: #6250d6;
+    --c-ctl: #898781;
+    --c-ctl-soft: #c3c2b7;
+    --band: rgba(0, 0, 0, 0.06);
+    --code-comment: #6b6963;
+    --code-keyword: #7b3a96;
+    --code-string: #2c6a2e;
+    --code-number: #a1440c;
+    --code-name: #1c5cab;
+    --code-builtin: #7a5a00;
+    --code-deleted: #a8322c;
+  }
+  body { font-size: 11pt; }
+  .site-header, .site-footer, .skip, .toc, .fig-toggles, .fig-data summary, .sn-toggle, .theme-switch, .tip { display: none !important; }
+  .grid { display: block; }
+  .post-body > .prose { display: block; }
+  .sn, .sn-toggle:checked + .sn-ref + .sn {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 0.4em 0;
+    padding-left: 0.8em;
+    border-left: 1px solid var(--axis);
+  }
+  .fig-data { display: none; }
+  pre { white-space: pre-wrap; }
+  .fig, pre, table, blockquote { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+}
+
+/* A full-width figure is not blown up past a readable size; flags stay on one line. */
+.fig--full > .fig-wide svg { max-width: 66rem; margin-inline: auto; }
+.prose :not(pre) > code { white-space: nowrap; }

@@ -1,0 +1,187 @@
+{
+ "id": "detectable",
+ "scope": "o3",
+ "z": 2.8,
+ "spread": 0.55,
+ "marks": [
+  {
+   "tickets": 27,
+   "points": 30,
+   "what": "gold o3 today"
+  },
+  {
+   "tickets": 105,
+   "points": 15,
+   "what": "a label set with about 105 tickets"
+  },
+  {
+   "tickets": 235,
+   "points": 10,
+   "what": "235 tickets"
+  }
+ ],
+ "observed": {
+  "tickets": 26,
+  "spread": 0.42,
+  "points": 23,
+  "what": "two quantisations of Gemma compared on the gold tickets"
+ },
+ "curve": [
+  {
+   "tickets": 10,
+   "points": 48.7
+  },
+  {
+   "tickets": 15,
+   "points": 39.8
+  },
+  {
+   "tickets": 20,
+   "points": 34.4
+  },
+  {
+   "tickets": 25,
+   "points": 30.8
+  },
+  {
+   "tickets": 30,
+   "points": 28.1
+  },
+  {
+   "tickets": 35,
+   "points": 26.0
+  },
+  {
+   "tickets": 40,
+   "points": 24.3
+  },
+  {
+   "tickets": 45,
+   "points": 23.0
+  },
+  {
+   "tickets": 50,
+   "points": 21.8
+  },
+  {
+   "tickets": 55,
+   "points": 20.8
+  },
+  {
+   "tickets": 60,
+   "points": 19.9
+  },
+  {
+   "tickets": 65,
+   "points": 19.1
+  },
+  {
+   "tickets": 70,
+   "points": 18.4
+  },
+  {
+   "tickets": 75,
+   "points": 17.8
+  },
+  {
+   "tickets": 80,
+   "points": 17.2
+  },
+  {
+   "tickets": 85,
+   "points": 16.7
+  },
+  {
+   "tickets": 90,
+   "points": 16.2
+  },
+  {
+   "tickets": 95,
+   "points": 15.8
+  },
+  {
+   "tickets": 100,
+   "points": 15.4
+  },
+  {
+   "tickets": 110,
+   "points": 14.7
+  },
+  {
+   "tickets": 120,
+   "points": 14.1
+  },
+  {
+   "tickets": 130,
+   "points": 13.5
+  },
+  {
+   "tickets": 140,
+   "points": 13.0
+  },
+  {
+   "tickets": 150,
+   "points": 12.6
+  },
+  {
+   "tickets": 160,
+   "points": 12.2
+  },
+  {
+   "tickets": 170,
+   "points": 11.8
+  },
+  {
+   "tickets": 180,
+   "points": 11.5
+  },
+  {
+   "tickets": 190,
+   "points": 11.2
+  },
+  {
+   "tickets": 200,
+   "points": 10.9
+  },
+  {
+   "tickets": 210,
+   "points": 10.6
+  },
+  {
+   "tickets": 220,
+   "points": 10.4
+  },
+  {
+   "tickets": 230,
+   "points": 10.2
+  },
+  {
+   "tickets": 240,
+   "points": 9.9
+  },
+  {
+   "tickets": 250,
+   "points": 9.7
+  },
+  {
+   "tickets": 260,
+   "points": 9.6
+  },
+  {
+   "tickets": 270,
+   "points": 9.4
+  },
+  {
+   "tickets": 280,
+   "points": 9.2
+  },
+  {
+   "tickets": 290,
+   "points": 9.0
+  },
+  {
+   "tickets": 300,
+   "points": 8.9
+  }
+ ]
+}

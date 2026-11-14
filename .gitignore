@@ -1,0 +1,10 @@
+/public/
+/resources/
+/.hugo_build.lock
+/.bin/
+/.cache/
+/.preview/
+__pycache__/
+*.pyc
+node_modules/
+/.ruff_cache/

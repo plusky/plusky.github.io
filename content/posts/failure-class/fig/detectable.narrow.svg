@@ -1,0 +1,60 @@
+<svg viewBox="0 0 360 287" role="img" aria-labelledby="detectable-n-t detectable-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="detectable-n-t">Smallest detectable difference against the number of labelled tickets</title>
+<desc id="detectable-n-d">With 27 labelled tickets a paired comparison can show a difference of about 30 points and nothing smaller; 15 points would need 105 tickets, 10 points 235.</desc>
+<g>
+<path class="band" d="M30.9 250L30.9 35.72L36.38 74.88L41.87 98.64L47.36 114.48L52.84 126.36L58.33 135.6L63.81 143.08L69.3 148.8L74.78 154.08L80.27 158.48L85.75 162.44L91.24 165.96L96.72 169.04L102.21 171.68L107.69 174.32L113.18 176.52L118.67 178.72L124.15 180.48L129.64 182.24L140.61 185.32L151.58 187.96L162.55 190.6L173.52 192.8L184.49 194.56L195.46 196.32L206.43 198.08L217.4 199.4L228.37 200.72L239.35 202.04L250.32 203.36L261.29 204.24L272.26 205.12L283.23 206.44L294.2 207.32L305.17 207.76L316.14 208.64L327.11 209.52L338.08 210.4L349.05 210.84L349.05 250Z"/>
+<line class="grid" x1="19.93" y1="250" x2="349.05" y2="250"/>
+<text class="t-muted" x="13.93" y="253.96" text-anchor="end">0</text>
+<line class="grid" x1="19.93" y1="206" x2="349.05" y2="206"/>
+<text class="t-muted" x="13.93" y="209.96" text-anchor="end">10</text>
+<line class="grid" x1="19.93" y1="162" x2="349.05" y2="162"/>
+<text class="t-muted" x="13.93" y="165.96" text-anchor="end">20</text>
+<line class="grid" x1="19.93" y1="118" x2="349.05" y2="118"/>
+<text class="t-muted" x="13.93" y="121.96" text-anchor="end">30</text>
+<line class="grid" x1="19.93" y1="74" x2="349.05" y2="74"/>
+<text class="t-muted" x="13.93" y="77.96" text-anchor="end">40</text>
+<line class="grid" x1="19.93" y1="30" x2="349.05" y2="30"/>
+<text class="t-muted" x="13.93" y="33.96" text-anchor="end">50</text>
+<text class="t-muted" x="2" y="13">smallest detectable difference, points</text>
+<line class="axis" x1="19.93" y1="250" x2="349.05" y2="250"/>
+<text class="t-muted" x="19.93" y="263.92" text-anchor="middle">0</text>
+<text class="t-muted" x="129.64" y="263.92" text-anchor="middle">100</text>
+<text class="t-muted" x="239.35" y="263.92" text-anchor="middle">200</text>
+<text class="t-muted" x="349.05" y="263.92" text-anchor="middle">300</text>
+<text class="t-muted" x="349.05" y="279.84" text-anchor="end">labelled tickets</text>
+</g>
+<g>
+<path class="s-focus" d="M30.9 35.72L36.38 74.88L41.87 98.64L47.36 114.48L52.84 126.36L58.33 135.6L63.81 143.08L69.3 148.8L74.78 154.08L80.27 158.48L85.75 162.44L91.24 165.96L96.72 169.04L102.21 171.68L107.69 174.32L113.18 176.52L118.67 178.72L124.15 180.48L129.64 182.24L140.61 185.32L151.58 187.96L162.55 190.6L173.52 192.8L184.49 194.56L195.46 196.32L206.43 198.08L217.4 199.4L228.37 200.72L239.35 202.04L250.32 203.36L261.29 204.24L272.26 205.12L283.23 206.44L294.2 207.32L305.17 207.76L316.14 208.64L327.11 209.52L338.08 210.4L349.05 210.84"/>
+<g>
+<text class="t-strong" x="60.55" y="86.75">27 tickets: what I had</text>
+<text class="t" x="60.55" y="103.75">30 points</text>
+</g>
+<g data-tip="27 tickets: smallest difference that shows is about 30 points (what I had)" tabindex="0">
+<title>27 tickets: smallest difference that shows is about 30 points (what I had)</title>
+<rect class="hit" x="37.55" y="106" width="24" height="24"/>
+<circle class="c-focus ring" cx="49.55" cy="118" r="5"/>
+</g>
+<g>
+<text class="t-strong" x="146.12" y="152.75">105 tickets</text>
+<text class="t" x="146.12" y="169.75">15 points</text>
+</g>
+<g data-tip="105 tickets: smallest difference that shows is about 15 points" tabindex="0">
+<title>105 tickets: smallest difference that shows is about 15 points</title>
+<rect class="hit" x="123.12" y="172" width="24" height="24"/>
+<circle class="c-focus ring" cx="135.12" cy="184" r="5"/>
+</g>
+<g>
+<text class="t-strong" x="277.74" y="170.75" text-anchor="middle">235 tickets</text>
+<text class="t" x="277.74" y="187.75" text-anchor="middle">10 points</text>
+</g>
+<g data-tip="235 tickets: smallest difference that shows is about 10 points" tabindex="0">
+<title>235 tickets: smallest difference that shows is about 10 points</title>
+<rect class="hit" x="265.74" y="194" width="24" height="24"/>
+<circle class="c-focus ring" cx="277.74" cy="206" r="5"/>
+</g>
+<text class="t" x="52.84" y="219.85">
+<tspan x="52.84" dy="0">too small to show with that</tspan>
+<tspan x="52.84" dy="16.9">many tickets</tspan>
+</text>
+</g>
+</svg>

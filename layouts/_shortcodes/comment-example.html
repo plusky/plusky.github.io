@@ -1,0 +1,9 @@
+{{- /* The text of one posted comment, from data/fig/comment-example.json. */ -}}
+{{- $d := index hugo.Data.fig "comment-example" -}}
+{{- if not $d -}}
+  {{- errorf "%s: data/fig/comment-example.json is missing" .Position -}}
+{{- end -}}
+<figure class="comment-example">
+<div class="comment-text">{{ range split $d.text "\n\n" }}<p>{{ . }}</p>{{ end }}</div>
+<figcaption>{{ with .Get "caption" }}{{ . | $.Page.RenderString }}{{ else }}A comment as the model posted it on {{ (time.AsTime $d.created) | time.Format "2 January 2006" }}, shown as its Markdown source.{{ end }}</figcaption>
+</figure>

@@ -1,0 +1,3 @@
+{{- $id := printf "sn-%d" .Ordinal -}}
+<input type="checkbox" class="sn-toggle" id="{{ $id }}" aria-label="Show sidenote"><label for="{{ $id }}" class="sn-ref"></label><span class="sn"><span class="sn-body">{{ .Inner | .Page.RenderString }}</span></span>
+{{- /**/ -}}

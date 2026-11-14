@@ -1,0 +1,315 @@
+<svg viewBox="0 0 360 733" role="img" aria-labelledby="labels-n-t labels-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="labels-n-t">Where the class labels come from: people, the gold set and the silver set</title>
+<desc id="labels-n-d">People labelled 90 of 1,316 failed jobs with a bug reference, and none of the 83 with a public ticket is infrastructure; the 98 gold jobs come from 27 tickets, one of them 18 jobs; all 111 infrastructure labels come from the 299-job silver set labelled by a frontier model with hindsight.</desc>
+<g>
+<rect class="c-product" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">product bug</text>
+<rect class="c-test" x="109.79" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="128.79" y="14.79">test issue</text>
+<rect class="c-infra" x="200.69" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="219.69" y="14.79">infrastructure</text>
+<rect class="c-ctl-soft" x="3" y="26.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="35.79">class unknown</text>
+<rect class="c-ctl" x="123.52" y="26.5" width="10" height="10" rx="2"/>
+<text class="t" x="142.52" y="35.79">unclear or another team</text>
+<rect class="s-ctl" x="4" y="48.5" width="8" height="8" rx="1"/>
+<text class="t" x="22" y="56.79">ticket that does not map cleanly</text>
+<text class="t-big" x="0" y="91.52">90</text>
+<text class="t-strong" x="30.57" y="91.52">
+<tspan x="30.57" dy="0">of 1,316 failed jobs with a bug reference in 42 days were</tspan>
+<tspan x="30.57" dy="16.9">labelled by a person</tspan>
+</text>
+<g data-tip="Set by a bot or carried over: 1,226 jobs" tabindex="0">
+<title>Set by a bot or carried over: 1,226 jobs</title>
+<rect class="hit" x="0" y="130.42" width="333.52" height="28"/>
+<rect class="band" x="0" y="130.42" width="333.52" height="28" rx="4"/>
+</g>
+<text class="t-strong" x="6" y="148.71">1,226</text>
+<text class="t" x="41.25" y="148.71">set by a bot or carried over</text>
+<g data-tip="Set by a person: 90 jobs" tabindex="0">
+<title>Set by a person: 90 jobs</title>
+<rect class="hit" x="335.52" y="130.42" width="24.48" height="28"/>
+<rect class="c-product" x="335.52" y="130.42" width="8.42" height="28" rx="4"/>
+<rect class="c-test" x="345.94" y="130.42" width="8.21" height="28" rx="4"/>
+<rect class="c-ctl-soft" x="356.15" y="130.42" width="1.44" height="28" rx="0.72"/>
+<rect class="c-ctl" x="359.59" y="130.42" width="0.41" height="28" rx="0.21"/>
+</g>
+<line class="leader" x1="335.52" y1="159.42" x2="0" y2="196.42"/>
+<line class="leader" x1="360" y1="159.42" x2="360" y2="196.42"/>
+<g data-tip="Set by a person, product bug: 41 jobs" tabindex="0">
+<title>Set by a person, product bug: 41 jobs</title>
+<rect class="hit" x="0" y="198.42" width="161.27" height="28"/>
+<rect class="c-product" x="0" y="198.42" width="161.27" height="28" rx="4"/>
+</g>
+<text class="t-on" x="6" y="216.38">41</text>
+<g data-tip="Set by a person, test issue: 40 jobs" tabindex="0">
+<title>Set by a person, test issue: 40 jobs</title>
+<rect class="hit" x="163.27" y="198.42" width="157.33" height="28"/>
+<rect class="c-test" x="163.27" y="198.42" width="157.33" height="28" rx="4"/>
+</g>
+<text class="t-on" x="169.27" y="216.38">40</text>
+<g data-tip="Set by a person, ticket that is not public, class unknown: 7 jobs" tabindex="0">
+<title>Set by a person, ticket that is not public, class unknown: 7 jobs</title>
+<rect class="hit" x="322.6" y="198.42" width="27.53" height="28"/>
+<rect class="c-ctl-soft" x="322.6" y="198.42" width="27.53" height="28" rx="4"/>
+</g>
+<g data-tip="Set by a person, ticket of another team: 2 jobs" tabindex="0">
+<title>Set by a person, ticket of another team: 2 jobs</title>
+<rect class="hit" x="336" y="198.42" width="24" height="28"/>
+<rect class="c-ctl" x="352.13" y="198.42" width="7.87" height="28" rx="4"/>
+</g>
+<text class="t-strong" x="0" y="243">None of the 83 with a public ticket is infrastructure.</text>
+<text class="t-muted" x="0" y="259.34">
+<tspan x="0" dy="0">7 point to a ticket that is not public, so their class is unknown; 2 point to</tspan>
+<tspan x="0" dy="15.6">another team's ticket.</tspan>
+</text>
+<line class="grid" x1="0" y1="295.42" x2="360" y2="295.42"/>
+<text class="t-big" x="0" y="325.94">98</text>
+<text class="t-strong" x="30.57" y="325.94">jobs in the gold set, from 27 tickets</text>
+<g data-tip="Ticket 1 of 27: 18 jobs, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 1 of 27: 18 jobs, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="0" y="361.94" width="24" height="178"/>
+<rect class="s-ctl" x="1" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="522.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="512.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="502.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="492.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="482.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="472.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="462.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="452.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="442.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="432.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="422.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="412.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="402.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="392.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="382.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="372.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="1" y="362.94" width="6" height="6" rx="1"/>
+</g>
+<text class="t" x="6.46" y="353.69" text-anchor="middle">18</text>
+<g data-tip="Ticket 2 of 27: 8 jobs, product bug" tabindex="0">
+<title>Ticket 2 of 27: 8 jobs, product bug</title>
+<rect class="hit" x="5.54" y="461.94" width="24" height="78"/>
+<rect class="c-product" x="13.54" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="501.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="491.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="481.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="471.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="13.54" y="461.94" width="8" height="8" rx="1"/>
+</g>
+<text class="t" x="17.54" y="453.69" text-anchor="middle">8</text>
+<g data-tip="Ticket 3 of 27: 8 jobs, test issue" tabindex="0">
+<title>Ticket 3 of 27: 8 jobs, test issue</title>
+<rect class="hit" x="19.08" y="461.94" width="24" height="78"/>
+<rect class="c-test" x="27.08" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="501.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="491.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="481.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="471.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="27.08" y="461.94" width="8" height="8" rx="1"/>
+</g>
+<text class="t" x="31.08" y="453.69" text-anchor="middle">8</text>
+<g data-tip="Ticket 4 of 27: 7 jobs, product bug" tabindex="0">
+<title>Ticket 4 of 27: 7 jobs, product bug</title>
+<rect class="hit" x="32.62" y="471.94" width="24" height="68"/>
+<rect class="c-product" x="40.62" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="501.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="491.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="481.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="40.62" y="471.94" width="8" height="8" rx="1"/>
+</g>
+<text class="t" x="44.62" y="463.69" text-anchor="middle">7</text>
+<g data-tip="Ticket 5 of 27: 7 jobs, product bug, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 5 of 27: 7 jobs, product bug, does not map cleanly onto the three classes</title>
+<rect class="hit" x="46.15" y="471.94" width="24" height="68"/>
+<rect class="s-ctl" x="55.15" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="522.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="512.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="502.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="492.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="482.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="55.15" y="472.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 6 of 27: 6 jobs, product bug" tabindex="0">
+<title>Ticket 6 of 27: 6 jobs, product bug</title>
+<rect class="hit" x="59.69" y="481.94" width="24" height="58"/>
+<rect class="c-product" x="67.69" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="67.69" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="67.69" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="67.69" y="501.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="67.69" y="491.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="67.69" y="481.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 7 of 27: 5 jobs, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 7 of 27: 5 jobs, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="73.23" y="491.94" width="24" height="48"/>
+<rect class="s-ctl" x="82.23" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="82.23" y="522.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="82.23" y="512.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="82.23" y="502.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="82.23" y="492.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 8 of 27: 4 jobs, product bug" tabindex="0">
+<title>Ticket 8 of 27: 4 jobs, product bug</title>
+<rect class="hit" x="86.77" y="501.94" width="24" height="38"/>
+<rect class="c-product" x="94.77" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="94.77" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="94.77" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="94.77" y="501.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 9 of 27: 4 jobs, product bug" tabindex="0">
+<title>Ticket 9 of 27: 4 jobs, product bug</title>
+<rect class="hit" x="100.31" y="501.94" width="24" height="38"/>
+<rect class="c-product" x="108.31" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="108.31" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="108.31" y="511.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="108.31" y="501.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 10 of 27: 4 jobs, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 10 of 27: 4 jobs, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="113.85" y="501.94" width="24" height="38"/>
+<rect class="s-ctl" x="122.85" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="122.85" y="522.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="122.85" y="512.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="122.85" y="502.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 11 of 27: 3 jobs, product bug" tabindex="0">
+<title>Ticket 11 of 27: 3 jobs, product bug</title>
+<rect class="hit" x="127.38" y="511.94" width="24" height="28"/>
+<rect class="c-product" x="135.38" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="135.38" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="135.38" y="511.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 12 of 27: 3 jobs, test issue" tabindex="0">
+<title>Ticket 12 of 27: 3 jobs, test issue</title>
+<rect class="hit" x="140.92" y="511.94" width="24" height="28"/>
+<rect class="c-test" x="148.92" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="148.92" y="521.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="148.92" y="511.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 13 of 27: 2 jobs, product bug" tabindex="0">
+<title>Ticket 13 of 27: 2 jobs, product bug</title>
+<rect class="hit" x="154.46" y="518.94" width="24" height="24"/>
+<rect class="c-product" x="162.46" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="162.46" y="521.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 14 of 27: 2 jobs, product bug" tabindex="0">
+<title>Ticket 14 of 27: 2 jobs, product bug</title>
+<rect class="hit" x="168" y="518.94" width="24" height="24"/>
+<rect class="c-product" x="176" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="176" y="521.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 15 of 27: 2 jobs, product bug" tabindex="0">
+<title>Ticket 15 of 27: 2 jobs, product bug</title>
+<rect class="hit" x="181.54" y="518.94" width="24" height="24"/>
+<rect class="c-product" x="189.54" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-product" x="189.54" y="521.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 16 of 27: 2 jobs, product bug, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 16 of 27: 2 jobs, product bug, does not map cleanly onto the three classes</title>
+<rect class="hit" x="195.08" y="518.94" width="24" height="24"/>
+<rect class="s-ctl" x="204.08" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="204.08" y="522.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 17 of 27: 2 jobs, test issue" tabindex="0">
+<title>Ticket 17 of 27: 2 jobs, test issue</title>
+<rect class="hit" x="208.62" y="518.94" width="24" height="24"/>
+<rect class="c-test" x="216.62" y="531.94" width="8" height="8" rx="1"/>
+<rect class="c-test" x="216.62" y="521.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 18 of 27: 2 jobs, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 18 of 27: 2 jobs, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="222.15" y="518.94" width="24" height="24"/>
+<rect class="s-ctl" x="231.15" y="532.94" width="6" height="6" rx="1"/>
+<rect class="s-ctl" x="231.15" y="522.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 19 of 27: 1 job, product bug" tabindex="0">
+<title>Ticket 19 of 27: 1 job, product bug</title>
+<rect class="hit" x="235.69" y="523.94" width="24" height="24"/>
+<rect class="c-product" x="243.69" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 20 of 27: 1 job, product bug" tabindex="0">
+<title>Ticket 20 of 27: 1 job, product bug</title>
+<rect class="hit" x="249.23" y="523.94" width="24" height="24"/>
+<rect class="c-product" x="257.23" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 21 of 27: 1 job, product bug" tabindex="0">
+<title>Ticket 21 of 27: 1 job, product bug</title>
+<rect class="hit" x="262.77" y="523.94" width="24" height="24"/>
+<rect class="c-product" x="270.77" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 22 of 27: 1 job, test issue" tabindex="0">
+<title>Ticket 22 of 27: 1 job, test issue</title>
+<rect class="hit" x="276.31" y="523.94" width="24" height="24"/>
+<rect class="c-test" x="284.31" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 23 of 27: 1 job, test issue" tabindex="0">
+<title>Ticket 23 of 27: 1 job, test issue</title>
+<rect class="hit" x="289.85" y="523.94" width="24" height="24"/>
+<rect class="c-test" x="297.85" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 24 of 27: 1 job, test issue" tabindex="0">
+<title>Ticket 24 of 27: 1 job, test issue</title>
+<rect class="hit" x="303.38" y="523.94" width="24" height="24"/>
+<rect class="c-test" x="311.38" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 25 of 27: 1 job, test issue" tabindex="0">
+<title>Ticket 25 of 27: 1 job, test issue</title>
+<rect class="hit" x="316.92" y="523.94" width="24" height="24"/>
+<rect class="c-test" x="324.92" y="531.94" width="8" height="8" rx="1"/>
+</g>
+<g data-tip="Ticket 26 of 27: 1 job, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 26 of 27: 1 job, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="330.46" y="523.94" width="24" height="24"/>
+<rect class="s-ctl" x="339.46" y="532.94" width="6" height="6" rx="1"/>
+</g>
+<g data-tip="Ticket 27 of 27: 1 job, test issue, does not map cleanly onto the three classes" tabindex="0">
+<title>Ticket 27 of 27: 1 job, test issue, does not map cleanly onto the three classes</title>
+<rect class="hit" x="336" y="523.94" width="24" height="24"/>
+<rect class="s-ctl" x="353" y="532.94" width="6" height="6" rx="1"/>
+</g>
+<text class="t-muted" x="0" y="557.86">
+<tspan x="0" dy="0">No ticket is labelled infrastructure. 8 of the 27 tickets, with 40 of the 98</tspan>
+<tspan x="0" dy="15.6">jobs, do not map cleanly onto the three classes, including the largest</tspan>
+<tspan x="0" dy="15.6">(18 jobs).</tspan>
+</text>
+<line class="grid" x1="0" y1="609.94" x2="360" y2="609.94"/>
+<text class="t-big" x="0" y="640.46">299</text>
+<text class="t-strong" x="41.86" y="640.46">
+<tspan x="41.86" dy="0">jobs in the silver set, labelled by a frontier model with</tspan>
+<tspan x="41.86" dy="16.9">hindsight</tspan>
+</text>
+<g data-tip="Silver set, product bug: 87 jobs, 70 of them confident (labeller confidence at least 0.6)" tabindex="0">
+<title>Silver set, product bug: 87 jobs, 70 of them confident (labeller confidence at least 0.6)</title>
+<rect class="hit" x="0" y="679.36" width="103" height="28"/>
+<rect class="c-product" x="0" y="679.36" width="103" height="28" rx="4"/>
+</g>
+<text class="t-on" x="6" y="697.32">87</text>
+<g data-tip="Silver set, test issue: 87 jobs, 26 of them confident (labeller confidence at least 0.6)" tabindex="0">
+<title>Silver set, test issue: 87 jobs, 26 of them confident (labeller confidence at least 0.6)</title>
+<rect class="hit" x="105" y="679.36" width="103" height="28"/>
+<rect class="c-test" x="105" y="679.36" width="103" height="28" rx="4"/>
+</g>
+<text class="t-on" x="111" y="697.32">87</text>
+<g data-tip="Silver set, infrastructure: 111 jobs, 57 of them confident (labeller confidence at least 0.6)" tabindex="0">
+<title>Silver set, infrastructure: 111 jobs, 57 of them confident (labeller confidence at least 0.6)</title>
+<rect class="hit" x="210.01" y="679.36" width="131.42" height="28"/>
+<rect class="c-infra" x="210.01" y="679.36" width="131.42" height="28" rx="4"/>
+</g>
+<text class="t-on" x="216.01" y="697.32">111</text>
+<g data-tip="Silver set, unclear: 14 jobs" tabindex="0">
+<title>Silver set, unclear: 14 jobs</title>
+<rect class="hit" x="336" y="679.36" width="24" height="28"/>
+<rect class="c-ctl" x="343.42" y="679.36" width="16.58" height="28" rx="4"/>
+</g>
+<text class="t-strong" x="0" y="723.94">The only infrastructure labels: 111 jobs. 14 stay unclear.</text>
+</g>
+</svg>

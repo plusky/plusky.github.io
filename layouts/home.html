@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="page-head grid">
+<h1 class="visually-hidden">{{ site.Title }}</h1>
+<div class="intro">{{ .Content }}</div>
+</div>
+{{- $posts := where site.RegularPages "Section" "posts" }}
+{{- with $posts }}
+<section class="grid list-head" aria-labelledby="latest">
+<h2 id="latest">Posts</h2>
+{{ partial "post-list.html" (dict "pages" . "level" 3) }}
+</section>
+{{- end }}
+{{ end }}

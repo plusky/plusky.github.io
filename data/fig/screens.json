@@ -1,0 +1,3068 @@
+{
+ "id": "screens",
+ "scope": "mixed",
+ "jobs": {
+  "A": 36,
+  "B": 35,
+  "AB": 71,
+  "M": 12
+ },
+ "log_rows": 182,
+ "verdicts": {
+  "pass": 31,
+  "drop": 147,
+  "drop (coverage)": 1
+ },
+ "rules": [
+  {
+   "screen": "A",
+   "rule": "net gain of at least 3 jobs and no class down by more than 1"
+  },
+  {
+   "screen": "B",
+   "rule": "a direction fitted on A counts by its B result alone: net at least 3, no class down by more than 1"
+  },
+  {
+   "screen": "AB",
+   "rule": "net gain of at least 5 of 71 and no class down by more than 2"
+  },
+  {
+   "screen": "M",
+   "rule": "12 hard jobs: all within 70 minutes and right answers over three wordings at least the control's plus 3"
+  },
+  {
+   "screen": "flag",
+   "rule": "flags 15 to 40% of jobs and the flagged answers are right at least 20 points less often"
+  }
+ ],
+ "noise": {
+  "scope": "mixed",
+  "what": "One repeat of the last turn alone (the verdict, in the fuller-definitions wording) on the same stored analysis turns of the jobs of half A, at temperature 0, against the screens' own run of that wording.",
+  "temperature": 0,
+  "jobs": 36,
+  "answers_changed": 3,
+  "right_wrong_switched": 2,
+  "only_half_a": "No repeat of the same prompt at the screens' settings exists for half B: the only other repeated answers there are five samples drawn at temperature 0.7, and an earlier repeat re-ran the whole conversation and covered only 32 of the 71 jobs, none of them infrastructure.",
+  "caveats": "One repeat of one wording on 36 jobs. Screens that re-ran the whole conversation (other chat models) are not covered and can move more."
+ },
+ "a_then_b": {
+  "definition": "A pair is a comparison that passed its rule on half A and was then run on half B with the same candidate against the same control in a later run. A half-B reading of the same stored run as the half-A pass does not count. An idea is a distinct candidate; the 'abstentions filled' variants are another reading of the same answers and fold into their candidate.",
+  "pairs": 19,
+  "pairs_failed_on_b": 18,
+  "pairs_passed_on_b": 1,
+  "ideas_passed_a": 19,
+  "ideas_ran_on_b": 15,
+  "ideas_failed_on_b": 14,
+  "readouts_excluded": 2,
+  "readouts_note": "Passes on half A whose half-B value is the same stored run read off on both halves at the same time, with no later run on half B; they are not pairs."
+ },
+ "on_the_halves": {
+  "comparisons": 164,
+  "passed": 29,
+  "which": "rows on half A, half B or both halves with a net count over at least one job"
+ },
+ "reference": {
+  "always_product": 24,
+  "production": 28,
+  "of": 71
+ },
+ "families": [
+  "prompt wording",
+  "added facts",
+  "sampling and voting",
+  "other decision models",
+  "bigger chat models",
+  "classic baseline",
+  "combination rules",
+  "flags"
+ ],
+ "rows": [
+  {
+   "time": "2026-11-10T11:34",
+   "screen": "A",
+   "n": 36,
+   "net": 9,
+   "class_delta": {
+    "product": 2,
+    "test": 4,
+    "infra": 3
+   },
+   "verdict": "pass",
+   "label": "TF-IDF baseline",
+   "family": "classic baseline",
+   "control": "decision model with the environment question",
+   "reason": "passed A, then a leakage check showed it had learnt to recognise tickets (jobs of one ticket on both sides of its split); trained only on earlier jobs it was level with the decision rule",
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:37",
+   "screen": "B",
+   "n": 33,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "hint plus environment override",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:37",
+   "screen": "A",
+   "n": 33,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "hint plus environment override",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:41",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 0,
+    "test": -1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "nearest labelled precedent rule",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:41",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "nearest labelled precedent rule",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:44",
+   "screen": "AB",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "TF-IDF leakage check",
+   "family": "classic baseline",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:44",
+   "screen": "-",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop (coverage)",
+   "label": "investigation clone results",
+   "family": "combination rules",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:44",
+   "screen": "AB",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "hint or definitions plus environment override",
+   "family": "combination rules",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T11:44",
+   "screen": "-",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "yes/no overrides",
+   "family": "combination rules",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T12:19",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "decision model on a focused excerpt",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T12:42",
+   "screen": "A",
+   "n": 36,
+   "net": -8,
+   "class_delta": {
+    "product": 1,
+    "test": -5,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "decision model on Gemma's analysis only",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T13:14",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "decision model on the excerpt plus Gemma's analysis",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T13:14",
+   "screen": "A",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "flag: decision model disagrees with Gemma",
+   "family": "flags",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T14:01",
+   "screen": "A",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "six new yes/no questions",
+   "family": "combination rules",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T15:02",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": 1,
+    "test": -1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "verdict asked again",
+   "family": "sampling and voting",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T15:02",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 5
+   },
+   "verdict": "pass",
+   "label": "definitions per kind of failure",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 0
+  },
+  {
+   "time": "2026-11-10T15:02",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "quote the evidence",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T15:02",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": 0,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "verdict in a fresh conversation",
+   "family": "sampling and voting",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 1
+  },
+  {
+   "time": "2026-11-10T15:02",
+   "screen": "A",
+   "n": 36,
+   "net": -4,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "verdict in a fresh conversation",
+   "family": "sampling and voting",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T15:41",
+   "screen": "B",
+   "n": 35,
+   "net": 2,
+   "class_delta": {
+    "product": -3,
+    "test": 1,
+    "infra": 4
+   },
+   "verdict": "drop",
+   "label": "definitions per kind of failure",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 0
+  },
+  {
+   "time": "2026-11-10T15:41",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": -1,
+    "test": 4,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "verdict in a fresh conversation",
+   "family": "sampling and voting",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T15:41",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "verdict in a fresh conversation",
+   "family": "sampling and voting",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 1
+  },
+  {
+   "time": "2026-11-10T15:41",
+   "screen": "B",
+   "n": 35,
+   "net": -3,
+   "class_delta": {
+    "product": -4,
+    "test": 0,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "definitions per kind of failure",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T16:30",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "majority of five samples",
+   "family": "sampling and voting",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T16:31",
+   "screen": "A",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "flag: the five samples disagree",
+   "family": "flags",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T17:20",
+   "screen": "B",
+   "n": null,
+   "net": null,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "flag: top vote 3 of 5 or less",
+   "family": "flags",
+   "control": null,
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T17:36",
+   "screen": "A",
+   "n": 36,
+   "net": -10,
+   "class_delta": {
+    "product": -8,
+    "test": -5,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "Kev-9B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T17:36",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": 4
+   },
+   "verdict": "pass",
+   "label": "Kev-9B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": 2
+  },
+  {
+   "time": "2026-11-10T17:51",
+   "screen": "A",
+   "n": 36,
+   "net": -8,
+   "class_delta": {
+    "product": -6,
+    "test": -5,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "Kev-4B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T17:51",
+   "screen": "A",
+   "n": 36,
+   "net": -7,
+   "class_delta": {
+    "product": -8,
+    "test": -5,
+    "infra": 6
+   },
+   "verdict": "drop",
+   "label": "Kev-4B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T18:12",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -4,
+    "test": 4,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "Clef-Flash, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T18:12",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": -5,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "Clef-Flash, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:00",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -5,
+    "test": 4,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "d3-flash, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:00",
+   "screen": "A",
+   "n": 0,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "Wald-4B as a decision model",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": -5,
+    "test": 4,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "d3-flash, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "production wording",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": -1,
+   "class_delta": {
+    "product": 0,
+    "test": -1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "production wording",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "no example",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": -1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "no example",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": 1,
+    "test": 2,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "step by step",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "step by step",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 2,
+    "test": -3,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "job facts listed",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": -1,
+   "class_delta": {
+    "product": -2,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "job facts listed",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": 4,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "few-shot examples",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": -1,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "few-shot examples",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "direct answer",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "direct answer",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "may abstain",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": -2,
+   "class_delta": {
+    "product": -3,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "may abstain",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "decision model's estimate as a hint",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": 4,
+   "class_delta": {
+    "product": 1,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "decision model's estimate as a hint",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "challenge the first answer",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:01",
+   "screen": "B",
+   "n": 35,
+   "net": 1,
+   "class_delta": {
+    "product": 0,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "challenge the first answer",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:47",
+   "screen": "B",
+   "n": 35,
+   "net": -2,
+   "class_delta": {
+    "product": -4,
+    "test": 1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "Kev-9B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": 2
+  },
+  {
+   "time": "2026-11-10T19:47",
+   "screen": "B",
+   "n": 35,
+   "net": -7,
+   "class_delta": {
+    "product": -9,
+    "test": -4,
+    "infra": 6
+   },
+   "verdict": "drop",
+   "label": "Kev-9B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:47",
+   "screen": "B",
+   "n": 35,
+   "net": -5,
+   "class_delta": {
+    "product": -5,
+    "test": 1,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "Kev-9B, label question",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T19:47",
+   "screen": "AB",
+   "n": 71,
+   "net": 1,
+   "class_delta": {
+    "product": -5,
+    "test": 1,
+    "infra": 5
+   },
+   "verdict": "drop",
+   "label": "Kev-9B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:05",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": -1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:05",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 1,
+    "test": 1,
+    "infra": 2
+   },
+   "verdict": "pass",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 3
+  },
+  {
+   "time": "2026-11-10T21:05",
+   "screen": "A",
+   "n": 36,
+   "net": -6,
+   "class_delta": {
+    "product": 0,
+    "test": -3,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:05",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 2,
+    "test": -1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:43",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 2,
+    "test": -1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "job statistics in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:43",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "job statistics in the first prompt",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:43",
+   "screen": "A",
+   "n": 36,
+   "net": -6,
+   "class_delta": {
+    "product": 1,
+    "test": -3,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "job statistics in the first prompt",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T21:43",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": 2,
+    "test": -2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "job statistics in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T22:39",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 3,
+    "test": -1,
+    "infra": 2
+   },
+   "verdict": "pass",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 4
+  },
+  {
+   "time": "2026-11-10T22:39",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 1,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 5
+  },
+  {
+   "time": "2026-11-10T22:39",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": 2,
+    "test": -3,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T22:39",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": 2,
+    "test": 0,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": 8,
+   "class_delta": {
+    "product": 1,
+    "test": 4,
+    "infra": 3
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 6
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": 0,
+    "test": -1,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": 2,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 7
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": 1,
+    "test": 1,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 8
+  },
+  {
+   "time": "2026-11-10T23:36",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": 2
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "test source in the prompt, production verdict",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "AB",
+   "n": 71,
+   "net": 11,
+   "class_delta": {
+    "product": 1,
+    "test": 7,
+    "infra": 3
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "B",
+   "n": 35,
+   "net": 3,
+   "class_delta": {
+    "product": 0,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 6
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "B",
+   "n": 35,
+   "net": 2,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 7
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "B",
+   "n": 35,
+   "net": -2,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 8
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "B",
+   "n": 35,
+   "net": -3,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "AB",
+   "n": 71,
+   "net": -5,
+   "class_delta": {
+    "product": 0,
+    "test": 1,
+    "infra": -6
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "B",
+   "n": 35,
+   "net": 1,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T00:33",
+   "screen": "AB",
+   "n": 71,
+   "net": 1,
+   "class_delta": {
+    "product": 0,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "decision model's area as a steer",
+   "family": "added facts",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T01:27",
+   "screen": "AB",
+   "n": 71,
+   "net": 4,
+   "class_delta": {
+    "product": 1,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T01:27",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": 1,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 3
+  },
+  {
+   "time": "2026-11-11T01:27",
+   "screen": "AB",
+   "n": 71,
+   "net": 0,
+   "class_delta": {
+    "product": 2,
+    "test": -1,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T01:27",
+   "screen": "AB",
+   "n": 71,
+   "net": 0,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T01:27",
+   "screen": "AB",
+   "n": 71,
+   "net": -12,
+   "class_delta": {
+    "product": 0,
+    "test": -4,
+    "infra": -8
+   },
+   "verdict": "drop",
+   "label": "contrast pairs in the first prompt",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "no note",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "no note, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -8,
+   "class_delta": {
+    "product": 0,
+    "test": -4,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "no note, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": 0,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "reasoning first",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 9
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": 0,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "pass",
+   "label": "reasoning first, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 10
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -4,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "reasoning first, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 2,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "name where it failed",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 2,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "name where it failed, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "name where it failed, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": -1,
+    "test": 3,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "proof required",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 11
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 3,
+   "class_delta": {
+    "product": -1,
+    "test": 3,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "proof required, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 12
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -4,
+   "class_delta": {
+    "product": -2,
+    "test": 1,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "proof required, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -1,
+    "test": -3,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "debate",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -1,
+    "test": -3,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "debate, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -10,
+   "class_delta": {
+    "product": -2,
+    "test": -5,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "debate, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": -2,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "three views",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 1,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "three views, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -7,
+   "class_delta": {
+    "product": -2,
+    "test": -1,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "three views, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": -3,
+    "test": 4,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "class probabilities",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": -3,
+    "test": 4,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "class probabilities, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -6,
+   "class_delta": {
+    "product": -4,
+    "test": 2,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "class probabilities, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": -1,
+    "test": -2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "yes/no chain",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": -1,
+    "test": -2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "yes/no chain, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:04",
+   "screen": "A",
+   "n": 36,
+   "net": -12,
+   "class_delta": {
+    "product": -2,
+    "test": -4,
+    "infra": -6
+   },
+   "verdict": "drop",
+   "label": "yes/no chain, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:41",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "Kev-27B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T05:41",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 4
+   },
+   "verdict": "pass",
+   "label": "Kev-27B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": 13
+  },
+  {
+   "time": "2026-11-11T05:43",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": -1,
+    "test": -1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "Kev-27B and elephant-1 averaged",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -3,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "reasoning first",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 9
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": -3,
+    "test": 5,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "reasoning first",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -3,
+    "test": 2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "reasoning first, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 10
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "AB",
+   "n": 71,
+   "net": -9,
+   "class_delta": {
+    "product": -5,
+    "test": 2,
+    "infra": -6
+   },
+   "verdict": "drop",
+   "label": "reasoning first, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -3,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "proof required",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 11
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": -4,
+    "test": 6,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "proof required",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -3,
+    "test": 3,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "proof required, abstentions filled",
+   "family": "prompt wording",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 12
+  },
+  {
+   "time": "2026-11-11T06:21",
+   "screen": "AB",
+   "n": 71,
+   "net": -9,
+   "class_delta": {
+    "product": -6,
+    "test": 3,
+    "infra": -6
+   },
+   "verdict": "drop",
+   "label": "proof required, abstentions filled",
+   "family": "prompt wording",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "B",
+   "n": 35,
+   "net": 4,
+   "class_delta": {
+    "product": -2,
+    "test": 0,
+    "infra": 6
+   },
+   "verdict": "drop",
+   "label": "Kev-27B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": "class rule: product down by 2 (the rule allows 1 on A or B)",
+   "pair": 13
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "B",
+   "n": 35,
+   "net": 1,
+   "class_delta": {
+    "product": -3,
+    "test": 0,
+    "infra": 4
+   },
+   "verdict": "drop",
+   "label": "Kev-27B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "AB",
+   "n": 71,
+   "net": 9,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": 10
+   },
+   "verdict": "pass",
+   "label": "Kev-27B, label question",
+   "family": "other decision models",
+   "control": "decision model, label question only",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": -2,
+    "test": 0,
+    "infra": 5
+   },
+   "verdict": "drop",
+   "label": "Kev-27B, environment rule",
+   "family": "other decision models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "B",
+   "n": 35,
+   "net": 3,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": 4
+   },
+   "verdict": "pass",
+   "label": "Kev-27B and elephant-1 averaged",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T07:00",
+   "screen": "AB",
+   "n": 71,
+   "net": 2,
+   "class_delta": {
+    "product": -2,
+    "test": -1,
+    "infra": 5
+   },
+   "verdict": "drop",
+   "label": "Kev-27B and elephant-1 averaged",
+   "family": "combination rules",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": 0,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 4
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "AB",
+   "n": 71,
+   "net": 4,
+   "class_delta": {
+    "product": 3,
+    "test": -1,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "B",
+   "n": 35,
+   "net": -1,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 5
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "AB",
+   "n": 71,
+   "net": 3,
+   "class_delta": {
+    "product": 2,
+    "test": 2,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "AB",
+   "n": 71,
+   "net": -8,
+   "class_delta": {
+    "product": 1,
+    "test": -4,
+    "infra": -5
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T08:51",
+   "screen": "AB",
+   "n": 71,
+   "net": -2,
+   "class_delta": {
+    "product": 1,
+    "test": -4,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "test source in the first prompt",
+   "family": "added facts",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": 3
+   },
+   "verdict": "pass",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": -3,
+   "class_delta": {
+    "product": -1,
+    "test": -2,
+    "infra": 0
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "steered analysis, production verdict",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 2,
+    "test": -1,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": 1,
+    "test": -2,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "steered analysis, definitions verdict",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": 0,
+    "test": -2,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:48",
+   "screen": "A",
+   "n": 36,
+   "net": -5,
+   "class_delta": {
+    "product": 1,
+    "test": -3,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:49",
+   "screen": "A",
+   "n": 36,
+   "net": 1,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "test source in the prompt, production verdict",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T09:49",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": -1,
+    "test": 0,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "steer plus test source",
+   "family": "added facts",
+   "control": "test source in the prompt, definitions verdict",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T10:58",
+   "screen": "M",
+   "n": null,
+   "net": 3,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "Ornith-9B, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": "cut at the 70-minute limit with 4 of 12 jobs answered (time rule)",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T11:59",
+   "screen": "M",
+   "n": null,
+   "net": 8,
+   "class_delta": null,
+   "verdict": "pass",
+   "label": "Gemma-26B-A4B, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:21",
+   "screen": "M",
+   "n": null,
+   "net": 0,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "Qwen3.5-35B, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:33",
+   "screen": "M",
+   "n": null,
+   "net": 4,
+   "class_delta": null,
+   "verdict": "pass",
+   "label": "gpt-oss-20b, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": 8,
+   "class_delta": {
+    "product": -2,
+    "test": 7,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": "class rule: product down by 2 (the rule allows 1 on A or B)",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": 7,
+   "class_delta": {
+    "product": 0,
+    "test": 6,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "gpt-oss-20b, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 14
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 0,
+    "test": 3,
+    "infra": 1
+   },
+   "verdict": "pass",
+   "label": "gpt-oss-20b, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 15
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": -2,
+    "test": 3,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, production wording",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": 0,
+   "class_delta": {
+    "product": -1,
+    "test": 4,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, definitions",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T14:57",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 0,
+    "test": 2,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, with hint",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": 12,
+   "class_delta": {
+    "product": 3,
+    "test": 4,
+    "infra": 5
+   },
+   "verdict": "pass",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": null,
+   "pair": 16
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": 5,
+   "class_delta": {
+    "product": 4,
+    "test": -1,
+    "infra": 2
+   },
+   "verdict": "pass",
+   "label": "Gemma-26B-A4B, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 17
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": 4,
+   "class_delta": {
+    "product": 2,
+    "test": 0,
+    "infra": 2
+   },
+   "verdict": "pass",
+   "label": "Gemma-26B-A4B, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 18
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": 2,
+   "class_delta": {
+    "product": 3,
+    "test": 0,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": -2,
+   "class_delta": {
+    "product": 3,
+    "test": -3,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, definitions",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T15:36",
+   "screen": "A",
+   "n": 36,
+   "net": -1,
+   "class_delta": {
+    "product": 2,
+    "test": -1,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, with hint",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "B",
+   "n": 35,
+   "net": 3,
+   "class_delta": {
+    "product": -3,
+    "test": 4,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": "class rule: product down by 3 (the rule allows 1 on A or B)",
+   "pair": 14
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "AB",
+   "n": 71,
+   "net": 10,
+   "class_delta": {
+    "product": -3,
+    "test": 10,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": "class rule: product down by 3 (the rule allows 2 on A+B)",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "B",
+   "n": 35,
+   "net": 0,
+   "class_delta": {
+    "product": -2,
+    "test": 0,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 15
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "AB",
+   "n": 71,
+   "net": 4,
+   "class_delta": {
+    "product": -2,
+    "test": 3,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "B",
+   "n": 35,
+   "net": 4,
+   "class_delta": {
+    "product": -3,
+    "test": 6,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": "class rule: product down by 3 (the rule allows 1 on A or B)",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "AB",
+   "n": 71,
+   "net": 12,
+   "class_delta": {
+    "product": -5,
+    "test": 13,
+    "infra": 4
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": "class rule: product down by 5 (the rule allows 2 on A+B)",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "AB",
+   "n": 71,
+   "net": -2,
+   "class_delta": {
+    "product": -5,
+    "test": 7,
+    "infra": -4
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, definitions",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:10",
+   "screen": "AB",
+   "n": 71,
+   "net": -2,
+   "class_delta": {
+    "product": -2,
+    "test": 3,
+    "infra": -3
+   },
+   "verdict": "drop",
+   "label": "gpt-oss-20b, with hint",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T16:22",
+   "screen": "M",
+   "n": null,
+   "net": -2,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "Winnow-E4B, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T17:32",
+   "screen": "M",
+   "n": null,
+   "net": -2,
+   "class_delta": null,
+   "verdict": "drop",
+   "label": "Wald-4B, three wordings",
+   "family": "bigger chat models",
+   "control": "Gemma Q8, three verdict wordings pooled",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T20:27",
+   "screen": "B",
+   "n": 32,
+   "net": 3,
+   "class_delta": {
+    "product": 1,
+    "test": 0,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": "coverage: 3 of 35 jobs timed out, so it was scored on 32 only and not counted as a pass",
+   "pair": 16
+  },
+  {
+   "time": "2026-11-11T20:27",
+   "screen": "B",
+   "n": 32,
+   "net": 2,
+   "class_delta": {
+    "product": 1,
+    "test": -1,
+    "infra": 2
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": null,
+   "pair": 17
+  },
+  {
+   "time": "2026-11-11T20:27",
+   "screen": "B",
+   "n": 32,
+   "net": -4,
+   "class_delta": {
+    "product": -2,
+    "test": -3,
+    "infra": 1
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": 18
+  },
+  {
+   "time": "2026-11-11T20:28",
+   "screen": "AB",
+   "n": 68,
+   "net": 15,
+   "class_delta": {
+    "product": 4,
+    "test": 4,
+    "infra": 7
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "production prompt, Gemma Q8",
+   "reason": "coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T20:28",
+   "screen": "AB",
+   "n": 68,
+   "net": 7,
+   "class_delta": {
+    "product": 5,
+    "test": -2,
+    "infra": 4
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, definitions",
+   "family": "bigger chat models",
+   "control": "fuller class definitions, Gemma Q8",
+   "reason": "coverage: 3 of 71 jobs timed out, so it was scored on 68 only and not counted as a pass",
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T20:28",
+   "screen": "AB",
+   "n": 68,
+   "net": 0,
+   "class_delta": {
+    "product": 0,
+    "test": -3,
+    "infra": 3
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, with hint",
+   "family": "bigger chat models",
+   "control": "decision model's estimate as a hint, Gemma Q8",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T20:28",
+   "screen": "AB",
+   "n": 68,
+   "net": -1,
+   "class_delta": {
+    "product": 3,
+    "test": -2,
+    "infra": -2
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  },
+  {
+   "time": "2026-11-11T20:28",
+   "screen": "B",
+   "n": 32,
+   "net": -3,
+   "class_delta": {
+    "product": 0,
+    "test": -2,
+    "infra": -1
+   },
+   "verdict": "drop",
+   "label": "Gemma-26B-A4B, production wording",
+   "family": "bigger chat models",
+   "control": "decision model with the environment question",
+   "reason": null,
+   "pair": null
+  }
+ ]
+}

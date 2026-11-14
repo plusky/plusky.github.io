@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="page-head grid">
+<h1>{{ .Title }}</h1>
+{{- with .Content }}
+<div class="intro prose">{{ . }}</div>
+{{- end }}
+</div>
+<div class="grid">
+{{- with .RegularPages }}
+{{ partial "post-list.html" (dict "pages" . "level" 2) }}
+{{- else }}
+<p>No posts yet.</p>
+{{- end }}
+</div>
+{{ end }}

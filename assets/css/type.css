@@ -1,0 +1,161 @@
+/* Headings step by about 1.2 from the body size. */
+h1, h2, h3, h4 {
+  font-family: var(--font-text);
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+  font-variant-numeric: lining-nums;
+  margin: 0;
+}
+h1 { font-size: clamp(1.728em, 1.5em + 1vw, 2.0736em); letter-spacing: -0.01em; }
+h2 { font-size: 1.44em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+
+.prose { font-variant-numeric: oldstyle-nums proportional-nums; }
+.prose > * { margin-block: 0; }
+.prose > * + * { margin-top: 1.25em; }
+.prose > h2 { margin-top: 2.25em; }
+.prose > h3 { margin-top: 1.75em; }
+.prose > h2 + *, .prose > h3 + * { margin-top: 0.6em; }
+.prose > p:empty { display: none; }
+.prose h2[id], .prose h3[id] { scroll-margin-top: 1.5rem; }
+
+.prose ul, .prose ol { padding-left: 1.4em; }
+.prose li + li { margin-top: 0.3em; }
+.prose li > ul, .prose li > ol { margin-top: 0.3em; }
+.prose li::marker { color: var(--ink-2); font-family: var(--font-ui); }
+
+blockquote {
+  margin-inline: 0;
+  padding-left: 1.25em;
+  border-left: 1px solid var(--axis);
+  color: var(--ink-2);
+  font-style: italic;
+}
+blockquote > * { margin-block: 0; }
+blockquote > * + * { margin-top: 0.8em; }
+
+hr { border: 0; border-top: 1px solid var(--rule); }
+
+/* Inline and block code. */
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  font-variant-ligatures: none;
+  font-variant-numeric: normal;
+}
+:not(pre) > code {
+  background: var(--plate);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+pre, .table-wrap, .fig-table { scrollbar-color: var(--axis) transparent; scrollbar-width: thin; }
+pre {
+  margin: 0;
+  padding: 1em 1.1em;
+  line-height: 1.55;
+  overflow-x: auto;
+  tab-size: 4;
+  background: var(--code-bg);
+  border-radius: 2px;
+}
+pre code { font-size: 1em; background: none; padding: 0; }
+
+/* Tables: sans, tabular figures, hairlines only. */
+.table-wrap { overflow-x: auto; }
+table {
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.9em;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.4;
+  min-width: 100%;
+}
+th, td {
+  padding: 0.45em 0.75em;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+th:first-child, td:first-child { padding-left: 0; }
+th:last-child, td:last-child { padding-right: 0; }
+thead th { font-weight: 600; border-bottom-color: var(--axis); vertical-align: bottom; }
+.ta-right { text-align: right; white-space: nowrap; }
+.ta-center { text-align: center; }
+caption { caption-side: bottom; text-align: left; color: var(--ink-2); padding-top: 0.5em; }
+
+/* Footnotes from Goldmark. */
+.footnote-ref, sup a {
+  font-family: var(--font-ui);
+  font-variant-numeric: lining-nums;
+  text-decoration: none;
+  padding-inline: 0.1em;
+}
+sup { line-height: 0; font-size: 0.72em; }
+.footnotes {
+  font-family: var(--font-ui);
+  font-size: 0.9em;
+  color: var(--ink-2);
+  font-variant-numeric: lining-nums;
+}
+.footnotes hr { margin: 2.5em 0 1.25em; width: 6rem; }
+.footnotes ol { padding-left: 1.4em; }
+.footnotes li + li { margin-top: 0.5em; }
+.footnotes li p { margin: 0; }
+.footnotes li:target { background: var(--band); }
+.footnote-backref { text-decoration: none; margin-left: 0.25em; font-size: 0; }
+/* The default backlink glyph is not in the subset fonts. */
+.footnote-backref::after { content: "\2191"; font-size: 0.875rem; }
+
+/* Sidenotes: lettered marker in the text, note beside or below it; footnotes keep the numbers. */
+.prose { counter-reset: sidenote; }
+.sn-ref { counter-increment: sidenote; }
+.sn-ref::after {
+  content: counter(sidenote, lower-alpha);
+  font-family: var(--font-ui);
+  font-size: 0.72em;
+  font-variant-numeric: lining-nums;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--link);
+  padding-inline: 0.1em;
+}
+@media (min-width: 1280px) {
+  .sn-ref::after { color: var(--ink-2); }
+}
+.sn-body {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  font-style: normal;
+  color: var(--ink-2);
+  font-variant-numeric: lining-nums;
+}
+.sn-body::before {
+  content: counter(sidenote, lower-alpha) ". ";
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Interface text. */
+.ui, .site-header, .site-footer, .post-meta, .toc, figcaption, .fig-data, .fig-toggles, .post-list time {
+  font-family: var(--font-ui);
+  font-variant-numeric: lining-nums;
+}
+
+/* A quoted job comment: plain text with its line breaks kept. */
+.comment-example { margin-inline: 0; margin-block: 1.75em; }
+.comment-example .comment-text p { margin: 0 0 0.7em; white-space: pre-wrap; }
+.comment-example .comment-text p:last-child { margin-bottom: 0; }
+.comment-example .comment-text {
+  overflow-wrap: anywhere;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  background: var(--plate);
+  border-left: 2px solid var(--axis);
+  padding: 0.9rem 1.1rem;
+}
+.comment-example figcaption { font-family: var(--font-ui); font-size: 0.875rem; color: var(--ink-2); margin-top: 0.5rem; }

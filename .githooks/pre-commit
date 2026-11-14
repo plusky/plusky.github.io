@@ -1,0 +1,27 @@
+#!/bin/sh
+# Leak, SVG and facts checks before each commit.
+# Enable once per clone with: git config core.hooksPath .githooks
+set -eu
+
+cd "$(git rev-parse --show-toplevel)"
+
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+status=0
+if [ -n "$staged" ]; then
+	# Word splitting on newlines only, so paths with spaces stay whole.
+	old_ifs=$IFS
+	IFS='
+'
+	# shellcheck disable=SC2086
+	python3 -I tools/check_leaks.py $staged || status=1
+	IFS=$old_ifs
+fi
+python3 -I tools/check_svg.py content || status=1
+set -- content/posts/*/index.md
+[ -e "$1" ] || set --
+python3 -I tools/check_facts.py "$@" || status=1
+
+if [ "$status" -ne 0 ]; then
+	echo "pre-commit: checks failed; fix them or commit with --no-verify" >&2
+fi
+exit "$status"

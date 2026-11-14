@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{- $isPost := eq .Section "posts" }}
+{{- /* .ReadingTime would also count the text of the inlined figures and their data tables. */}}
+{{- $words := .Content | replaceRE `(?s)<figure class="fig.*?</figure>` "" | plainify | countwords }}
+{{- $minutes := math.Max 1 (math.Ceil (div (float $words) 213)) }}
+{{- $toc := "" }}
+{{- if and $isPost (findRE `<li>` .TableOfContents 1) }}
+  {{- $toc = .TableOfContents | replaceRE `</?nav[^>]*>` "" | safeHTML }}
+{{- end }}
+<article>
+<header class="post-head grid">
+<h1>{{ .Title }}</h1>
+{{- with .Params.summary }}
+<p class="standfirst">{{ . | $.RenderString }}</p>
+{{- end }}
+{{- if $isPost }}
+<p class="post-meta"><span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></span><span>{{ int $minutes }} min read</span></p>
+{{- end }}
+{{- with $toc }}
+<details class="toc toc-inline">
+<summary>Contents</summary>
+<nav aria-label="Contents">{{ . }}</nav>
+</details>
+{{- end }}
+</header>
+<div class="post-body grid">
+{{- with $toc }}
+<aside class="toc toc-side">
+<nav aria-label="Contents">
+<p class="toc-title">Contents</p>
+{{ . }}
+</nav>
+</aside>
+{{- end }}
+<div class="prose">
+{{ .Content }}
+</div>
+</div>
+</article>
+{{ end }}
