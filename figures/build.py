@@ -1,19 +1,21 @@
-"""Build the figures of the post.
+"""Build the figures of the posts.
 
-    python3 -I figures/build.py [--only ID] [--data-dir data/fig] [--out content/posts/failure-class/fig]
+    python3 -I figures/build.py [--only ID] [--data-dir data/fig] [--out DIR]
 
 A generator is a module figures/gen/<name>.py with:
 
     ID = "chars-per-token"          # figure id; its data is <data-dir>/<ID>.json, or {} if there is none
     NARROW = True                   # also draw a 360-wide variant
+    POST = "failure-class"          # optional: the post the figure belongs to; this is the default
+    DATA = "results/<id>.json"      # optional: the data file, under data/, when it is not <data-dir>/<ID>.json
     def render(data, width): ...    # -> svgkit.Svg, called with width 720 and, if NARROW, 360
     def table(data): ...            # -> HTML string, svgkit.table_html(...) or svgkit.list_html(...)
 
 A diagram is a generator without a data file; render and table get an empty dict. Modules whose name
 starts with an underscore are shared helpers, not generators.
 
-It writes <out>/<ID>.svg, <ID>.narrow.svg and <ID>.table.html. Every class an SVG uses must be defined in
-assets/css/fig.css.
+It writes <ID>.svg, <ID>.narrow.svg and <ID>.table.html to content/posts/<POST>/fig, or all to --out.
+Every class an SVG uses must be defined in assets/css/fig.css.
 """
 import argparse
 import importlib.util
@@ -52,22 +54,23 @@ def write(path, text):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build the figures of the post.")
+    ap = argparse.ArgumentParser(description="Build the figures of the posts.")
     ap.add_argument("--only", metavar="ID")
     ap.add_argument("--data-dir", default="data/fig")
-    ap.add_argument("--out", default="content/posts/failure-class/fig")
+    ap.add_argument("--out", metavar="DIR", help="one folder for every figure, instead of each post's fig folder")
     args = ap.parse_args()
     data_dir = (ROOT / args.data_dir).resolve()
-    out = (ROOT / args.out).resolve()
-    out.mkdir(parents=True, exist_ok=True)
     allowed = known_classes()
 
     for path in sorted((HERE / "gen").glob("[!_]*.py")):
         mod = load(path)
         if args.only and mod.ID != args.only:
             continue
-        src = data_dir / f"{mod.ID}.json"
-        data = json.loads(src.read_text(encoding="utf-8")) if src.exists() else {}
+        out = (ROOT / (args.out or f"content/posts/{getattr(mod, 'POST', 'failure-class')}/fig")).resolve()
+        out.mkdir(parents=True, exist_ok=True)
+        rel = getattr(mod, "DATA", None)
+        src = ROOT / "data" / rel if rel else data_dir / f"{mod.ID}.json"
+        data = json.loads(src.read_text(encoding="utf-8")) if rel or src.exists() else {}
         variants = [(720, f"{mod.ID}.svg")] + ([(360, f"{mod.ID}.narrow.svg")] if mod.NARROW else [])
         for width, name in variants:
             svg = mod.render(data, width).render()

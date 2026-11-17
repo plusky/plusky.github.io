@@ -1,6 +1,6 @@
 """Write .preview/light.html and .preview/dark.html showing every built figure wide and narrow.
 
-    python3 -I tools/preview.py [--fig-dir content/posts/failure-class/fig]
+    python3 -I tools/preview.py [--fig-dir content/posts/<post>/fig ...]
 
 .preview/index.html links both. The pages inline tokens.css, fig.css and the SVGs, use the site
 fonts from static/fonts when present, and carry a small tooltip script for data-tip.
@@ -87,12 +87,13 @@ def figures(fig_dir):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--fig-dir", default="content/posts/failure-class/fig")
+    ap.add_argument("--fig-dir", action="append", help="default: the fig folder of every post")
     ap.add_argument("--out-dir", default=str(OUT), help="where light.html and dark.html go")
     args = ap.parse_args()
     out = pathlib.Path(args.out_dir).resolve()
     css = "\n".join((ROOT / "assets/css" / n).read_text(encoding="utf-8") for n in ("tokens.css", "fig.css"))
-    body = figures((ROOT / args.fig_dir).resolve())
+    fig_dirs = args.fig_dir or sorted(p.relative_to(ROOT) for p in ROOT.glob("content/posts/*/fig"))
+    body = "\n".join(figures((ROOT / d).resolve()) for d in fig_dirs)
     out.mkdir(parents=True, exist_ok=True)
     for theme in ("light", "dark"):
         page = (f'<!doctype html>\n<html lang="en" data-theme="{theme}">\n<head><meta charset="utf-8">'

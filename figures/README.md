@@ -10,6 +10,8 @@ page and follows the light and dark theme.
 | `data/fig/<id>.json` | the numbers a figure draws (`comment-example.json` holds the example comment instead); the other data are `data/facts.json` and `data/facts_allow.txt` |
 | `figures/gen/<id>.py` | generator: reads `data/fig/<id>.json`, writes the files below |
 | `figures/gen/<id>.py` without `data/fig/<id>.json` | diagram: a generator without a data file, called with `{}` |
+| `POST = "<post>"` in a generator | the post the figure belongs to; without it, `failure-class` |
+| `DATA = "results/<id>.json"` in a generator | the figure draws a table of `data/results` instead of a file of its own |
 | `figures/svgkit/` | small SVG library, standard library only |
 | `figures/build.py` | runs every generator; `figures/gen/_*.py` are shared helpers |
 | `content/posts/<post>/fig/<id>.svg` | wide variant, `viewBox` width 720 |
