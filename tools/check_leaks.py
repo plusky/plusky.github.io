@@ -14,7 +14,8 @@ import sys
 
 # Patterns are assembled from pieces so that this file does not flag itself.
 _LOW, _HIGH = 23 * 10**6, 26 * 10**6 - 1
-_NUMBER = re.compile(r"(?<![\d.,'_])\d{1,3}(?:[,'_   ]\d{3})+(?![\d]|[.,]\d)|(?<![\d.,'_])\d{8}(?![\d]|[.,]\d)")
+_NUMBER = re.compile(r"(?<!\d)(?<!\d[.,'_   ])\d{1,3}(?:[,'_   ]\d{3})+(?!\d|[,'_   ]\d{3}(?!\d))|(?<!\d)(?<!\d\.)0*\d{8}(?!\d)")
+_EXPONENT = re.compile(r"(?<![\w.])\d+(?:\.\d+)?[eE][+-]?\d+(?![\w.])")  # how a template prints a large number
 _DOT = r"\."
 _HOSTS = [
     ("internal host", re.compile(r"(?<![a-z0-9-])suse" + _DOT + r"de(?![a-z0-9-])", re.I)),
@@ -55,6 +56,9 @@ def find_leaks(text: str, deny: list[str] | None = None) -> list[tuple[int, str,
             value = int(re.sub(r"\D", "", m.group(0)))
             if _LOW <= value <= _HIGH:
                 hits.append((n, "internal job id range", m.group(0)))
+        for m in _EXPONENT.finditer(line):
+            if _LOW <= float(m.group(0)) <= _HIGH and float(m.group(0)).is_integer():
+                hits.append((n, "internal job id range", m.group(0)))
         for kind, rx in _HOSTS:
             hits += [(n, kind, m.group(0)) for m in rx.finditer(line)]
         hits += [(n, "e-mail address", m.group(0)) for m in _EMAIL.finditer(line)]
@@ -79,7 +83,32 @@ def files(paths: list[str]):
             yield p
 
 
+def self_test() -> int:
+    n, m = str(_LOW + 10**6), str(_LOW + 10**6 + 1)
+    grouped = [f"{n[:2]}{sep}{n[2:5]}{sep}{n[5:]}" for sep in ",'_   "]
+    tenth = int(n) / 10**7
+    cases = [(s, 1) for s in (n, f"1,{n}", f"a,{n},b", f"job_{n}", f"x='{n}'", f"t.{n}.log", f"tests/{n}#step",
+                              f"id {n}.", f'{{"job": {n}}}', f"{n}.0", f"{n}.5", f"0{n}", f"00{n}",
+                              f"{tenth}e7", f"{tenth}e+07", f"{tenth}E+07", f"{tenth}e+007", f"{n[:2]}e6",
+                              f"job_{grouped[0]}", f"x='{grouped[0]}'", f"a,{grouped[0]},b", f"{grouped[0]}.0",
+                              *grouped)]
+    cases += [(f"[{n},{m}]", 2), (f"{n}\t{m}", 2)]
+    cases += [(s, 0) for s in (f"0.{n}", f"{n}0", f"1{n}", str(_LOW - 1), str(_HIGH + 1), n[:7], f"{tenth}e+06",
+                               f"{tenth}e+08", f"a{n[:2]}e6b", f"[{n[:7]},{m[:7]}]", f"1{grouped[0]}",
+                               f"1,0{grouped[0]}", f"{grouped[0]},123")]
+    failed = 0
+    for text, want in cases:
+        got = sum(kind == "internal job id range" for _, kind, _ in find_leaks(text, []))
+        if got != want:
+            failed += 1
+            print(f"FAIL {text!r}: expected {want} hit(s), got {got}")
+    print(f"check_leaks self-test: {len(cases) - failed}/{len(cases)} passed")
+    return 1 if failed else 0
+
+
 def main() -> int:
+    if sys.argv[1:] == ["--self-test"]:
+        return self_test()
     parser = argparse.ArgumentParser(description="List data that must not be published.")
     parser.add_argument("--deny", type=pathlib.Path, help="deny list, one literal string per line")
     parser.add_argument("paths", nargs="+")
