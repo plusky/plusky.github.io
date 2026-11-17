@@ -144,9 +144,13 @@ main { display: block; }
 /* Figures: a size container; the narrow drawing replaces the wide one below 610px,
    where the wide one would be drawn under 85% of its size. */
 .fig { margin-inline: 0; container-type: inline-size; }
-.prose > .fig { margin-block: 2.25em; }
+.prose > .fig, .prose > .result { margin-block: 2.25em; }
 /* The prose is a grid, so margins do not collapse. */
-.prose > .fig + * { margin-top: 0; }
+.prose > .fig + *, .prose > .result + * { margin-top: 0; }
+/* A result table scrolls inside the column; its caption below it does not. */
+.result { margin-inline: 0; min-width: 0; }
+.result th:first-child, .result td:first-child { min-width: 11em; }
+.result figcaption strong { color: var(--ink); }
 .fig-narrow { display: none; }
 .fig--has-narrow .fig-wide { display: none; }
 .fig--has-narrow .fig-narrow { display: block; }
@@ -157,7 +161,7 @@ main { display: block; }
   .fig--has-narrow .fig-wide { display: block; }
   .fig--has-narrow .fig-narrow { display: none; }
 }
-.fig figcaption {
+.fig figcaption, .result figcaption {
   margin-top: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.45;

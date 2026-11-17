@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{- $isPost := eq .Section "posts" }}
-{{- /* .ReadingTime would also count the text of the inlined figures and their data tables. */}}
-{{- $words := .Content | replaceRE `(?s)<figure class="fig.*?</figure>` "" | plainify | countwords }}
+{{- /* .ReadingTime would also count the text of the inlined figures, their data tables and the result tables. */}}
+{{- $words := .Content | replaceRE `(?s)<figure class="fig.*?</figure>|<figure class="result".*?</figure>` "" | plainify | countwords }}
 {{- $minutes := math.Max 1 (math.Ceil (div (float $words) 213)) }}
 {{- $toc := "" }}
 {{- if and $isPost (findRE `<li>` .TableOfContents 1) }}

@@ -3,8 +3,9 @@ title = "Martin Pluskal"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
-# Read directly by the fig shortcode; as content files Hugo would parse them as pages.
-ignoreFiles = ['\.table\.html$', 'data/fig/SCHEMA\.md$', 'data/facts_allow\.txt$']
+# Read directly by the fig shortcode; as content files Hugo would parse them as pages. The per-job rows under
+# data/jobs are kept out of hugo.Data, so that no shortcode prints a job number by accident.
+ignoreFiles = ['\.table\.html$', 'data/fig/SCHEMA\.md$', 'data/facts_allow\.txt$', 'data/jobs/']
 
 [outputs]
   home = ["html", "rss"]

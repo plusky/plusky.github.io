@@ -1,0 +1,40 @@
+{{- /* One table from data/results/<id>.json. It takes no caption, so every number shown comes from the file. */ -}}
+{{- $id := .Get "id" -}}
+{{- if not $id -}}
+  {{- errorf "%s: result needs an id" .Position -}}
+{{- end -}}
+{{- $seen := 0 -}}
+{{- range findRESubmatch `\{\{<\s*result\s[^}]*?\bid="([^"]+)"` .Page.RawContent -}}
+  {{- if eq (index . 1) $id }}{{ $seen = add $seen 1 }}{{ end -}}
+{{- end -}}
+{{- if gt $seen 1 -}}
+  {{- errorf "%s: result %q is used %d times; an id may appear once per page" .Position $id $seen -}}
+{{- end -}}
+{{- with index (hugo.Data.results | default dict) $id -}}
+{{- $d := . -}}
+<figure class="result" id="result-{{ $id }}">
+<div class="table-wrap" role="region" aria-label="{{ $d.title }}" tabindex="0">
+<table>
+<thead>
+<tr>{{ range $d.columns }}<th scope="col"{{ with .align }} class="ta-{{ . }}"{{ end }}>{{ .label }}</th>{{ end }}</tr>
+</thead>
+<tbody>
+{{- range $row := $d.rows }}
+<tr>
+{{- range $c := $d.columns }}
+{{- $v := index $row $c.key }}
+<td{{ with $c.align }} class="ta-{{ . }}"{{ end }}>
+{{- if eq (printf "%T" $v) "<nil>" }}–{{ else if reflect.IsSlice $v }}{{ if eq (len $v) 2 }}{{ index $v 0 }} of {{ index $v 1 }}{{ else }}{{ $v }}{{ end }}{{ else }}{{ $v }}{{ end -}}
+</td>
+{{- end }}
+</tr>
+{{- end }}
+</tbody>
+</table>
+</div>
+<figcaption><strong>{{ $d.title }}{{ if not (strings.HasSuffix $d.title "?") }}.{{ end }}</strong> {{ $d.compared }} {{ $d.sample }} {{ $d.verdict }}{{ with $d.note }} {{ . }}{{ end }}
+{{- range $d.pr }} <a href="https://github.com/os-autoinst/{{ .repo }}/pull/{{ .number }}">{{ if eq .repo "openQA" }}openQA {{ end }}#{{ .number }}</a>{{ end }}</figcaption>
+</figure>
+{{- else -}}
+  {{- errorf "%s: data/results/%s.json is missing" .Position $id -}}
+{{- end -}}
