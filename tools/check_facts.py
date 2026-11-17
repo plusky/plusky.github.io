@@ -4,8 +4,9 @@
 Usage: check_facts.py content/posts/<post>/index.md...
        check_facts.py --self-test
 
-A number passes when it equals the value of a fact in data/facts.json, when the
-text around it matches one of that fact's forms, or when it is listed in
+A number passes when it equals the value of a fact in data/facts.json or in a
+data/facts-<name>.json beside it, when the text around it matches one of that
+fact's forms, or when it is listed in
 data/facts_allow.txt ("<token>  # <reason>"). Years, ordinals, "#814", dotted
 versions such as 1.2.3 and ISO dates pass without an entry; number words are
 not numbers here.
@@ -171,11 +172,17 @@ def run(paths):
     if not FACTS.is_file():
         print(f"check_facts: {FACTS.relative_to(ROOT)} not found; it lists the numbers a post may quote", file=sys.stderr)
         return 2
-    try:
-        facts_json = json.loads(FACTS.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as e:
-        print(f"check_facts: {FACTS.relative_to(ROOT)}: {e}", file=sys.stderr)
-        return 2
+    facts_json = {}
+    for path in sorted(FACTS.parent.glob("facts*.json")):
+        try:
+            part = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            print(f"check_facts: {path.relative_to(ROOT)}: {e}", file=sys.stderr)
+            return 2
+        if again := sorted(facts_json.keys() & part.keys()):
+            print(f"check_facts: {path.relative_to(ROOT)}: keys of another facts file: {', '.join(again)}", file=sys.stderr)
+            return 2
+        facts_json.update(part)
     allow, errors = load_allow(ALLOW)
     for e in errors:
         print(e)

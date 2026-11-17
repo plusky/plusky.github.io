@@ -6,7 +6,7 @@ PAGE ?= /
 POSTS = $(wildcard content/posts/*/index.md)
 LEAK_PATHS = data content figures layouts assets static tools .github .githooks .gitignore README.md Makefile hugo.toml
 
-.PHONY: all figures check check-svg check-facts check-leaks build serve preview-figures shots linkcheck linkcheck-internal fresh
+.PHONY: all figures check check-self check-svg check-facts check-leaks check-results build serve preview-figures shots linkcheck linkcheck-internal fresh
 
 all: figures check build linkcheck-internal
 	$(PYTHON) tools/check_leaks.py public
@@ -14,7 +14,13 @@ all: figures check build linkcheck-internal
 figures:
 	$(PYTHON) figures/build.py
 
-check: check-svg check-facts check-leaks
+check: check-self check-svg check-facts check-leaks check-results
+
+check-self:
+	$(PYTHON) tools/check_svg.py --self-test
+	$(PYTHON) tools/check_facts.py --self-test
+	$(PYTHON) tools/check_leaks.py --self-test
+	$(PYTHON) tools/check_results.py --self-test
 
 check-svg:
 	$(PYTHON) tools/check_svg.py content
@@ -24,6 +30,9 @@ check-facts:
 
 check-leaks:
 	$(PYTHON) tools/check_leaks.py $(LEAK_PATHS)
+
+check-results:
+	$(PYTHON) tools/check_results.py data
 
 build:
 	$(HUGO) --gc --minify --panicOnWarning --printPathWarnings --cleanDestinationDir $(HUGOFLAGS)

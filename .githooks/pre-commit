@@ -1,5 +1,5 @@
 #!/bin/sh
-# Leak, SVG and facts checks before each commit.
+# Leak, SVG, results and facts checks before each commit.
 # Enable once per clone with: git config core.hooksPath .githooks
 set -eu
 
@@ -17,6 +17,7 @@ if [ -n "$staged" ]; then
 	IFS=$old_ifs
 fi
 python3 -I tools/check_svg.py content || status=1
+python3 -I tools/check_results.py data || status=1
 set -- content/posts/*/index.md
 [ -e "$1" ] || set --
 python3 -I tools/check_facts.py "$@" || status=1
