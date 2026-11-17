@@ -1,0 +1,108 @@
+{
+ "id": "labels-supply",
+ "scope": "o3",
+ "title": "Where labels could come from on the public instance",
+ "compared": "Failed jobs that got a bug or ticket reference, by who set it, and jobs that got an LLM comment, by whether a person later reviewed them.",
+ "sample": "42 days of four public job groups (Tumbleweed, its Development group, AArch64, Leap 16); jobs, not comments.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "what",
+   "label": "Jobs"
+  },
+  {
+   "key": "count",
+   "label": "Count",
+   "align": "right"
+  },
+  {
+   "key": "share_pct",
+   "label": "Share (%)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "what": "failed, with a bug or ticket reference",
+   "count": 1316,
+   "share_pct": null
+  },
+  {
+   "what": "reference set by automation or carried over",
+   "count": [
+    1226,
+    1316
+   ],
+   "share_pct": 93.2
+  },
+  {
+   "what": "reference set by a person",
+   "count": [
+    90,
+    1316
+   ],
+   "share_pct": 6.8
+  },
+  {
+   "what": "set by a person: product bug",
+   "count": 41,
+   "share_pct": null
+  },
+  {
+   "what": "set by a person: test issue ticket",
+   "count": 40,
+   "share_pct": null
+  },
+  {
+   "what": "set by a person: ticket of another team",
+   "count": 2,
+   "share_pct": null
+  },
+  {
+   "what": "set by a person: ticket not visible anonymously",
+   "count": 7,
+   "share_pct": null
+  },
+  {
+   "what": "set by a person: infrastructure ticket",
+   "count": 0,
+   "share_pct": null
+  },
+  {
+   "what": "distinct references set by a person",
+   "count": 23,
+   "share_pct": null
+  },
+  {
+   "what": "with an LLM comment",
+   "count": 6459,
+   "share_pct": null
+  },
+  {
+   "what": "with an LLM comment, reviewed by a person",
+   "count": [
+    142,
+    6459
+   ],
+   "share_pct": 2.2
+  },
+  {
+   "what": "with an LLM comment, in the Development group",
+   "count": [
+    3290,
+    6459
+   ],
+   "share_pct": 50.9
+  },
+  {
+   "what": "in the Development group, reviewed by a person",
+   "count": [
+    4,
+    3290
+   ],
+   "share_pct": 0.1
+  }
+ ],
+ "verdict": "A person set the reference on 90 jobs in 42 days, none for infrastructure, and people reviewed 2.2% of the jobs the model commented. Too few labels to train or tune on.",
+ "note": "Reviewed means a person later set a bug reference or a label on the job."
+}

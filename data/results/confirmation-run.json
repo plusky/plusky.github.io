@@ -1,0 +1,143 @@
+{
+ "id": "confirmation-run",
+ "scope": "mixed",
+ "title": "The frozen confirmation run",
+ "compared": "The class of the comments Gemma posted against two decision rules on elephant-1's answers: the product-or-test question asked in three orders plus the environment question, and the product-or-test question asked once plus the environment question.",
+ "sample": "128 public jobs with a confident label from a frontier model, most of them made with hindsight, none among the jobs the threshold was read from; some share a test and a build with jobs used for tuning. Plus 19 jobs of the internal instance as a side check. The rules and the pass rule were written down before the run.",
+ "date": "2026-11-12",
+ "columns": [
+  {
+   "key": "instance",
+   "label": "Instance"
+  },
+  {
+   "key": "rule",
+   "label": "Class from"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "product",
+   "label": "Product bugs right",
+   "align": "right"
+  },
+  {
+   "key": "test",
+   "label": "Test issues right",
+   "align": "right"
+  },
+  {
+   "key": "infra",
+   "label": "Infrastructure right",
+   "align": "right"
+  },
+  {
+   "key": "recall",
+   "label": "Mean class recall (%)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "instance": "public",
+   "rule": "posted comment",
+   "right": [
+    66,
+    128
+   ],
+   "product": [
+    38,
+    70
+   ],
+   "test": [
+    9,
+    16
+   ],
+   "infra": [
+    19,
+    42
+   ],
+   "recall": 51.9
+  },
+  {
+   "instance": "public",
+   "rule": "three orders and the environment question",
+   "right": [
+    95,
+    128
+   ],
+   "product": [
+    61,
+    70
+   ],
+   "test": [
+    12,
+    16
+   ],
+   "infra": [
+    22,
+    42
+   ],
+   "recall": 71.5
+  },
+  {
+   "instance": "public",
+   "rule": "two questions",
+   "right": [
+    93,
+    128
+   ],
+   "product": [
+    58,
+    70
+   ],
+   "test": [
+    13,
+    16
+   ],
+   "infra": [
+    22,
+    42
+   ],
+   "recall": 72.2
+  },
+  {
+   "instance": "internal (counts only)",
+   "rule": "posted comment",
+   "right": [
+    6,
+    19
+   ],
+   "product": null,
+   "test": null,
+   "infra": null,
+   "recall": null
+  },
+  {
+   "instance": "internal (counts only)",
+   "rule": "either decision rule",
+   "right": [
+    14,
+    19
+   ],
+   "product": null,
+   "test": null,
+   "infra": null,
+   "recall": null
+  }
+ ],
+ "verdict": "Both rules passed: 95 and 93 right of 128 against 66 for the posted comments, and 14 of 19 against 6 on the internal jobs. The cheaper two-question rule was proposed.",
+ "pr": [
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 814
+  },
+  {
+   "repo": "openQA",
+   "number": 8102
+  }
+ ]
+}

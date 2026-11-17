@@ -1,0 +1,70 @@
+{
+ "id": "confirmation-disagreement",
+ "scope": "o3",
+ "title": "Where the rule and the posted comment disagree",
+ "compared": "Whether a decision rule that names a different class than the posted comment can flag the comments worth a second look: how often the rule is right where the two differ and where they agree.",
+ "sample": "The 128 public jobs of the frozen confirmation run.",
+ "date": "2026-11-12",
+ "columns": [
+  {
+   "key": "rule",
+   "label": "Rule"
+  },
+  {
+   "key": "differ",
+   "label": "Jobs where the classes differ",
+   "align": "right"
+  },
+  {
+   "key": "right_differ",
+   "label": "Rule right where they differ",
+   "align": "right"
+  },
+  {
+   "key": "pct_differ",
+   "label": "Right where they differ (%)",
+   "align": "right"
+  },
+  {
+   "key": "right_agree",
+   "label": "Rule right where they agree",
+   "align": "right"
+  },
+  {
+   "key": "pct_agree",
+   "label": "Right where they agree (%)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "rule": "two questions",
+   "differ": 61,
+   "right_differ": [
+    41,
+    61
+   ],
+   "pct_differ": 67,
+   "right_agree": [
+    52,
+    67
+   ],
+   "pct_agree": 78
+  },
+  {
+   "rule": "three orders and the environment question",
+   "differ": 63,
+   "right_differ": [
+    43,
+    63
+   ],
+   "pct_differ": 68,
+   "right_agree": [
+    52,
+    65
+   ],
+   "pct_agree": 80
+  }
+ ],
+ "verdict": "With the three-order rule the classes differ on 49% of the jobs, and there the rule is right only a little less often (68% against 80%); the two-question rule gives nearly the same. A useful flag had to mark 15 to 40% of the jobs with a gap of at least 20 points. Dropped."
+}

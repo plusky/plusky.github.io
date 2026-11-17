@@ -1,0 +1,103 @@
+{
+ "id": "ideas-screenshot",
+ "scope": "o3",
+ "title": "Does the screenshot of a failed needle help?",
+ "compared": "Gemma 4 E4B (Q8_0, vision loaded) asked for the failure class with the text alone, and with the same text plus the screenshot of the failing needle step.",
+ "sample": "Needle failures of the public instance, one job per cause: 39 causes, 18 of them with a firm hindsight label.",
+ "date": "2026-11-12",
+ "columns": [
+  {
+   "key": "causes",
+   "label": "Causes"
+  },
+  {
+   "key": "input",
+   "label": "Gemma given"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "product",
+   "label": "Product bugs right",
+   "align": "right"
+  },
+  {
+   "key": "test",
+   "label": "Test issues right",
+   "align": "right"
+  },
+  {
+   "key": "infra",
+   "label": "Infrastructure right",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "causes": "18 causes with a firm label",
+   "input": "text only",
+   "right": [
+    9,
+    18
+   ],
+   "product": [
+    3,
+    3
+   ],
+   "test": [
+    5,
+    6
+   ],
+   "infra": [
+    1,
+    9
+   ]
+  },
+  {
+   "causes": "18 causes with a firm label",
+   "input": "text and screenshot",
+   "right": [
+    10,
+    18
+   ],
+   "product": [
+    2,
+    3
+   ],
+   "test": [
+    6,
+    6
+   ],
+   "infra": [
+    2,
+    9
+   ]
+  },
+  {
+   "causes": "all 39 causes",
+   "input": "text only",
+   "right": [
+    21,
+    39
+   ],
+   "product": null,
+   "test": null,
+   "infra": null
+  },
+  {
+   "causes": "all 39 causes",
+   "input": "text and screenshot",
+   "right": [
+    20,
+    39
+   ],
+   "product": null,
+   "test": null,
+   "infra": null
+  }
+ ],
+ "verdict": "On the firm causes the screenshot gave 1 more right; the bar written down before the run was 3 more. Dropped."
+}

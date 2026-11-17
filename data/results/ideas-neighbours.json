@@ -1,0 +1,138 @@
+{
+ "id": "ideas-neighbours",
+ "scope": "o3",
+ "title": "Can a labelled neighbour supply the label?",
+ "compared": "For each labelled job, an earlier failure of the same module in another scenario that already had a ticket reference: how often that neighbour's class equals the job's label, against the posted comment's class on the same jobs.",
+ "sample": "Public jobs: a pilot of 40 (20 gold, 20 silver), then all 383 gold and firm silver jobs; a job had a median of 188 candidate jobs.",
+ "date": "2026-11-13",
+ "columns": [
+  {
+   "key": "run",
+   "label": "Run"
+  },
+  {
+   "key": "jobs",
+   "label": "Jobs"
+  },
+  {
+   "key": "with",
+   "label": "With a labelled neighbour",
+   "align": "right"
+  },
+  {
+   "key": "nearest",
+   "label": "Nearest neighbour's class = label",
+   "align": "right"
+  },
+  {
+   "key": "any",
+   "label": "Some neighbour's class = label",
+   "align": "right"
+  },
+  {
+   "key": "posted",
+   "label": "Posted class = label, same jobs",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "run": "pilot",
+   "jobs": "all",
+   "with": [
+    9,
+    40
+   ],
+   "nearest": [
+    7,
+    9
+   ],
+   "any": [
+    8,
+    9
+   ],
+   "posted": null
+  },
+  {
+   "run": "wide",
+   "jobs": "all",
+   "with": [
+    213,
+    383
+   ],
+   "nearest": [
+    69,
+    213
+   ],
+   "any": [
+    80,
+    213
+   ],
+   "posted": [
+    111,
+    210
+   ]
+  },
+  {
+   "run": "wide",
+   "jobs": "gold",
+   "with": [
+    62,
+    98
+   ],
+   "nearest": [
+    33,
+    62
+   ],
+   "any": [
+    38,
+    62
+   ],
+   "posted": [
+    36,
+    59
+   ]
+  },
+  {
+   "run": "wide",
+   "jobs": "silver",
+   "with": [
+    151,
+    285
+   ],
+   "nearest": [
+    36,
+    151
+   ],
+   "any": [
+    42,
+    151
+   ],
+   "posted": [
+    75,
+    151
+   ]
+  },
+  {
+   "run": "wide",
+   "jobs": "silver, infrastructure",
+   "with": [
+    58,
+    111
+   ],
+   "nearest": [
+    0,
+    58
+   ],
+   "any": [
+    0,
+    58
+   ],
+   "posted": [
+    17,
+    58
+   ]
+  }
+ ],
+ "verdict": "The pilot passed its bar: at least 8 of 40 jobs with a neighbour, and for at least 80% of them some neighbour with the job's class. On all jobs 56% had a neighbour, but some neighbour matched for only 38% of them and the nearest one for 32%, against the 80% asked, and never on silver infrastructure jobs. Dropped."
+}

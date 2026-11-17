@@ -1,0 +1,143 @@
+{
+ "id": "prompt-size-context",
+ "scope": "mixed",
+ "title": "Prompts that still overflow the context after cutting",
+ "compared": "The script cuts a prompt assuming 2.5 characters per token; the proposal assumes 1.9.",
+ "sample": "520 real first-question prompts, 398 from the public instance and 122 from an internal one, measured with the model's tokenizer; totals only.",
+ "date": "2026-11-12",
+ "columns": [
+  {
+   "key": "context",
+   "label": "Context (tokens)",
+   "align": "right"
+  },
+  {
+   "key": "cpt",
+   "label": "Characters per token assumed",
+   "align": "right"
+  },
+  {
+   "key": "cut",
+   "label": "Prompts cut",
+   "align": "right"
+  },
+  {
+   "key": "over",
+   "label": "Still over the context",
+   "align": "right"
+  },
+  {
+   "key": "over_reserve",
+   "label": "Over the context less 2,048 tokens for the answer",
+   "align": "right"
+  },
+  {
+   "key": "needless",
+   "label": "Cut but would have fitted",
+   "align": "right"
+  },
+  {
+   "key": "needless_median",
+   "label": "Characters removed by such a cut, median",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "context": 16384,
+   "cpt": 2.5,
+   "cut": [
+    23,
+    520
+   ],
+   "over": [
+    11,
+    520
+   ],
+   "over_reserve": [
+    36,
+    520
+   ],
+   "needless": [
+    1,
+    520
+   ],
+   "needless_median": 12708
+  },
+  {
+   "context": 16384,
+   "cpt": 1.9,
+   "cut": [
+    59,
+    520
+   ],
+   "over": [
+    0,
+    520
+   ],
+   "over_reserve": [
+    1,
+    520
+   ],
+   "needless": [
+    23,
+    520
+   ],
+   "needless_median": 1287
+  },
+  {
+   "context": 32768,
+   "cpt": 2.5,
+   "cut": [
+    1,
+    520
+   ],
+   "over": [
+    3,
+    520
+   ],
+   "over_reserve": [
+    3,
+    520
+   ],
+   "needless": [
+    0,
+    520
+   ],
+   "needless_median": null
+  },
+  {
+   "context": 32768,
+   "cpt": 1.9,
+   "cut": [
+    6,
+    520
+   ],
+   "over": [
+    0,
+    520
+   ],
+   "over_reserve": [
+    0,
+    520
+   ],
+   "needless": [
+    3,
+    520
+   ],
+   "needless_median": 3436
+  }
+ ],
+ "verdict": "With 1.9 no prompt overflows a context of 16,384 tokens and 1 leaves too little room for the answer, against 11 and 36 with 2.5. The price is 23 prompts cut that would have fitted.",
+ "pr": [
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 799
+  },
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 815
+  }
+ ],
+ "note": "The measured prompts have a median of 2.28 characters per token, a 10th percentile of 2.14 and a minimum of 1.73."
+}

@@ -1,0 +1,11 @@
+<ol>
+<li>The benchmark server ran llama-server with --ctx-size 262144 and --parallel 8.</li>
+<li>It divided the context into 8 equal slots of 32,768 tokens; each request got one slot.</li>
+<li>The script keeps 2,048 tokens of a slot for the three replies.</li>
+<li>Two real prompts against one slot:
+<ol>
+<li>32.3k tokens: inside the slot, but in the part kept for the replies. The request failed.</li>
+<li>35.3k tokens: 2.5k tokens over the slot. The request failed.</li>
+</ol></li>
+<li>The script cuts the prompt by characters, assuming 2.5 characters per token. Real prompts measure a median of 2.28 characters per token, so they hold about 10% more tokens than it estimates (2.5 / 2.28 = 1.10).</li>
+</ol>

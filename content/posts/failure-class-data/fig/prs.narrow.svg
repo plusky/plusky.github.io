@@ -1,0 +1,187 @@
+<svg viewBox="0 0 360 600" role="img" aria-labelledby="prs-n-t prs-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="prs-n-t">Pull requests by topic, 25 Oct to 14 Nov 2026</title>
+<desc id="prs-n-d">Of the 28 pull requests opened from 25 Oct to 14 Nov, 22 merged within days; the 6 still open were all opened on 12 and 13 Nov, among them the decision-model and retry changes.</desc>
+<g>
+<line class="grid" x1="0" y1="108" x2="351" y2="108"/>
+<line class="grid" x1="0" y1="205" x2="351" y2="205"/>
+<line class="grid" x1="0" y1="254" x2="351" y2="254"/>
+<line class="grid" x1="0" y1="319" x2="351" y2="319"/>
+<line class="grid" x1="0" y1="368" x2="351" y2="368"/>
+<line class="grid" x1="0" y1="465" x2="351" y2="465"/>
+<line class="grid" x1="0" y1="530" x2="351" y2="530"/>
+<line class="grid" x1="0" y1="31" x2="0" y2="579"/>
+<line class="grid" x1="117" y1="31" x2="117" y2="579"/>
+<line class="grid" x1="234" y1="31" x2="234" y2="579"/>
+<line class="grid" x1="334.29" y1="31" x2="334.29" y2="579"/>
+<line class="axis" x1="351" y1="31" x2="351" y2="579"/>
+<line class="axis" x1="0" y1="579" x2="351" y2="579"/>
+</g>
+<g>
+<g data-tip="os-autoinst-scripts #788: fix(llm-investigate): Keep the reply from acting on the job (opened 25 Oct, merged 29 Oct)" tabindex="0">
+<title>os-autoinst-scripts #788: fix(llm-investigate): Keep the reply from acting on the job (opened 25 Oct, merged 29 Oct)</title>
+<rect class="hit" x="1" y="44" width="81.57" height="24"/>
+<path class="c-ctl" d="M1 56H78.57A4 4 0 0 1 82.57 60V60A4 4 0 0 1 78.57 64H1Z"/>
+</g>
+<g data-tip="openQA #8023: feat: Ignore bugrefs, labels, tags and flags in flag:verbatim comments (opened 26 Oct, merged 27 Oct)" tabindex="0">
+<title>openQA #8023: feat: Ignore bugrefs, labels, tags and flags in flag:verbatim comments (opened 26 Oct, merged 27 Oct)</title>
+<rect class="hit" x="17.71" y="68" width="31.43" height="16"/>
+<path class="c-ctl" d="M17.71 72H45.14A4 4 0 0 1 49.14 76V76A4 4 0 0 1 45.14 80H17.71Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #796: fix(llm-investigate): Don't post on a job that is already reviewed (opened 31 Oct, merged 3 Nov)" tabindex="0">
+<title>os-autoinst-scripts #796: fix(llm-investigate): Don't post on a job that is already reviewed (opened 31 Oct, merged 3 Nov)</title>
+<rect class="hit" x="101.29" y="44" width="64.86" height="24"/>
+<path class="c-ctl" d="M101.29 56H162.14A4 4 0 0 1 166.14 60V60A4 4 0 0 1 162.14 64H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #797: fix(hook): Report investigate jobs without the LLM gate (opened 31 Oct, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #797: fix(hook): Report investigate jobs without the LLM gate (opened 31 Oct, merged 2 Nov)</title>
+<rect class="hit" x="101.29" y="68" width="48.14" height="16"/>
+<path class="c-ctl" d="M101.29 72H145.43A4 4 0 0 1 149.43 76V76A4 4 0 0 1 145.43 80H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #817: fix(llm-investigate): Keep force_result labels out of the summary (opened 13 Nov, open on 14 Nov)" tabindex="0">
+<title>os-autoinst-scripts #817: fix(llm-investigate): Keep force_result labels out of the summary (opened 13 Nov, open on 14 Nov)</title>
+<rect class="hit" x="318.57" y="44" width="41.43" height="24"/>
+<path class="c-focus" d="M318.57 56H351V54L359 60L351 66V64H318.57Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #819: docs: Describe _FORCE_STATUS_ON_RETRY of openqa-investigate (opened 13 Nov, open on 14 Nov)" tabindex="0">
+<title>os-autoinst-scripts #819: docs: Describe _FORCE_STATUS_ON_RETRY of openqa-investigate (opened 13 Nov, open on 14 Nov)</title>
+<rect class="hit" x="318.57" y="68" width="41.43" height="16"/>
+<path class="c-focus" d="M318.57 72H351V70L359 76L351 82V80H318.57Z"/>
+</g>
+<g data-tip="openQA #8113: fix: Allow deleting verbatim force_result comments (opened 13 Nov, open on 14 Nov)" tabindex="0">
+<title>openQA #8113: fix: Allow deleting verbatim force_result comments (opened 13 Nov, open on 14 Nov)</title>
+<rect class="hit" x="318.57" y="84" width="41.43" height="24"/>
+<path class="c-focus" d="M318.57 88H351V86L359 92L351 98V96H318.57Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #789: feat(llm-investigate): Show the test commits since the last good job (opened 25 Oct, merged 28 Oct)" tabindex="0">
+<title>os-autoinst-scripts #789: feat(llm-investigate): Show the test commits since the last good job (opened 25 Oct, merged 28 Oct)</title>
+<rect class="hit" x="1" y="125" width="64.86" height="24"/>
+<path class="c-ctl" d="M1 137H61.86A4 4 0 0 1 65.86 141V141A4 4 0 0 1 61.86 145H1Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #790: fix(llm-investigate): Count the verdict statistics per scenario (opened 25 Oct, merged 27 Oct)" tabindex="0">
+<title>os-autoinst-scripts #790: fix(llm-investigate): Count the verdict statistics per scenario (opened 25 Oct, merged 27 Oct)</title>
+<rect class="hit" x="1" y="149" width="48.14" height="16"/>
+<path class="c-ctl" d="M1 153H45.14A4 4 0 0 1 49.14 157V157A4 4 0 0 1 45.14 161H1Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #791: feat(llm-investigate): Name sudo, DNS and mount errors of failing steps (opened 25 Oct, merged 28 Oct)" tabindex="0">
+<title>os-autoinst-scripts #791: feat(llm-investigate): Name sudo, DNS and mount errors of failing steps (opened 25 Oct, merged 28 Oct)</title>
+<rect class="hit" x="1" y="165" width="64.86" height="16"/>
+<path class="c-ctl" d="M1 169H61.86A4 4 0 0 1 65.86 173V173A4 4 0 0 1 61.86 177H1Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #795: fix(llm-investigate): Skip permissive SELinux denials as the key error (opened 31 Oct, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #795: fix(llm-investigate): Skip permissive SELinux denials as the key error (opened 31 Oct, merged 2 Nov)</title>
+<rect class="hit" x="101.29" y="125" width="48.14" height="24"/>
+<path class="c-ctl" d="M101.29 137H145.43A4 4 0 0 1 149.43 141V141A4 4 0 0 1 145.43 145H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #798: feat(llm-investigate): Skip bisect and restart on long failure streaks (opened 31 Oct, merged 3 Nov)" tabindex="0">
+<title>os-autoinst-scripts #798: feat(llm-investigate): Skip bisect and restart on long failure streaks (opened 31 Oct, merged 3 Nov)</title>
+<rect class="hit" x="101.29" y="149" width="64.86" height="16"/>
+<path class="c-ctl" d="M101.29 153H162.14A4 4 0 0 1 166.14 157V157A4 4 0 0 1 162.14 161H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #801: feat(llm-investigate): Show reviews of earlier same-module failures (opened 31 Oct, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #801: feat(llm-investigate): Show reviews of earlier same-module failures (opened 31 Oct, merged 2 Nov)</title>
+<rect class="hit" x="101.29" y="165" width="48.14" height="16"/>
+<path class="c-ctl" d="M101.29 169H145.43A4 4 0 0 1 149.43 173V173A4 4 0 0 1 145.43 177H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #802: fix(llm-investigate): Require evidence for an Infrastructure verdict (opened 1 Nov, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #802: fix(llm-investigate): Require evidence for an Infrastructure verdict (opened 1 Nov, merged 2 Nov)</title>
+<rect class="hit" x="118" y="181" width="31.43" height="24"/>
+<path class="c-ctl" d="M118 185H145.43A4 4 0 0 1 149.43 189V189A4 4 0 0 1 145.43 193H118Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #792: fix(ci): Ignore ruff's shared-clock-mock rule in tests (opened 28 Oct, merged 28 Oct)" tabindex="0">
+<title>os-autoinst-scripts #792: fix(ci): Ignore ruff's shared-clock-mock rule in tests (opened 28 Oct, merged 28 Oct)</title>
+<rect class="hit" x="46.5" y="222" width="24" height="32"/>
+<path class="c-ctl" d="M51.14 234H61.86A4 4 0 0 1 65.86 238V238A4 4 0 0 1 61.86 242H51.14Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #809: fix(ci): Ignore only the gitlab imports that ty can't resolve (opened 8 Nov, merged 10 Nov)" tabindex="0">
+<title>os-autoinst-scripts #809: fix(ci): Ignore only the gitlab imports that ty can't resolve (opened 8 Nov, merged 10 Nov)</title>
+<rect class="hit" x="235" y="222" width="48.14" height="32"/>
+<path class="c-ctl" d="M235 234H279.14A4 4 0 0 1 283.14 238V238A4 4 0 0 1 279.14 242H235Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #816: fix(ci): Use ruff's new name for missing-return-type rule (opened 13 Nov, merged 13 Nov)" tabindex="0">
+<title>os-autoinst-scripts #816: fix(ci): Use ruff's new name for missing-return-type rule (opened 13 Nov, merged 13 Nov)</title>
+<rect class="hit" x="313.93" y="222" width="24" height="32"/>
+<path class="c-ctl" d="M318.57 234H329.29A4 4 0 0 1 333.29 238V238A4 4 0 0 1 329.29 242H318.57Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #799: fix(llm-investigate): Count 2.5 chars per token for --context-tokens (opened 31 Oct, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #799: fix(llm-investigate): Count 2.5 chars per token for --context-tokens (opened 31 Oct, merged 2 Nov)</title>
+<rect class="hit" x="101.29" y="271" width="48.14" height="24"/>
+<path class="c-ctl" d="M101.29 283H145.43A4 4 0 0 1 149.43 287V287A4 4 0 0 1 145.43 291H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #800: feat(llm-investigate): Say in the comment when the analysis was cut (opened 31 Oct, merged 2 Nov)" tabindex="0">
+<title>os-autoinst-scripts #800: feat(llm-investigate): Say in the comment when the analysis was cut (opened 31 Oct, merged 2 Nov)</title>
+<rect class="hit" x="101.29" y="295" width="48.14" height="24"/>
+<path class="c-ctl" d="M101.29 299H145.43A4 4 0 0 1 149.43 303V303A4 4 0 0 1 145.43 307H101.29Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #815: fix(llm-investigate): Lower CHARS_PER_TOKEN to 1.9 so cut prompts fit (opened 12 Nov, open on 14 Nov)" tabindex="0">
+<title>os-autoinst-scripts #815: fix(llm-investigate): Lower CHARS_PER_TOKEN to 1.9 so cut prompts fit (opened 12 Nov, open on 14 Nov)</title>
+<rect class="hit" x="301.86" y="271" width="58.14" height="24"/>
+<path class="c-focus" d="M301.86 283H351V281L359 287L351 293V291H301.86Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #810: feat(llm-investigate): Skip the Development groups (opened 8 Nov, merged 11 Nov)" tabindex="0">
+<title>os-autoinst-scripts #810: feat(llm-investigate): Skip the Development groups (opened 8 Nov, merged 11 Nov)</title>
+<rect class="hit" x="235" y="336" width="64.86" height="32"/>
+<path class="c-ctl" d="M235 348H295.86A4 4 0 0 1 299.86 352V352A4 4 0 0 1 295.86 356H235Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #808: feat(llm-investigate): Keep the LLM requests of a job on one server (opened 8 Nov, merged 10 Nov)" tabindex="0">
+<title>os-autoinst-scripts #808: feat(llm-investigate): Keep the LLM requests of a job on one server (opened 8 Nov, merged 10 Nov)</title>
+<rect class="hit" x="235" y="385" width="48.14" height="24"/>
+<path class="c-ctl" d="M235 397H279.14A4 4 0 0 1 283.14 401V401A4 4 0 0 1 279.14 405H235Z"/>
+</g>
+<g data-tip="openQA #8069: perf(nginx): Route LLM requests by openQA job (opened 8 Nov, merged 10 Nov)" tabindex="0">
+<title>openQA #8069: perf(nginx): Route LLM requests by openQA job (opened 8 Nov, merged 10 Nov)</title>
+<rect class="hit" x="235" y="409" width="48.14" height="16"/>
+<path class="c-ctl" d="M235 413H279.14A4 4 0 0 1 283.14 417V417A4 4 0 0 1 279.14 421H235Z"/>
+</g>
+<g data-tip="openQA #8070: perf(container): Don't load the multimodal projector of the LLM (opened 8 Nov, merged 12 Nov)" tabindex="0">
+<title>openQA #8070: perf(container): Don't load the multimodal projector of the LLM (opened 8 Nov, merged 12 Nov)</title>
+<rect class="hit" x="235" y="425" width="81.57" height="16"/>
+<path class="c-ctl" d="M235 429H312.57A4 4 0 0 1 316.57 433V433A4 4 0 0 1 312.57 437H235Z"/>
+</g>
+<g data-tip="openQA #8071: fix(nginx): Pass an LLM request to the next server on a 503 (opened 8 Nov, merged 10 Nov)" tabindex="0">
+<title>openQA #8071: fix(nginx): Pass an LLM request to the next server on a 503 (opened 8 Nov, merged 10 Nov)</title>
+<rect class="hit" x="235" y="441" width="48.14" height="24"/>
+<path class="c-ctl" d="M235 445H279.14A4 4 0 0 1 283.14 449V449A4 4 0 0 1 279.14 453H235Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #814: feat(llm-investigate): Let a decision model set the Classification line (opened 12 Nov, open on 14 Nov)" tabindex="0">
+<title>os-autoinst-scripts #814: feat(llm-investigate): Let a decision model set the Classification line (opened 12 Nov, open on 14 Nov)</title>
+<rect class="hit" x="301.86" y="482" width="58.14" height="24"/>
+<path class="c-focus" d="M301.86 494H351V492L359 498L351 504V502H301.86Z"/>
+</g>
+<g data-tip="openQA #8102: feat: Add openQA-llm-decision-server sub-package (opened 12 Nov, merged 14 Nov)" tabindex="0">
+<title>openQA #8102: feat: Add openQA-llm-decision-server sub-package (opened 12 Nov, merged 14 Nov)</title>
+<rect class="hit" x="301.86" y="506" width="48.14" height="24"/>
+<path class="c-ctl" d="M301.86 510H346A4 4 0 0 1 350 514V514A4 4 0 0 1 346 518H301.86Z"/>
+</g>
+<g data-tip="os-autoinst-scripts #821: feat(llm-investigate): Retry a job alone on Restart: YES (opened 13 Nov, open on 14 Nov)" tabindex="0">
+<title>os-autoinst-scripts #821: feat(llm-investigate): Retry a job alone on Restart: YES (opened 13 Nov, open on 14 Nov)</title>
+<rect class="hit" x="318.57" y="547" width="41.43" height="32"/>
+<path class="c-focus" d="M318.57 559H351V557L359 563L351 569V567H318.57Z"/>
+</g>
+</g>
+<g>
+<rect class="c-ctl" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">merged (22)</text>
+<rect class="c-focus" x="108.35" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="127.35" y="14.79">open on 14 Nov (6)</text>
+<text class="t-strong" x="0" y="43.58">Comments and the hook</text>
+<text class="t-muted" x="142.68" y="42.92">4 merged, 3 open</text>
+<text class="t-strong" x="0" y="124.58">Prompt and verdict rules</text>
+<text class="t-muted" x="144.76" y="123.92">7 merged</text>
+<text class="t-strong" x="0" y="221.58">CI</text>
+<text class="t-muted" x="17.15" y="220.92">3 merged</text>
+<text class="t-strong" x="0" y="270.58">Prompt length</text>
+<text class="t-muted" x="87.24" y="269.92">2 merged, 1 open</text>
+<text class="t-strong" x="0" y="335.58">Groups nobody reviews</text>
+<text class="t-muted" x="137.35" y="334.92">1 merged</text>
+<text class="t-strong" x="0" y="384.58">Routing and the model server</text>
+<text class="t-muted" x="170.92" y="383.92">4 merged</text>
+<text class="t-strong" x="0" y="481.58">Decision model</text>
+<text class="t-muted" x="91.7" y="480.92">1 merged, 1 open</text>
+<text class="t-strong" x="0" y="546.58">Retry on Restart: YES</text>
+<text class="t-muted" x="123.48" y="545.92">1 open</text>
+<text class="t-muted" x="0" y="592.92">25 Oct</text>
+<text class="t-muted" x="117" y="592.92" text-anchor="middle">1 Nov</text>
+<text class="t-muted" x="234" y="592.92" text-anchor="middle">8 Nov</text>
+<text class="t-muted" x="334.29" y="592.92" text-anchor="middle">14 Nov</text>
+</g>
+</svg>

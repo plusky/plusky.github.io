@@ -1,0 +1,87 @@
+{
+ "id": "labels-linked",
+ "scope": "o3",
+ "title": "Jobs linked from tickets and bugs that still have their log",
+ "compared": "Public jobs that tickets and bugs link to, and whether each job and its autoinst-log.txt could still be read.",
+ "sample": "Recent test-issue and infrastructure tickets of the public tracker and recent product bugs, each linked job checked once.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "source",
+   "label": "Linked from"
+  },
+  {
+   "key": "texts",
+   "label": "Tickets or bugs read",
+   "align": "right"
+  },
+  {
+   "key": "linking",
+   "label": "Linking a job",
+   "align": "right"
+  },
+  {
+   "key": "jobs",
+   "label": "Linked jobs",
+   "align": "right"
+  },
+  {
+   "key": "deleted",
+   "label": "Job deleted",
+   "align": "right"
+  },
+  {
+   "key": "log_kept",
+   "label": "Log still there",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "source": "test-issue tickets",
+   "texts": 77,
+   "linking": 23,
+   "jobs": 54,
+   "deleted": 0,
+   "log_kept": [
+    52,
+    54
+   ]
+  },
+  {
+   "source": "infrastructure tickets",
+   "texts": 72,
+   "linking": 3,
+   "jobs": 4,
+   "deleted": 0,
+   "log_kept": [
+    1,
+    4
+   ]
+  },
+  {
+   "source": "product bugs",
+   "texts": 32,
+   "linking": 31,
+   "jobs": 72,
+   "deleted": 1,
+   "log_kept": [
+    66,
+    72
+   ]
+  },
+  {
+   "source": "all",
+   "texts": 181,
+   "linking": 57,
+   "jobs": 130,
+   "deleted": 1,
+   "log_kept": [
+    119,
+    130
+   ]
+  }
+ ],
+ "verdict": "119 of 130 linked jobs still had their log, but only 3 infrastructure tickets linked a job at all, and 54 of the jobs with a log had failed.",
+ "note": "A job linked from a ticket gets a label:linked comment, which keeps it from cleanup; the check here is whether the log could still be read. The other linked jobs with a log had passed or soft-failed. The failed ones with a log were the first trial set."
+}

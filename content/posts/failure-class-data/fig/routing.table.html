@@ -1,0 +1,15 @@
+<ol>
+<li>Each job asks three questions in one chat. Turn 2 and turn 3 repeat the whole earlier conversation, so most of their prompt is already in the cache of the server that answered turn 1.</li>
+<li>Before: nginx with least_conn, where ties fall back to round robin.
+<ol>
+<li>Turn 1 goes to server A and is read fresh.</li>
+<li>Turn 2 goes to server B, which has no cached prompt and reads everything fresh.</li>
+<li>Turn 3 goes to server C, which also reads everything fresh.</li>
+</ol></li>
+<li>After: nginx with hash $http_x_openqa_job consistent, keyed on the job id the script sends in the X-Openqa-Job header.
+<ol>
+<li>All three turns go to server A.</li>
+<li>Turns 2 and 3 take 95% of their prompt tokens from the cache.</li>
+<li>If the server answers 503, the request passes to the next server.</li>
+</ol></li>
+</ol>

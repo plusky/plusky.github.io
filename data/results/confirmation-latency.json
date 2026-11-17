@@ -1,0 +1,200 @@
+{
+ "id": "confirmation-latency",
+ "scope": "bench",
+ "title": "Time of one decision request under a thread cap",
+ "compared": "The decision request of elephant-1 with 8 threads and 16 batch threads, with four and with two questions, against the confirmation run with 32 and 64 threads.",
+ "sample": "10 public jobs spread over the range of prompt sizes, one request each per setting; the 128 public jobs of the confirmation run; 6 requests sent in bursts. All on a 2x EPYC 9354 server.",
+ "date": "2026-11-12",
+ "columns": [
+  {
+   "key": "what",
+   "label": "Requests"
+  },
+  {
+   "key": "n",
+   "label": "Number",
+   "align": "right"
+  },
+  {
+   "key": "median",
+   "label": "Median (s)",
+   "align": "right"
+  },
+  {
+   "key": "p90",
+   "label": "90th percentile (s)",
+   "align": "right"
+  },
+  {
+   "key": "max",
+   "label": "Longest (s)",
+   "align": "right"
+  },
+  {
+   "key": "alone",
+   "label": "Same request alone (s)",
+   "align": "right"
+  },
+  {
+   "key": "over",
+   "label": "Over 300 s",
+   "align": "right"
+  },
+  {
+   "key": "mem",
+   "label": "Memory (GiB)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "what": "8 and 16 threads, four questions, one request at a time",
+   "n": 10,
+   "median": 104.0,
+   "p90": null,
+   "max": 400.1,
+   "alone": null,
+   "over": [
+    1,
+    10
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, one request at a time",
+   "n": 10,
+   "median": 52.9,
+   "p90": null,
+   "max": 202.2,
+   "alone": null,
+   "over": [
+    0,
+    10
+   ],
+   "mem": null
+  },
+  {
+   "what": "32 and 64 threads, four questions, the confirmation run",
+   "n": 128,
+   "median": 45.8,
+   "p90": 114.2,
+   "max": 195.1,
+   "alone": null,
+   "over": [
+    0,
+    128
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, two sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 260.8,
+   "alone": 202.2,
+   "over": [
+    0,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, two sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 316.2,
+   "alone": 107.6,
+   "over": [
+    1,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, four sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 100.8,
+   "alone": 63.8,
+   "over": [
+    0,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, four sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 193.8,
+   "alone": 73.5,
+   "over": [
+    0,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, four sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 401.3,
+   "alone": 202.2,
+   "over": [
+    1,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "8 and 16 threads, two questions, four sent at once",
+   "n": 1,
+   "median": null,
+   "p90": null,
+   "max": 456.3,
+   "alone": 107.6,
+   "over": [
+    1,
+    1
+   ],
+   "mem": null
+  },
+  {
+   "what": "server memory, one request at a time",
+   "n": null,
+   "median": null,
+   "p90": null,
+   "max": null,
+   "alone": null,
+   "over": null,
+   "mem": 8.55
+  },
+  {
+   "what": "server memory, requests sent at once",
+   "n": null,
+   "median": null,
+   "p90": null,
+   "max": null,
+   "alone": null,
+   "over": null,
+   "mem": 8.56
+  }
+ ],
+ "verdict": "With two questions no single request went over the 300 s limit, with four questions 1 did. Sent at once, 3 of 6 requests went over it.",
+ "pr": [
+  {
+   "repo": "openQA",
+   "number": 8102
+  },
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 814
+  }
+ ],
+ "note": "The 90th percentile is left out where ten requests were timed. The comments on the pull request give 111 and 57 seconds for the first two rows; they took the upper of the two middle values."
+}

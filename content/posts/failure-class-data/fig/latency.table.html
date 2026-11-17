@@ -1,0 +1,77 @@
+<table>
+<caption>Measured seconds per request with two questions, by input tokens, on a 2x EPYC 9354 server</caption>
+<thead><tr>
+<th scope="col">Input tokens</th>
+<th scope="col">8 threads, 16 batch threads (s)</th>
+<th scope="col">16 threads, 32 batch threads (s)</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row">3,226</th><td>22.5</td><td>15.9</td></tr>
+<tr><th scope="row">4,670</th><td>32.5</td><td>21.9</td></tr>
+<tr><th scope="row">5,232</th><td>36.4</td><td>22.0</td></tr>
+<tr><th scope="row">5,744</th><td>40.0</td><td>21.4</td></tr>
+<tr><th scope="row">6,954</th><td>49.0</td><td>26.2</td></tr>
+<tr><th scope="row">8,000</th><td>56.7</td><td>31.2</td></tr>
+<tr><th scope="row">8,932</th><td>63.8</td><td>33.9</td></tr>
+<tr><th scope="row">10,280</th><td>73.5</td><td>40.1</td></tr>
+<tr><th scope="row">14,442</th><td>107.6</td><td>58.2</td></tr>
+<tr><th scope="row">24,582</th><td>202.2</td><td>108.1</td></tr>
+</tbody>
+</table>
+<table>
+<caption>Measured seconds per request with four questions, by input tokens, on a 2x EPYC 9354 server</caption>
+<thead><tr>
+<th scope="col">Input tokens</th>
+<th scope="col">8 threads, 16 batch threads (s)</th>
+<th scope="col">16 threads, 32 batch threads (s)</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row">6,422</th><td>46.9</td><td>23.8</td></tr>
+<tr><th scope="row">9,310</th><td>64.0</td><td>34.1</td></tr>
+<tr><th scope="row">10,434</th><td>72.0</td><td>38.4</td></tr>
+<tr><th scope="row">11,458</th><td>79.3</td><td>42.3</td></tr>
+<tr><th scope="row">13,878</th><td>96.7</td><td>51.4</td></tr>
+<tr><th scope="row">15,970</th><td>111.3</td><td>59.9</td></tr>
+<tr><th scope="row">17,834</th><td>125.7</td><td>67.4</td></tr>
+<tr><th scope="row">20,530</th><td>145.7</td><td>78.2</td></tr>
+<tr><th scope="row">28,854</th><td>213.6</td><td>114.6</td></tr>
+<tr><th scope="row">49,134</th><td>400.1</td><td>216.9</td></tr>
+</tbody>
+</table>
+<table>
+<caption>Linear fit per setting, and times estimated from it over the 128 confirmation requests</caption>
+<thead><tr>
+<th scope="col">Setting</th>
+<th scope="col">s per 1,000 tokens</th>
+<th scope="col">Intercept (s)</th>
+<th scope="col">Largest gap between a point and the line (s)</th>
+<th scope="col">Median (s)</th>
+<th scope="col">Mean (s)</th>
+<th scope="col">p90 (s)</th>
+<th scope="col">Max (s)</th>
+<th scope="col">Over 300 s</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row">8 threads, two questions (chosen)</th><td>8.41</td><td>−9.0</td><td>4.8</td><td>55</td><td>68.5</td><td>142</td><td>236</td><td>0</td></tr>
+<tr><th scope="row">16 threads, two questions</th><td>4.35</td><td>−2.2</td><td>4.0</td><td>31</td><td>37.9</td><td>76</td><td>125</td><td>0</td></tr>
+<tr><th scope="row">8 threads, four questions</th><td>8.31</td><td>−17.1</td><td>10.7</td><td>110</td><td>135.7</td><td>280</td><td>467</td><td>12</td></tr>
+<tr><th scope="row">16 threads, four questions</th><td>4.52</td><td>−10.4</td><td>5.4</td><td>59</td><td>72.8</td><td>151</td><td>253</td><td>0</td></tr>
+</tbody>
+</table>
+<table>
+<caption>Measured requests sent at once with 8 threads, two questions, against the 300 s limit</caption>
+<thead><tr>
+<th scope="col">Requests at once</th>
+<th scope="col">Input tokens</th>
+<th scope="col">Seconds</th>
+<th scope="col">Seconds alone</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row">2</th><td>24,582</td><td>260.8</td><td>202.2</td></tr>
+<tr><th scope="row">2</th><td>14,442</td><td>316.2</td><td>107.6</td></tr>
+<tr><th scope="row">4</th><td>8,932</td><td>100.8</td><td>63.8</td></tr>
+<tr><th scope="row">4</th><td>10,280</td><td>193.8</td><td>73.5</td></tr>
+<tr><th scope="row">4</th><td>24,582</td><td>401.3</td><td>202.2</td></tr>
+<tr><th scope="row">4</th><td>14,442</td><td>456.3</td><td>107.6</td></tr>
+</tbody>
+</table>

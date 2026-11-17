@@ -231,7 +231,8 @@ Gemma's input.
 
 The data comes from o3, which is public, but job pages there expire, so I link none. Parts of several sets
 came from an internal instance and appear as counts only. The numbers behind every figure are in the
-[repository of this site](https://github.com/plusky/plusky.github.io).
+[repository of this site](https://github.com/plusky/plusky.github.io). The measurements that did not fit here
+are on a [separate page](/posts/failure-class-data/).
 
 As for the comments themselves, they seem useful. I hope the open pull requests get merged.
 

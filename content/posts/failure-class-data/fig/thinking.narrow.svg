@@ -1,0 +1,277 @@
+<svg viewBox="0 0 360 536" role="img" aria-labelledby="thinking-n-t thinking-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="thinking-n-t">Thinking on against off: tokens generated, seconds per job and jobs with the right class</title>
+<desc id="thinking-n-d">On an aarch64 test VM, thinking was 91% of the tokens the model generated; turning it off cut the median job from 629 to 401 seconds and the time for all 17 jobs by 37%, but dropped the jobs with the right class from 13 to 9.</desc>
+<rect class="c-focus" x="3" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="22" y="14.79">thinking on</text>
+<rect class="c-ctl" x="104.83" y="5.5" width="10" height="10" rx="2"/>
+<text class="t" x="123.83" y="14.79">thinking off</text>
+<g>
+<g>
+<line class="grid" x1="24.64" y1="70.83" x2="24.64" y2="124.83"/>
+<line class="grid" x1="81.73" y1="70.83" x2="81.73" y2="124.83"/>
+<line class="grid" x1="138.83" y1="70.83" x2="138.83" y2="124.83"/>
+<line class="grid" x1="195.92" y1="70.83" x2="195.92" y2="124.83"/>
+<line class="grid" x1="253.02" y1="70.83" x2="253.02" y2="124.83"/>
+<line class="grid" x1="310.11" y1="70.83" x2="310.11" y2="124.83"/>
+<line class="axis" x1="24.64" y1="124.83" x2="310.11" y2="124.83"/>
+<text class="t-muted" x="24.64" y="138.75" text-anchor="middle">0</text>
+<text class="t-muted" x="81.73" y="138.75" text-anchor="middle">100</text>
+<text class="t-muted" x="138.83" y="138.75" text-anchor="middle">200</text>
+<text class="t-muted" x="195.92" y="138.75" text-anchor="middle">300</text>
+<text class="t-muted" x="253.02" y="138.75" text-anchor="middle">400</text>
+<text class="t-muted" x="310.11" y="138.75" text-anchor="middle">500</text>
+</g>
+<text class="t-strong" x="0" y="43.58">Tokens generated per turn</text>
+<text class="t" x="14.64" y="87.12" text-anchor="end">on</text>
+<g data-tip="Thinking on: 468 tokens generated per turn" tabindex="0">
+<title>Thinking on: 468 tokens generated per turn</title>
+<rect class="hit" x="24.64" y="70.83" width="267.21" height="24"/>
+<rect class="c-focus" x="24.64" y="72.83" width="242.16" height="20"/>
+<path class="wash-focus s-focus" d="M269.8 73.83H287.84A3 3 0 0 1 290.84 76.83V88.83A3 3 0 0 1 287.84 91.83H269.8Z"/>
+</g>
+<text class="t" x="24.64" y="65.58">thinking 91%</text>
+<text class="t-muted" x="291.84" y="65.83" text-anchor="end">visible answer</text>
+<text class="t" x="297.84" y="87.12">468</text>
+<text class="t" x="14.64" y="113.12" text-anchor="end">off</text>
+<g data-tip="Thinking off: 44 tokens generated per turn" tabindex="0">
+<title>Thinking off: 44 tokens generated per turn</title>
+<rect class="hit" x="24.64" y="96.83" width="25.12" height="24"/>
+<path class="c-ctl" d="M24.64 98.83H45.76A4 4 0 0 1 49.76 102.83V114.83A4 4 0 0 1 45.76 118.83H24.64Z"/>
+</g>
+<text class="t" x="55.76" y="113.12">44</text>
+</g>
+<g>
+<g>
+<line class="grid" x1="24.64" y1="201.41" x2="24.64" y2="367.74"/>
+<line class="grid" x1="81.73" y1="201.41" x2="81.73" y2="367.74"/>
+<line class="grid" x1="138.83" y1="201.41" x2="138.83" y2="367.74"/>
+<line class="grid" x1="195.92" y1="201.41" x2="195.92" y2="367.74"/>
+<line class="grid" x1="253.02" y1="201.41" x2="253.02" y2="367.74"/>
+<line class="grid" x1="310.11" y1="201.41" x2="310.11" y2="367.74"/>
+<line class="axis" x1="24.64" y1="367.74" x2="310.11" y2="367.74"/>
+<text class="t-muted" x="24.64" y="381.66" text-anchor="middle">0</text>
+<text class="t-muted" x="81.73" y="381.66" text-anchor="middle">200</text>
+<text class="t-muted" x="138.83" y="381.66" text-anchor="middle">400</text>
+<text class="t-muted" x="195.92" y="381.66" text-anchor="middle">600</text>
+<text class="t-muted" x="253.02" y="381.66" text-anchor="middle">800</text>
+<text class="t-muted" x="310.11" y="381.66" text-anchor="middle">1,000</text>
+<text class="t-muted" x="310.11" y="397.58" text-anchor="end">seconds</text>
+</g>
+<text class="t-strong" x="0" y="176.33">Median seconds per job</text>
+<text class="t" x="0" y="192.16">thinking off: 37% less time, all 17 jobs together</text>
+<text class="t" x="14.64" y="217.7" text-anchor="end">on</text>
+<g data-tip="Thinking on: median 629 s per job" tabindex="0">
+<title>Thinking on: median 629 s per job</title>
+<rect class="hit" x="24.64" y="201.41" width="179.56" height="24"/>
+<path class="c-focus" d="M24.64 203.41H200.2A4 4 0 0 1 204.2 207.41V219.41A4 4 0 0 1 200.2 223.41H24.64Z"/>
+</g>
+<text class="t" x="210.2" y="217.7">629 s</text>
+<text class="t" x="14.64" y="243.7" text-anchor="end">off</text>
+<g data-tip="Thinking off: median 401 s per job" tabindex="0">
+<title>Thinking off: median 401 s per job</title>
+<rect class="hit" x="24.64" y="227.41" width="114.48" height="24"/>
+<path class="c-ctl" d="M24.64 229.41H135.11A4 4 0 0 1 139.11 233.41V245.41A4 4 0 0 1 135.11 249.41H24.64Z"/>
+</g>
+<text class="t" x="145.11" y="243.7">401 s</text>
+<text class="t-muted" x="0" y="269.33">each job</text>
+<text class="t" x="14.64" y="301.35" text-anchor="end">on</text>
+<g data-tip="Job 1: thinking on 307 s" tabindex="0">
+<title>Job 1: thinking on 307 s</title>
+<rect class="hit" x="100.28" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="112.28" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 2: thinking on 419 s" tabindex="0">
+<title>Job 2: thinking on 419 s</title>
+<rect class="hit" x="132.25" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="144.25" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 3: thinking on 446 s" tabindex="0">
+<title>Job 3: thinking on 446 s</title>
+<rect class="hit" x="139.96" y="280.41" width="24" height="24"/>
+<circle class="c-focus ring" cx="151.96" cy="292.41" r="4"/>
+</g>
+<g data-tip="Job 4: thinking on 446 s" tabindex="0">
+<title>Job 4: thinking on 446 s</title>
+<rect class="hit" x="139.96" y="271.41" width="24" height="24"/>
+<circle class="c-focus ring" cx="151.96" cy="283.41" r="4"/>
+</g>
+<g data-tip="Job 5: thinking on 461 s" tabindex="0">
+<title>Job 5: thinking on 461 s</title>
+<rect class="hit" x="144.24" y="288.33" width="24" height="24"/>
+<circle class="c-focus ring" cx="156.24" cy="300.33" r="4"/>
+</g>
+<g data-tip="Job 6: thinking on 485 s" tabindex="0">
+<title>Job 6: thinking on 485 s</title>
+<rect class="hit" x="151.09" y="294.16" width="24" height="24"/>
+<circle class="c-focus ring" cx="163.09" cy="306.16" r="4"/>
+</g>
+<g data-tip="Job 7: thinking on 582 s" tabindex="0">
+<title>Job 7: thinking on 582 s</title>
+<rect class="hit" x="178.79" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="190.79" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 8: thinking on 592 s" tabindex="0">
+<title>Job 8: thinking on 592 s</title>
+<rect class="hit" x="181.64" y="276.52" width="24" height="24"/>
+<circle class="c-focus ring" cx="193.64" cy="288.52" r="4"/>
+</g>
+<g data-tip="Job 9: thinking on 629 s" tabindex="0">
+<title>Job 9: thinking on 629 s</title>
+<rect class="hit" x="192.2" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="204.2" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 10: thinking on 640 s" tabindex="0">
+<title>Job 10: thinking on 640 s</title>
+<rect class="hit" x="195.34" y="293.49" width="24" height="24"/>
+<circle class="c-focus ring" cx="207.34" cy="305.49" r="4"/>
+</g>
+<g data-tip="Job 11: thinking on 668 s" tabindex="0">
+<title>Job 11: thinking on 668 s</title>
+<rect class="hit" x="203.34" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="215.34" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 12: thinking on 731 s" tabindex="0">
+<title>Job 12: thinking on 731 s</title>
+<rect class="hit" x="221.32" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="233.32" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 13: thinking on 749 s" tabindex="0">
+<title>Job 13: thinking on 749 s</title>
+<rect class="hit" x="226.46" y="292.45" width="24" height="24"/>
+<circle class="c-focus ring" cx="238.46" cy="304.45" r="4"/>
+</g>
+<g data-tip="Job 14: thinking on 822 s" tabindex="0">
+<title>Job 14: thinking on 822 s</title>
+<rect class="hit" x="247.3" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="259.3" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 15: thinking on 836 s" tabindex="0">
+<title>Job 15: thinking on 836 s</title>
+<rect class="hit" x="251.3" y="293.12" width="24" height="24"/>
+<circle class="c-focus ring" cx="263.3" cy="305.12" r="4"/>
+</g>
+<g data-tip="Job 16: thinking on 889 s" tabindex="0">
+<title>Job 16: thinking on 889 s</title>
+<rect class="hit" x="266.43" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="278.43" cy="297.06" r="4"/>
+</g>
+<g data-tip="Job 17: thinking on 939 s" tabindex="0">
+<title>Job 17: thinking on 939 s</title>
+<rect class="hit" x="280.7" y="285.06" width="24" height="24"/>
+<circle class="c-focus ring" cx="292.7" cy="297.06" r="4"/>
+</g>
+<text class="t" x="14.64" y="343.61" text-anchor="end">off</text>
+<g data-tip="Job 1: thinking off 136 s" tabindex="0">
+<title>Job 1: thinking off 136 s</title>
+<rect class="hit" x="51.46" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="63.46" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 2: thinking off 238 s" tabindex="0">
+<title>Job 2: thinking off 238 s</title>
+<rect class="hit" x="80.58" y="318.79" width="24" height="24"/>
+<circle class="c-ctl ring" cx="92.58" cy="330.79" r="4"/>
+</g>
+<g data-tip="Job 3: thinking off 247 s" tabindex="0">
+<title>Job 3: thinking off 247 s</title>
+<rect class="hit" x="83.15" y="310.16" width="24" height="24"/>
+<circle class="c-ctl ring" cx="95.15" cy="322.16" r="4"/>
+</g>
+<g data-tip="Job 4: thinking off 251 s" tabindex="0">
+<title>Job 4: thinking off 251 s</title>
+<rect class="hit" x="84.29" y="343.74" width="24" height="24"/>
+<circle class="c-ctl ring" cx="96.29" cy="355.74" r="4"/>
+</g>
+<g data-tip="Job 5: thinking off 228 s" tabindex="0">
+<title>Job 5: thinking off 228 s</title>
+<rect class="hit" x="77.73" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="89.73" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 6: thinking off 245 s" tabindex="0">
+<title>Job 6: thinking off 245 s</title>
+<rect class="hit" x="82.58" y="334.9" width="24" height="24"/>
+<circle class="c-ctl ring" cx="94.58" cy="346.9" r="4"/>
+</g>
+<g data-tip="Job 7: thinking off 378 s" tabindex="0">
+<title>Job 7: thinking off 378 s</title>
+<rect class="hit" x="120.55" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="132.55" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 8: thinking off 401 s" tabindex="0">
+<title>Job 8: thinking off 401 s</title>
+<rect class="hit" x="127.11" y="343.43" width="24" height="24"/>
+<circle class="c-ctl ring" cx="139.11" cy="355.43" r="4"/>
+</g>
+<g data-tip="Job 9: thinking off 421 s" tabindex="0">
+<title>Job 9: thinking off 421 s</title>
+<rect class="hit" x="132.82" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="144.82" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 10: thinking off 382 s" tabindex="0">
+<title>Job 10: thinking off 382 s</title>
+<rect class="hit" x="121.69" y="336.25" width="24" height="24"/>
+<circle class="c-ctl ring" cx="133.69" cy="348.25" r="4"/>
+</g>
+<g data-tip="Job 11: thinking off 444 s" tabindex="0">
+<title>Job 11: thinking off 444 s</title>
+<rect class="hit" x="139.39" y="321.17" width="24" height="24"/>
+<circle class="c-ctl ring" cx="151.39" cy="333.17" r="4"/>
+</g>
+<g data-tip="Job 12: thinking off 500 s" tabindex="0">
+<title>Job 12: thinking off 500 s</title>
+<rect class="hit" x="155.38" y="318.34" width="24" height="24"/>
+<circle class="c-ctl ring" cx="167.38" cy="330.34" r="4"/>
+</g>
+<g data-tip="Job 13: thinking off 498 s" tabindex="0">
+<title>Job 13: thinking off 498 s</title>
+<rect class="hit" x="154.81" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="166.81" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 14: thinking off 548 s" tabindex="0">
+<title>Job 14: thinking off 548 s</title>
+<rect class="hit" x="169.08" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="181.08" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 15: thinking off 615 s" tabindex="0">
+<title>Job 15: thinking off 615 s</title>
+<rect class="hit" x="188.21" y="327.32" width="24" height="24"/>
+<circle class="c-ctl ring" cx="200.21" cy="339.32" r="4"/>
+</g>
+<g data-tip="Job 16: thinking off 564 s" tabindex="0">
+<title>Job 16: thinking off 564 s</title>
+<rect class="hit" x="173.65" y="319.57" width="24" height="24"/>
+<circle class="c-ctl ring" cx="185.65" cy="331.57" r="4"/>
+</g>
+<g data-tip="Job 17: thinking off 645 s" tabindex="0">
+<title>Job 17: thinking off 645 s</title>
+<rect class="hit" x="196.77" y="330.09" width="24" height="24"/>
+<circle class="c-ctl ring" cx="208.77" cy="342.09" r="4"/>
+</g>
+</g>
+<g>
+<g>
+<line class="axis" x1="24.64" y1="514.24" x2="310.11" y2="514.24"/>
+<text class="t-muted" x="24.64" y="528.16" text-anchor="middle">0</text>
+<text class="t-muted" x="108.6" y="528.16" text-anchor="middle">5</text>
+<text class="t-muted" x="192.57" y="528.16" text-anchor="middle">10</text>
+<text class="t-muted" x="276.53" y="528.16" text-anchor="middle">15</text>
+</g>
+<text class="t-strong" x="0" y="435.16">Jobs with the right class, of 17</text>
+<text class="t" x="0" y="450.99">thinking off: 4 fewer right</text>
+<text class="t" x="14.64" y="476.53" text-anchor="end">on</text>
+<rect class="band" x="24.64" y="462.24" width="285.48" height="20" rx="4"/>
+<g data-tip="Thinking on: 13 of 17 jobs with the right class" tabindex="0">
+<title>Thinking on: 13 of 17 jobs with the right class</title>
+<rect class="hit" x="24.64" y="460.24" width="218.31" height="24"/>
+<path class="c-focus" d="M24.64 462.24H238.94A4 4 0 0 1 242.94 466.24V478.24A4 4 0 0 1 238.94 482.24H24.64Z"/>
+</g>
+<text class="t" x="316.11" y="476.53">13 of 17</text>
+<text class="t" x="14.64" y="502.53" text-anchor="end">off</text>
+<rect class="band" x="24.64" y="488.24" width="285.48" height="20" rx="4"/>
+<g data-tip="Thinking off: 9 of 17 jobs with the right class" tabindex="0">
+<title>Thinking off: 9 of 17 jobs with the right class</title>
+<rect class="hit" x="24.64" y="486.24" width="151.13" height="24"/>
+<path class="c-ctl" d="M24.64 488.24H171.77A4 4 0 0 1 175.77 492.24V504.24A4 4 0 0 1 171.77 508.24H24.64Z"/>
+</g>
+<text class="t" x="316.11" y="502.53">9 of 17</text>
+</g>
+</svg>

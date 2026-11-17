@@ -1,0 +1,94 @@
+<svg viewBox="0 0 720 441" role="img" aria-labelledby="models-t models-d" xmlns="http://www.w3.org/2000/svg">
+<title id="models-t">Jobs right of 71 on the screen set per approach, with the right answers per class</title>
+<desc id="models-d">The best approaches get 47 of the 71 screen jobs right, against 24 for always answering product; part of the set comes from an internal instance, counted only.</desc>
+<g>
+<g data-tip="elephant-1 with the environment question: 47 of 71 right; product 20 of 24, test 12 of 23, infra 15 of 24" tabindex="0">
+<title>elephant-1 with the environment question: 47 of 71 right; product 20 of 24, test 12 of 23, infra 15 of 24</title>
+<rect class="hit" x="0" y="12.83" width="307.69" height="24"/>
+<path class="c-focus" d="M0 15.83H303.69A4 4 0 0 1 307.69 19.83V29.83A4 4 0 0 1 303.69 33.83H0Z"/>
+</g>
+<g data-tip="Kev-27B Q4_K_M, label question: 47 of 71 right; product 18 of 24, test 9 of 23, infra 20 of 24" tabindex="0">
+<title>Kev-27B Q4_K_M, label question: 47 of 71 right; product 18 of 24, test 9 of 23, infra 20 of 24</title>
+<rect class="hit" x="0" y="60.66" width="307.69" height="24"/>
+<path class="c-ctl" d="M0 63.66H303.69A4 4 0 0 1 307.69 67.66V77.66A4 4 0 0 1 303.69 81.66H0Z"/>
+</g>
+<g data-tip="gpt-oss-20b, fuller definitions: 42 of 71 right; product 15 of 24, test 16 of 23, infra 11 of 24" tabindex="0">
+<title>gpt-oss-20b, fuller definitions: 42 of 71 right; product 15 of 24, test 16 of 23, infra 11 of 24</title>
+<rect class="hit" x="0" y="108.49" width="274.95" height="24"/>
+<path class="c-ctl" d="M0 111.49H270.95A4 4 0 0 1 274.95 115.49V125.49A4 4 0 0 1 270.95 129.49H0Z"/>
+</g>
+<g data-tip="Gemma-26B-A4B Q8, production prompt: 42 of 68 right; product 22 of 22, test 7 of 22, infra 13 of 24" tabindex="0">
+<title>Gemma-26B-A4B Q8, production prompt: 42 of 68 right; product 22 of 22, test 7 of 22, infra 13 of 24</title>
+<rect class="hit" x="0" y="156.32" width="274.95" height="24"/>
+<path class="c-ctl" d="M0 159.32H270.95A4 4 0 0 1 274.95 163.32V173.32A4 4 0 0 1 270.95 177.32H0Z"/>
+</g>
+<g data-tip="elephant-1 area as a steer, Gemma Q8: 39 of 71 right; product 20 of 24, test 10 of 23, infra 9 of 24" tabindex="0">
+<title>elephant-1 area as a steer, Gemma Q8: 39 of 71 right; product 20 of 24, test 10 of 23, infra 9 of 24</title>
+<rect class="hit" x="0" y="204.15" width="255.31" height="24"/>
+<path class="c-ctl" d="M0 207.15H251.31A4 4 0 0 1 255.31 211.15V221.15A4 4 0 0 1 251.31 225.15H0Z"/>
+</g>
+<g data-tip="elephant-1 estimate as a hint, Gemma Q8: 38 of 71 right; product 20 of 24, test 9 of 23, infra 9 of 24" tabindex="0">
+<title>elephant-1 estimate as a hint, Gemma Q8: 38 of 71 right; product 20 of 24, test 9 of 23, infra 9 of 24</title>
+<rect class="hit" x="0" y="251.98" width="248.77" height="24"/>
+<path class="c-ctl" d="M0 254.98H244.77A4 4 0 0 1 248.77 258.98V268.98A4 4 0 0 1 244.77 272.98H0Z"/>
+</g>
+<g data-tip="elephant-1, label question: 38 of 71 right; product 19 of 24, test 9 of 23, infra 10 of 24" tabindex="0">
+<title>elephant-1, label question: 38 of 71 right; product 19 of 24, test 9 of 23, infra 10 of 24</title>
+<rect class="hit" x="0" y="299.81" width="248.77" height="24"/>
+<path class="c-ctl" d="M0 302.81H244.77A4 4 0 0 1 248.77 306.81V316.81A4 4 0 0 1 244.77 320.81H0Z"/>
+</g>
+<g data-tip="fuller class definitions, Gemma Q8: 32 of 71 right; product 18 of 24, test 6 of 23, infra 8 of 24" tabindex="0">
+<title>fuller class definitions, Gemma Q8: 32 of 71 right; product 18 of 24, test 6 of 23, infra 8 of 24</title>
+<rect class="hit" x="0" y="347.64" width="209.49" height="24"/>
+<path class="c-ctl" d="M0 350.64H205.49A4 4 0 0 1 209.49 354.64V364.64A4 4 0 0 1 205.49 368.64H0Z"/>
+</g>
+<g data-tip="production prompt, Gemma Q8: 28 of 71 right; product 19 of 24, test 3 of 23, infra 6 of 24" tabindex="0">
+<title>production prompt, Gemma Q8: 28 of 71 right; product 19 of 24, test 3 of 23, infra 6 of 24</title>
+<rect class="hit" x="0" y="395.47" width="183.3" height="24"/>
+<path class="c-ctl" d="M0 398.47H179.3A4 4 0 0 1 183.3 402.47V412.47A4 4 0 0 1 179.3 416.47H0Z"/>
+</g>
+</g>
+<g>
+<text class="t-strong" x="313.69" y="29.12">47</text>
+<text class="t" x="313.69" y="76.95">47</text>
+<text class="t" x="280.95" y="124.78">42</text>
+<text class="t" x="280.95" y="172.61">42 of 68</text>
+<text class="t" x="261.31" y="220.44">39</text>
+<text class="t" x="254.77" y="268.27">38</text>
+<text class="t" x="254.77" y="316.1">38</text>
+<text class="t" x="215.49" y="363.93">32</text>
+<text class="t" x="189.3" y="411.76">28</text>
+</g>
+<text class="t-strong" x="0" y="8.58">elephant-1 with the environment question</text>
+<text class="t-muted" x="720" y="28.79" text-anchor="end">product 20/24 · test 12/23 · infra 15/24</text>
+<text class="t" x="0" y="56.41">Kev-27B Q4_K_M, label question</text>
+<text class="t-muted" x="720" y="76.62" text-anchor="end">product 18/24 · test 9/23 · infra 20/24</text>
+<text class="t" x="0" y="104.24">gpt-oss-20b, fuller definitions</text>
+<text class="t-muted" x="720" y="124.45" text-anchor="end">product 15/24 · test 16/23 · infra 11/24</text>
+<text class="t" x="0" y="152.07">Gemma-26B-A4B Q8, production prompt</text>
+<text class="t-muted" x="720" y="172.28" text-anchor="end">product 22/22 · test 7/22 · infra 13/24</text>
+<text class="t" x="0" y="199.9">elephant-1 area as a steer, Gemma Q8</text>
+<text class="t-muted" x="720" y="220.11" text-anchor="end">product 20/24 · test 10/23 · infra 9/24</text>
+<text class="t" x="0" y="247.73">elephant-1 estimate as a hint, Gemma Q8</text>
+<text class="t-muted" x="720" y="267.94" text-anchor="end">product 20/24 · test 9/23 · infra 9/24</text>
+<text class="t" x="0" y="295.56">elephant-1, label question</text>
+<text class="t-muted" x="720" y="315.77" text-anchor="end">product 19/24 · test 9/23 · infra 10/24</text>
+<text class="t" x="0" y="343.39">fuller class definitions, Gemma Q8</text>
+<text class="t-muted" x="720" y="363.6" text-anchor="end">product 18/24 · test 6/23 · infra 8/24</text>
+<text class="t" x="0" y="391.22">production prompt, Gemma Q8</text>
+<text class="t-muted" x="720" y="411.43" text-anchor="end">product 19/24 · test 3/23 · infra 6/24</text>
+<g data-tip="always product: 24 of 71 right" tabindex="0">
+<title>always product: 24 of 71 right</title>
+<rect class="hit" x="145.12" y="15.83" width="24" height="400.64"/>
+<line class="ref" x1="157.12" y1="12.83" x2="157.12" y2="36.83"/>
+<line class="ref" x1="157.12" y1="60.66" x2="157.12" y2="84.66"/>
+<line class="ref" x1="157.12" y1="108.49" x2="157.12" y2="132.49"/>
+<line class="ref" x1="157.12" y1="156.32" x2="157.12" y2="180.32"/>
+<line class="ref" x1="157.12" y1="204.15" x2="157.12" y2="228.15"/>
+<line class="ref" x1="157.12" y1="251.98" x2="157.12" y2="275.98"/>
+<line class="ref" x1="157.12" y1="299.81" x2="157.12" y2="323.81"/>
+<line class="ref" x1="157.12" y1="347.64" x2="157.12" y2="371.64"/>
+<line class="ref" x1="157.12" y1="395.47" x2="157.12" y2="419.47"/>
+</g>
+<text class="t" x="157.12" y="433.05">always product, 24</text>
+</svg>

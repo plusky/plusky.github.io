@@ -1,0 +1,364 @@
+<svg viewBox="0 0 720 505" role="img" aria-labelledby="latency-t latency-d" xmlns="http://www.w3.org/2000/svg">
+<title id="latency-t">Seconds per decision request by input tokens, by threads and questions</title>
+<desc id="latency-d">With 8 threads and two questions per request, a linear fit over the 128 confirmation requests estimates a median of 55 seconds and none over the 300-second limit. Measured: with four questions the slowest of 10 timed requests took 400.1 seconds on the longest prompt, and some requests sent two or four at once went over the limit.</desc>
+<line class="s-focus" x1="0" y1="10.5" x2="16" y2="10.5"/>
+<circle class="c-focus ring" cx="8" cy="10.5" r="4"/>
+<text class="t" x="22" y="14.79">chosen setting</text>
+<line class="s-ctl" x1="119.2" y1="10.5" x2="135.2" y2="10.5"/>
+<circle class="c-ctl ring" cx="127.2" cy="10.5" r="4"/>
+<text class="t" x="141.2" y="14.79">other settings</text>
+<circle class="bg" cx="242.26" cy="10.5" r="4.5"/>
+<circle class="s-focus" cx="242.26" cy="10.5" r="4.5"/>
+<text class="t" x="256.26" y="14.79">2 sent at once</text>
+<path class="bg" d="M357.4 4.5L363.4 10.5L357.4 16.5L351.4 10.5Z"/>
+<path class="s-focus" d="M357.4 4.5L363.4 10.5L357.4 16.5L351.4 10.5Z"/>
+<text class="t" x="371.4" y="14.79">4 sent at once</text>
+<text class="t" x="464.54" y="14.79">dots: measured</text>
+<text class="t" x="0" y="35.79">line: linear fit, estimates from it under each title</text>
+<g>
+<line class="grid" x1="33.32" y1="252" x2="349.66" y2="252"/>
+<text class="t-muted" x="27.32" y="255.96" text-anchor="end">0</text>
+<line class="grid" x1="33.32" y1="222" x2="349.66" y2="222"/>
+<text class="t-muted" x="27.32" y="225.96" text-anchor="end">100</text>
+<line class="grid" x1="33.32" y1="192" x2="349.66" y2="192"/>
+<text class="t-muted" x="27.32" y="195.96" text-anchor="end">200</text>
+<line class="grid" x1="33.32" y1="162" x2="349.66" y2="162"/>
+<text class="t-muted" x="27.32" y="165.96" text-anchor="end">300</text>
+<line class="grid" x1="33.32" y1="132" x2="349.66" y2="132"/>
+<text class="t-muted" x="27.32" y="135.96" text-anchor="end">400</text>
+<line class="grid" x1="33.32" y1="102" x2="349.66" y2="102"/>
+<text class="t-muted" x="27.32" y="105.96" text-anchor="end">500 s</text>
+<line class="axis" x1="33.32" y1="252" x2="349.66" y2="252"/>
+<line class="ref" x1="33.32" y1="162" x2="349.66" y2="162"/>
+</g>
+<g>
+<line class="s-focus" x1="53.73" y1="246.56" x2="188.85" y2="192.68"/>
+<line class="leader" x1="98.36" y1="224.95" x2="98.36" y2="199.86"/>
+<line class="leader" x1="124.69" y1="214.72" x2="124.69" y2="163.14"/>
+<line class="leader" x1="124.69" y1="151.14" x2="124.69" y2="121.11"/>
+<line class="leader" x1="188.85" y1="186.34" x2="188.85" y2="179.76"/>
+<line class="leader" x1="188.85" y1="167.76" x2="188.85" y2="137.61"/>
+</g>
+<g>
+<text class="t-strong" x="33.32" y="66.58">8 threads, two questions (chosen)</text>
+<text class="t-strong" x="33.32" y="85.58">fitted over 128 requests: median 55 s, none over 300 s</text>
+<g data-tip="8 threads, two questions, 3,226 tokens: 22.5 s measured" tabindex="0">
+<title>8 threads, two questions, 3,226 tokens: 22.5 s measured</title>
+<rect class="hit" x="41.73" y="233.25" width="24" height="24"/>
+<circle class="c-focus ring" cx="53.73" cy="245.25" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 4,670 tokens: 32.5 s measured" tabindex="0">
+<title>8 threads, two questions, 4,670 tokens: 32.5 s measured</title>
+<rect class="hit" x="50.87" y="230.25" width="24" height="24"/>
+<circle class="c-focus ring" cx="62.87" cy="242.25" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 5,232 tokens: 36.4 s measured" tabindex="0">
+<title>8 threads, two questions, 5,232 tokens: 36.4 s measured</title>
+<rect class="hit" x="54.42" y="229.08" width="24" height="24"/>
+<circle class="c-focus ring" cx="66.42" cy="241.08" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 5,744 tokens: 40.0 s measured" tabindex="0">
+<title>8 threads, two questions, 5,744 tokens: 40.0 s measured</title>
+<rect class="hit" x="57.66" y="228" width="24" height="24"/>
+<circle class="c-focus ring" cx="69.66" cy="240" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 6,954 tokens: 49.0 s measured" tabindex="0">
+<title>8 threads, two questions, 6,954 tokens: 49.0 s measured</title>
+<rect class="hit" x="65.32" y="225.3" width="24" height="24"/>
+<circle class="c-focus ring" cx="77.32" cy="237.3" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 8,000 tokens: 56.7 s measured" tabindex="0">
+<title>8 threads, two questions, 8,000 tokens: 56.7 s measured</title>
+<rect class="hit" x="71.93" y="222.99" width="24" height="24"/>
+<circle class="c-focus ring" cx="83.93" cy="234.99" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 8,932 tokens: 63.8 s measured" tabindex="0">
+<title>8 threads, two questions, 8,932 tokens: 63.8 s measured</title>
+<rect class="hit" x="77.83" y="220.86" width="24" height="24"/>
+<circle class="c-focus ring" cx="89.83" cy="232.86" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 10,280 tokens: 73.5 s measured" tabindex="0">
+<title>8 threads, two questions, 10,280 tokens: 73.5 s measured</title>
+<rect class="hit" x="86.36" y="217.95" width="24" height="24"/>
+<circle class="c-focus ring" cx="98.36" cy="229.95" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 14,442 tokens: 107.6 s measured" tabindex="0">
+<title>8 threads, two questions, 14,442 tokens: 107.6 s measured</title>
+<rect class="hit" x="112.69" y="207.72" width="24" height="24"/>
+<circle class="c-focus ring" cx="124.69" cy="219.72" r="4"/>
+</g>
+<g data-tip="8 threads, two questions, 24,582 tokens: 202.2 s measured" tabindex="0">
+<title>8 threads, two questions, 24,582 tokens: 202.2 s measured</title>
+<rect class="hit" x="176.85" y="179.34" width="24" height="24"/>
+<circle class="c-focus ring" cx="188.85" cy="191.34" r="4"/>
+</g>
+<g data-tip="2 requests at once, 24,582 tokens: 260.8 s (202.2 s alone)" tabindex="0">
+<title>2 requests at once, 24,582 tokens: 260.8 s (202.2 s alone)</title>
+<rect class="hit" x="176.85" y="161.76" width="24" height="24"/>
+<circle class="bg" cx="188.85" cy="173.76" r="4.5"/>
+<circle class="s-focus" cx="188.85" cy="173.76" r="4.5"/>
+</g>
+<g data-tip="2 requests at once, 14,442 tokens: 316.2 s (107.6 s alone)" tabindex="0">
+<title>2 requests at once, 14,442 tokens: 316.2 s (107.6 s alone)</title>
+<rect class="hit" x="112.69" y="145.14" width="24" height="24"/>
+<circle class="bg" cx="124.69" cy="157.14" r="4.5"/>
+<circle class="s-focus" cx="124.69" cy="157.14" r="4.5"/>
+</g>
+<g data-tip="4 requests at once, 8,932 tokens: 100.8 s (63.8 s alone)" tabindex="0">
+<title>4 requests at once, 8,932 tokens: 100.8 s (63.8 s alone)</title>
+<rect class="hit" x="77.83" y="209.76" width="24" height="24"/>
+<path class="bg" d="M89.83 215.76L95.83 221.76L89.83 227.76L83.83 221.76Z"/>
+<path class="s-focus" d="M89.83 215.76L95.83 221.76L89.83 227.76L83.83 221.76Z"/>
+</g>
+<g data-tip="4 requests at once, 10,280 tokens: 193.8 s (73.5 s alone)" tabindex="0">
+<title>4 requests at once, 10,280 tokens: 193.8 s (73.5 s alone)</title>
+<rect class="hit" x="86.36" y="181.86" width="24" height="24"/>
+<path class="bg" d="M98.36 187.86L104.36 193.86L98.36 199.86L92.36 193.86Z"/>
+<path class="s-focus" d="M98.36 187.86L104.36 193.86L98.36 199.86L92.36 193.86Z"/>
+</g>
+<g data-tip="4 requests at once, 24,582 tokens: 401.3 s (202.2 s alone)" tabindex="0">
+<title>4 requests at once, 24,582 tokens: 401.3 s (202.2 s alone)</title>
+<rect class="hit" x="176.85" y="119.61" width="24" height="24"/>
+<path class="bg" d="M188.85 125.61L194.85 131.61L188.85 137.61L182.85 131.61Z"/>
+<path class="s-focus" d="M188.85 125.61L194.85 131.61L188.85 137.61L182.85 131.61Z"/>
+</g>
+<g data-tip="4 requests at once, 14,442 tokens: 456.3 s (107.6 s alone)" tabindex="0">
+<title>4 requests at once, 14,442 tokens: 456.3 s (107.6 s alone)</title>
+<rect class="hit" x="112.69" y="103.11" width="24" height="24"/>
+<path class="bg" d="M124.69 109.11L130.69 115.11L124.69 121.11L118.69 115.11Z"/>
+<path class="s-focus" d="M124.69 109.11L130.69 115.11L124.69 121.11L118.69 115.11Z"/>
+</g>
+<text class="t" x="134.69" y="113.4">4 at once: 456.3 s</text>
+<text class="t" x="198.85" y="135.9">4 at once: 401.3 s</text>
+<text class="t" x="114.69" y="132.99" text-anchor="end">
+<tspan x="114.69" dy="0">2 at once:</tspan>
+<tspan x="114.69" dy="16.9">316.2 s</tspan>
+</text>
+<text class="t-muted" x="345.66" y="155" text-anchor="end">limit</text>
+</g>
+<g>
+<line class="grid" x1="381.66" y1="252" x2="698" y2="252"/>
+<line class="grid" x1="381.66" y1="222" x2="698" y2="222"/>
+<line class="grid" x1="381.66" y1="192" x2="698" y2="192"/>
+<line class="grid" x1="381.66" y1="162" x2="698" y2="162"/>
+<line class="grid" x1="381.66" y1="132" x2="698" y2="132"/>
+<line class="grid" x1="381.66" y1="102" x2="698" y2="102"/>
+<line class="axis" x1="381.66" y1="252" x2="698" y2="252"/>
+<line class="ref" x1="381.66" y1="162" x2="698" y2="162"/>
+</g>
+<g>
+<line class="s-ctl" x1="402.07" y1="248.45" x2="537.19" y2="220.58"/>
+</g>
+<g>
+<text class="t" x="381.66" y="66.58">16 threads, two questions</text>
+<text class="t-muted" x="381.66" y="84.92">fitted over 128 requests: median 31 s, none over 300 s</text>
+<g data-tip="16 threads, two questions, 3,226 tokens: 15.9 s measured" tabindex="0">
+<title>16 threads, two questions, 3,226 tokens: 15.9 s measured</title>
+<rect class="hit" x="390.07" y="235.23" width="24" height="24"/>
+<circle class="c-ctl ring" cx="402.07" cy="247.23" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 4,670 tokens: 21.9 s measured" tabindex="0">
+<title>16 threads, two questions, 4,670 tokens: 21.9 s measured</title>
+<rect class="hit" x="399.21" y="233.43" width="24" height="24"/>
+<circle class="c-ctl ring" cx="411.21" cy="245.43" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 5,232 tokens: 22.0 s measured" tabindex="0">
+<title>16 threads, two questions, 5,232 tokens: 22.0 s measured</title>
+<rect class="hit" x="402.76" y="233.4" width="24" height="24"/>
+<circle class="c-ctl ring" cx="414.76" cy="245.4" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 5,744 tokens: 21.4 s measured" tabindex="0">
+<title>16 threads, two questions, 5,744 tokens: 21.4 s measured</title>
+<rect class="hit" x="406" y="233.58" width="24" height="24"/>
+<circle class="c-ctl ring" cx="418" cy="245.58" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 6,954 tokens: 26.2 s measured" tabindex="0">
+<title>16 threads, two questions, 6,954 tokens: 26.2 s measured</title>
+<rect class="hit" x="413.66" y="232.14" width="24" height="24"/>
+<circle class="c-ctl ring" cx="425.66" cy="244.14" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 8,000 tokens: 31.2 s measured" tabindex="0">
+<title>16 threads, two questions, 8,000 tokens: 31.2 s measured</title>
+<rect class="hit" x="420.27" y="230.64" width="24" height="24"/>
+<circle class="c-ctl ring" cx="432.27" cy="242.64" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 8,932 tokens: 33.9 s measured" tabindex="0">
+<title>16 threads, two questions, 8,932 tokens: 33.9 s measured</title>
+<rect class="hit" x="426.17" y="229.83" width="24" height="24"/>
+<circle class="c-ctl ring" cx="438.17" cy="241.83" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 10,280 tokens: 40.1 s measured" tabindex="0">
+<title>16 threads, two questions, 10,280 tokens: 40.1 s measured</title>
+<rect class="hit" x="434.7" y="227.97" width="24" height="24"/>
+<circle class="c-ctl ring" cx="446.7" cy="239.97" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 14,442 tokens: 58.2 s measured" tabindex="0">
+<title>16 threads, two questions, 14,442 tokens: 58.2 s measured</title>
+<rect class="hit" x="461.03" y="222.54" width="24" height="24"/>
+<circle class="c-ctl ring" cx="473.03" cy="234.54" r="4"/>
+</g>
+<g data-tip="16 threads, two questions, 24,582 tokens: 108.1 s measured" tabindex="0">
+<title>16 threads, two questions, 24,582 tokens: 108.1 s measured</title>
+<rect class="hit" x="525.19" y="207.57" width="24" height="24"/>
+<circle class="c-ctl ring" cx="537.19" cy="219.57" r="4"/>
+</g>
+<text class="t-muted" x="385.66" y="155">limit</text>
+</g>
+<g>
+<line class="grid" x1="33.32" y1="468" x2="349.66" y2="468"/>
+<text class="t-muted" x="27.32" y="471.96" text-anchor="end">0</text>
+<line class="grid" x1="33.32" y1="438" x2="349.66" y2="438"/>
+<text class="t-muted" x="27.32" y="441.96" text-anchor="end">100</text>
+<line class="grid" x1="33.32" y1="408" x2="349.66" y2="408"/>
+<text class="t-muted" x="27.32" y="411.96" text-anchor="end">200</text>
+<line class="grid" x1="33.32" y1="378" x2="349.66" y2="378"/>
+<text class="t-muted" x="27.32" y="381.96" text-anchor="end">300</text>
+<line class="grid" x1="33.32" y1="348" x2="349.66" y2="348"/>
+<text class="t-muted" x="27.32" y="351.96" text-anchor="end">400</text>
+<line class="grid" x1="33.32" y1="318" x2="349.66" y2="318"/>
+<text class="t-muted" x="27.32" y="321.96" text-anchor="end">500 s</text>
+<line class="axis" x1="33.32" y1="468" x2="349.66" y2="468"/>
+<text class="t-muted" x="33.32" y="481.92" text-anchor="middle">0</text>
+<text class="t-muted" x="96.59" y="481.92" text-anchor="middle">10,000</text>
+<text class="t-muted" x="159.86" y="481.92" text-anchor="middle">20,000</text>
+<text class="t-muted" x="223.12" y="481.92" text-anchor="middle">30,000</text>
+<text class="t-muted" x="286.39" y="481.92" text-anchor="middle">40,000</text>
+<text class="t-muted" x="349.66" y="481.92" text-anchor="middle">50,000</text>
+<text class="t-muted" x="349.66" y="497.84" text-anchor="end">input tokens</text>
+<line class="ref" x1="33.32" y1="378" x2="349.66" y2="378"/>
+</g>
+<g>
+<line class="s-ctl" x1="73.95" y1="457.12" x2="344.18" y2="350.64"/>
+</g>
+<g>
+<text class="t" x="33.32" y="282.58">8 threads, four questions</text>
+<text class="t-muted" x="33.32" y="300.92">fitted over 128 requests: median 110 s, 12 over 300 s</text>
+<g data-tip="8 threads, four questions, 6,422 tokens: 46.9 s measured" tabindex="0">
+<title>8 threads, four questions, 6,422 tokens: 46.9 s measured</title>
+<rect class="hit" x="61.95" y="441.93" width="24" height="24"/>
+<circle class="c-ctl ring" cx="73.95" cy="453.93" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 9,310 tokens: 64.0 s measured" tabindex="0">
+<title>8 threads, four questions, 9,310 tokens: 64.0 s measured</title>
+<rect class="hit" x="80.22" y="436.8" width="24" height="24"/>
+<circle class="c-ctl ring" cx="92.22" cy="448.8" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 10,434 tokens: 72.0 s measured" tabindex="0">
+<title>8 threads, four questions, 10,434 tokens: 72.0 s measured</title>
+<rect class="hit" x="87.33" y="434.4" width="24" height="24"/>
+<circle class="c-ctl ring" cx="99.33" cy="446.4" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 11,458 tokens: 79.3 s measured" tabindex="0">
+<title>8 threads, four questions, 11,458 tokens: 79.3 s measured</title>
+<rect class="hit" x="93.81" y="432.21" width="24" height="24"/>
+<circle class="c-ctl ring" cx="105.81" cy="444.21" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 13,878 tokens: 96.7 s measured" tabindex="0">
+<title>8 threads, four questions, 13,878 tokens: 96.7 s measured</title>
+<rect class="hit" x="109.12" y="426.99" width="24" height="24"/>
+<circle class="c-ctl ring" cx="121.12" cy="438.99" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 15,970 tokens: 111.3 s measured" tabindex="0">
+<title>8 threads, four questions, 15,970 tokens: 111.3 s measured</title>
+<rect class="hit" x="122.36" y="422.61" width="24" height="24"/>
+<circle class="c-ctl ring" cx="134.36" cy="434.61" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 17,834 tokens: 125.7 s measured" tabindex="0">
+<title>8 threads, four questions, 17,834 tokens: 125.7 s measured</title>
+<rect class="hit" x="134.15" y="418.29" width="24" height="24"/>
+<circle class="c-ctl ring" cx="146.15" cy="430.29" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 20,530 tokens: 145.7 s measured" tabindex="0">
+<title>8 threads, four questions, 20,530 tokens: 145.7 s measured</title>
+<rect class="hit" x="151.21" y="412.29" width="24" height="24"/>
+<circle class="c-ctl ring" cx="163.21" cy="424.29" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 28,854 tokens: 213.6 s measured" tabindex="0">
+<title>8 threads, four questions, 28,854 tokens: 213.6 s measured</title>
+<rect class="hit" x="203.87" y="391.92" width="24" height="24"/>
+<circle class="c-ctl ring" cx="215.87" cy="403.92" r="4"/>
+</g>
+<g data-tip="8 threads, four questions, 49,134 tokens: 400.1 s measured" tabindex="0">
+<title>8 threads, four questions, 49,134 tokens: 400.1 s measured</title>
+<rect class="hit" x="332.18" y="335.97" width="24" height="24"/>
+<circle class="c-ctl ring" cx="344.18" cy="347.97" r="4"/>
+</g>
+<text class="t" x="335.18" y="352.26" text-anchor="end">measured 400.1 s</text>
+<text class="t-muted" x="37.32" y="371">limit</text>
+</g>
+<g>
+<line class="grid" x1="381.66" y1="468" x2="698" y2="468"/>
+<line class="grid" x1="381.66" y1="438" x2="698" y2="438"/>
+<line class="grid" x1="381.66" y1="408" x2="698" y2="408"/>
+<line class="grid" x1="381.66" y1="378" x2="698" y2="378"/>
+<line class="grid" x1="381.66" y1="348" x2="698" y2="348"/>
+<line class="grid" x1="381.66" y1="318" x2="698" y2="318"/>
+<line class="axis" x1="381.66" y1="468" x2="698" y2="468"/>
+<text class="t-muted" x="381.66" y="481.92" text-anchor="middle">0</text>
+<text class="t-muted" x="444.93" y="481.92" text-anchor="middle">10,000</text>
+<text class="t-muted" x="508.2" y="481.92" text-anchor="middle">20,000</text>
+<text class="t-muted" x="571.46" y="481.92" text-anchor="middle">30,000</text>
+<text class="t-muted" x="634.73" y="481.92" text-anchor="middle">40,000</text>
+<text class="t-muted" x="698" y="481.92" text-anchor="middle">50,000</text>
+<text class="t-muted" x="698" y="497.84" text-anchor="end">input tokens</text>
+<line class="ref" x1="381.66" y1="378" x2="698" y2="378"/>
+</g>
+<g>
+<line class="s-ctl" x1="422.29" y1="462.41" x2="692.52" y2="404.49"/>
+</g>
+<g>
+<text class="t" x="381.66" y="282.58">16 threads, four questions</text>
+<text class="t-muted" x="381.66" y="300.92">fitted over 128 requests: median 59 s, none over 300 s</text>
+<g data-tip="16 threads, four questions, 6,422 tokens: 23.8 s measured" tabindex="0">
+<title>16 threads, four questions, 6,422 tokens: 23.8 s measured</title>
+<rect class="hit" x="410.29" y="448.86" width="24" height="24"/>
+<circle class="c-ctl ring" cx="422.29" cy="460.86" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 9,310 tokens: 34.1 s measured" tabindex="0">
+<title>16 threads, four questions, 9,310 tokens: 34.1 s measured</title>
+<rect class="hit" x="428.56" y="445.77" width="24" height="24"/>
+<circle class="c-ctl ring" cx="440.56" cy="457.77" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 10,434 tokens: 38.4 s measured" tabindex="0">
+<title>16 threads, four questions, 10,434 tokens: 38.4 s measured</title>
+<rect class="hit" x="435.67" y="444.48" width="24" height="24"/>
+<circle class="c-ctl ring" cx="447.67" cy="456.48" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 11,458 tokens: 42.3 s measured" tabindex="0">
+<title>16 threads, four questions, 11,458 tokens: 42.3 s measured</title>
+<rect class="hit" x="442.15" y="443.31" width="24" height="24"/>
+<circle class="c-ctl ring" cx="454.15" cy="455.31" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 13,878 tokens: 51.4 s measured" tabindex="0">
+<title>16 threads, four questions, 13,878 tokens: 51.4 s measured</title>
+<rect class="hit" x="457.46" y="440.58" width="24" height="24"/>
+<circle class="c-ctl ring" cx="469.46" cy="452.58" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 15,970 tokens: 59.9 s measured" tabindex="0">
+<title>16 threads, four questions, 15,970 tokens: 59.9 s measured</title>
+<rect class="hit" x="470.7" y="438.03" width="24" height="24"/>
+<circle class="c-ctl ring" cx="482.7" cy="450.03" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 17,834 tokens: 67.4 s measured" tabindex="0">
+<title>16 threads, four questions, 17,834 tokens: 67.4 s measured</title>
+<rect class="hit" x="482.49" y="435.78" width="24" height="24"/>
+<circle class="c-ctl ring" cx="494.49" cy="447.78" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 20,530 tokens: 78.2 s measured" tabindex="0">
+<title>16 threads, four questions, 20,530 tokens: 78.2 s measured</title>
+<rect class="hit" x="499.55" y="432.54" width="24" height="24"/>
+<circle class="c-ctl ring" cx="511.55" cy="444.54" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 28,854 tokens: 114.6 s measured" tabindex="0">
+<title>16 threads, four questions, 28,854 tokens: 114.6 s measured</title>
+<rect class="hit" x="552.21" y="421.62" width="24" height="24"/>
+<circle class="c-ctl ring" cx="564.21" cy="433.62" r="4"/>
+</g>
+<g data-tip="16 threads, four questions, 49,134 tokens: 216.9 s measured" tabindex="0">
+<title>16 threads, four questions, 49,134 tokens: 216.9 s measured</title>
+<rect class="hit" x="680.52" y="390.93" width="24" height="24"/>
+<circle class="c-ctl ring" cx="692.52" cy="402.93" r="4"/>
+</g>
+<text class="t-muted" x="385.66" y="371">limit</text>
+</g>
+</svg>

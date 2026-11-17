@@ -1,0 +1,80 @@
+{
+ "id": "tuning-prompt-cache",
+ "scope": "bench",
+ "title": "How much of each prompt the server took from its cache",
+ "compared": "Prompt tokens each request sent against the tokens the server had to process, in the baseline replay.",
+ "sample": "The 54 requests of the baseline replay of 17 audited public jobs on an aarch64 test VM, counted once each from the server log.",
+ "date": "2026-11-07",
+ "columns": [
+  {
+   "key": "requests",
+   "label": "Requests"
+  },
+  {
+   "key": "n",
+   "label": "Number",
+   "align": "right"
+  },
+  {
+   "key": "sent",
+   "label": "Prompt tokens sent",
+   "align": "right"
+  },
+  {
+   "key": "cached",
+   "label": "Taken from the cache",
+   "align": "right"
+  },
+  {
+   "key": "share",
+   "label": "From the cache (%)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "requests": "first questions, answered",
+   "n": 14,
+   "sent": 60893,
+   "cached": 0,
+   "share": 0
+  },
+  {
+   "requests": "first questions cut off by the client's timeout",
+   "n": 3,
+   "sent": 23877,
+   "cached": 0,
+   "share": 0
+  },
+  {
+   "requests": "retries of the cut-off questions",
+   "n": 3,
+   "sent": 23877,
+   "cached": 23874,
+   "share": 100
+  },
+  {
+   "requests": "second and third questions",
+   "n": 34,
+   "sent": 180561,
+   "cached": 170854,
+   "share": 95
+  },
+  {
+   "requests": "all answered requests",
+   "n": 51,
+   "sent": 265331,
+   "cached": 194728,
+   "share": 73
+  },
+  {
+   "requests": "all requests",
+   "n": 54,
+   "sent": 289208,
+   "cached": 194728,
+   "share": 67
+  }
+ ],
+ "verdict": "The second and third questions found almost all of their prompt in the cache; over all requests 67% of the prompt tokens came from it. Reading prompts took 6409 s and generating 3680 s of the 10641 s.",
+ "note": "The seconds for reading prompts include the three cut-off requests. The client's timeout is not in these logs, so its length is not given here."
+}

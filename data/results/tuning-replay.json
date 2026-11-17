@@ -1,0 +1,102 @@
+{
+ "id": "tuning-replay",
+ "scope": "bench",
+ "title": "Replaying 17 audited jobs under three server settings",
+ "compared": "The baseline server, the same server with thinking turned off, and the Q4_K_M quantisation with 64 batch threads.",
+ "sample": "17 public jobs whose answers were audited by hand, each replayed with its three questions, one run per setting, on an aarch64 test VM.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "config",
+   "label": "Setting"
+  },
+  {
+   "key": "median_s",
+   "label": "Median seconds per job",
+   "align": "right"
+  },
+  {
+   "key": "total_s",
+   "label": "Total seconds",
+   "align": "right"
+  },
+  {
+   "key": "class_ok",
+   "label": "Class right",
+   "align": "right"
+  },
+  {
+   "key": "bisect_ok",
+   "label": "BISECT answer right",
+   "align": "right"
+  },
+  {
+   "key": "restart_ok",
+   "label": "Restart answer right",
+   "align": "right"
+  },
+  {
+   "key": "gen_per_turn",
+   "label": "Generated tokens per question",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "config": "IQ2_M, thinking on (baseline)",
+   "median_s": 629,
+   "total_s": 10641,
+   "class_ok": [
+    13,
+    17
+   ],
+   "bisect_ok": [
+    15,
+    17
+   ],
+   "restart_ok": [
+    17,
+    17
+   ],
+   "gen_per_turn": 468
+  },
+  {
+   "config": "IQ2_M, thinking off",
+   "median_s": 401,
+   "total_s": 6741,
+   "class_ok": [
+    9,
+    17
+   ],
+   "bisect_ok": [
+    15,
+    17
+   ],
+   "restart_ok": [
+    17,
+    17
+   ],
+   "gen_per_turn": 44
+  },
+  {
+   "config": "Q4_K_M, 64 batch threads",
+   "median_s": 391,
+   "total_s": 6677,
+   "class_ok": [
+    12,
+    17
+   ],
+   "bisect_ok": [
+    15,
+    17
+   ],
+   "restart_ok": [
+    17,
+    17
+   ],
+   "gen_per_turn": 464
+  }
+ ],
+ "verdict": "Thinking off took 37% less time but got the class right for 9 instead of 13 jobs. Dropped. Q4_K_M with 64 batch threads took 37% less time with 12 classes right.",
+ "note": "Where the audit gave no expected answer for a job, the answer counts as right. The time saved by 64 batch threads was later traced to the thread cap of the baseline server, not to the batch threads."
+}

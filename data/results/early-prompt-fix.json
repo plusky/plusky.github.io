@@ -1,0 +1,100 @@
+{
+ "id": "early-prompt-fix",
+ "scope": "bench",
+ "title": "Evidence in the prompt instead of guesses about infrastructure",
+ "compared": "The prompt before the change against the prompt with the job's own evidence first.",
+ "sample": "17 audited public jobs, one dry run per job and prompt with Gemma 4 E4B IQ2_M on an aarch64 test VM; two jobs repeated three times for the BISECT answer.",
+ "date": "2026-10-31",
+ "columns": [
+  {
+   "key": "measure",
+   "label": "Measure"
+  },
+  {
+   "key": "before",
+   "label": "Before",
+   "align": "right"
+  },
+  {
+   "key": "after",
+   "label": "With the change",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "measure": "class given as infrastructure",
+   "before": [
+    15,
+    17
+   ],
+   "after": [
+    3,
+    17
+   ]
+  },
+  {
+   "measure": "class right",
+   "before": [
+    4,
+    17
+   ],
+   "after": [
+    12,
+    17
+   ]
+  },
+  {
+   "measure": "Restart: YES",
+   "before": [
+    7,
+    17
+   ],
+   "after": [
+    1,
+    17
+   ]
+  },
+  {
+   "measure": "Restart answer right",
+   "before": [
+    10,
+    17
+   ],
+   "after": [
+    16,
+    17
+   ]
+  },
+  {
+   "measure": "BISECT answer right",
+   "before": [
+    15,
+    17
+   ],
+   "after": [
+    13,
+    17
+   ]
+  },
+  {
+   "measure": "BISECT answer right, two jobs three times each",
+   "before": [
+    6,
+    6
+   ],
+   "after": [
+    3,
+    6
+   ]
+  }
+ ],
+ "verdict": "The class was infrastructure for 3 instead of 15 jobs and right for 12 instead of 4. The BISECT answer was right for 13 instead of 15. Kept.",
+ "pr": [
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 802
+  }
+ ],
+ "note": "Where the audit gave no expected answer for a job, the answer counts as right."
+}

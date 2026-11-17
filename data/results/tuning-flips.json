@@ -1,0 +1,75 @@
+{
+ "id": "tuning-flips",
+ "scope": "bench",
+ "title": "Repeating the jobs where the quantisations disagreed",
+ "compared": "IQ2_M against Q4_K_M with 64 batch threads, on the jobs whose class was right under one and wrong under the other.",
+ "sample": "3 audited public jobs, replayed three times per setting on an aarch64 test VM.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "quant",
+   "label": "Setting"
+  },
+  {
+   "key": "r1",
+   "label": "Run 1, class right",
+   "align": "right"
+  },
+  {
+   "key": "r2",
+   "label": "Run 2",
+   "align": "right"
+  },
+  {
+   "key": "r3",
+   "label": "Run 3",
+   "align": "right"
+  },
+  {
+   "key": "total",
+   "label": "All runs",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "quant": "IQ2_M (baseline)",
+   "r1": [
+    2,
+    3
+   ],
+   "r2": [
+    1,
+    3
+   ],
+   "r3": [
+    0,
+    3
+   ],
+   "total": [
+    3,
+    9
+   ]
+  },
+  {
+   "quant": "Q4_K_M, 64 batch threads",
+   "r1": [
+    1,
+    3
+   ],
+   "r2": [
+    1,
+    3
+   ],
+   "r3": [
+    2,
+    3
+   ],
+   "total": [
+    4,
+    9
+   ]
+  }
+ ],
+ "verdict": "IQ2_M got 3 of 9 classes right and Q4_K_M 4 of 9. Inside the noise."
+}

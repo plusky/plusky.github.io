@@ -1,0 +1,149 @@
+{
+ "id": "tuning-micro",
+ "scope": "bench",
+ "title": "Prompt and generation speed of single server settings",
+ "compared": "One server setting changed at a time against the baseline of the same machine.",
+ "sample": "One fixed prompt of 8413 tokens without the prompt cache, 128 generated tokens, median of two requests per setting, on an aarch64 test VM and on a 2x EPYC 9354 server.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "setting",
+   "label": "Setting"
+  },
+  {
+   "key": "machine",
+   "label": "Machine"
+  },
+  {
+   "key": "pp",
+   "label": "Prompt (tokens/s)",
+   "align": "right"
+  },
+  {
+   "key": "tg",
+   "label": "Generation (tokens/s)",
+   "align": "right"
+  },
+  {
+   "key": "pp_rel",
+   "label": "Prompt speed against the first row of its machine",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "setting": "IQ2_M, 32 threads (baseline)",
+   "machine": "an aarch64 test VM",
+   "pp": 14.7,
+   "tg": 6.2,
+   "pp_rel": 1.0
+  },
+  {
+   "setting": "IQ2_M, without the vision projector",
+   "machine": "an aarch64 test VM",
+   "pp": 14.7,
+   "tg": 6.1,
+   "pp_rel": 1.0
+  },
+  {
+   "setting": "IQ2_M, 64 batch threads",
+   "machine": "an aarch64 test VM",
+   "pp": 24.5,
+   "tg": 5.9,
+   "pp_rel": 1.67
+  },
+  {
+   "setting": "IQ2_M, flash attention on",
+   "machine": "an aarch64 test VM",
+   "pp": 14.6,
+   "tg": 6.1,
+   "pp_rel": 0.99
+  },
+  {
+   "setting": "IQ2_M, flash attention off",
+   "machine": "an aarch64 test VM",
+   "pp": 14.5,
+   "tg": 6.1,
+   "pp_rel": 0.99
+  },
+  {
+   "setting": "IQ2_M, micro-batch of 1024",
+   "machine": "an aarch64 test VM",
+   "pp": 15.3,
+   "tg": 5.9,
+   "pp_rel": 1.04
+  },
+  {
+   "setting": "IQ2_M, micro-batch of 256",
+   "machine": "an aarch64 test VM",
+   "pp": 13.6,
+   "tg": 6.1,
+   "pp_rel": 0.92
+  },
+  {
+   "setting": "Q4_0",
+   "machine": "an aarch64 test VM",
+   "pp": 21.5,
+   "tg": 5.7,
+   "pp_rel": 1.47
+  },
+  {
+   "setting": "Q4_0, 64 batch threads",
+   "machine": "an aarch64 test VM",
+   "pp": 34.2,
+   "tg": 5.6,
+   "pp_rel": 2.33
+  },
+  {
+   "setting": "Q4_K_M",
+   "machine": "an aarch64 test VM",
+   "pp": 25.7,
+   "tg": 5.6,
+   "pp_rel": 1.75
+  },
+  {
+   "setting": "IQ2_M, speculative decoding with an MTP draft model",
+   "machine": "an aarch64 test VM",
+   "pp": 14.3,
+   "tg": 5.9,
+   "pp_rel": 0.98
+  },
+  {
+   "setting": "IQ2_M, speculative decoding with n-grams",
+   "machine": "an aarch64 test VM",
+   "pp": 14.6,
+   "tg": 6.8,
+   "pp_rel": 1.0
+  },
+  {
+   "setting": "IQ2_M, 32 threads",
+   "machine": "a 2x EPYC 9354 server",
+   "pp": 301.6,
+   "tg": 13.7,
+   "pp_rel": 1.0
+  },
+  {
+   "setting": "IQ2_M, 64 threads",
+   "machine": "a 2x EPYC 9354 server",
+   "pp": 378.0,
+   "tg": 9.9,
+   "pp_rel": 1.25
+  },
+  {
+   "setting": "IQ2_M, 128 threads",
+   "machine": "a 2x EPYC 9354 server",
+   "pp": 130.7,
+   "tg": 2.4,
+   "pp_rel": 0.43
+  },
+  {
+   "setting": "IQ2_M, 64 threads spread over both processors",
+   "machine": "a 2x EPYC 9354 server",
+   "pp": 473.6,
+   "tg": 10.2,
+   "pp_rel": 1.57
+  }
+ ],
+ "verdict": "Q4_K_M read the prompt 1.75 times as fast as IQ2_M and 64 batch threads 1.67 times as fast on the test VM. Flash attention, the micro-batch size, the projector and speculative decoding changed little. On the server 128 threads were slower than 32.",
+ "note": "All settings use Gemma 4 E4B. The 64 batch threads gain on the test VM came from the 32-thread cap of its baseline."
+}

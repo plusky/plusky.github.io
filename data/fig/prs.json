@@ -1,0 +1,273 @@
+{
+ "id": "prs",
+ "scope": "public-record",
+ "read": "2026-11-14",
+ "topics": [
+  "Prompt and verdict rules",
+  "Comments and the hook",
+  "Prompt length",
+  "Routing and the model server",
+  "Groups nobody reviews",
+  "Decision model",
+  "Retry on Restart: YES",
+  "CI"
+ ],
+ "counts": {
+  "merged": 22,
+  "open": 6
+ },
+ "prs": [
+  {
+   "number": 788,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Keep the reply from acting on the job",
+   "topic": "Comments and the hook",
+   "state": "merged",
+   "created": "2026-10-25",
+   "merged": "2026-10-29"
+  },
+  {
+   "number": 789,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Show the test commits since the last good job",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-25",
+   "merged": "2026-10-28"
+  },
+  {
+   "number": 790,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Count the verdict statistics per scenario",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-25",
+   "merged": "2026-10-27"
+  },
+  {
+   "number": 791,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Name sudo, DNS and mount errors of failing steps",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-25",
+   "merged": "2026-10-28"
+  },
+  {
+   "number": 8023,
+   "repo": "openQA",
+   "title": "feat: Ignore bugrefs, labels, tags and flags in flag:verbatim comments",
+   "topic": "Comments and the hook",
+   "state": "merged",
+   "created": "2026-10-26",
+   "merged": "2026-10-27"
+  },
+  {
+   "number": 792,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(ci): Ignore ruff's shared-clock-mock rule in tests",
+   "topic": "CI",
+   "state": "merged",
+   "created": "2026-10-28",
+   "merged": "2026-10-28"
+  },
+  {
+   "number": 795,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Skip permissive SELinux denials as the key error",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 796,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Don't post on a job that is already reviewed",
+   "topic": "Comments and the hook",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-03"
+  },
+  {
+   "number": 797,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(hook): Report investigate jobs without the LLM gate",
+   "topic": "Comments and the hook",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 798,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Skip bisect and restart on long failure streaks",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-03"
+  },
+  {
+   "number": 799,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Count 2.5 chars per token for --context-tokens",
+   "topic": "Prompt length",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 800,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Say in the comment when the analysis was cut",
+   "topic": "Prompt length",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 801,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Show reviews of earlier same-module failures",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-10-31",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 802,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Require evidence for an Infrastructure verdict",
+   "topic": "Prompt and verdict rules",
+   "state": "merged",
+   "created": "2026-11-01",
+   "merged": "2026-11-02"
+  },
+  {
+   "number": 8069,
+   "repo": "openQA",
+   "title": "perf(nginx): Route LLM requests by openQA job",
+   "topic": "Routing and the model server",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-10"
+  },
+  {
+   "number": 8070,
+   "repo": "openQA",
+   "title": "perf(container): Don't load the multimodal projector of the LLM",
+   "topic": "Routing and the model server",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-12"
+  },
+  {
+   "number": 8071,
+   "repo": "openQA",
+   "title": "fix(nginx): Pass an LLM request to the next server on a 503",
+   "topic": "Routing and the model server",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-10"
+  },
+  {
+   "number": 808,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Keep the LLM requests of a job on one server",
+   "topic": "Routing and the model server",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-10"
+  },
+  {
+   "number": 809,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(ci): Ignore only the gitlab imports that ty can't resolve",
+   "topic": "CI",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-10"
+  },
+  {
+   "number": 810,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Skip the Development groups",
+   "topic": "Groups nobody reviews",
+   "state": "merged",
+   "created": "2026-11-08",
+   "merged": "2026-11-11"
+  },
+  {
+   "number": 8102,
+   "repo": "openQA",
+   "title": "feat: Add openQA-llm-decision-server sub-package",
+   "topic": "Decision model",
+   "state": "merged",
+   "created": "2026-11-12",
+   "merged": "2026-11-14"
+  },
+  {
+   "number": 814,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Let a decision model set the Classification line",
+   "topic": "Decision model",
+   "state": "open",
+   "created": "2026-11-12",
+   "merged": null
+  },
+  {
+   "number": 815,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Lower CHARS_PER_TOKEN to 1.9 so cut prompts fit",
+   "topic": "Prompt length",
+   "state": "open",
+   "created": "2026-11-12",
+   "merged": null
+  },
+  {
+   "number": 8113,
+   "repo": "openQA",
+   "title": "fix: Allow deleting verbatim force_result comments",
+   "topic": "Comments and the hook",
+   "state": "open",
+   "created": "2026-11-13",
+   "merged": null
+  },
+  {
+   "number": 816,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(ci): Use ruff's new name for missing-return-type rule",
+   "topic": "CI",
+   "state": "merged",
+   "created": "2026-11-13",
+   "merged": "2026-11-13"
+  },
+  {
+   "number": 817,
+   "repo": "os-autoinst-scripts",
+   "title": "fix(llm-investigate): Keep force_result labels out of the summary",
+   "topic": "Comments and the hook",
+   "state": "open",
+   "created": "2026-11-13",
+   "merged": null
+  },
+  {
+   "number": 819,
+   "repo": "os-autoinst-scripts",
+   "title": "docs: Describe _FORCE_STATUS_ON_RETRY of openqa-investigate",
+   "topic": "Comments and the hook",
+   "state": "open",
+   "created": "2026-11-13",
+   "merged": null
+  },
+  {
+   "number": 821,
+   "repo": "os-autoinst-scripts",
+   "title": "feat(llm-investigate): Retry a job alone on Restart: YES",
+   "topic": "Retry on Restart: YES",
+   "state": "open",
+   "created": "2026-11-13",
+   "merged": null
+  }
+ ]
+}

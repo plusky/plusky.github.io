@@ -1,0 +1,89 @@
+{
+ "id": "screens-flags",
+ "scope": "mixed",
+ "title": "Flagging the jobs where two models disagree",
+ "compared": "Where elephant-1 with the environment question and a second model give different classes, how often each is right, against the jobs where they agree.",
+ "sample": "The 71 screen jobs from both instances; totals only.",
+ "date": "2026-11-11",
+ "columns": [
+  {
+   "key": "comparison",
+   "label": "Models"
+  },
+  {
+   "key": "flagged",
+   "label": "Disagree",
+   "align": "right"
+  },
+  {
+   "key": "right_agree",
+   "label": "Right where they agree",
+   "align": "right"
+  },
+  {
+   "key": "ele_right",
+   "label": "elephant-1 right where they disagree",
+   "align": "right"
+  },
+  {
+   "key": "other_right",
+   "label": "Other model right where they disagree",
+   "align": "right"
+  },
+  {
+   "key": "neither",
+   "label": "Neither right where they disagree",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "comparison": "elephant-1 with the environment question against Kev-27B",
+   "flagged": [
+    23,
+    71
+   ],
+   "right_agree": [
+    38,
+    48
+   ],
+   "ele_right": [
+    6,
+    23
+   ],
+   "other_right": [
+    9,
+    23
+   ],
+   "neither": [
+    8,
+    23
+   ]
+  },
+  {
+   "comparison": "elephant-1 with the environment question against Gemma Q8, production prompt",
+   "flagged": [
+    19,
+    71
+   ],
+   "right_agree": [
+    28,
+    52
+   ],
+   "ele_right": [
+    16,
+    19
+   ],
+   "other_right": [
+    0,
+    19
+   ],
+   "neither": [
+    3,
+    19
+   ]
+  }
+ ],
+ "verdict": "A disagreement with Kev-27B marks a third of the jobs as uncertain, and neither model is reliable there. Against Gemma, elephant-1 is usually the one that is right.",
+ "note": "elephant-1 here averages the label question over three option orders, as the screens' own source does, and gets 44 of 71 on its own."
+}

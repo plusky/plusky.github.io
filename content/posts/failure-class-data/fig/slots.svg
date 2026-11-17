@@ -1,0 +1,39 @@
+<svg viewBox="0 0 720 262" role="img" aria-labelledby="slots-t slots-d" xmlns="http://www.w3.org/2000/svg">
+<title id="slots-t">One context, eight slots</title>
+<desc id="slots-d">With --parallel, llama-server can divide --ctx-size among its slots, so each request gets a fraction of the context you configured.</desc>
+<g>
+<text class="t-mono" x="0" y="14">--ctx-size 262144</text>
+<text class="t" x="126.4" y="14">divided by</text>
+<text class="t-mono" x="193.59" y="14">--parallel 8</text>
+<text class="t-strong" x="720" y="14" text-anchor="end">= 8 slots of 32,768 tokens</text>
+<rect class="c-focus" x="0" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="90.25" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="180.5" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="270.75" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="361" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="451.25" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="541.5" y="26" width="88.25" height="24"/>
+<rect class="c-ctl-soft" x="631.75" y="26" width="88.25" height="24"/>
+<text class="t-on" x="8" y="42.5">slot 1</text>
+<line class="leader" x1="0" y1="50" x2="0" y2="84"/>
+<line class="leader" x1="88.25" y1="50" x2="560" y2="84"/>
+<rect class="c-ctl-soft" x="0" y="84" width="523" height="24"/>
+<path class="c-ctl" d="M525 84H556A4 4 0 0 1 560 88V104A4 4 0 0 1 556 108H525Z"/>
+<text class="t" x="0" y="124">one slot: 32,768 tokens</text>
+<text class="t" x="554" y="124" text-anchor="end">2,048 kept for the replies</text>
+<path class="c-focus" d="M0 146H548A4 4 0 0 1 552 150V164A4 4 0 0 1 548 168H0Z"/>
+<text class="t-on" x="10" y="161.5">32.3k tokens</text>
+<text class="t" x="570" y="161.5">in the reserve, failed</text>
+<rect class="c-focus" x="0" y="182" width="559" height="22"/>
+<path class="c-focus flow" d="M561 182H599.27A4 4 0 0 1 603.27 186V200A4 4 0 0 1 599.27 204H561Z"/>
+<text class="t-on" x="10" y="197.5">35.3k tokens</text>
+<text class="t" x="613.27" y="197.5">2.5k over, failed</text>
+<line class="grid" x1="524" y1="78" x2="524" y2="111"/>
+<line class="grid" x1="524" y1="130" x2="524" y2="210"/>
+<line class="ref" x1="560.5" y1="78" x2="560.5" y2="111"/>
+<line class="ref" x1="560.5" y1="130" x2="560.5" y2="210"/>
+<text class="t-muted" x="570" y="100.5">slot ends</text>
+<text class="t" x="0" y="238">The script cuts the prompt by characters, assuming 2.5 characters per token. Real prompts measure a median of 2.28,</text>
+<text class="t" x="0" y="256">so they hold about 10% more tokens than it estimates.</text>
+</g>
+</svg>

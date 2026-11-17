@@ -1,0 +1,80 @@
+{
+ "id": "models-decision-silver",
+ "scope": "mixed",
+ "title": "elephant-1 against the silver labels",
+ "compared": "elephant-1's most likely class against the class a frontier model gave with hindsight, on all jobs and on the jobs where elephant-1 was most sure.",
+ "sample": "Failed jobs with a posted LLM comment and a silver class: public pool and internal pool.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "instance",
+   "label": "Instance"
+  },
+  {
+   "key": "subset",
+   "label": "Jobs"
+  },
+  {
+   "key": "right",
+   "label": "elephant-1 right",
+   "align": "right"
+  },
+  {
+   "key": "right_pct",
+   "label": "Right (%)",
+   "align": "right"
+  },
+  {
+   "key": "posted",
+   "label": "Posted comment right",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "instance": "public",
+   "subset": "all with a silver class",
+   "right": [
+    140,
+    285
+   ],
+   "right_pct": 49,
+   "posted": [
+    124,
+    285
+   ]
+  },
+  {
+   "instance": "public",
+   "subset": "probability 0.7 or more",
+   "right": [
+    45,
+    46
+   ],
+   "right_pct": 98,
+   "posted": null
+  },
+  {
+   "instance": "internal (counts only)",
+   "subset": "all with a silver class",
+   "right": [
+    31,
+    63
+   ],
+   "right_pct": 49,
+   "posted": null
+  },
+  {
+   "instance": "internal (counts only)",
+   "subset": "probability 0.6 or more",
+   "right": [
+    12,
+    18
+   ],
+   "right_pct": 67,
+   "posted": null
+  }
+ ],
+ "verdict": "Right on about half the jobs, and on 45 of 46 public jobs where it was very sure.",
+ "note": "The silver labels are a frontier model's, not a person's. The cut-offs 0.7 and 0.6 are the ones the records used for each pool."
+}

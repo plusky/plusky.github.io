@@ -1,0 +1,106 @@
+{
+ "id": "confirmation-arrivals",
+ "scope": "o3",
+ "title": "How commented jobs arrive",
+ "compared": "How close together the failed jobs that get an LLM comment finish: the share that finish within 5 minutes and within 1 minute of the one before, and the most in any 5 and 10 minutes.",
+ "sample": "Jobs with an LLM comment in public job groups that keep the LLM step, in the 42 days before the job lists were read.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "groups",
+   "label": "Job groups"
+  },
+  {
+   "key": "jobs",
+   "label": "Jobs",
+   "align": "right"
+  },
+  {
+   "key": "within5",
+   "label": "Within 5 min of the previous (%)",
+   "align": "right"
+  },
+  {
+   "key": "within1",
+   "label": "Within 1 min of the previous (%)",
+   "align": "right"
+  },
+  {
+   "key": "most5",
+   "label": "Most in 5 min",
+   "align": "right"
+  },
+  {
+   "key": "most10",
+   "label": "Most in 10 min",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "groups": "openSUSE Tumbleweed",
+   "jobs": 1613,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "openSUSE Tumbleweed AArch64",
+   "jobs": 1497,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "openSUSE Leap 16",
+   "jobs": 59,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "Kernel",
+   "jobs": 650,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "PowerPC",
+   "jobs": 141,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "s390x",
+   "jobs": 27,
+   "within5": null,
+   "within1": null,
+   "most5": null,
+   "most10": null
+  },
+  {
+   "groups": "the first three together",
+   "jobs": 3169,
+   "within5": 71,
+   "within1": 38,
+   "most5": 43,
+   "most10": 56
+  },
+  {
+   "groups": "all six together",
+   "jobs": 3987,
+   "within5": 69,
+   "within1": 36,
+   "most5": 43,
+   "most10": 56
+  }
+ ],
+ "verdict": "Comments come in bursts: in the three main groups 71% of the jobs finish within 5 minutes of the one before, and up to 43 in 5 minutes. A decision step of about a minute per job has to queue them."
+}

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 360 380" role="img" aria-labelledby="slots-n-t slots-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="slots-n-t">One context, eight slots</title>
+<desc id="slots-n-d">With --parallel, llama-server can divide --ctx-size among its slots, so each request gets a fraction of the context you configured.</desc>
+<g>
+<text class="t-mono" x="0" y="14">--ctx-size 262144</text>
+<text class="t" x="0" y="32">divided by</text>
+<text class="t-mono" x="67.19" y="32">--parallel 8</text>
+<text class="t-strong" x="0" y="50">= 8 slots of 32,768 tokens</text>
+<rect class="c-focus" x="0" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="45.25" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="90.5" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="135.75" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="181" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="226.25" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="271.5" y="62" width="43.25" height="24"/>
+<rect class="c-ctl-soft" x="316.75" y="62" width="43.25" height="24"/>
+<line class="leader" x1="0" y1="86" x2="0" y2="120"/>
+<line class="leader" x1="43.25" y1="86" x2="300" y2="120"/>
+<rect class="c-ctl-soft" x="0" y="120" width="279.25" height="24"/>
+<path class="c-ctl" d="M281.25 120H296A4 4 0 0 1 300 124V140A4 4 0 0 1 296 144H281.25Z"/>
+<text class="t" x="0" y="160">one slot: 32,768 tokens</text>
+<text class="t" x="294" y="178" text-anchor="end">2,048 kept for the replies</text>
+<text class="t" x="0" y="211">32.3k tokens: in the reserve, failed</text>
+<path class="c-focus" d="M0 218H291.72A4 4 0 0 1 295.72 222V236A4 4 0 0 1 291.72 240H0Z"/>
+<text class="t" x="0" y="257">35.3k tokens: 2.5k over, failed</text>
+<rect class="c-focus" x="0" y="264" width="299" height="22"/>
+<path class="c-focus flow" d="M301 264H319.18A4 4 0 0 1 323.18 268V282A4 4 0 0 1 319.18 286H301Z"/>
+<line class="grid" x1="280.25" y1="114" x2="280.25" y2="147"/>
+<line class="grid" x1="280.25" y1="184" x2="280.25" y2="292"/>
+<line class="ref" x1="300.5" y1="114" x2="300.5" y2="147"/>
+<line class="ref" x1="300.5" y1="184" x2="300.5" y2="292"/>
+<text class="t" x="0" y="320">The script cuts the prompt by characters, assuming 2.5</text>
+<text class="t" x="0" y="338">characters per token. Real prompts measure a median of</text>
+<text class="t" x="0" y="356">2.28, so they hold about 10% more tokens than it</text>
+<text class="t" x="0" y="374">estimates.</text>
+</g>
+</svg>

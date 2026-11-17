@@ -1,0 +1,97 @@
+{
+ "id": "thinking",
+ "scope": "bench",
+ "hardware": "an aarch64 test VM",
+ "model": "Gemma 4 E4B, IQ2_M",
+ "jobs": 17,
+ "thinking_share_of_generation": 0.91,
+ "time_saved_share": 0.37,
+ "on": {
+  "generated_per_turn": 468,
+  "median_s": 629,
+  "p90_s": 836,
+  "total_s": 10641,
+  "prompt_s": 6409,
+  "generation_s": 3680,
+  "class_right": 13
+ },
+ "off": {
+  "generated_per_turn": 44,
+  "median_s": 401,
+  "p90_s": 564,
+  "total_s": 6741,
+  "prompt_s": 6232,
+  "generation_s": 338,
+  "class_right": 9
+ },
+ "per_job_s": [
+  {
+   "on": 307,
+   "off": 136
+  },
+  {
+   "on": 419,
+   "off": 238
+  },
+  {
+   "on": 446,
+   "off": 247
+  },
+  {
+   "on": 446,
+   "off": 251
+  },
+  {
+   "on": 461,
+   "off": 228
+  },
+  {
+   "on": 485,
+   "off": 245
+  },
+  {
+   "on": 582,
+   "off": 378
+  },
+  {
+   "on": 592,
+   "off": 401
+  },
+  {
+   "on": 629,
+   "off": 421
+  },
+  {
+   "on": 640,
+   "off": 382
+  },
+  {
+   "on": 668,
+   "off": 444
+  },
+  {
+   "on": 731,
+   "off": 500
+  },
+  {
+   "on": 749,
+   "off": 498
+  },
+  {
+   "on": 822,
+   "off": 548
+  },
+  {
+   "on": 836,
+   "off": 615
+  },
+  {
+   "on": 889,
+   "off": 564
+  },
+  {
+   "on": 939,
+   "off": 645
+  }
+ ]
+}

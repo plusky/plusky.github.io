@@ -1,0 +1,215 @@
+{
+ "data_lat_chosen_threads": {
+  "value": 8,
+  "forms": [
+   "8 threads"
+  ],
+  "what": "threads of the chosen setting of the decision server",
+  "scope": "bench"
+ },
+ "data_lat_fit_requests": {
+  "value": 128,
+  "forms": [
+   "128"
+  ],
+  "what": "public confirmation requests the linear fit is applied to",
+  "scope": "bench"
+ },
+ "data_lat_fit_median": {
+  "value": 55,
+  "forms": [
+   "55 seconds"
+  ],
+  "what": "estimated median seconds of a two-question request at 8/16 threads over the confirmation requests",
+  "scope": "bench"
+ },
+ "data_lat_fit_over": {
+  "value": 0,
+  "forms": [
+   "none"
+  ],
+  "what": "estimated two-question requests at 8/16 threads over the limit",
+  "scope": "bench"
+ },
+ "data_lat_timeout": {
+  "value": 300,
+  "forms": [
+   "300-second limit",
+   "300 s"
+  ],
+  "what": "seconds the openQA hook waits for the decision",
+  "scope": "bench"
+ },
+ "data_lat_four_requests": {
+  "value": 10,
+  "forms": [
+   "10"
+  ],
+  "what": "timed four-question requests at 8/16 threads",
+  "scope": "bench"
+ },
+ "data_lat_four_max": {
+  "value": 400.1,
+  "forms": [
+   "400.1 seconds"
+  ],
+  "what": "slowest timed four-question request at 8/16 threads",
+  "scope": "bench"
+ },
+ "data_lat_burst_over": {
+  "value": 3,
+  "forms": [
+   "3 of 6",
+   "two or four at once"
+  ],
+  "what": "requests sent in bursts of two or four that went over the limit",
+  "scope": "bench"
+ },
+ "data_think_share": {
+  "value": 0.91,
+  "forms": [
+   "91%"
+  ],
+  "what": "share of the generated tokens that is thinking, 17-job replay",
+  "scope": "bench"
+ },
+ "data_think_median_on": {
+  "value": 629,
+  "forms": [
+   "629"
+  ],
+  "what": "median seconds per job, thinking on",
+  "scope": "bench"
+ },
+ "data_think_median_off": {
+  "value": 401,
+  "forms": [
+   "401 seconds"
+  ],
+  "what": "median seconds per job, thinking off",
+  "scope": "bench"
+ },
+ "data_think_jobs": {
+  "value": 17,
+  "forms": [
+   "all 17 jobs"
+  ],
+  "what": "audited jobs in the replay",
+  "scope": "bench"
+ },
+ "data_think_time_saved": {
+  "value": 0.37,
+  "forms": [
+   "37%"
+  ],
+  "what": "less total time with thinking off",
+  "scope": "bench"
+ },
+ "data_think_class_on": {
+  "value": 13,
+  "forms": [
+   "from 13"
+  ],
+  "what": "class right, thinking on",
+  "scope": "bench"
+ },
+ "data_think_class_off": {
+  "value": 9,
+  "forms": [
+   "to 9"
+  ],
+  "what": "class right, thinking off",
+  "scope": "bench"
+ },
+ "data_readers_window_days": {
+  "value": 42,
+  "forms": [
+   "42 days",
+   "In 42 days"
+  ],
+  "what": "days over which the jobs with an LLM comment were counted",
+  "scope": "o3"
+ },
+ "data_readers_jobs": {
+  "value": 6459,
+  "forms": [
+   "6,459"
+  ],
+  "what": "jobs with an LLM comment in 42 days in the four job groups shown",
+  "scope": "o3"
+ },
+ "data_readers_reviewed": {
+  "value": 142,
+  "forms": [
+   "142"
+  ],
+  "what": "of those, jobs a person later reviewed (bug reference or label)",
+  "scope": "o3"
+ },
+ "data_readers_reviewed_share": {
+  "value": 0.022,
+  "forms": [
+   "2.2%"
+  ],
+  "what": "share of the commented jobs a person reviewed",
+  "scope": "o3"
+ },
+ "data_readers_development_jobs": {
+  "value": 3290,
+  "forms": [
+   "3,290"
+  ],
+  "what": "commented jobs in the Development Tumbleweed group",
+  "scope": "o3"
+ },
+ "data_readers_development_share": {
+  "value": 0.51,
+  "forms": [
+   "51%"
+  ],
+  "what": "share of the commented jobs in the Development Tumbleweed group",
+  "scope": "o3"
+ },
+ "data_readers_development_reviewed": {
+  "value": 4,
+  "forms": [
+   "4 of 3,290",
+   "4"
+  ],
+  "what": "commented Development Tumbleweed jobs a person reviewed",
+  "scope": "o3"
+ },
+ "data_prs_open": {
+  "value": 6,
+  "forms": [
+   "6 still open",
+   "open on 14 Nov (6)"
+  ],
+  "what": "pull requests still open on 14 November 2026, of the 28 opened",
+  "scope": "public-record"
+ },
+ "data_prs_open_first": {
+  "value": "2026-11-12",
+  "forms": [
+   "12 and 13 Nov"
+  ],
+  "what": "first day an open pull request was opened",
+  "scope": "public-record"
+ },
+ "data_prs_open_last": {
+  "value": "2026-11-13",
+  "forms": [
+   "12 and 13 Nov"
+  ],
+  "what": "last day an open pull request was opened",
+  "scope": "public-record"
+ },
+ "data_prs_read": {
+  "value": "2026-11-14",
+  "forms": [
+   "14 Nov"
+  ],
+  "what": "day the pull request lists were read",
+  "scope": "public-record"
+ }
+}

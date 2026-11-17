@@ -1,0 +1,58 @@
+<svg viewBox="0 0 360 385" role="img" aria-labelledby="readers-n-t readers-n-d" xmlns="http://www.w3.org/2000/svg">
+<title id="readers-n-t">Jobs with an LLM comment in 42 days, reviewed share and jobs per job group</title>
+<desc id="readers-n-d">In 42 days the four job groups shown had 6,459 jobs with an LLM comment; 142 (2.2%) were later reviewed by a person, and 3,290 (51%) were in the Development group, which is almost never reviewed (4 of 3,290).</desc>
+<text class="t-big" x="0" y="14.52">2.2%</text>
+<text class="t-strong" x="59.12" y="14.52">
+<tspan x="59.12" dy="0">of 6,459 jobs with an LLM comment in the four groups</tspan>
+<tspan x="59.12" dy="16.9">shown, over 42 days, were later reviewed by a person</tspan>
+</text>
+<g data-tip="Reviewed by a person: 142 of 6,459 jobs (2.2%)" tabindex="0">
+<title>Reviewed by a person: 142 of 6,459 jobs (2.2%)</title>
+<rect class="hit" x="0" y="41.67" width="8.91" height="24"/>
+<path class="c-ctl" d="M0 46.67H3.91A4 4 0 0 1 7.91 50.67V56.67A4 4 0 0 1 3.91 60.67H0Z"/>
+</g>
+<g data-tip="Not reviewed: 6,317 of 6,459 jobs (97.8%)" tabindex="0">
+<title>Not reviewed: 6,317 of 6,459 jobs (97.8%)</title>
+<rect class="hit" x="8.91" y="41.67" width="351.09" height="24"/>
+<path class="c-ctl-soft" d="M9.91 46.67H356A4 4 0 0 1 360 50.67V56.67A4 4 0 0 1 356 60.67H9.91Z"/>
+</g>
+<text class="t-muted" x="0" y="74.59">142 reviewed</text>
+<text class="t-muted" x="360" y="74.59" text-anchor="end">6,317 not reviewed</text>
+<text class="t-big" x="0" y="124.11">51%</text>
+<text class="t-strong" x="53.07" y="124.11">
+<tspan x="53.07" dy="0">were in the Development group, which is almost never</tspan>
+<tspan x="53.07" dy="16.9">reviewed (4 of 3,290)</tspan>
+</text>
+<rect class="c-focus" x="0" y="161.76" width="10" height="10" rx="2"/>
+<text class="t" x="19" y="171.05">Development group</text>
+<rect class="c-ctl" x="148.26" y="161.76" width="10" height="10" rx="2"/>
+<text class="t" x="167.26" y="171.05">Groups people review</text>
+<text class="t" x="0" y="195.84">Development Tumbleweed</text>
+<g data-tip="Development Tumbleweed: 3,290 jobs with an LLM comment, 4 reviewed by a person" tabindex="0">
+<title>Development Tumbleweed: 3,290 jobs with an LLM comment, 4 reviewed by a person</title>
+<rect class="hit" x="0" y="202.09" width="249.27" height="24"/>
+<path class="c-focus" d="M0 204.09H245.27A4 4 0 0 1 249.27 208.09V220.09A4 4 0 0 1 245.27 224.09H0Z"/>
+</g>
+<text class="t" x="255.27" y="218.38">3,290 · 4 reviewed</text>
+<text class="t" x="0" y="246.67">openSUSE Tumbleweed</text>
+<g data-tip="openSUSE Tumbleweed: 1,613 jobs with an LLM comment, 71 reviewed by a person" tabindex="0">
+<title>openSUSE Tumbleweed: 1,613 jobs with an LLM comment, 71 reviewed by a person</title>
+<rect class="hit" x="0" y="252.92" width="122.21" height="24"/>
+<path class="c-ctl" d="M0 254.92H118.21A4 4 0 0 1 122.21 258.92V270.92A4 4 0 0 1 118.21 274.92H0Z"/>
+</g>
+<text class="t" x="128.21" y="269.21">1,613 · 71 reviewed</text>
+<text class="t" x="0" y="297.5">openSUSE Tumbleweed AArch64</text>
+<g data-tip="openSUSE Tumbleweed AArch64: 1,497 jobs with an LLM comment, 62 reviewed by a person" tabindex="0">
+<title>openSUSE Tumbleweed AArch64: 1,497 jobs with an LLM comment, 62 reviewed by a person</title>
+<rect class="hit" x="0" y="303.75" width="113.42" height="24"/>
+<path class="c-ctl" d="M0 305.75H109.42A4 4 0 0 1 113.42 309.75V321.75A4 4 0 0 1 109.42 325.75H0Z"/>
+</g>
+<text class="t" x="119.42" y="320.04">1,497 · 62 reviewed</text>
+<text class="t" x="0" y="348.33">openSUSE Leap 16</text>
+<g data-tip="openSUSE Leap 16: 59 jobs with an LLM comment, 5 reviewed by a person" tabindex="0">
+<title>openSUSE Leap 16: 59 jobs with an LLM comment, 5 reviewed by a person</title>
+<rect class="hit" x="0" y="354.58" width="24" height="24"/>
+<path class="c-ctl" d="M0 356.58H0.47A4 4 0 0 1 4.47 360.58V372.58A4 4 0 0 1 0.47 376.58H0Z"/>
+</g>
+<text class="t" x="10.47" y="370.87">59 · 5 reviewed</text>
+</svg>

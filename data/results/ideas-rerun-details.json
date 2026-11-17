@@ -1,0 +1,97 @@
+{
+ "id": "ideas-rerun-details",
+ "scope": "o3",
+ "title": "The failures that passed on a rerun",
+ "compared": "For the first failures whose later run in the same build passed: how that run was started, and what the posted comment had said: its class, BISECT and Restart.",
+ "sample": "The 67 public first failures with a hindsight label whose rerun in the same build passed on its own (one pass forced by a label is left out).",
+ "date": "2026-11-14",
+ "columns": [
+  {
+   "key": "what",
+   "label": "What"
+  },
+  {
+   "key": "answer",
+   "label": "Answer"
+  },
+  {
+   "key": "jobs",
+   "label": "Jobs",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "what": "how the rerun was started",
+   "answer": "direct clone, no comment says who",
+   "jobs": 50
+  },
+  {
+   "what": "how the rerun was started",
+   "answer": "direct clone after a mass-restart comment",
+   "jobs": 11
+  },
+  {
+   "what": "how the rerun was started",
+   "answer": "direct clone by the openQA retry setting",
+   "jobs": 2
+  },
+  {
+   "what": "how the rerun was started",
+   "answer": "new run of the scenario in the same build",
+   "jobs": 4
+  },
+  {
+   "what": "how the rerun was started",
+   "answer": "clone by the investigation hook",
+   "jobs": 0
+  },
+  {
+   "what": "posted class",
+   "answer": "product",
+   "jobs": 12
+  },
+  {
+   "what": "posted class",
+   "answer": "test",
+   "jobs": 35
+  },
+  {
+   "what": "posted class",
+   "answer": "infrastructure",
+   "jobs": 20
+  },
+  {
+   "what": "posted BISECT",
+   "answer": "YES",
+   "jobs": 17
+  },
+  {
+   "what": "posted BISECT",
+   "answer": "NO, the model's own answer",
+   "jobs": 25
+  },
+  {
+   "what": "posted BISECT",
+   "answer": "NO, set by the same-module rule",
+   "jobs": 25
+  },
+  {
+   "what": "posted BISECT",
+   "answer": "NO, set by the streak rule",
+   "jobs": 0
+  },
+  {
+   "what": "posted Restart",
+   "answer": "YES",
+   "jobs": 28
+  },
+  {
+   "what": "posted Restart",
+   "answer": "NO",
+   "jobs": 39
+  }
+ ],
+ "verdict": "Most reruns were plain clones that no comment explains. The posted comments had called 20 of the 67 infrastructure and said Restart: YES for 28.",
+ "note": "The investigation hook did retry some of these jobs, as the article says, but its clones are investigation runs and none of them is the rerun counted here."
+}

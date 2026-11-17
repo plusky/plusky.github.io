@@ -1,0 +1,162 @@
+{
+ "id": "models-speed",
+ "scope": "mixed",
+ "title": "How long the other chat models took",
+ "compared": "Wall time of each other chat model for the first two questions and three verdict wordings, against the 70-minute gate for the 12-job mini sample.",
+ "sample": "Screen A (36 jobs), screen B (35 jobs) and the mini sample (12 jobs of A), both instances; totals only.",
+ "date": "2026-11-11",
+ "columns": [
+  {
+   "key": "model",
+   "label": "Model"
+  },
+  {
+   "key": "sample",
+   "label": "Jobs"
+  },
+  {
+   "key": "answered",
+   "label": "Jobs answered",
+   "align": "right"
+  },
+  {
+   "key": "minutes",
+   "label": "Minutes",
+   "align": "right"
+  },
+  {
+   "key": "per_job",
+   "label": "Minutes per answered job",
+   "align": "right"
+  },
+  {
+   "key": "how",
+   "label": "Timed"
+  }
+ ],
+ "rows": [
+  {
+   "model": "gpt-oss-20b",
+   "sample": "mini sample",
+   "answered": [
+    12,
+    12
+   ],
+   "minutes": 12,
+   "per_job": 1.0,
+   "how": "start to end of the run"
+  },
+  {
+   "model": "gpt-oss-20b",
+   "sample": "screen A",
+   "answered": [
+    36,
+    36
+   ],
+   "minutes": 35,
+   "per_job": 1.0,
+   "how": "as logged with the comparison"
+  },
+  {
+   "model": "gpt-oss-20b",
+   "sample": "screen B",
+   "answered": [
+    35,
+    35
+   ],
+   "minutes": 34,
+   "per_job": 1.0,
+   "how": "as logged with the comparison"
+  },
+  {
+   "model": "Gemma-26B-A4B",
+   "sample": "mini sample",
+   "answered": [
+    12,
+    12
+   ],
+   "minutes": 60,
+   "per_job": 5.0,
+   "how": "start to end of the run"
+  },
+  {
+   "model": "Gemma-26B-A4B",
+   "sample": "screen A",
+   "answered": [
+    36,
+    36
+   ],
+   "minutes": 160,
+   "per_job": 4.4,
+   "how": "as logged with the comparison"
+  },
+  {
+   "model": "Gemma-26B-A4B",
+   "sample": "screen B",
+   "answered": [
+    32,
+    35
+   ],
+   "minutes": 175,
+   "per_job": 5.5,
+   "how": "as logged with the comparison"
+  },
+  {
+   "model": "Ornith-35B",
+   "sample": "screen A",
+   "answered": [
+    2,
+    36
+   ],
+   "minutes": 64,
+   "per_job": 32.0,
+   "how": "until stopped by hand"
+  },
+  {
+   "model": "Ornith-9B",
+   "sample": "mini sample",
+   "answered": [
+    4,
+    12
+   ],
+   "minutes": 71,
+   "per_job": 17.8,
+   "how": "start to end of the run"
+  },
+  {
+   "model": "Qwen3.5-35B",
+   "sample": "mini sample",
+   "answered": [
+    0,
+    12
+   ],
+   "minutes": 23,
+   "per_job": null,
+   "how": "until stopped by hand"
+  },
+  {
+   "model": "Wald-4B",
+   "sample": "mini sample",
+   "answered": [
+    2,
+    12
+   ],
+   "minutes": 70,
+   "per_job": 35.0,
+   "how": "start to end of the run"
+  },
+  {
+   "model": "Winnow-E4B",
+   "sample": "mini sample",
+   "answered": [
+    12,
+    12
+   ],
+   "minutes": 12,
+   "per_job": 1.0,
+   "how": "start to end of the run"
+  }
+ ],
+ "verdict": "Only gpt-oss-20b and Winnow-E4B took about a minute a job; Gemma-26B-A4B took several minutes a job, and the others answered few jobs in the time they had.",
+ "note": "Minutes per answered job are the wall time divided by the jobs answered, so one job took longer than that. All runs used a 2x EPYC 9354 server with eight jobs in parallel, but the load from other work on the server differed from run to run, so the times compare only roughly. The run log has minute timestamps."
+}

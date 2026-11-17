@@ -1,0 +1,79 @@
+{
+ "id": "models-quantisation",
+ "scope": "mixed",
+ "title": "Production quantisation against Q8_0",
+ "compared": "Gemma 4 E4B in the production quantisation UD-IQ2_M against the same model in Q8_0, replaying the production prompts.",
+ "sample": "Gold jobs with a bug or ticket a person set: public, and internal (all product bugs).",
+ "date": "2026-11-09",
+ "columns": [
+  {
+   "key": "instance",
+   "label": "Instance"
+  },
+  {
+   "key": "jobs",
+   "label": "Jobs"
+  },
+  {
+   "key": "iq2m",
+   "label": "UD-IQ2_M right",
+   "align": "right"
+  },
+  {
+   "key": "q8",
+   "label": "Q8_0 right",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "instance": "public",
+   "jobs": "all gold jobs answered",
+   "iq2m": [
+    50,
+    95
+   ],
+   "q8": [
+    50,
+    95
+   ]
+  },
+  {
+   "instance": "public",
+   "jobs": "product bugs",
+   "iq2m": [
+    35,
+    49
+   ],
+   "q8": [
+    44,
+    49
+   ]
+  },
+  {
+   "instance": "public",
+   "jobs": "test issues",
+   "iq2m": [
+    15,
+    46
+   ],
+   "q8": [
+    6,
+    46
+   ]
+  },
+  {
+   "instance": "internal (counts only)",
+   "jobs": "all gold jobs answered",
+   "iq2m": [
+    21,
+    36
+   ],
+   "q8": [
+    30,
+    36
+   ]
+  }
+ ],
+ "verdict": "Level on the public jobs, where Q8_0 trades test issues for product bugs; Q8_0 ahead on the internal product bugs. Inside the noise for a decision on the public set."
+}

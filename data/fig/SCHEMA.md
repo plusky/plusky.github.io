@@ -120,8 +120,66 @@ pass when simply rerun, and today's hook catches few of them.
 `job` (o3 job id), `instance`, `created` (date), `text` (the LLM's comment, Markdown). Shows: what a comment
 looks like.
 
+## thinking
+
+`hardware`, `model`, `jobs` (jobs replayed), `thinking_share_of_generation` and `time_saved_share` (0..1);
+`on` and `off` (thinking on, thinking off): `generated_per_turn` (tokens), `median_s`, `p90_s`, `total_s`,
+`prompt_s`, `generation_s`, `class_right` (jobs); `per_job_s[]`: `on`, `off` (seconds of the same job under
+both settings, no job number). Shows: most of what the model generates is thinking, and turning it off saves
+time but costs right answers.
+
+## latency
+
+`settings`: the text of each setting id (`t8b16`, `t16b32`, `t8b16-2q`, `t16b32-2q`: threads, batch threads,
+two or four questions), `chosen` (the id proposed), `timeout_s` (openQA's limit for the hook), `hardware`;
+`points[]`: `setting`, `tokens` (input tokens of one request), `secs`; `fits` per setting: `intercept_s`,
+`s_per_1000_tokens`, `worst_residual_s`, and `on_128` (the fit applied to the 128 confirmation jobs):
+`median`, `mean`, `p90`, `max`, `over_300` (jobs over the limit); `bursts[]`: `at_once` (requests sent
+together), `secs`, `alone_s` (the same request alone). Shows: the decision request takes about a minute and
+grows with the prompt; requests sent together can pass the limit.
+
+## readers
+
+`window_days`, `jobs_with_llm_comment`, `reviewed_jobs` (of those, reviewed by a person), `reviewed_share`
+(0..1), `development_jobs`, `development_reviewed_jobs`, `development_share` (jobs in development groups),
+`jobs_per_day`; `groups[]`: `group` (name of a public job group), `jobs_with_llm_comment`, `reviewed_jobs`,
+`development` (true for a development group); `seven_groups`: the same counts over seven groups. Shows: few
+of the commented jobs are reviewed by a person, and half of the comments go to groups nobody reviews.
+
+## prs
+
+`read` (date the lists were read), `topics[]`, `counts`: `merged`, `open`; `prs[]`: `number`, `repo`, `title`,
+`topic`, `state`, `created`, `merged` (dates). Shows: the pull requests of the work over time, by topic.
+
+## data/results
+
+`data/results/<id>.json` is one experiment as a table: `id`, `scope` (as above), `title`, `compared` (what
+was compared), `sample` (on what), `date`, `verdict` (the outcome), optional `note` and `pr[]` (`repo`,
+`number`); `columns[]`: `key`, `label`, optional `align`; `rows[]`: one object per row with the column keys.
+A cell is a number, a short text, a pair `[a, b]` ("a of b") or null (not measured). A table with rows from
+both instances has scope `mixed` and a column `instance` that marks each row.
+
+## data/jobs
+
+`data/jobs/<set>.json` holds one row per job for a set that consists of public jobs only: `set`, `scope`
+(always `o3`), `date`, `jobs` (number of rows), `columns[]`, `rows[]` (arrays in column order). `job` is the
+job number on openqa.opensuse.org; job pages there expire. Classes are `product`, `test`, `infra`.
+
+- `confirmation` (128 jobs of the frozen run): `label`, `label_source` (`hindsight` if the label needed what
+  happened after the failure), `posted` (class of the posted comment), `rule_three` and `rule_two` (class of
+  the three-order and of the two-question decision rule), `shares_test_and_build` (the job shares a test and a
+  build with a job used for tuning).
+- `gold` (98 jobs whose bug reference a person set): `label`, `iq2m` and `q8` (class Gemma gave in a replay
+  with each quantisation, null without an answer), `decision_label` (the decision model's most probable class),
+  `decision_rule` (class of the two-question rule), `doubtful` (the ticket's class is in doubt), `ticket` (a
+  running number per ticket, 1 to 27, not the reference).
+- `reruns` (299 jobs with a hindsight label): `label` (may be `unclear`), `posted`, `first_failure`, `group`
+  (`passed-later-same-build`, `rerun-not-passed`, `not-rerun`, `not-first-failure`), `restart` and `bisect`
+  (what the posted comment advised; for `bisect` also which rule set a NO), `rerun_started_by` (for the jobs
+  that passed on a rerun: `unknown`, `mass-restart`, `retry-setting`, `new-run`, `hook`).
+
 ## facts.json
 
 `data/facts.json` maps a key to `value`, `forms` (spellings the text may use), `what` and `scope` (as above).
 It holds the numbers the article and its figure descriptions quote, and nothing else; the figure files above
-hold the rest.
+hold the rest. `data/facts-data.json` does the same for the data page.

@@ -1,0 +1,75 @@
+{
+ "id": "labels-internal",
+ "scope": "internal-aggregate",
+ "title": "Human labels on the internal instance",
+ "compared": "Failed jobs on the internal instance that a person gave a bug or ticket reference, and the distinct tickets behind them, by class of the ticket.",
+ "sample": "60 days of internal job groups; failed, incomplete or timed-out jobs with a reference.",
+ "date": "2026-11-13",
+ "columns": [
+  {
+   "key": "cls",
+   "label": "Class of the reference"
+  },
+  {
+   "key": "jobs",
+   "label": "Jobs labelled by a person",
+   "align": "right"
+  },
+  {
+   "key": "tickets",
+   "label": "Tickets",
+   "align": "right"
+  },
+  {
+   "key": "tickets_all",
+   "label": "Tickets with carry-over",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "cls": "product bug",
+   "jobs": 216,
+   "tickets": 39,
+   "tickets_all": 64
+  },
+  {
+   "cls": "test issue",
+   "jobs": 9,
+   "tickets": 2,
+   "tickets_all": 3
+  },
+  {
+   "cls": "infrastructure",
+   "jobs": 0,
+   "tickets": 0,
+   "tickets_all": 2
+  },
+  {
+   "cls": "other tracker",
+   "jobs": 47,
+   "tickets": 8,
+   "tickets_all": 11
+  },
+  {
+   "cls": "not visible",
+   "jobs": 38,
+   "tickets": 17,
+   "tickets_all": 30
+  },
+  {
+   "cls": "references of more than one class",
+   "jobs": 3,
+   "tickets": null,
+   "tickets_all": null
+  },
+  {
+   "cls": "all",
+   "jobs": 313,
+   "tickets": 66,
+   "tickets_all": 110
+  }
+ ],
+ "verdict": "313 jobs on 66 tickets. Where the class of a ticket is known it is nearly always a product bug: 2 test-issue tickets and 0 for infrastructure. Not enough to tune on.",
+ "note": "1473 more jobs carried a reference that automation set or carried over; their tickets are the last column. A ticket whose project is not visible without an account is counted as not visible. A job with references of two classes counts once in its own row, and its tickets in their classes."
+}

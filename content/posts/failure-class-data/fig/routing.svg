@@ -1,0 +1,83 @@
+<svg viewBox="0 0 720 254" role="img" aria-labelledby="routing-t routing-d" xmlns="http://www.w3.org/2000/svg">
+<title id="routing-t">Why turns two and three lost their cache</title>
+<desc id="routing-d">The three turns of one job reuse most of their prompt from the server's cache, but the load balancer sent them to different servers.</desc>
+<g transform="translate(0 0)">
+<text class="t-strong" x="0" y="14">Before</text>
+<text class="t-mono" x="0" y="32">least_conn;</text>
+<text class="t-muted" x="0" y="50">ties go round robin</text>
+<text class="t-muted" x="0" y="78">turn</text>
+<text class="t-muted" x="320" y="78" text-anchor="middle">server</text>
+<rect class="box" x="176" y="86" width="46" height="126" rx="6"/>
+<text class="t-strong" x="199" y="153.5" text-anchor="middle">nginx</text>
+<text class="t-strong" x="0" y="105.5">1</text>
+<path class="c-focus" d="M18 92H110A4 4 0 0 1 114 96V106A4 4 0 0 1 110 110H18Z"/>
+<text class="t-muted" x="18" y="125">all read fresh</text>
+<path class="arrow" d="M120 101L170 101"/>
+<path class="head" d="M176 101L169 104.5L169 97.5Z"/>
+<rect class="box" x="300" y="87" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="105.5" text-anchor="middle">A</text>
+<path class="arrow" d="M222 101L294 101"/>
+<path class="head" d="M300 101L293 104.5L293 97.5Z"/>
+<text class="t-strong" x="0" y="153.5">2</text>
+<path class="c-focus" d="M18 140H122A4 4 0 0 1 126 144V154A4 4 0 0 1 122 158H18Z"/>
+<text class="t-muted" x="18" y="173">all read fresh on B</text>
+<path class="arrow" d="M132 149L170 149"/>
+<path class="head" d="M176 149L169 152.5L169 145.5Z"/>
+<rect class="box" x="300" y="135" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="153.5" text-anchor="middle">B</text>
+<path class="arrow" d="M222 149L294 149"/>
+<path class="head" d="M300 149L293 152.5L293 145.5Z"/>
+<text class="t-strong" x="0" y="201.5">3</text>
+<path class="c-focus" d="M18 188H134A4 4 0 0 1 138 192V202A4 4 0 0 1 134 206H18Z"/>
+<text class="t-muted" x="18" y="221">all read fresh on C</text>
+<path class="arrow" d="M144 197L170 197"/>
+<path class="head" d="M176 197L169 200.5L169 193.5Z"/>
+<rect class="box" x="300" y="183" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="201.5" text-anchor="middle">C</text>
+<path class="arrow" d="M222 197L294 197"/>
+<path class="head" d="M300 197L293 200.5L293 193.5Z"/>
+</g>
+<g transform="translate(380 0)">
+<text class="t-strong" x="0" y="14">After</text>
+<text class="t-mono" x="0" y="32">hash $http_x_openqa_job consistent;</text>
+<text class="t-muted" x="0" y="50">on 503 the request passes to the next server</text>
+<text class="t-muted" x="0" y="78">turn</text>
+<text class="t-muted" x="320" y="78" text-anchor="middle">server</text>
+<rect class="box" x="176" y="86" width="46" height="126" rx="6"/>
+<text class="t-strong" x="199" y="153.5" text-anchor="middle">nginx</text>
+<text class="t-strong" x="0" y="105.5">1</text>
+<path class="c-focus" d="M18 92H110A4 4 0 0 1 114 96V106A4 4 0 0 1 110 110H18Z"/>
+<text class="t-muted" x="18" y="125">all read fresh</text>
+<path class="arrow" d="M120 101L170 101"/>
+<path class="head" d="M176 101L169 104.5L169 97.5Z"/>
+<rect class="box" x="300" y="87" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="105.5" text-anchor="middle">A</text>
+<path class="arrow" d="M222 101L294.03 93.61"/>
+<path class="head" d="M300 93L293.39 97.2L292.68 90.23Z"/>
+<text class="t-strong" x="0" y="153.5">2</text>
+<rect class="c-ctl-soft" x="18" y="140" width="101.6" height="18"/>
+<path class="c-focus" d="M121.6 140H122A4 4 0 0 1 126 144V154A4 4 0 0 1 122 158H121.6Z"/>
+<text class="t-muted" x="18" y="173">95% from the cache</text>
+<path class="arrow" d="M132 149L170 149"/>
+<path class="head" d="M176 149L169 152.5L169 145.5Z"/>
+<rect class="box" x="300" y="135" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="153.5" text-anchor="middle">B</text>
+<path class="arrow" d="M222 149L294.89 104.14"/>
+<path class="head" d="M300 101L295.87 107.65L292.2 101.69Z"/>
+<text class="t-strong" x="0" y="201.5">3</text>
+<rect class="c-ctl-soft" x="18" y="188" width="113" height="18"/>
+<path class="c-focus" d="M133 188H134A4 4 0 0 1 138 192V202A4 4 0 0 1 134 206H133Z"/>
+<text class="t-muted" x="18" y="221">95% from the cache</text>
+<path class="arrow" d="M144 197L170 197"/>
+<path class="head" d="M176 197L169 200.5L169 193.5Z"/>
+<rect class="box" x="300" y="183" width="40" height="28" rx="6"/>
+<text class="t-strong" x="320" y="201.5" text-anchor="middle">C</text>
+<path class="arrow" d="M222 197L296.02 113.49"/>
+<path class="head" d="M300 109L297.98 116.56L292.74 111.92Z"/>
+</g>
+<line class="grid" x1="360" y1="0" x2="360" y2="224"/>
+<rect class="c-focus" x="0" y="238" width="12" height="12"/>
+<text class="t" x="18" y="248">tokens read fresh</text>
+<rect class="c-ctl-soft" x="148" y="238" width="12" height="12"/>
+<text class="t" x="166" y="248">tokens taken from the cache</text>
+</svg>

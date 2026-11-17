@@ -1,0 +1,228 @@
+{
+ "id": "screens-table",
+ "scope": "mixed",
+ "title": "All approaches on the 71 screen jobs",
+ "compared": "Every approach that made it to both screen halves, against always answering product and the production prompt.",
+ "sample": "The 71 screen jobs, about a third of each class, from both instances; totals only. Gemma-26B-A4B answered 68 of them.",
+ "date": "2026-11-11",
+ "columns": [
+  {
+   "key": "approach",
+   "label": "Approach"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "product",
+   "label": "Product bugs right",
+   "align": "right"
+  },
+  {
+   "key": "test",
+   "label": "Test issues right",
+   "align": "right"
+  },
+  {
+   "key": "infra",
+   "label": "Infrastructure right",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "approach": "always product",
+   "right": [
+    24,
+    71
+   ],
+   "product": [
+    24,
+    24
+   ],
+   "test": [
+    0,
+    23
+   ],
+   "infra": [
+    0,
+    24
+   ]
+  },
+  {
+   "approach": "production prompt, Gemma Q8",
+   "right": [
+    28,
+    71
+   ],
+   "product": [
+    19,
+    24
+   ],
+   "test": [
+    3,
+    23
+   ],
+   "infra": [
+    6,
+    24
+   ]
+  },
+  {
+   "approach": "fuller class definitions, Gemma Q8",
+   "right": [
+    32,
+    71
+   ],
+   "product": [
+    18,
+    24
+   ],
+   "test": [
+    6,
+    23
+   ],
+   "infra": [
+    8,
+    24
+   ]
+  },
+  {
+   "approach": "elephant-1 estimate as a hint, Gemma Q8",
+   "right": [
+    38,
+    71
+   ],
+   "product": [
+    20,
+    24
+   ],
+   "test": [
+    9,
+    23
+   ],
+   "infra": [
+    9,
+    24
+   ]
+  },
+  {
+   "approach": "elephant-1 area as a steer, Gemma Q8",
+   "right": [
+    39,
+    71
+   ],
+   "product": [
+    20,
+    24
+   ],
+   "test": [
+    10,
+    23
+   ],
+   "infra": [
+    9,
+    24
+   ]
+  },
+  {
+   "approach": "elephant-1, label question",
+   "right": [
+    38,
+    71
+   ],
+   "product": [
+    19,
+    24
+   ],
+   "test": [
+    9,
+    23
+   ],
+   "infra": [
+    10,
+    24
+   ]
+  },
+  {
+   "approach": "elephant-1 with the environment question",
+   "right": [
+    47,
+    71
+   ],
+   "product": [
+    20,
+    24
+   ],
+   "test": [
+    12,
+    23
+   ],
+   "infra": [
+    15,
+    24
+   ]
+  },
+  {
+   "approach": "Kev-27B Q4_K_M, label question",
+   "right": [
+    47,
+    71
+   ],
+   "product": [
+    18,
+    24
+   ],
+   "test": [
+    9,
+    23
+   ],
+   "infra": [
+    20,
+    24
+   ]
+  },
+  {
+   "approach": "gpt-oss-20b, fuller definitions",
+   "right": [
+    42,
+    71
+   ],
+   "product": [
+    15,
+    24
+   ],
+   "test": [
+    16,
+    23
+   ],
+   "infra": [
+    11,
+    24
+   ]
+  },
+  {
+   "approach": "Gemma-26B-A4B Q8, production prompt",
+   "right": [
+    42,
+    68
+   ],
+   "product": [
+    22,
+    22
+   ],
+   "test": [
+    7,
+    22
+   ],
+   "infra": [
+    13,
+    24
+   ]
+  }
+ ],
+ "verdict": "elephant-1 with the environment question and Kev-27B did best, the bigger chat models did not beat them, and every approach but gpt-oss-20b stayed weak on test issues.",
+ "note": "The environment row uses the deployed rule, which reads the label question in one option order; averaged over three orders, as the screens' own source does, it gets 44."
+}

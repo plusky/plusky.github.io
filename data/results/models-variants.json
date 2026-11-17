@@ -1,0 +1,132 @@
+{
+ "id": "models-variants",
+ "scope": "mixed",
+ "title": "Ten wordings of the verdict question",
+ "compared": "Ten wordings of the last question, each asked on the same stored analysis of Gemma 4 E4B Q8_0, against always answering product, the production Gemma and elephant-1.",
+ "sample": "The 114 jobs every wording answered, out of a set of 116: 71 jobs with a label set without hindsight and 45 others, called guard jobs, from both instances; totals only.",
+ "date": "2026-11-10",
+ "columns": [
+  {
+   "key": "approach",
+   "label": "Approach"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "recall_pct",
+   "label": "Mean right per class (%)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "approach": "always product",
+   "right": [
+    53,
+    114
+   ],
+   "recall_pct": 33
+  },
+  {
+   "approach": "Gemma, production quantisation",
+   "right": [
+    50,
+    114
+   ],
+   "recall_pct": 42
+  },
+  {
+   "approach": "production wording",
+   "right": [
+    59,
+    114
+   ],
+   "recall_pct": 43
+  },
+  {
+   "approach": "no example",
+   "right": [
+    65,
+    114
+   ],
+   "recall_pct": 49
+  },
+  {
+   "approach": "fuller class definitions",
+   "right": [
+    65,
+    114
+   ],
+   "recall_pct": 50
+  },
+  {
+   "approach": "step by step",
+   "right": [
+    65,
+    114
+   ],
+   "recall_pct": 51
+  },
+  {
+   "approach": "job facts listed",
+   "right": [
+    61,
+    114
+   ],
+   "recall_pct": 46
+  },
+  {
+   "approach": "few-shot examples",
+   "right": [
+    66,
+    114
+   ],
+   "recall_pct": 50
+  },
+  {
+   "approach": "direct answer",
+   "right": [
+    64,
+    114
+   ],
+   "recall_pct": 50
+  },
+  {
+   "approach": "may abstain",
+   "right": [
+    59,
+    114
+   ],
+   "recall_pct": 46
+  },
+  {
+   "approach": "elephant-1 estimate as a hint",
+   "right": [
+    67,
+    114
+   ],
+   "recall_pct": 53
+  },
+  {
+   "approach": "challenge the first answer",
+   "right": [
+    67,
+    114
+   ],
+   "recall_pct": 52
+  },
+  {
+   "approach": "elephant-1, label question",
+   "right": [
+    64,
+    114
+   ],
+   "recall_pct": 52
+  }
+ ],
+ "verdict": "Most wordings gained a few jobs over the production wording, elephant-1's estimate as a hint the most, and none got much past half right per class. Screened further.",
+ "note": "The mean right per class is the share right within each class, averaged over the three classes."
+}

@@ -1,0 +1,198 @@
+{
+ "id": "ideas-no-last-good",
+ "scope": "mixed",
+ "title": "No last good job means a test issue?",
+ "compared": "A rule that calls every job whose test never passed before (no last good job) a test issue, applied on top of Gemma's class and on top of the decision rule.",
+ "sample": "The labelled sets of both instances. Gemma's class is the posted one for the public silver jobs and a replay with the production quantisation (IQ2_M) elsewhere; the public gold set also has a replay with Q8_0. The internal gold set here has 43 jobs: the 36 of the quantisation table and a later batch of 7.",
+ "date": "2026-11-13",
+ "columns": [
+  {
+   "key": "instance",
+   "label": "Instance"
+  },
+  {
+   "key": "set",
+   "label": "Set"
+  },
+  {
+   "key": "test",
+   "label": "Test issues among jobs without a last good job",
+   "align": "right"
+  },
+  {
+   "key": "gemma",
+   "label": "Gemma right",
+   "align": "right"
+  },
+  {
+   "key": "gemma_rule",
+   "label": "Gemma with the rule",
+   "align": "right"
+  },
+  {
+   "key": "q8",
+   "label": "Gemma Q8_0 right",
+   "align": "right"
+  },
+  {
+   "key": "q8_rule",
+   "label": "Gemma Q8_0 with the rule",
+   "align": "right"
+  },
+  {
+   "key": "decision",
+   "label": "Decision rule right",
+   "align": "right"
+  },
+  {
+   "key": "decision_rule",
+   "label": "Decision rule with the rule",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "instance": "public",
+   "set": "gold: bug reference set by a person",
+   "test": [
+    10,
+    13
+   ],
+   "gemma": [
+    50,
+    95
+   ],
+   "gemma_rule": [
+    56,
+    95
+   ],
+   "q8": [
+    50,
+    95
+   ],
+   "q8_rule": [
+    57,
+    95
+   ],
+   "decision": [
+    57,
+    98
+   ],
+   "decision_rule": [
+    64,
+    98
+   ]
+  },
+  {
+   "instance": "public",
+   "set": "silver: the 128 confirmation jobs",
+   "test": [
+    1,
+    1
+   ],
+   "gemma": [
+    66,
+    128
+   ],
+   "gemma_rule": [
+    67,
+    128
+   ],
+   "q8": null,
+   "q8_rule": null,
+   "decision": [
+    93,
+    128
+   ],
+   "decision_rule": [
+    94,
+    128
+   ]
+  },
+  {
+   "instance": "public",
+   "set": "silver: the other labelled jobs",
+   "test": [
+    8,
+    8
+   ],
+   "gemma": [
+    58,
+    157
+   ],
+   "gemma_rule": [
+    65,
+    157
+   ],
+   "q8": null,
+   "q8_rule": null,
+   "decision": [
+    31,
+    86
+   ],
+   "decision_rule": [
+    34,
+    86
+   ]
+  },
+  {
+   "instance": "internal (counts only)",
+   "set": "gold: bug reference set by a person",
+   "test": [
+    0,
+    13
+   ],
+   "gemma": [
+    23,
+    43
+   ],
+   "gemma_rule": [
+    13,
+    43
+   ],
+   "q8": null,
+   "q8_rule": null,
+   "decision": [
+    33,
+    43
+   ],
+   "decision_rule": [
+    22,
+    43
+   ]
+  },
+  {
+   "instance": "internal (counts only)",
+   "set": "silver: hindsight labels",
+   "test": [
+    7,
+    30
+   ],
+   "gemma": [
+    22,
+    63
+   ],
+   "gemma_rule": [
+    18,
+    63
+   ],
+   "q8": null,
+   "q8_rule": null,
+   "decision": [
+    31,
+    63
+   ],
+   "decision_rule": [
+    18,
+    63
+   ]
+  }
+ ],
+ "verdict": "On the public sets most such jobs are test issues (19 of 22) and the rule adds a few right answers. On the internal sets they are mostly product bugs and the rule costs 10 of 43 on the gold set.",
+ "pr": [
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 818
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "readers",
+ "scope": "o3",
+ "window_days": 42,
+ "jobs_with_llm_comment": 6459,
+ "reviewed_jobs": 142,
+ "reviewed_share": 0.022,
+ "development_jobs": 3290,
+ "development_reviewed_jobs": 4,
+ "development_share": 0.51,
+ "jobs_per_day": 154,
+ "groups": [
+  {
+   "group": "openSUSE Tumbleweed",
+   "jobs_with_llm_comment": 1613,
+   "reviewed_jobs": 71,
+   "development": false
+  },
+  {
+   "group": "Development Tumbleweed",
+   "jobs_with_llm_comment": 3290,
+   "reviewed_jobs": 4,
+   "development": true
+  },
+  {
+   "group": "openSUSE Tumbleweed AArch64",
+   "jobs_with_llm_comment": 1497,
+   "reviewed_jobs": 62,
+   "development": false
+  },
+  {
+   "group": "openSUSE Leap 16",
+   "jobs_with_llm_comment": 59,
+   "reviewed_jobs": 5,
+   "development": false
+  }
+ ],
+ "seven_groups": {
+  "jobs_with_llm_comment": 7277,
+  "reviewed_jobs": 165,
+  "reviewed_share": 0.0227,
+  "development_share": 0.45
+ }
+}

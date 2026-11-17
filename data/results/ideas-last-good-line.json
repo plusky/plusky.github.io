@@ -1,0 +1,112 @@
+{
+ "id": "ideas-last-good-line",
+ "scope": "o3",
+ "title": "A Last good job line in the prompt",
+ "compared": "Gemma 4 E4B (Q8_0) with the unchanged prompt and with a proposed prompt line that names the last job of the same test that passed. To size the noise, the unchanged prompt was run again on 16 of the jobs.",
+ "sample": "32 public gold jobs that have a last good job, 16 product bugs and 16 test issues.",
+ "date": "2026-11-13",
+ "columns": [
+  {
+   "key": "prompt",
+   "label": "Prompt"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "product",
+   "label": "Product bugs right",
+   "align": "right"
+  },
+  {
+   "key": "test",
+   "label": "Test issues right",
+   "align": "right"
+  },
+  {
+   "key": "fixes",
+   "label": "Fixed",
+   "align": "right"
+  },
+  {
+   "key": "breaks",
+   "label": "Broken",
+   "align": "right"
+  },
+  {
+   "key": "bisect_yes",
+   "label": "BISECT: YES",
+   "align": "right"
+  },
+  {
+   "key": "same",
+   "label": "Same class as the first run",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "prompt": "unchanged",
+   "right": [
+    17,
+    32
+   ],
+   "product": [
+    13,
+    16
+   ],
+   "test": [
+    4,
+    16
+   ],
+   "fixes": null,
+   "breaks": null,
+   "bisect_yes": 14,
+   "same": null
+  },
+  {
+   "prompt": "with the last good job line",
+   "right": [
+    14,
+    32
+   ],
+   "product": [
+    11,
+    16
+   ],
+   "test": [
+    3,
+    16
+   ],
+   "fixes": 3,
+   "breaks": 6,
+   "bisect_yes": 18,
+   "same": null
+  },
+  {
+   "prompt": "unchanged, run again on 16 jobs",
+   "right": [
+    8,
+    16
+   ],
+   "product": null,
+   "test": null,
+   "fixes": null,
+   "breaks": null,
+   "bisect_yes": null,
+   "same": [
+    7,
+    16
+   ]
+  }
+ ],
+ "verdict": "With the line 14 right against 17 (3 fixed, 6 broken, 2 wrong either way), but the unchanged prompt run again kept its class on only 7 of 16 jobs. No measurable effect.",
+ "pr": [
+  {
+   "repo": "os-autoinst-scripts",
+   "number": 818
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": "models-gold",
+ "scope": "o3",
+ "title": "Gemma, elephant-1 and the two together on the gold jobs",
+ "compared": "The production Gemma, elephant-1 on its own, and a hybrid that takes elephant-1's class when it is sure and Gemma's otherwise.",
+ "sample": "The 95 public gold jobs Gemma answered: failed jobs whose bug or ticket a person set.",
+ "date": "2026-11-09",
+ "columns": [
+  {
+   "key": "approach",
+   "label": "Approach"
+  },
+  {
+   "key": "right",
+   "label": "Right",
+   "align": "right"
+  },
+  {
+   "key": "product",
+   "label": "Product bugs right",
+   "align": "right"
+  },
+  {
+   "key": "test",
+   "label": "Test issues right",
+   "align": "right"
+  },
+  {
+   "key": "called_infra",
+   "label": "Called infrastructure",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "approach": "Gemma 4 E4B, production quantisation",
+   "right": [
+    50,
+    95
+   ],
+   "product": [
+    35,
+    49
+   ],
+   "test": [
+    15,
+    46
+   ],
+   "called_infra": 1
+  },
+  {
+   "approach": "elephant-1 alone",
+   "right": [
+    42,
+    95
+   ],
+   "product": [
+    15,
+    49
+   ],
+   "test": [
+    27,
+    46
+   ],
+   "called_infra": 26
+  },
+  {
+   "approach": "elephant-1 if its probability is 0.6 or more, else Gemma",
+   "right": [
+    48,
+    95
+   ],
+   "product": [
+    33,
+    49
+   ],
+   "test": [
+    15,
+    46
+   ],
+   "called_infra": 3
+  }
+ ],
+ "verdict": "Gemma 50, elephant-1 42, hybrid 48 of 95. elephant-1 called 26 jobs infrastructure, and the gold set has none. No gain.",
+ "note": "The gold jobs hold only product bugs and test issues, so every infrastructure answer is wrong."
+}

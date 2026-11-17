@@ -1,0 +1,36 @@
+{
+ "id": "tuning-mmproj",
+ "scope": "bench",
+ "title": "Memory with and without the vision projector",
+ "compared": "The model server started with the projector file that lets Gemma read images, and without it.",
+ "sample": "Resident memory of one llama.cpp server after loading the model, read from /proc.",
+ "date": "2026-11-08",
+ "columns": [
+  {
+   "key": "server",
+   "label": "Server"
+  },
+  {
+   "key": "rss_gib",
+   "label": "Resident memory (GiB)",
+   "align": "right"
+  }
+ ],
+ "rows": [
+  {
+   "server": "with projector",
+   "rss_gib": 5.49
+  },
+  {
+   "server": "without projector",
+   "rss_gib": 4.54
+  }
+ ],
+ "verdict": "Without the projector the server needs 0.95 GiB less, and the file is not downloaded. Kept.",
+ "pr": [
+  {
+   "repo": "openQA",
+   "number": 8070
+  }
+ ]
+}
